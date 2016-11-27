@@ -1,12 +1,9 @@
-package net.anomalyxii.werewolves;
+package net.anomalyxii.werewolves.router;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.Games;
-import net.anomalyxii.werewolves.router.DeserialisationCallback;
-import net.anomalyxii.werewolves.router.RouterRequest;
-import net.anomalyxii.werewolves.router.RouterResponse;
 import net.anomalyxii.werewolves.router.exceptions.RequestSerialisationException;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 import net.anomalyxii.werewolves.router.exceptions.UnsupportedContentTypeException;
@@ -28,6 +25,10 @@ import java.net.URI;
 import java.util.Collections;
 
 /**
+ * A router class that can be used
+ * to conveniently access the various
+ * <code>werewolv.es</code> endpoints.
+ *
  * Created by Anomaly on 20/11/2016.
  */
 public class Router {
