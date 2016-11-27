@@ -3,6 +3,8 @@ package net.anomalyxii.werewolves.domain.players;
 import java.net.URI;
 
 /**
+ * A character in
+ *
  * Created by Anomaly on 26/11/2016.
  */
 public class Character extends AbstractPlayer {

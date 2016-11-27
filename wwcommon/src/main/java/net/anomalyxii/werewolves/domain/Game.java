@@ -10,6 +10,12 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * A game of <code>werewolv.es</code>.
+ *
+ * A game is made up of a series of
+ * {@link Day days} themselves comprising
+ * of a number of {@link Event events}.
+ *
  * Created by Anomaly on 20/11/2016.
  */
 public class Game {
@@ -26,6 +32,8 @@ public class Game {
     private final List<Event> postGameEvents = new ArrayList<>();
 
     private final List<Day> days = new ArrayList<>();
+
+    private Alignment winningAlignment = null;
 
     // ******************************
     // Constructors
@@ -62,6 +70,10 @@ public class Game {
         return days.get(dayNo - 1);
     }
 
+    public Alignment getWinningAlignment() {
+        return winningAlignment;
+    }
+
     // ******************************
     // Setters
     // ******************************
@@ -93,6 +105,10 @@ public class Game {
 
     public void addDay(Day day) {
         days.add(day);
+    }
+
+    public void setWinningAlignment(Alignment winningAlignment) {
+        this.winningAlignment = winningAlignment;
     }
 
     // ******************************

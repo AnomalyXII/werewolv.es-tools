@@ -1,10 +1,10 @@
 package net.anomalyxii.werewolves.router.response;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import net.anomalyxii.werewolves.domain.Day;
-import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.phases.DayPhase;
+import net.anomalyxii.werewolves.domain.phases.NightPhase;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
 import net.anomalyxii.werewolves.domain.players.User;
@@ -14,6 +14,9 @@ import java.net.URI;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by Anomaly on 22/11/2016.
@@ -122,6 +125,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
         private boolean gameStarted = false;
         private boolean gameFinished = false;
         private boolean dayPhase = false;
+        private Alignment winner = null;
 
         private final Set<Player> players = new LinkedHashSet<>();
         private final Map<String, User> users = new HashMap<>();
@@ -129,7 +133,9 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private final List<Event> preGameEvents = new ArrayList<>();
         private final List<Event> postGameEvents = new ArrayList<>();
-        private final Deque<List<Event>> days = new ArrayDeque<>();
+        private final Deque<Day> days = new ArrayDeque<>();
+        private final Map<Day, List<Event>> dayGameEvents = new HashMap<>();
+        private final Map<Day, List<Event>> nightGameEvents = new HashMap<>();
 
         // Process Methods
 
@@ -146,10 +152,13 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
             Player player = findOrCreatePlayer(eventBody.playerName, eventBody.avatarURL);
             players.add(player);
 
+            Day currentDay = days.peekLast();
             List<Event> currentPhase = gameStarted
                                        ? gameFinished
                                          ? postGameEvents
-                                         : days.peekLast()
+                                         : dayPhase
+                                           ? dayGameEvents.get(currentDay)
+                                           : nightGameEvents.get(currentDay)
                                        : preGameEvents;
 
             switch (eventBody.type) {
@@ -167,27 +176,40 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
                 case "GameStarted":
                     currentPhase.add(new GameStartedEvent(player, calendar));
+                    preGameEvents.addAll(currentPhase);
+                    currentPhase.clear();
                     gameStarted = true;
-                    dayPhase = true;
-                    days.addLast(new ArrayList<>());
+                    // Fall through!
+
+                case "DayStarted":
+                    if (!dayPhase) {
+                        Day lastDay = days.peekLast();
+                        if(lastDay != null)
+                            lastDay.getNightPhase().setComplete(true);
+
+                        dayPhase = true;
+                        List<Event> newDayPhase = new ArrayList<>();
+                        List<Event> newNightPhase = new ArrayList<>();
+                        currentDay = new Day(new DayPhase(newDayPhase), new NightPhase(newNightPhase));
+                        dayGameEvents.put(currentDay, newDayPhase);
+                        nightGameEvents.put(currentDay, newNightPhase);
+                        days.addLast(currentDay);
+
+                        dayPhase = true;
+                    }
+                    break;
+
+                case "NightStarted":
+                    days.peekLast().getDayPhase().setComplete(true);
+                    dayPhase = false;
                     break;
 
                 case "AnonymisedGameStarted":
                 case "GameSetToFixedLengthDayCycle":
-                    return; // Set something in the context?
-
-                case "DayStarted":
-                    if (!dayPhase) {
-                        days.addLast(new ArrayList<>());
-                        dayPhase = true;
-                    }
-                    return;
-                case "NightStarted":
-                    dayPhase = false;
-                    return;
+                    break; // Set something in the context?
 
                 case "VillageNominationsOpened":
-                    return;
+                    break;
 
                 case "VillageNomination":
                     Character targetCharacter = getCharacter(eventBody.target);
@@ -201,10 +223,26 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 case "PlayerLynched":
                     currentPhase.add(new PlayerLynchedEvent(player, calendar));
                     break;
+                case "PlayerRevived":
+                    //currentPhase.add(new PlayerLynchedEvent(player, calendar));
+                    break;
 
                 case "PostGameMessage":
-                    // This should always be in the post-game phase?
+                    // This should always be in the post-game phases?
                     postGameEvents.add(new PlayerMessageEvent(player, calendar, eventBody.message));
+                    break;
+
+                case "CovenVictory":
+                    winner = Alignment.COVEN;
+                    gameFinished = true;
+                    break;
+                case "WerewolfVictory":
+                    winner = Alignment.WEREWOLVES;
+                    gameFinished = true;
+                    break;
+                case "VillageVictory":
+                    winner = Alignment.VILLAGE;
+                    gameFinished = true;
                     break;
 
                 case "GameSpyJoined":
@@ -213,10 +251,11 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 case "WarnedForInactivity":
                 case "PlayerSmited":
                 case "PlayerRoleRevealed":
-                case "CovenVictory":
-                    return;
+                    break;
 
                 case "JoinGame": // Not needed?
+                    break;
+
                 default:
                     return;
 
@@ -229,15 +268,18 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
         public Game build() {
             Game game = new Game();
             players.forEach(game::addPlayer);
+
             preGameEvents.forEach(game::addPreGameEvent);
+            days.forEach(game::addDay);
             postGameEvents.forEach(game::addPostGameEvent);
-            days.stream().map(Day::new).forEach(game::addDay);
+
+            game.setWinningAlignment(winner);
             return game;
         }
 
         // Helper Methods
 
-        public Player findOrCreatePlayer(String name, String avatarUrl) {
+        private Player findOrCreatePlayer(String name, String avatarUrl) {
 
             if (MODERATOR.getName().equals(name))
                 return MODERATOR;
@@ -251,7 +293,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private User getUser(String name) {
             User user = findUser(name);
-            if(user != null)
+            if (user != null)
                 return user;
             throw new IllegalArgumentException("User '" + name + "' was not found");
         }
@@ -262,7 +304,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private User findOrCreateUser(String name, String avatarUrl) {
             User user = findUser(name);
-            if(user != null)
+            if (user != null)
                 return user;
 
             URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
@@ -274,7 +316,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private Character getCharacter(String name) {
             Character character = findCharacter(name);
-            if(character != null)
+            if (character != null)
                 return character;
             throw new IllegalArgumentException("Character '" + name + "' was not found");
         }
@@ -285,7 +327,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private Character findOrCreateCharacter(String name, String avatarUrl) {
             Character character = findCharacter(name);
-            if(character != null)
+            if (character != null)
                 return character;
 
             URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;

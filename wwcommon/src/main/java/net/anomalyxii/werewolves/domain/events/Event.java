@@ -32,6 +32,7 @@ public interface Event {
 
         PLAYER_KILLED,
         PLAYER_LYNCHED,
+        PLAYER_REVIVED,
 
         NOMINATION,
 
