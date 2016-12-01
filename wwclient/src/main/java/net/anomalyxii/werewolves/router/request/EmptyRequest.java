@@ -15,8 +15,4 @@ public class EmptyRequest extends AbstractRequest<Void> {
         super(host, path, null);
     }
 
-    public EmptyRequest(URI uri) {
-        super(uri, null);
-    }
-
 }

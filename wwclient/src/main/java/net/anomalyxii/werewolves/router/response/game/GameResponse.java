@@ -1,4 +1,4 @@
-package net.anomalyxii.werewolves.router.response;
+package net.anomalyxii.werewolves.router.response.game;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import net.anomalyxii.werewolves.domain.*;
@@ -9,14 +9,12 @@ import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
 import net.anomalyxii.werewolves.domain.players.User;
 import net.anomalyxii.werewolves.router.DeserialisationCallback;
+import net.anomalyxii.werewolves.router.response.AbstractResponse;
 
 import java.net.URI;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by Anomaly on 22/11/2016.
@@ -103,13 +101,13 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         @JsonCreator
         public static EventBody factory(Map<String, Object> map) {
-            String playerName = (String) map.get("PlayerName");
-            String avatarUrl = (String) map.get("AvatarUrl");
-            String gameId = (String) map.get("GameId");
-            String timestamp = (String) map.get("TimeStamp");
+            String playerName = (String) map.get("playerName");
+            String avatarUrl = (String) map.get("avatarUrl");
+            String gameId = (String) map.get("gameId");
+            String timestamp = (String) map.get("timeStamp");
             String type = (String) map.get("__type");
-            String message = (String) map.get("Message");
-            String target = (String) map.get("Target");
+            String message = (String) map.get("message");
+            String target = (String) map.get("target");
 
             return new EventBody(playerName, avatarUrl, gameId, timestamp, type, message, target);
         }
@@ -163,9 +161,51 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
             switch (eventBody.type) {
 
-                case "VillageMessage":
+                // Message Events
+
+                case "ModeratorMessage": // Word of God
+                    currentPhase.add(new PlayerMessageEvent(MODERATOR, calendar, eventBody.message));
+                    break;
+
+                case "GhostMessage": // Deadchat
+                case "CovenNightMessage": // Wolfchat
+                case "WerewolfNightMessage": // Wolfchat
+                    break;
+                case "VillageMessage": // Normalchat
                     currentPhase.add(new PlayerMessageEvent(player, calendar, eventBody.message));
                     break;
+
+                // Role Events
+
+                case "AlphawolfEnraged":
+                case "AlphawolfTargetChosen":
+                case "AlphawolfUsedEnrage":
+                case "BloodhoundRevertedToWerewolf":
+                case "BloodhoundtargetChosen":
+                case "GravediggerTargetChosen":
+                case "GraverobberFoundNoRole":
+                case "HarlotSawNoVisitors":
+                case "HarlotSawVisit":
+                case "HuntsmanGuarded":
+                case "MessiahResurrected":
+                case "MessiahUsedSacrifice":
+                case "MilitiaUsedKill":
+                case "ProtectorProtected":
+                case "ProtectorTargetChosen":
+                case "ReviverTargetChosen":
+                case "RoleAssigned":
+                case "RoleRevealedToBloodhound":
+                case "RoleRevealedToGravedigger":
+                case "RoleRevealedToSeer":
+                case "SeerTargetMade":
+                case "ShapeshifterAbilityActivated":
+                case "StalkerSawNoVisit":
+                case "StalkerSawVisit":
+                case "UndeterminedRoleReaveledToGraveDigger":
+                    break;
+
+
+                // Game Phase Events
 
                 case "PlayerJoined":
                     currentPhase.add(new PlayerJoinedEvent(player, calendar));
@@ -176,15 +216,13 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
                 case "GameStarted":
                     currentPhase.add(new GameStartedEvent(player, calendar));
-                    preGameEvents.addAll(currentPhase);
-                    currentPhase.clear();
                     gameStarted = true;
                     // Fall through!
 
                 case "DayStarted":
                     if (!dayPhase) {
                         Day lastDay = days.peekLast();
-                        if(lastDay != null)
+                        if (lastDay != null)
                             lastDay.getNightPhase().setComplete(true);
 
                         dayPhase = true;
@@ -224,7 +262,16 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                     currentPhase.add(new PlayerLynchedEvent(player, calendar));
                     break;
                 case "PlayerRevived":
-                    //currentPhase.add(new PlayerLynchedEvent(player, calendar));
+                    currentPhase.add(new PlayerRevivedEvent(player, calendar));
+                    break;
+                case "PlayerSmited":
+                    currentPhase.add(new PlayerSmitedEvent(player, calendar));
+                    break;
+
+
+                case "PendingGameMessage":
+                    // This should always be in the post-game phases?
+                    preGameEvents.add(new PlayerMessageEvent(player, calendar, eventBody.message));
                     break;
 
                 case "PostGameMessage":
@@ -244,13 +291,18 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                     winner = Alignment.VILLAGE;
                     gameFinished = true;
                     break;
+                case "VampireVictory":
+                    // Lol like this'll ever happen...
+                    winner = Alignment.VAMPIRE;
+                    gameFinished = true;
+                    break;
 
                 case "GameSpyJoined":
                 case "HostRightsGranted":
-                case "ModeratorMessage":
                 case "WarnedForInactivity":
-                case "PlayerSmited":
                 case "PlayerRoleRevealed":
+                case "IdentitySwapped":
+                case "NewIdentityAssigned":
                     break;
 
                 case "JoinGame": // Not needed?

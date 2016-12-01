@@ -7,12 +7,16 @@ import net.anomalyxii.werewolves.domain.Games;
 import net.anomalyxii.werewolves.router.exceptions.RequestSerialisationException;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 import net.anomalyxii.werewolves.router.exceptions.UnsupportedContentTypeException;
-import net.anomalyxii.werewolves.router.request.EmptyRequest;
-import net.anomalyxii.werewolves.router.request.LoginRequest;
-import net.anomalyxii.werewolves.router.response.GameResponse;
-import net.anomalyxii.werewolves.router.response.GamesResponse;
-import net.anomalyxii.werewolves.router.response.LoginResponse;
+import net.anomalyxii.werewolves.router.request.game.GameRequest;
+import net.anomalyxii.werewolves.router.request.game.GameListRequest;
+import net.anomalyxii.werewolves.router.request.account.LoginRequest;
+import net.anomalyxii.werewolves.router.request.oauth2.TokenRequest;
+import net.anomalyxii.werewolves.router.response.game.GameResponse;
+import net.anomalyxii.werewolves.router.response.game.GameListResponse;
+import net.anomalyxii.werewolves.router.response.account.LoginResponse;
+import net.anomalyxii.werewolves.router.response.oauth2.TokenResponse;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.fluent.Form;
 import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Response;
 import org.apache.http.entity.ContentType;
@@ -23,12 +27,13 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.net.URI;
 import java.util.Collections;
+import java.util.Optional;
 
 /**
- * A router class that can be used
- * to conveniently access the various
+ * A router class that can be used to
+ * conveniently access the various
  * <code>werewolv.es</code> endpoints.
- *
+ * <p>
  * Created by Anomaly on 20/11/2016.
  */
 public class Router {
@@ -75,11 +80,11 @@ public class Router {
 
         logger.debug("Request /api/Account/Login - started");
         LoginResponse loginResponse = routeAndParse(
-                new LoginRequest(host, "/api/Account/Login", username, password),
+                new LoginRequest(host, username, password),
                 LoginResponse.deserialisation());
 
         auth = loginResponse.getContent()
-                .map(LoginResponse.Body::getToken)
+                .map(LoginResponse.Body::getAccessToken)
                 .orElseThrow(() -> new RouterException("Login Failed")); // Todo: make this a better exception
         System.out.println(auth);
 
@@ -88,16 +93,33 @@ public class Router {
 
     }
 
+    public boolean oauth(String username, String password) throws RouterException {
+
+        logger.debug("Request /oauth2/token - started");
+        TokenResponse tokenResponse = routeAndParse(
+                new TokenRequest(host, username, password),
+                TokenResponse.deserialisation());
+
+        auth = tokenResponse.getContent()
+                .map(TokenResponse.Body::getAccessToken)
+                .orElseThrow(() -> new RouterException("Login Failed")); // Todo: make this a better exception
+        System.out.println(auth);
+
+        logger.debug("Request /oauth2/token - succeeded");
+        return true;
+
+    }
+
     public Games games() throws RouterException {
 
-        // Fetch the Game
+        // Fetch the IDs for active / pending games
         logger.debug("Request /api/Game - started");
         if (auth == null)
             throw new RouterException("Not logged in!"); // Todo: make this a better exception
 
-        RouterRequest<?> request = new EmptyRequest(host, "/api/Game");
+        RouterRequest<?> request = new GameListRequest(host);
         request.addHeader(new BasicHeader("Authorization", "Bearer " + auth));
-        GamesResponse gameResponse = routeAndParse(request, GamesResponse.deserialisation());
+        GameListResponse gameResponse = routeAndParse(request, GameListResponse.deserialisation());
 
         logger.debug("Request /api/Game - succeeded");
 
@@ -114,7 +136,7 @@ public class Router {
         if (auth == null)
             throw new RouterException("Not logged in!"); // Todo: make this a better exception
 
-        RouterRequest<?> request = new EmptyRequest(host, "/api/Game/" + id);
+        RouterRequest<?> request = new GameRequest(host, id);
         request.addHeader(new BasicHeader("Authorization", "Bearer " + auth));
         GameResponse gameResponse = routeAndParse(request, GameResponse.deserialisation());
 
@@ -157,8 +179,12 @@ public class Router {
             // Set the HTTP Headers (if any)
             request.getHeaders().forEach(httpRequest::addHeader);
 
+            // Specific handling for /api/oauth2/token...
+            if(request.useForm())
+                transmitForm(httpRequest, request);
+
             // Todo: we need to make the content type configurable for when we can support multiple serialisations
-            if (request.getContent().isPresent())
+            else if (request.getContent().isPresent())
                 httpRequest.bodyString(serialiseRequest(request, objectMapper), ContentType.APPLICATION_JSON);
 
             // Go go gooooooo!
@@ -166,6 +192,19 @@ public class Router {
         } catch (IOException e) {
             throw new RouterException(e); // Todo: make this a better exception
         }
+    }
+
+    protected Request transmitForm(Request httpRequest, RouterRequest<?> request) {
+        // Todo: remove whe StormPooper works out how to do it better in the API...
+        Optional<?> optionalContent = request.getContent();
+        if(optionalContent.isPresent()) {
+            Object content = optionalContent.get();
+            if(content instanceof Form) {
+                Form form = (Form) content;
+                httpRequest.bodyForm(form.build());
+            }
+        }
+        return httpRequest;
     }
 
     protected HttpResponse validate(Response response) throws RouterException {

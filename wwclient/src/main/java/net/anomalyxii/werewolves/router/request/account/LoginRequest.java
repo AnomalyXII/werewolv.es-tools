@@ -1,7 +1,9 @@
-package net.anomalyxii.werewolves.router.request;
+package net.anomalyxii.werewolves.router.request.account;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import net.anomalyxii.werewolves.router.request.AbstractRequest;
+import org.apache.http.client.fluent.Form;
 
 import java.net.URI;
 
@@ -15,12 +17,8 @@ public class LoginRequest extends AbstractRequest<LoginRequest.Body> {
     // Constructors
     // ******************************
 
-    public LoginRequest(URI host, String path, String username, String password) {
-        super(host, path, new Body(username, password));
-    }
-
     public LoginRequest(URI uri, String username, String password) {
-        super(uri, new Body(username, password));
+        super(uri, "/api/Account/Login", new Body(username, password));
     }
 
     // ******************************
@@ -53,12 +51,12 @@ public class LoginRequest extends AbstractRequest<LoginRequest.Body> {
 
         // Constructors
 
-        @JsonProperty("UserName")
+        @JsonProperty("userName")
         public String getUsername() {
             return username;
         }
 
-        @JsonProperty("Password")
+        @JsonProperty("password")
         public String getPassword() {
             return password;
         }

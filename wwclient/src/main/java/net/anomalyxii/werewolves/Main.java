@@ -2,6 +2,12 @@ package net.anomalyxii.werewolves;
 
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.events.Event;
+import net.anomalyxii.werewolves.domain.events.PlayerNominationEvent;
+import net.anomalyxii.werewolves.domain.phases.DayPhase;
+import net.anomalyxii.werewolves.domain.phases.NightPhase;
+import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.router.DefaultRouterBuilder;
 import net.anomalyxii.werewolves.router.Router;
 import net.anomalyxii.werewolves.router.RouterBuilder;
@@ -10,9 +16,15 @@ import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 /**
  * Fetch
- *
+ * <p>
  * Created by Anomaly on 10/07/2016.
  */
 public class Main {
@@ -56,11 +68,33 @@ public class Main {
         Game game = router.game(arguments.getOptionValue("g"));
         game.getPreGameEvents().forEach(System.out::println);
         game.getDays().forEach(day -> {
+            DayPhase dp = day.getDayPhase();
+            NightPhase np = day.getNightPhase();
+
             System.out.println("======= New Day =======");
-            day.getDayPhase().getEvents().forEach(System.out::println);
-            if (day.getDayPhase().isComplete()) {
+            dp.getEvents().forEach(System.out::println);
+            if (dp.isComplete()) {
+                // Print the end-of-day votes:
+                dp.getEvents().stream()
+                        .filter(event -> event.getType() == Event.EventType.NOMINATION)
+                        .map(event -> (PlayerNominationEvent) event)
+                        .collect(Collectors.groupingBy(Event::getPlayer))
+                        .values().stream()
+                        .flatMap(Collection::stream)
+                        .collect(Collectors.toMap(
+                                PlayerNominationEvent::getPlayer,
+                                PlayerNominationEvent::getTarget,
+                                (oldTarget, newTarget) -> newTarget))
+                        .entrySet().stream()
+                        .sorted(Comparator.comparing(a -> a.getKey().getName()))
+                        .forEach((entry) -> System.out.printf(
+                                "Final vote: %s -> %s%n",
+                                entry.getKey().getName(),
+                                entry.getValue().getName()));
+
+
                 System.out.println("======= Night Falls =======");
-                day.getNightPhase().getEvents().forEach(System.out::println);
+                np.getEvents().forEach(System.out::println);
             }
             System.out.println("======= End Day =======");
         });

@@ -35,6 +35,8 @@ public interface RouterRequest<T> extends ContentTypeSupport {
         return false;
     }
 
+    default boolean useForm() { return false; }
+
     default List<Integer> getAcceptedStatusCodes() {
         return Collections.singletonList(200);
     }

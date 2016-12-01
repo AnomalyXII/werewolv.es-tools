@@ -1,6 +1,7 @@
 package net.anomalyxii.werewolves.router.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.anomalyxii.werewolves.router.DeserialisationCallback;
 import net.anomalyxii.werewolves.router.RouterResponse;
@@ -63,10 +64,10 @@ public abstract class AbstractResponse<T> implements RouterResponse<T>, XmlOrJso
     // Content Class
     // ******************************
 
-    protected interface Body {
+    public interface Body {
     }
 
-    protected static class DefaultBody implements Body {
+    public static class DefaultBody implements Body {
 
         // Members
 
@@ -85,16 +86,17 @@ public abstract class AbstractResponse<T> implements RouterResponse<T>, XmlOrJso
 
         // Getters & Setters
 
+        @JsonProperty("message")
         public String getMessage() {
             return message;
         }
 
-        public void setMessage(String message) {
-            this.message = message;
-        }
-
         public Map<String, Object> getModelState() {
             return modelState;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
         }
 
         public void setModelState(Map<String, Object> modelState) {

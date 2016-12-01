@@ -1,8 +1,9 @@
-package net.anomalyxii.werewolves.router.response;
+package net.anomalyxii.werewolves.router.response.game;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import net.anomalyxii.werewolves.router.DeserialisationCallback;
 import net.anomalyxii.werewolves.router.exceptions.ResponseDeserialisationException;
+import net.anomalyxii.werewolves.router.response.AbstractResponse;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by Anomaly on 22/11/2016.
  */
-public class GamesResponse extends AbstractResponse<GamesResponse.Body> {
+public class GameListResponse extends AbstractResponse<GameListResponse.Body> {
 
     // ******************************
     // Members
@@ -21,7 +22,7 @@ public class GamesResponse extends AbstractResponse<GamesResponse.Body> {
     // Constructors
     // ******************************
 
-    public GamesResponse(int statusCode, Body content) {
+    public GameListResponse(int statusCode, Body content) {
         super(statusCode, content);
     }
 
@@ -72,7 +73,7 @@ public class GamesResponse extends AbstractResponse<GamesResponse.Body> {
     // Static Helper Methods
     // ******************************
 
-    public static DeserialisationCallback<GamesResponse> deserialisation() {
+    public static DeserialisationCallback<GameListResponse> deserialisation() {
         return (response, objectMapper) -> {
             int statusCode = response.getStatusLine().getStatusCode();
             InputStream in = null;
@@ -91,7 +92,7 @@ public class GamesResponse extends AbstractResponse<GamesResponse.Body> {
             }
 
             // Construct the response object
-            return new GamesResponse(statusCode, body);
+            return new GameListResponse(statusCode, body);
         };
     }
 

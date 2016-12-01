@@ -31,7 +31,7 @@ public class AbstractRequest<T> implements RouterRequest<T>, XmlOrJsonSupport {
         this(host.resolve(path), content);
     }
 
-    public AbstractRequest(URI uri, T content) {
+    private AbstractRequest(URI uri, T content) {
         this.uri = uri;
         this.content = content;
     }

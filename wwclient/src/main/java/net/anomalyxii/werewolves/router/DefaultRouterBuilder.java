@@ -19,7 +19,7 @@ public class DefaultRouterBuilder implements RouterBuilder {
     @Override
     public Router forCredentials(String username, String password) throws RouterException {
         Router router = new Router();
-        if (!router.login(username, password))
+        if (!router.oauth(username, password))
             throw new RouterException("Failed to log-in!");
 
         return router;
