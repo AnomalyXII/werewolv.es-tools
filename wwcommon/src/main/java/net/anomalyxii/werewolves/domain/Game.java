@@ -2,7 +2,6 @@ package net.anomalyxii.werewolves.domain;
 
 import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.players.Character;
-import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
 import net.anomalyxii.werewolves.domain.players.User;
 
 import java.util.ArrayList;
@@ -46,10 +45,26 @@ public class Game {
     // Getters
     // ******************************
 
+    /**
+     * Retrieve a {@link List} of all
+     * the real identities of
+     * {@link User Users} who are in
+     * the game.
+     *
+     * @return a {@link List} of {@link User Users}
+     */
     public List<User> getUsers() {
         return Collections.unmodifiableList(users);
     }
 
+    /**
+     * Retrieve a {@link List} of all
+     * anonymised identities of
+     * {@link Character Characters}
+     * who are in the game.
+     *
+     * @return a {@link List} of {@link Character Characters}
+     */
     public List<Character> getCharacters() {
         return Collections.unmodifiableList(characters);
     }
@@ -70,6 +85,12 @@ public class Game {
         return days.get(dayNo - 1);
     }
 
+    /**
+     * Retrieve the {@link Alignment}
+     * of the team who won this game.
+     *
+     * @return
+     */
     public Alignment getWinningAlignment() {
         return winningAlignment;
     }

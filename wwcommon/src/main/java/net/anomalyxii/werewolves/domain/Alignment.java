@@ -7,9 +7,11 @@ package net.anomalyxii.werewolves.domain;
  */
 public enum Alignment {
 
+    NEUTRAL,
     VILLAGE,
     WEREWOLVES,
     COVEN,
+    VAMPIRE,
 
     // End of constants
     ;

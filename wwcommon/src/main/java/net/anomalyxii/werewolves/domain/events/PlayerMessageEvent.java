@@ -1,5 +1,6 @@
 package net.anomalyxii.werewolves.domain.events;
 
+import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 
 import java.util.Calendar;
@@ -30,6 +31,10 @@ public class PlayerMessageEvent extends AbstractEvent {
 
     public String getMessage() {
         return message;
+    }
+
+    public Alignment getRestrictedVisibility() {
+        return null;
     }
 
     // ******************************

@@ -47,6 +47,12 @@ public enum Role {
 
     // Getters
 
+    /**
+     * Get the {@link Alignment} that
+     * this role belongs to.
+     *
+     * @return the {@link Alignment}
+     */
     public Alignment getAlignment() {
         return alignment;
     }
