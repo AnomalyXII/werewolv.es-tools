@@ -26,6 +26,7 @@ public interface Event {
     enum EventType {
 
         GAME_STARTED,
+        ROLE_ASSIGNED,
 
         PLAYER_JOINED,
         PLAYER_LEFT,
@@ -34,8 +35,12 @@ public interface Event {
         PLAYER_LYNCHED,
         PLAYER_REVIVED,
 
+        INACTIVITY_WARNING,
+
         NOMINATION,
 
+        COVEN_MESSAGE,
+        WEREWOLF_MESSAGE,
         VILLAGE_MESSAGE,
 
         // End of constants

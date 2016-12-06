@@ -57,4 +57,17 @@ public enum Role {
         return alignment;
     }
 
+    // Helper Methods
+
+    /**
+     * Convert the name of a {@link Role}
+     * into the appropriate constant.
+     *
+     * @param role
+     * @return
+     */
+    public static Role forString(String role) {
+        return Role.valueOf(role.toUpperCase());
+    }
+
 }

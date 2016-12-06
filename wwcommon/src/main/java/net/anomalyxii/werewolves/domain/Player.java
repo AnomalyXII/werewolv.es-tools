@@ -1,5 +1,7 @@
 package net.anomalyxii.werewolves.domain;
 
+import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
+
 import java.net.URI;
 
 /**
@@ -8,6 +10,8 @@ import java.net.URI;
  * Created by Anomaly on 26/11/2016.
  */
 public interface Player {
+
+    Player MODERATOR = new SpecialPlayer("Moderator", null);
 
     // ******************************
     // Interface Methods

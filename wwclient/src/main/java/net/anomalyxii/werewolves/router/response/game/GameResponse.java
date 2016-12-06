@@ -6,7 +6,6 @@ import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
 import net.anomalyxii.werewolves.domain.players.Character;
-import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
 import net.anomalyxii.werewolves.domain.players.User;
 import net.anomalyxii.werewolves.router.DeserialisationCallback;
 import net.anomalyxii.werewolves.router.response.AbstractResponse;
@@ -60,63 +59,62 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         // Members
 
-        private final String playerName;
-        private final String avatarURL;
-        private final String gameId;
-        private final String timestamp;
-        private final String type;
-        private final String message;
-        private final String target;
-        //
-        private final List<Event> nestedEvents;
+        private final Map<String, Object> data;
 
         // Constructors
 
-        public EventBody(String playerName, String avatarURL, String gameId,
-                         String timestamp, String type, String message, String target) {
-            this.playerName = playerName;
-            this.avatarURL = avatarURL;
-            this.gameId = gameId;
-            this.timestamp = timestamp;
-            this.type = type;
-            this.message = message;
-            this.target = target;
-
-            this.nestedEvents = null;
+        public EventBody(Map<String, Object> data) {
+            this.data = data;
         }
 
-        public EventBody(List<Event> nestedEvents) {
-            this.nestedEvents = nestedEvents;
+        // Getters
 
-            this.playerName = null;
-            this.avatarURL = null;
-            this.gameId = null;
-            this.timestamp = null;
-            this.type = null;
-            this.message = null;
-            this.target = null;
+        public String getPlayerName() {
+            return (String) get("playerName");
+        }
+
+        public String getAvatarURL() {
+            return (String) get("avatarUrl");
+        }
+
+        public String getType() {
+            return (String) get("__type");
+        }
+
+        public String getTimestamp() {
+            return (String) get("timeStamp");
+        }
+
+        public Calendar getCalendar() {
+            String timestamp = getTimestamp();
+            if (timestamp == null)
+                return null;
+
+            Calendar calendar = Calendar.getInstance();
+
+            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
+            OffsetDateTime parsedDate = OffsetDateTime.parse(timestamp, formatter);
+            Date date = Date.from(parsedDate.toInstant());
+            calendar.setTime(date);
+
+            return calendar;
+        }
+
+        @SuppressWarnings("unchecked")
+        public <T> T get(String key) {
+            return (T) data.get(key);
         }
 
         // Factory Methods
 
         @JsonCreator
         public static EventBody factory(Map<String, Object> map) {
-            String playerName = (String) map.get("playerName");
-            String avatarUrl = (String) map.get("avatarUrl");
-            String gameId = (String) map.get("gameId");
-            String timestamp = (String) map.get("timeStamp");
-            String type = (String) map.get("__type");
-            String message = (String) map.get("message");
-            String target = (String) map.get("target");
-
-            return new EventBody(playerName, avatarUrl, gameId, timestamp, type, message, target);
+            return new EventBody(map);
         }
 
     }
 
     public static class GameCreationContext {
-
-        private static final Player MODERATOR = new SpecialPlayer("Moderator", null);
 
         // Members
 
@@ -138,16 +136,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
         // Process Methods
 
         public void process(EventBody eventBody) {
-
-            Calendar calendar = Calendar.getInstance();
-
-            // Todo: improve this!
-            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
-            OffsetDateTime parsedDate = OffsetDateTime.parse(eventBody.timestamp, formatter);
-            Date date = Date.from(parsedDate.toInstant());
-            calendar.setTime(date);
-
-            Player player = findOrCreatePlayer(eventBody.playerName, eventBody.avatarURL);
+            Player player = findOrCreatePlayer(eventBody.getPlayerName(), eventBody.getAvatarURL());
             players.add(player);
 
             Day currentDay = days.peekLast();
@@ -159,23 +148,35 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                                            : nightGameEvents.get(currentDay)
                                        : preGameEvents;
 
-            switch (eventBody.type) {
+            switch (eventBody.getType()) {
 
                 // Message Events
 
                 case "ModeratorMessage": // Word of God
-                    currentPhase.add(new PlayerMessageEvent(MODERATOR, calendar, eventBody.message));
+                    currentPhase.add(new ModeratorMessage(eventBody.getCalendar(), eventBody.get("message")));
                     break;
-
                 case "GhostMessage": // Deadchat
-                case "CovenNightMessage": // Wolfchat
+                    currentPhase.add(
+                            new GraveyardMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
+                    break;
+                case "CovenNightMessage": // Covenchat
+                    currentPhase.add(new CovenMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
+                    break;
                 case "WerewolfNightMessage": // Wolfchat
+                    currentPhase.add(
+                            new WerewolfMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
                 case "VillageMessage": // Normalchat
-                    currentPhase.add(new PlayerMessageEvent(player, calendar, eventBody.message));
+                    currentPhase.add(
+                            new VillageMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
 
                 // Role Events
+
+                case "RoleAssigned":
+                    Role role = Role.forString(eventBody.get("role"));
+                    currentPhase.add(new RoleAssignedEvent(player, eventBody.getCalendar(), role));
+                    break;
 
                 case "AlphawolfEnraged":
                 case "AlphawolfTargetChosen":
@@ -193,7 +194,6 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 case "ProtectorProtected":
                 case "ProtectorTargetChosen":
                 case "ReviverTargetChosen":
-                case "RoleAssigned":
                 case "RoleRevealedToBloodhound":
                 case "RoleRevealedToGravedigger":
                 case "RoleRevealedToSeer":
@@ -208,14 +208,15 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 // Game Phase Events
 
                 case "PlayerJoined":
-                    currentPhase.add(new PlayerJoinedEvent(player, calendar));
+                    currentPhase.add(new PlayerJoinedEvent(player, eventBody.getCalendar()));
                     break;
                 case "PlayerLeft":
-                    currentPhase.add(new PlayerLeftEvent(player, calendar));
+                    currentPhase.add(new PlayerLeftEvent(player, eventBody.getCalendar()));
                     break;
 
                 case "GameStarted":
-                    currentPhase.add(new GameStartedEvent(player, calendar));
+                    // Todo: does this need to be an event??
+                    //currentPhase.add(new GameStartedEvent(player, calendar));
                     gameStarted = true;
                     // Fall through!
 
@@ -250,33 +251,35 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                     break;
 
                 case "VillageNomination":
-                    Character targetCharacter = getCharacter(eventBody.target);
-                    currentPhase.add(new PlayerNominationEvent(player, calendar, targetCharacter));
+                    Character targetCharacter = getCharacter(eventBody.get("target"));
+                    currentPhase.add(new PlayerNominationEvent(player, eventBody.getCalendar(), targetCharacter));
                 case "VillageNominationRetracted":
                     break; // Is this silent?
 
                 case "PlayerKilled":
-                    currentPhase.add(new PlayerKilledEvent(player, calendar));
+                    currentPhase.add(new PlayerKilledEvent(player, eventBody.getCalendar()));
                     break;
                 case "PlayerLynched":
-                    currentPhase.add(new PlayerLynchedEvent(player, calendar));
+                    currentPhase.add(new PlayerLynchedEvent(player, eventBody.getCalendar()));
                     break;
                 case "PlayerRevived":
-                    currentPhase.add(new PlayerRevivedEvent(player, calendar));
+                    currentPhase.add(new PlayerRevivedEvent(player, eventBody.getCalendar()));
                     break;
                 case "PlayerSmited":
-                    currentPhase.add(new PlayerSmitedEvent(player, calendar));
+                    currentPhase.add(new PlayerSmitedEvent(player, eventBody.getCalendar()));
                     break;
 
 
                 case "PendingGameMessage":
                     // This should always be in the post-game phases?
-                    preGameEvents.add(new PlayerMessageEvent(player, calendar, eventBody.message));
+                    preGameEvents.add(
+                            new VillageMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
 
                 case "PostGameMessage":
                     // This should always be in the post-game phases?
-                    postGameEvents.add(new PlayerMessageEvent(player, calendar, eventBody.message));
+                    postGameEvents.add(
+                            new VillageMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
 
                 case "CovenVictory":
@@ -303,6 +306,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 case "PlayerRoleRevealed":
                 case "IdentitySwapped":
                 case "NewIdentityAssigned":
+                case "PlayerActiveDuringLastDay":
                     break;
 
                 case "JoinGame": // Not needed?
@@ -333,8 +337,8 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         private Player findOrCreatePlayer(String name, String avatarUrl) {
 
-            if (MODERATOR.getName().equals(name))
-                return MODERATOR;
+            if (Player.MODERATOR.getName().equals(name))
+                return Player.MODERATOR;
 
             if (!gameStarted)
                 return findOrCreateUser(name, avatarUrl);

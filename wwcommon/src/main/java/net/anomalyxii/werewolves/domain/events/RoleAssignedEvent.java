@@ -2,42 +2,36 @@ package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
-import net.anomalyxii.werewolves.domain.Vitality;
+import net.anomalyxii.werewolves.domain.Role;
 
 import java.util.Calendar;
 
 /**
- * Created by Anomaly on 26/11/2016.
+ * Created by Anomaly on 05/12/2016.
  */
-public abstract class PlayerMessageEvent extends AbstractEvent {
+public class RoleAssignedEvent extends AbstractEvent {
 
     // ******************************
     // Members
     // ******************************
 
-    private final String message;
+    private final Role role;
 
     // ******************************
     // Constructors
     // ******************************
 
-    protected PlayerMessageEvent(Player player, Calendar timestamp, EventType eventType, String message) {
-        super(player, timestamp, eventType);
-        this.message = message;
+    public RoleAssignedEvent(Player player, Calendar timestamp, Role role) {
+        super(player, timestamp, EventType.ROLE_ASSIGNED);
+        this.role = role;
     }
 
     // ******************************
     // Getters
     // ******************************
 
-    public String getMessage() {
-        return message;
-    }
-
-    public Vitality getVitalityVisibility() { return null; }
-
-    public Alignment getAlignmentVisibility() {
-        return null;
+    public Role getRole() {
+        return role;
     }
 
     // ******************************
@@ -46,7 +40,7 @@ public abstract class PlayerMessageEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("%s %s", super.toString(), message);
+        return String.format("[%tH:%<tM] %s is a %s", getTimestamp(), getPlayer().getName(), role);
     }
 
 }
