@@ -8,6 +8,7 @@ package net.anomalyxii.werewolves.domain;
 public enum Role {
 
     // Village
+    VILLAGER(Alignment.VILLAGE),
     LYCAN(Alignment.VILLAGE),
     SEER(Alignment.VILLAGE),
     PROTECTOR(Alignment.VILLAGE),
