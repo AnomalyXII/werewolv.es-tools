@@ -24,7 +24,7 @@ public enum Role {
     // Werewolves
     WEREWOLF(Alignment.WEREWOLVES),
     SHAPESHIFTER(Alignment.WEREWOLVES),
-    ALPHA_WOLF(Alignment.WEREWOLVES),
+    ALPHAWOLF(Alignment.WEREWOLVES),
     BLOODHOUND(Alignment.WEREWOLVES),
 
     // Coven
@@ -32,8 +32,11 @@ public enum Role {
     SUCCUBUS(Alignment.COVEN),
     WITCH(Alignment.COVEN),
     SHAMAN(Alignment.COVEN),
-    PUPPET_MASTER(Alignment.COVEN),
+    PUPPETMASTER(Alignment.COVEN),
     PUPPET(Alignment.COVEN),
+
+    // Neutral
+    VAMPIRE(Alignment.VAMPIRE),
 
     // End of constants
     ;

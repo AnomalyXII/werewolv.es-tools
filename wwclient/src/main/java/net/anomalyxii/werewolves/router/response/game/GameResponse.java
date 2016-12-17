@@ -167,8 +167,7 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                             new WerewolfMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
                 case "VillageMessage": // Normalchat
-                    currentPhase.add(
-                            new VillageMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
+                    currentPhase.add(new VillageMessageEvent(player, eventBody.getCalendar(), eventBody.get("message")));
                     break;
 
                 // Role Events
