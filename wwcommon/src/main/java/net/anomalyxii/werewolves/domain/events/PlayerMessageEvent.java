@@ -4,6 +4,7 @@ import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.Vitality;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -21,7 +22,7 @@ public abstract class PlayerMessageEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    protected PlayerMessageEvent(Player player, Calendar timestamp, EventType eventType, String message) {
+    protected PlayerMessageEvent(Player player, OffsetDateTime timestamp, EventType eventType, String message) {
         super(player, timestamp, eventType);
         this.message = message;
     }

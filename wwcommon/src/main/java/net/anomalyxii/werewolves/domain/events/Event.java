@@ -2,9 +2,13 @@ package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Player;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
+ * Generic specification of an event from
+ * the <code>werewolv.es</code> API
+ *
  * Created by Anomaly on 20/11/2016.
  */
 public interface Event {
@@ -15,7 +19,7 @@ public interface Event {
 
     Player getPlayer();
 
-    Calendar getTimestamp();
+    OffsetDateTime getTime();
 
     EventType getType();
 

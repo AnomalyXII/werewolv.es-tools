@@ -3,6 +3,7 @@ package net.anomalyxii.werewolves.domain.events;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.players.Character;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -20,7 +21,7 @@ public class PlayerNominationEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public PlayerNominationEvent(Player player, Calendar timestamp, Character target) {
+    public PlayerNominationEvent(Player player, OffsetDateTime timestamp, Character target) {
         super(player, timestamp, EventType.NOMINATION);
         this.target = target;
     }
@@ -40,9 +41,9 @@ public class PlayerNominationEvent extends AbstractEvent {
     @Override
     public String toString() {
         return String.format("[%tH:%<tM] %s votes to lynch %s",
-                getTimestamp(),
-                getPlayer().getName(),
-                getTarget().getName());
+                             getTime(),
+                             getPlayer().getName(),
+                             getTarget().getName());
     }
 
 }

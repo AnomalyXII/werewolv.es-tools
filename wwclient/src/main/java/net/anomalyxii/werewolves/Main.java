@@ -7,7 +7,9 @@ import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.events.PlayerNominationEvent;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
+import net.anomalyxii.werewolves.domain.players.AbstractPlayer;
 import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.User;
 import net.anomalyxii.werewolves.router.DefaultRouterBuilder;
 import net.anomalyxii.werewolves.router.Router;
 import net.anomalyxii.werewolves.router.RouterBuilder;
@@ -105,6 +107,15 @@ public class Main {
             System.out.printf("Game Over! Congratulations to the %s! %n",
                               game.getWinningAlignment().toString().toLowerCase());
             System.out.println();
+
+            System.out.println("======= Role Reveals =======");
+            game.getCharacters().stream()
+                    .sorted(Comparator.comparing(AbstractPlayer::getName))
+                    .forEach(character -> System.out.printf("[xx:xx] <%s> %s was a %s %n",
+                                                            character.getName(),
+                                                            character.getUser().getName(),
+                                                            character.getRole()));
+
             game.getPostGameEvents().forEach(System.out::println);
         }
 

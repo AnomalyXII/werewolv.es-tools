@@ -1,5 +1,7 @@
 package net.anomalyxii.werewolves.domain.players;
 
+import net.anomalyxii.werewolves.domain.Role;
+
 import java.net.URI;
 
 /**
@@ -14,6 +16,7 @@ public class Character extends AbstractPlayer {
     // ******************************
 
     private User user;
+    private Role role;
 
     // ******************************
     // Constructors
@@ -33,6 +36,28 @@ public class Character extends AbstractPlayer {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    // ******************************
+    // Helper Methods
+    // ******************************
+
+
+    @Override
+    public String getFormattedName() {
+        return isLinkedToUser() ? String.format("%s (%s)", getName(), getUser().getName()) : getName();
+    }
+
+    public boolean isLinkedToUser() {
+        return user != null;
     }
 
 }

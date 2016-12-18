@@ -1,9 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.Vitality;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -15,7 +15,7 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
     // Constructors
     // ******************************
 
-    public GraveyardMessageEvent(Player player, Calendar timestamp, String message) {
+    public GraveyardMessageEvent(Player player, OffsetDateTime timestamp, String message) {
         super(player, timestamp, EventType.WEREWOLF_MESSAGE, message);
     }
 
@@ -26,6 +26,15 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
     @Override
     public Vitality getVitalityVisibility() {
         return Vitality.DEAD;
+    }
+
+    // ******************************
+    // To String
+    // ******************************
+
+    @Override
+    public String toString() {
+        return String.format("[%tH:%<tM] (%s) %s", getTime(), getPlayer().getName(), getMessage());
     }
 
 }

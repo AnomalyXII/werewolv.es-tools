@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Player;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -13,7 +14,7 @@ public class ModeratorMessage extends PlayerMessageEvent {
     // Constructors
     // ******************************
 
-    public ModeratorMessage(Calendar timestamp, String message) {
+    public ModeratorMessage(OffsetDateTime timestamp, String message) {
         super(Player.MODERATOR, timestamp, EventType.VILLAGE_MESSAGE, message);
     }
 

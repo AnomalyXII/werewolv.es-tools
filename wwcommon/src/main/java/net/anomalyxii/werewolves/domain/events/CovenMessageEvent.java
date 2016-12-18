@@ -3,6 +3,7 @@ package net.anomalyxii.werewolves.domain.events;
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -14,7 +15,7 @@ public class CovenMessageEvent extends PlayerMessageEvent {
     // Constructors
     // ******************************
 
-    public CovenMessageEvent(Player player, Calendar timestamp, String message) {
+    public CovenMessageEvent(Player player, OffsetDateTime timestamp, String message) {
         super(player, timestamp, EventType.COVEN_MESSAGE, message);
     }
 

@@ -1,9 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.Role;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -21,7 +21,7 @@ public class RoleAssignedEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public RoleAssignedEvent(Player player, Calendar timestamp, Role role) {
+    public RoleAssignedEvent(Player player, OffsetDateTime timestamp, Role role) {
         super(player, timestamp, EventType.ROLE_ASSIGNED);
         this.role = role;
     }
@@ -40,7 +40,7 @@ public class RoleAssignedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] %s is a %s", getTimestamp(), getPlayer().getName(), role);
+        return String.format("[%tH:%<tM] %s is a %s", getTime(), getPlayer().getName(), role);
     }
 
 }

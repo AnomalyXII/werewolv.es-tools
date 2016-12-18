@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Player;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -13,7 +14,7 @@ public class PlayerRevivedEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public PlayerRevivedEvent(Player player, Calendar timestamp) {
+    public PlayerRevivedEvent(Player player, OffsetDateTime timestamp) {
         super(player, timestamp, EventType.PLAYER_REVIVED);
     }
 
@@ -23,7 +24,7 @@ public class PlayerRevivedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (^_^) %s was revived", getTimestamp(), getPlayer().getName());
+        return String.format("[%tH:%<tM] (^_^) %s was revived", getTime(), getPlayer().getName());
     }
 
 }

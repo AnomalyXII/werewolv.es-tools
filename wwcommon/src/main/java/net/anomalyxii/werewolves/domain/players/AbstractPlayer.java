@@ -5,6 +5,8 @@ import net.anomalyxii.werewolves.domain.Player;
 import java.net.URI;
 
 /**
+ * Base class for all {@link Player} implementations
+ *
  * Created by Anomaly on 26/11/2016.
  */
 public class AbstractPlayer implements Player {

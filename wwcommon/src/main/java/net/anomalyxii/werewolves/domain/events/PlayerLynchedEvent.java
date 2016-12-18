@@ -1,8 +1,8 @@
 package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Player;
-import net.anomalyxii.werewolves.domain.players.Character;
 
+import java.time.OffsetDateTime;
 import java.util.Calendar;
 
 /**
@@ -14,7 +14,7 @@ public class PlayerLynchedEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public PlayerLynchedEvent(Player player, Calendar timestamp) {
+    public PlayerLynchedEvent(Player player, OffsetDateTime timestamp) {
         super(player, timestamp, EventType.PLAYER_LYNCHED);
     }
 
@@ -24,7 +24,7 @@ public class PlayerLynchedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (x_x) %s was lynched", getTimestamp(), getPlayer().getName());
+        return String.format("[%tH:%<tM] (x_x) %s was lynched", getTime(), getPlayer().getName());
     }
 
 }
