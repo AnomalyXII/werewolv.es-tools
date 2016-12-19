@@ -37,6 +37,7 @@ public enum Role {
 
     // Neutral
     VAMPIRE(Alignment.VAMPIRE),
+    FAMILIAR(Alignment.VAMPIRE),
 
     // End of constants
     ;
