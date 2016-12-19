@@ -473,6 +473,10 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                                                        List<Map<String, Object>> villagers,
                                                        List<Map<String, Object>> neutrals) {
 
+            // This is a hack because apparently sometimes the API gets confused
+            // Todo: try and persuade Kirschstein to fix the API so this can be removed
+            List<Map<String, Object>> spareAssignments = new ArrayList<>();
+
             List<Map<String, Object>> all = new ArrayList<>();
             all.addAll(werewolves);
             all.addAll(coven);
@@ -485,6 +489,12 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 String roleName = (String) player.get("role");
 
                 Character character = getCharacter(characterName);
+                if (character.getUser() != null) {
+                    // Character has already been assigned - add to "spare assignments"
+                    spareAssignments.add(player);
+                    return;
+                }
+
                 User user = getUser(userName);
                 Role role = getRole(roleName);
 
@@ -492,6 +502,21 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                 character.setRole(role);
             });
 
+            characters.values()
+                    .stream()
+                    .filter(character -> character.getUser() == null)
+                    .forEach(character -> {
+                        Map<String, Object> player = spareAssignments.remove(0);
+
+                        String userName = (String) player.get("originalName");
+                        String roleName = (String) player.get("role");
+
+                        User user = getUser(userName);
+                        Role role = getRole(roleName);
+
+                        character.setUser(user);
+                        character.setRole(role);
+                    });
 
         }
 
