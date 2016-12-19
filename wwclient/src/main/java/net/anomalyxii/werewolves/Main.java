@@ -111,10 +111,12 @@ public class Main {
             System.out.println("======= Role Reveals =======");
             game.getCharacters().stream()
                     .sorted(Comparator.comparing(AbstractPlayer::getName))
-                    .forEach(character -> System.out.printf("[xx:xx] <%s> %s was a %s %n",
+                    .forEach(character -> System.out.printf("[xx:xx] <%s> %s was a %s%s %n",
                                                             character.getName(),
                                                             character.getUser().getName(),
-                                                            character.getRole()));
+                                                            character.getRole(),
+                                                            character.isPossiblyIncorrectlyLinked() ? " (probably)"
+                                                                                                    : ""));
 
             game.getPostGameEvents().forEach(System.out::println);
         }

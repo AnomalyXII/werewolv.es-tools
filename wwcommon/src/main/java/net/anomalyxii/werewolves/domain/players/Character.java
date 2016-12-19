@@ -17,6 +17,9 @@ public class Character extends AbstractPlayer {
 
     private User user;
     private Role role;
+    //
+    private boolean possiblyIncorrectUser = false; // Todo: remove the hack and remove this
+    private boolean possiblyIncorrectRole = false; // Todo: remove the hack and remove this
 
     // ******************************
     // Constructors
@@ -38,12 +41,22 @@ public class Character extends AbstractPlayer {
         this.user = user;
     }
 
+    public void setUserPossiblyIncorrectly(User user) {
+        this.user = user;
+        this.possiblyIncorrectUser = true;
+    }
+
     public Role getRole() {
         return role;
     }
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public void setRolePossiblyIncorrectly(Role role) {
+        this.role = role;
+        this.possiblyIncorrectRole = true;
     }
 
     // ******************************
@@ -58,6 +71,10 @@ public class Character extends AbstractPlayer {
 
     public boolean isLinkedToUser() {
         return user != null;
+    }
+
+    public boolean isPossiblyIncorrectlyLinked() {
+        return possiblyIncorrectUser || possiblyIncorrectRole;
     }
 
 }

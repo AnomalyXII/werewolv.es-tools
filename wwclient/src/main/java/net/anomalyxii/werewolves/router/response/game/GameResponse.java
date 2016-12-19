@@ -514,8 +514,8 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
                         User user = getUser(userName);
                         Role role = getRole(roleName);
 
-                        character.setUser(user);
-                        character.setRole(role);
+                        character.setUserPossiblyIncorrectly(user);
+                        character.setRolePossiblyIncorrectly(role);
                     });
 
         }
