@@ -20,12 +20,17 @@ public enum Role {
     MILITIA(Alignment.VILLAGE),
     REVIVER(Alignment.VILLAGE),
     MESSIAH(Alignment.VILLAGE),
+    MASONLEADER(Alignment.VILLAGE),
+    TAROTREADER(Alignment.VILLAGE),
+    // COURTESAN(Alignment.VILLAGE), // Unconfirmed
+    // WITCHHUNTER(Alignment.VILLAGE), // Unconfirmed
 
     // Werewolves
     WEREWOLF(Alignment.WEREWOLVES),
     SHAPESHIFTER(Alignment.WEREWOLVES),
     ALPHAWOLF(Alignment.WEREWOLVES),
     BLOODHOUND(Alignment.WEREWOLVES),
+    // DIREWOLF(Alignment.WEREWOLVES), // Unconfirmed
 
     // Coven
     DJINN(Alignment.COVEN),
