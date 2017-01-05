@@ -8,3 +8,11 @@ allprojects {
         mavenCentral()
     }
 }
+
+allprojects { project ->
+    project.plugins.withType(JavaPlugin) {
+        project.dependencies {
+            testCompile group: 'org.testng', name: 'testng', version: '6.9.+'
+        }
+    }
+}

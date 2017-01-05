@@ -82,7 +82,7 @@ public class LocalRouterTest {
         assertEquals(game.getDay(3).getDayPhase().getEvents().size(), 288);
         assertTrue(game.getDay(3).getDayPhase().isComplete());
         assertEquals(game.getDay(3).getNightPhase().getEvents().size(), 1);
-        assertFalse(game.getDay(3).getNightPhase().isComplete()); // Todo: is this correct?
+        assertTrue(game.getDay(3).getNightPhase().isComplete());
     }
 
 }

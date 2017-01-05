@@ -12,6 +12,7 @@ import java.net.URI;
 public interface Player {
 
     Player MODERATOR = new SpecialPlayer("Moderator", null);
+    Player ANONYMOUS = new SpecialPlayer("Anonymous", null);
 
     // ******************************
     // Interface Methods

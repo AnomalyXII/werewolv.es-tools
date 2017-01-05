@@ -5,6 +5,7 @@ import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
 import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
 import net.anomalyxii.werewolves.domain.players.User;
 
 import java.net.URI;
@@ -153,12 +154,38 @@ public abstract class GameContext {
     // Look-up Players + Characters
 
     protected Player findOrCreatePlayer(String name, String avatarUrl) {
+        return isGameStarted()
+               ? findOrCreateCharacter(name, avatarUrl)
+               : findOrCreateUser(name, avatarUrl);
+    }
 
-        if (isGameStarted())
-            return findOrCreateCharacter(name, avatarUrl);
-        else
-            return findOrCreateUser(name, avatarUrl);
+    protected Player getPlayer(String name) {
+        return isGameStarted()
+               ? getCharacter(name)
+               : getUser(name);
+    }
 
+    protected Player findPlayer(String name) {
+        return isGameStarted()
+               ? findCharacter(name)
+               : findUser(name);
+    }
+
+    protected Player getSpecialPlayer(String name) {
+        Player player = findSpecialPlayer(name);
+        if (player != null)
+            return player;
+        throw new IllegalArgumentException("SpecialPlayer '" + name + "' was not found");
+    }
+
+    protected Player findSpecialPlayer(String name) {
+        if (name == null)
+            return Player.ANONYMOUS;
+
+        if (Player.MODERATOR.getName().equals(name))
+            return Player.MODERATOR;
+
+        return null;
     }
 
     protected User getUser(String name) {
@@ -173,6 +200,38 @@ public abstract class GameContext {
     }
 
     protected User findOrCreateUser(String name, String avatarUrl) {
+        User user = findUser(name);
+        if (user != null)
+            return user;
+
+        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
+
+        user = new User(name, uri);
+        users.put(name, user);
+        return user;
+    }
+
+    protected Player getUserOrSpecialPlayer(String name) {
+        Player player = findUserOrSpecialPlayer(name);
+        if (player != null)
+            return player;
+
+        throw new IllegalArgumentException("User '" + name + "' was not found");
+    }
+
+    protected Player findUserOrSpecialPlayer(String name) {
+        Player player = findSpecialPlayer(name);
+        if (player != null)
+            return player;
+
+        return users.get(name);
+    }
+
+    protected Player findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
+        Player player = findSpecialPlayer(name);
+        if (player != null)
+            return player;
+
         User user = findUser(name);
         if (user != null)
             return user;
@@ -207,15 +266,47 @@ public abstract class GameContext {
         return character;
     }
 
+    protected Player getCharacterOrSpecialPlayer(String name) {
+        Player player = findCharacterOrSpecialPlayer(name);
+        if (player != null)
+            return player;
+
+        throw new IllegalArgumentException("Character '" + name + "' was not found");
+    }
+
+    protected Player findCharacterOrSpecialPlayer(String name) {
+        Player player = findSpecialPlayer(name);
+        if (player != null)
+            return player;
+
+        return characters.get(name);
+    }
+
+    protected Player findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
+        Player player = findSpecialPlayer(name);
+        if (player != null)
+            return player;
+
+        Character character = findCharacter(name);
+        if (character != null)
+            return character;
+
+        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
+
+        character = new Character(name, uri);
+        characters.put(name, character);
+        return character;
+    }
+
     // Look-up Roles and Alignments
 
     protected Role getRole(String role) {
         return Role.forString(role);
     }
 
-    // Day and Night Functions
+    // Phase Functions
 
-    protected Day startNewDay() {
+    protected Day startDayPhase() {
         Day lastDay = days.peekLast();
         if (lastDay != null)
             lastDay.getNightPhase().setComplete(true);
@@ -229,6 +320,27 @@ public abstract class GameContext {
 
         setDayPhase(true);
         return currentDay;
+    }
+
+    protected Day startNightPhase() {
+        Day currentDay = days.peekLast();
+        if (currentDay == null)
+            throw new AssertionError("Should never happen!");
+
+        currentDay.getDayPhase().setComplete(true);
+        setDayPhase(false);
+        return currentDay;
+    }
+
+    protected void finishGame(Alignment winningAlignment) {
+        Day lastDay = days.peekLast();
+        if (isDayPhase())
+            lastDay.getDayPhase().setComplete(true);
+        else
+            lastDay.getNightPhase().setComplete(true);
+
+        setWinningAlignment(winningAlignment);
+        setGameFinished(true);
     }
 
 }

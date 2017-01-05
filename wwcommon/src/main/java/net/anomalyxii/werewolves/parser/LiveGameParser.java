@@ -1,12 +1,9 @@
 package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Day;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.Role;
 import net.anomalyxii.werewolves.domain.events.*;
-import net.anomalyxii.werewolves.domain.phases.DayPhase;
-import net.anomalyxii.werewolves.domain.phases.NightPhase;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
 
@@ -110,12 +107,11 @@ public class LiveGameParser extends AbstractGameParser {
 
                 case "DayStarted":
                     if (!isDayPhase())
-                        startNewDay();
+                        startDayPhase();
                     return null;
 
                 case "NightStarted":
-                    getDays().peekLast().getDayPhase().setComplete(true);
-                    setDayPhase(false);
+                    startNightPhase();
                     return null;
 
                 case "AnonymisedGameStarted":
@@ -152,14 +148,14 @@ public class LiveGameParser extends AbstractGameParser {
                 case "CovenVictory":
                     finishGame(Alignment.COVEN, event);
                     return null;
-                case "WerewolfVictory":
-                    finishGame(Alignment.WEREWOLVES, event);
-                    return null;
                 case "VillageVictory":
                     finishGame(Alignment.VILLAGE, event);
                     return null;
                 case "VampireVictory":
                     finishGame(Alignment.VAMPIRE, event);
+                    return null;
+                case "WerewolfVictory":
+                    finishGame(Alignment.WEREWOLVES, event);
                     return null;
 
                 case "GameSpyJoined":
@@ -215,25 +211,19 @@ public class LiveGameParser extends AbstractGameParser {
 
         protected Player findOrCreatePlayer(String name, String avatarUrl, String type) {
 
-            if (name == null)
-                return Player.MODERATOR;
-
-            if (Player.MODERATOR.getName().equals(name))
-                return Player.MODERATOR;
-
             LiveGameParser.PlayerLookupMode lookupMode = getLookupModeForEvent(type);
             switch (lookupMode) {
 
                 case PREGAME:
-                    return findOrCreateUser(name, avatarUrl);
+                    return findOrCreateUserOrSpecialPlayer(name, avatarUrl);
 
                 case INGAME_STRICT:
-                    return getCharacter(name);
+                    return getCharacterOrSpecialPlayer(name);
 
                 case INGAME_LAX: {
-                    Character character = findCharacter(name);
-                    if (character != null)
-                        return character;
+                    Player player = findCharacterOrSpecialPlayer(name);
+                    if (player != null)
+                        return player;
 
                     User user = findUser(name); // Probably shouldn't happen?
                     if (user != null)
@@ -249,9 +239,9 @@ public class LiveGameParser extends AbstractGameParser {
                     // If this is a post-game event, it's probably the Character
                     // identity of one of the players, but it could be an observer
                     // who will show using their User name instead
-                    Character character = findCharacter(name);
-                    if (character != null)
-                        return character;
+                    Player player = findCharacterOrSpecialPlayer(name);
+                    if (player != null)
+                        return player;
 
                     return findOrCreateUser(name, avatarUrl);
                 }
@@ -286,8 +276,7 @@ public class LiveGameParser extends AbstractGameParser {
         }
 
         private void finishGame(Alignment winner, Map<String, Object> event) {
-            setWinningAlignment(winner);
-            setGameFinished(true);
+            finishGame(winner);
 
             List<Map<String, Object>> wolves = (List<Map<String, Object>>) event.get("werewolves");
             List<Map<String, Object>> coven = (List<Map<String, Object>>) event.get("coven");
