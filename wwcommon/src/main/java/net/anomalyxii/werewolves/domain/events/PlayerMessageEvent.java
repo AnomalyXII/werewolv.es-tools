@@ -35,12 +35,6 @@ public abstract class PlayerMessageEvent extends AbstractEvent {
         return message;
     }
 
-    public Vitality getVitalityVisibility() { return null; }
-
-    public Alignment getAlignmentVisibility() {
-        return null;
-    }
-
     // ******************************
     // To String
     // ******************************

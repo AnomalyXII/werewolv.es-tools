@@ -1,9 +1,10 @@
 package net.anomalyxii.werewolves.domain.events;
 
+import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.Vitality;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Generic specification of an event from
@@ -24,9 +25,22 @@ public interface Event {
     EventType getType();
 
     // ******************************
-    // Constnts
+    // Default Methods
     // ******************************
 
+    default Vitality getVitalityVisibility() { return null; }
+
+    default Alignment getAlignmentVisibility() {
+        return null;
+    }
+
+    // ******************************
+    // Constants
+    // ******************************
+
+    /**
+     *
+     */
     enum EventType {
 
         GAME_STARTED,
@@ -45,6 +59,7 @@ public interface Event {
 
         COVEN_MESSAGE,
         WEREWOLF_MESSAGE,
+        VAMPIRE_MESSAGE,
         VILLAGE_MESSAGE,
 
         // End of constants

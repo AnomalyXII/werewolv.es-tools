@@ -8,13 +8,13 @@ import java.util.Calendar;
 /**
  * Created by Anomaly on 03/12/2016.
  */
-public class ModeratorMessage extends PlayerMessageEvent {
+public class ModeratorMessageEvent extends PlayerMessageEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
-    public ModeratorMessage(OffsetDateTime timestamp, String message) {
+    public ModeratorMessageEvent(OffsetDateTime timestamp, String message) {
         super(Player.MODERATOR, timestamp, EventType.VILLAGE_MESSAGE, message);
     }
 
