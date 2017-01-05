@@ -57,6 +57,13 @@ public class ArchivedGameParser extends AbstractGameParser {
                     assignUserToCharacter(originalUser, newCharacter);
                     return null;
 
+                case "Werewolf.GameEngine.Roles.Werewolves.Shapeshifter.ShapeshifterSwappedPlayerIdentities":
+                case "Werewolf.GameEngine.Roles.Coven.Djinn.DjinnSwappedPlayerIdentities":
+                    User firstPlayer = getUser((String) event.get("FirstPlayer")).getUser();
+                    User secondPlayer = getUser((String) event.get("SecondPlayer")).getUser();
+                    swapUserCharacters(firstPlayer, secondPlayer);
+                    return null;
+
                 // Message Events
                 case "Werewolf.GameEngine.Core.ModeratorMessageEvent":
                     return new ModeratorMessageEvent(parseTime(event), parseMessage(event));
@@ -81,7 +88,37 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return new VampireMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 // Role Events
+
+                case "Werewolf.GameEngine.Roles.AlphawolfAssignedEvent":
+                case "Werewolf.GameEngine.Roles.BloodhoundAssignedEvent":
+                case "Werewolf.GameEngine.Roles.ShapeshifterAssignedEvent":
+                case "Werewolf.GameEngine.Roles.WerewolfAssignedEvent":
                 case "Werewolf.GameEngine.Roles.AllWerewolvesAssignedEvent":
+
+                case "Werewolf.GameEngine.Roles.DjinnAssignedEvent":
+                case "Werewolf.GameEngine.Roles.PuppetAssignedEvent":
+                case "Werewolf.GameEngine.Roles.PuppetmasterAssignedEvent":
+                case "Werewolf.GameEngine.Roles.SuccubusAssignedEvent":
+                case "Werewolf.GameEngine.Roles.WitchAssignedEvent":
+
+                case "Werewolf.GameEngine.Roles.VampireAssignedEvent":
+                case "Werewolf.GameEngine.Roles.FamiliarStalkerAssignedEvent":
+
+                case "Werewolf.GameEngine.Roles.GravediggerAssignedEvent":
+                case "Werewolf.GameEngine.Roles.HarlotAssignedEvent":
+                case "Werewolf.GameEngine.Roles.HuntsmanAssignedEvent":
+                case "Werewolf.GameEngine.Roles.LycanAssignedEvent":
+                case "Werewolf.GameEngine.Roles.MessiahAssignedEvent":
+                case "Werewolf.GameEngine.Roles.MilitiaAssignedEvent":
+                case "Werewolf.GameEngine.Roles.ProtectorAssignedEvent":
+                case "Werewolf.GameEngine.Roles.ReviverAssignedEvent":
+                case "Werewolf.GameEngine.Roles.SeerAssignedEvent":
+                case "Werewolf.GameEngine.Roles.ShamanAssignedEvent":
+                case "Werewolf.GameEngine.Roles.StalkerAssignedEvent":
+                case "Werewolf.GameEngine.Roles.VillagerAssignedEvent":
+
+                case "Werewolf.GameEngine.Roles.NightTargetChosenEvent":
+
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetVoted":
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapSelected":
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapped":
@@ -91,24 +128,6 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanProtectionTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Succubus.PrimarySuccubusTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Succubus.SecondarySuccubusTargetChosen":
-                case "Werewolf.GameEngine.Roles.DjinnAssignedEvent":
-                case "Werewolf.GameEngine.Roles.FamiliarStalkerAssignedEvent":
-                case "Werewolf.GameEngine.Roles.GravediggerAssignedEvent":
-                case "Werewolf.GameEngine.Roles.HarlotAssignedEvent":
-                case "Werewolf.GameEngine.Roles.HuntsmanAssignedEvent":
-                case "Werewolf.GameEngine.Roles.MessiahAssignedEvent":
-                case "Werewolf.GameEngine.Roles.MilitiaAssignedEvent":
-                case "Werewolf.GameEngine.Roles.NightTargetChosenEvent":
-                case "Werewolf.GameEngine.Roles.ProtectorAssignedEvent":
-                case "Werewolf.GameEngine.Roles.PuppetAssignedEvent":
-                case "Werewolf.GameEngine.Roles.PuppetmasterAssignedEvent":
-                case "Werewolf.GameEngine.Roles.ReviverAssignedEvent":
-                case "Werewolf.GameEngine.Roles.SeerAssignedEvent":
-                case "Werewolf.GameEngine.Roles.ShamanAssignedEvent":
-                case "Werewolf.GameEngine.Roles.ShapeshifterAssignedEvent":
-                case "Werewolf.GameEngine.Roles.StalkerAssignedEvent":
-                case "Werewolf.GameEngine.Roles.SuccubusAssignedEvent":
-                case "Werewolf.GameEngine.Roles.VampireAssignedEvent":
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToRecruit":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.UndeterminedRoleReaveledToGraveDigger":
@@ -123,8 +142,10 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawNoVisit":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawVisit":
-                case "Werewolf.GameEngine.Roles.WerewolfAssignedEvent":
-                case "Werewolf.GameEngine.Roles.Werewolves.Shapeshifter.ShapeshifterSwappedPlayerIdentities":
+                case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfEnraged":
+                case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfTargetChosen":
+                case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfUsedEnrage":
+                case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.RoleRevealedToBloodhoundEvent":
                     return null;
 
                 // Game Phase Events
@@ -149,12 +170,12 @@ public class ArchivedGameParser extends AbstractGameParser {
                     finishGame(Alignment.COVEN);
                     assignFinalUsersToCharacters();
                     return null;
-                case "Werewolf.GameEngine.Phases.After.VillageVictoryEvent":
-                    finishGame(Alignment.VILLAGE);
-                    assignFinalUsersToCharacters();
-                    return null;
                 case "Werewolf.GameEngine.Phases.After.VampireVictoryEvent":
                     finishGame(Alignment.VAMPIRE);
+                    assignFinalUsersToCharacters();
+                    return null;
+                case "Werewolf.GameEngine.Phases.After.VillageVictoryEvent":
+                    finishGame(Alignment.VILLAGE);
                     assignFinalUsersToCharacters();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.WerewolfVictoryEvent":
@@ -177,10 +198,15 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent":
                 case "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled":
                 case "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity":
+                case "Werewolf.GameEngine.PlayerActivity.PlayerCheckedGame":
+                case "Werewolf.GameEngine.PlayerActivity.PlayerActiveDuringLastDay":
+                    return null;
+
+                default:
+                    System.err.println(type);
+                    return null;
 
             }
-
-            return null;
 
         }
 
@@ -191,12 +217,12 @@ public class ArchivedGameParser extends AbstractGameParser {
             String playerName = (String) event.get("PlayerName");
             String avatarUrl = (String) event.get("PlayerName");
             PlayerInstance instance = findOrCreateUserOrSpecialPlayer(playerName, avatarUrl);
-            if(instance.getUser() == null)
+            if (instance.getUser() == null)
                 return instance; // Probably a "Special Player"
 
             User user = instance.getUser();
             Character character = getCharacterFor(user);
-            if(character == null)
+            if (character == null)
                 return instance; // Probably a user who isn't joined to the game?
 
             return new CharacterInstance(character, user, Vitality.ALIVE); // Todo: look this up!

@@ -163,11 +163,11 @@ public class LiveGameParser extends AbstractGameParser {
                 case "CovenVictory":
                     finishGame(Alignment.COVEN, event);
                     return null;
-                case "VillageVictory":
-                    finishGame(Alignment.VILLAGE, event);
-                    return null;
                 case "VampireVictory":
                     finishGame(Alignment.VAMPIRE, event);
+                    return null;
+                case "VillageVictory":
+                    finishGame(Alignment.VILLAGE, event);
                     return null;
                 case "WerewolfVictory":
                     finishGame(Alignment.WEREWOLVES, event);
