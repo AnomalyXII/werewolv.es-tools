@@ -6,9 +6,14 @@ mainClassName = 'net.anomalyxii.werewolves.Main'
 
 run {
     if (project.hasProperty('username'))
-        args += ['-U', project.getProperty('username'), '-P', project.getProperty('password')]
+        if (project.hasProperty('archived'))
+            args += ['-U', project.getProperty('username'), '-A']
+        else
+            args += ['-U', project.getProperty('username'), '-P', project.getProperty('password')]
     else if (project.hasProperty('token'))
         args += ['-T', project.getProperty('token')]
+    else if (project.hasProperty('local'))
+        args += ['-L']
 
     if (project.hasProperty('game'))
         args += ['-g', project.getProperty('game')]
