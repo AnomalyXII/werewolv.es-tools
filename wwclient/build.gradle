@@ -14,10 +14,6 @@ run {
         args += ['-g', project.getProperty('game')]
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
 
     compile project(':common')

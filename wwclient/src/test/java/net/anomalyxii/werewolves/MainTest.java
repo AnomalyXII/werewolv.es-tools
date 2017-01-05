@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves;
 
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.router.HttpRouter;
 import net.anomalyxii.werewolves.router.Router;
 import net.anomalyxii.werewolves.router.RouterBuilder;
 import org.apache.commons.cli.ParseException;
@@ -34,6 +35,7 @@ public class MainTest {
                 {"-U", "username", "-P", "password", "-T", "x12345z", "-g", "ext-001"},
                 {"-T", "-g", "ext-001"},
                 {"-T", "x12345z",},
+                {"-T", "x12345z", "-g"},
                 {"-T", "x12345z", "-g"},
         };
     }
@@ -90,6 +92,52 @@ public class MainTest {
 
     }
 
+    @Test
+    public void main_should_accept_valid_Local_arguments() throws Exception {
+
+        // arrange
+        // Mock the router so that we don't need to do actual HTTP requests
+        Router router = mock(Router.class);
+        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.game(anyString())).thenReturn(new Game());
+
+        RouterBuilder builder = mock(RouterBuilder.class);
+        when(builder.forLocalGame()).thenReturn(router);
+
+        Main main = new Main(builder);
+
+        // act
+        main.run("-L", "-g", "ext-001");
+
+        // assert
+        verify(builder).forLocalGame();
+        verify(router).game("ext-001");
+
+    }
+
+    @Test
+    public void main_should_accept_valid_Archived_arguments() throws Exception {
+
+        // arrange
+        // Mock the router so that we don't need to do actual HTTP requests
+        Router router = mock(Router.class);
+        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.game(anyString())).thenReturn(new Game());
+
+        RouterBuilder builder = mock(RouterBuilder.class);
+        when(builder.forArchivedGame(anyString())).thenReturn(router);
+
+        Main main = new Main(builder);
+
+        // act
+        main.run("-A", "-U", "username", "-g", "ext-001");
+
+        // assert
+        verify(builder).forArchivedGame("username");
+        verify(router).game("ext-001");
+
+    }
+
     @Test(dataProvider = "invalid", expectedExceptions = ParseException.class)
     public void main_should_reject_invalid_arguments(String... args) throws Exception {
 
@@ -101,6 +149,9 @@ public class MainTest {
 
         RouterBuilder builder = mock(RouterBuilder.class);
         when(builder.forToken(anyString())).thenReturn(router);
+        when(builder.forCredentials(anyString(), anyString())).thenReturn(router);
+        when(builder.forLocalGame()).thenReturn(router);
+        when(builder.forArchivedGame(anyString())).thenReturn(router);
 
         Main main = new Main(builder);
 
