@@ -2,3 +2,9 @@ group 'net.anomalyxii.werewolves'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'idea'
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}

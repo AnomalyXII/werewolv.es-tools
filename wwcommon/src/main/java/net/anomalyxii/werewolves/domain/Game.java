@@ -82,7 +82,11 @@ public class Game {
     }
 
     public Day getDay(int dayNo) {
-        return days.get(dayNo - 1);
+        return days.get(dayNo);
+    }
+
+    public Day getDayFor(int visualDayNo) {
+        return getDay(visualDayNo - 1);
     }
 
     /**

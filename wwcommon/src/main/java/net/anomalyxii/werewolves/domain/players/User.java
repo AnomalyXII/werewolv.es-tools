@@ -1,7 +1,5 @@
 package net.anomalyxii.werewolves.domain.players;
 
-import net.anomalyxii.werewolves.domain.Player;
-
 import java.net.URI;
 
 /**
@@ -13,11 +11,29 @@ import java.net.URI;
 public class User extends AbstractPlayer {
 
     // ******************************
+    // Members
+    // ******************************
+
+    private boolean joinedGame = false;
+
+    // ******************************
     // Constructors
     // ******************************
 
     public User(String name, URI avatarURI) {
         super(name, avatarURI);
+    }
+
+    // ******************************
+    // Getters & Setters
+    // ******************************
+
+    public boolean isJoinedGame() {
+        return joinedGame;
+    }
+
+    public void setJoinedGame(boolean joinedGame) {
+        this.joinedGame = joinedGame;
     }
 
 }
