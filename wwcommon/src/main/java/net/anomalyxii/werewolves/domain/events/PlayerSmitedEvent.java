@@ -1,9 +1,8 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 26/11/2016.
@@ -14,7 +13,7 @@ public class PlayerSmitedEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public PlayerSmitedEvent(Player player, OffsetDateTime timestamp) {
+    public PlayerSmitedEvent(PlayerInstance player, OffsetDateTime timestamp) {
         super(player, timestamp, EventType.PLAYER_REVIVED);
     }
 

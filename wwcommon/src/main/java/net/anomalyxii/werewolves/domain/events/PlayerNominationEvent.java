@@ -1,10 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.players.Character;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 26/11/2016.
@@ -21,7 +20,7 @@ public class PlayerNominationEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public PlayerNominationEvent(Player player, OffsetDateTime timestamp, Character target) {
+    public PlayerNominationEvent(PlayerInstance player, OffsetDateTime timestamp, Character target) {
         super(player, timestamp, EventType.NOMINATION);
         this.target = target;
     }

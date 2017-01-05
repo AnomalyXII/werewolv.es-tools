@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
 
@@ -14,7 +14,7 @@ public class VampireMessageEvent extends PlayerMessageEvent {
     // Constructors
     // ******************************
 
-    public VampireMessageEvent(Player player, OffsetDateTime timestamp, String message) {
+    public VampireMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
         super(player, timestamp, EventType.VAMPIRE_MESSAGE, message);
     }
 

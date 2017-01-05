@@ -63,12 +63,6 @@ public class Character extends AbstractPlayer {
     // Helper Methods
     // ******************************
 
-
-    @Override
-    public String getFormattedName() {
-        return isLinkedToUser() ? String.format("%s (%s)", getName(), getUser().getName()) : getName();
-    }
-
     public boolean isLinkedToUser() {
         return user != null;
     }

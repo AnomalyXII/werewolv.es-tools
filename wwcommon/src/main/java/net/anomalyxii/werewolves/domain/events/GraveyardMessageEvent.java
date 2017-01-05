@@ -1,10 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Vitality;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 03/12/2016.
@@ -15,7 +14,7 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
     // Constructors
     // ******************************
 
-    public GraveyardMessageEvent(Player player, OffsetDateTime timestamp, String message) {
+    public GraveyardMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
         super(player, timestamp, EventType.WEREWOLF_MESSAGE, message);
     }
 

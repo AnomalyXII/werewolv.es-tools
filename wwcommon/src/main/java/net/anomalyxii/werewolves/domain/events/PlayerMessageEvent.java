@@ -1,11 +1,8 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
-import net.anomalyxii.werewolves.domain.Vitality;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 26/11/2016.
@@ -22,7 +19,7 @@ public abstract class PlayerMessageEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    protected PlayerMessageEvent(Player player, OffsetDateTime timestamp, EventType eventType, String message) {
+    protected PlayerMessageEvent(PlayerInstance player, OffsetDateTime timestamp, EventType eventType, String message) {
         super(player, timestamp, eventType);
         this.message = message;
     }

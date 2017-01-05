@@ -1,9 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 03/12/2016.
@@ -15,7 +15,7 @@ public class ModeratorMessageEvent extends PlayerMessageEvent {
     // ******************************
 
     public ModeratorMessageEvent(OffsetDateTime timestamp, String message) {
-        super(Player.MODERATOR, timestamp, EventType.VILLAGE_MESSAGE, message);
+        super(PlayerInstance.MODERATOR, timestamp, EventType.VILLAGE_MESSAGE, message);
     }
 
 }

@@ -2,10 +2,13 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Role;
 import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.CharacterInstance;
 import net.anomalyxii.werewolves.domain.players.User;
+import net.anomalyxii.werewolves.domain.players.UserInstance;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
@@ -36,10 +39,21 @@ public class LiveGameParser extends AbstractGameParser {
         // Process Methods
 
         @Override
-        public Event parseEvent(Player player, Map<String, Object> event) {
+        public Event parseEvent(PlayerInstance player, Map<String, Object> event) {
 
             String type = parseType(event);
             switch (type) {
+
+                // Identity Events
+
+                case "NewIdentityAssigned":
+                    // Todo: add an event for this!
+                    User originalUser = getUser((String) event.get("originalName")).getUser();
+                    Character newCharacter = getCharacter((String) event.get("newPlayerName")).getCharacter();
+                    assignUserToCharacter(originalUser, newCharacter);
+                    return null;
+                case "IdentitySwapped":
+                    return null;
 
                 // Message Events
 
@@ -122,7 +136,8 @@ public class LiveGameParser extends AbstractGameParser {
                     return null;
 
                 case "VillageNomination":
-                    Character targetCharacter = getCharacter((String) event.get("target"));
+                    // Todo: should this use an instance too??
+                    Character targetCharacter = getCharacter((String) event.get("target")).getCharacter();
                     return new PlayerNominationEvent(player, parseTime(event), targetCharacter);
                 case "VillageNominationRetracted":
                     return null; // Is this silent?
@@ -162,8 +177,6 @@ public class LiveGameParser extends AbstractGameParser {
                 case "HostRightsGranted":
                 case "WarnedForInactivity":
                 case "PlayerRoleRevealed":
-                case "IdentitySwapped":
-                case "NewIdentityAssigned":
                 case "PlayerActiveDuringLastDay":
                 case "WerewolfVote":
                 case "NightTargetChosen":
@@ -180,10 +193,11 @@ public class LiveGameParser extends AbstractGameParser {
         }
 
         @Override
-        protected Player parsePlayer(Map<String, Object> event) {
+        protected PlayerInstance parsePlayerInstance(Map<String, Object> event) {
             String playerName = (String) event.get("playerName");
             String avatarUrl = (String) event.get("avatarUrl");
             String type = parseType(event);
+
             return findOrCreatePlayer(playerName, avatarUrl, type);
         }
 
@@ -209,7 +223,7 @@ public class LiveGameParser extends AbstractGameParser {
 
         // Helper Methods
 
-        protected Player findOrCreatePlayer(String name, String avatarUrl, String type) {
+        protected PlayerInstance findOrCreatePlayer(String name, String avatarUrl, String type) {
 
             LiveGameParser.PlayerLookupMode lookupMode = getLookupModeForEvent(type);
             switch (lookupMode) {
@@ -221,11 +235,11 @@ public class LiveGameParser extends AbstractGameParser {
                     return getCharacterOrSpecialPlayer(name);
 
                 case INGAME_LAX: {
-                    Player player = findCharacterOrSpecialPlayer(name);
+                    PlayerInstance player = findCharacterOrSpecialPlayer(name);
                     if (player != null)
                         return player;
 
-                    User user = findUser(name); // Probably shouldn't happen?
+                    UserInstance user = findUser(name); // Probably shouldn't happen?
                     if (user != null)
                         return user;
 
@@ -239,7 +253,7 @@ public class LiveGameParser extends AbstractGameParser {
                     // If this is a post-game event, it's probably the Character
                     // identity of one of the players, but it could be an observer
                     // who will show using their User name instead
-                    Player player = findCharacterOrSpecialPlayer(name);
+                    PlayerInstance player = findCharacterOrSpecialPlayer(name);
                     if (player != null)
                         return player;
 
@@ -305,14 +319,14 @@ public class LiveGameParser extends AbstractGameParser {
                 String userName = (String) player.get("originalName");
                 String roleName = (String) player.get("role");
 
-                Character character = getCharacter(characterName);
+                Character character = getCharacter(characterName).getCharacter(); // Todo: do this directly!
                 if (character.getUser() != null) {
                     // Character has already been assigned - add to "spare assignments"
                     spareAssignments.add(player);
                     return;
                 }
 
-                User user = getUser(userName);
+                User user = getUser(userName).getUser(); // Todo: do this directly!
                 Role role = getRole(roleName);
 
                 character.setUser(user);
@@ -328,7 +342,7 @@ public class LiveGameParser extends AbstractGameParser {
                         String userName = (String) player.get("originalName");
                         String roleName = (String) player.get("role");
 
-                        User user = getUser(userName);
+                        User user = getUser(userName).getUser(); // Todo: do this directly!
                         Role role = getRole(roleName);
 
                         character.setUserPossiblyIncorrectly(user);

@@ -1,10 +1,9 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Role;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 05/12/2016.
@@ -21,7 +20,7 @@ public class RoleAssignedEvent extends AbstractEvent {
     // Constructors
     // ******************************
 
-    public RoleAssignedEvent(Player player, OffsetDateTime timestamp, Role role) {
+    public RoleAssignedEvent(PlayerInstance player, OffsetDateTime timestamp, Role role) {
         super(player, timestamp, EventType.ROLE_ASSIGNED);
         this.role = role;
     }

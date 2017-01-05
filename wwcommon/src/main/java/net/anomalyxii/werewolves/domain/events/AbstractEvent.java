@@ -1,9 +1,8 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
-import java.util.Calendar;
 
 /**
  * Created by Anomaly on 20/11/2016.
@@ -14,7 +13,7 @@ public abstract class AbstractEvent implements Event {
     // Members
     // ******************************
 
-    private final Player player;
+    private final PlayerInstance player;
     private final OffsetDateTime timestamp;
     //
     private final EventType type;
@@ -23,7 +22,7 @@ public abstract class AbstractEvent implements Event {
     // Constructors
     // ******************************
 
-    public AbstractEvent(Player player, OffsetDateTime timestamp, EventType type) {
+    public AbstractEvent(PlayerInstance player, OffsetDateTime timestamp, EventType type) {
         this.player = player;
         this.timestamp = timestamp;
         this.type = type;
@@ -34,7 +33,7 @@ public abstract class AbstractEvent implements Event {
     // ******************************
 
     @Override
-    public Player getPlayer() {
+    public PlayerInstance getPlayer() {
         return player;
     }
 
@@ -54,7 +53,7 @@ public abstract class AbstractEvent implements Event {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] <%s>", timestamp, player.getFormattedName());
+        return String.format("[%tH:%<tM] <%s>", timestamp, player.getName());
     }
 
 }

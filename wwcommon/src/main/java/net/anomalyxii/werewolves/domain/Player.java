@@ -34,19 +34,4 @@ public interface Player {
      */
     URI getAvatarURI();
 
-    // ******************************
-    // Default Methods
-    // ******************************
-
-    /**
-     * Get the name of the {@link Player},
-     * potentially with special formatting
-     * applied.
-     *
-     * @return the formatted display name of the player
-     */
-    default String getFormattedName() {
-        return getName();
-    }
-
 }

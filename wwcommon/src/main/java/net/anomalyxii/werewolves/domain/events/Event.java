@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Vitality;
 
 import java.time.OffsetDateTime;
@@ -18,7 +18,7 @@ public interface Event {
     // Interface Methods
     // ******************************
 
-    Player getPlayer();
+    PlayerInstance getPlayer();
 
     OffsetDateTime getTime();
 

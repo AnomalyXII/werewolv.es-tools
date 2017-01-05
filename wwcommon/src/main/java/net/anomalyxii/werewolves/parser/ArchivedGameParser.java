@@ -1,8 +1,12 @@
 package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
+import net.anomalyxii.werewolves.domain.PlayerInstance;
+import net.anomalyxii.werewolves.domain.Vitality;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.CharacterInstance;
+import net.anomalyxii.werewolves.domain.players.User;
 
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
@@ -37,12 +41,21 @@ public class ArchivedGameParser extends AbstractGameParser {
     private static class GameCreationContext extends GameContext {
 
         @Override
-        public Event parseEvent(Player player, Map<String, Object> event) {
+        public Event parseEvent(PlayerInstance player, Map<String, Object> event) {
 
             String type = (String) event.get("__type");
             type = type.split(",")[0];
 
             switch (type) {
+
+                // Identity Events
+                case "Werewolf.GameEngine.Core.NewIdentityAssignedEvent":
+                    // Todo: add an event for this!
+                    User originalUser = getUser((String) event.get("OriginalName")).getUser();
+                    Character newCharacter = findOrCreateCharacter((String) event.get("NewName"),
+                                                                   (String) event.get("NewAvatarUrl")).getCharacter();
+                    assignUserToCharacter(originalUser, newCharacter);
+                    return null;
 
                 // Message Events
                 case "Werewolf.GameEngine.Core.ModeratorMessageEvent":
@@ -50,22 +63,22 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Chatting.PendingGameMessage":
                 case "Werewolf.GameEngine.Chatting.PostGameMessageEvent":
-                    return new VillageMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new VillageMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.GhostMessageEvent":
-                    return new GraveyardMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new GraveyardMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.VillageMessageEvent":
-                    return new VillageMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new VillageMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent":
-                    return new WerewolfMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new WerewolfMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.CovenNightMessageEvent":
-                    return new CovenMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new CovenMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 case "Werewolf.GameEngine.Roles.Vampires.VampireNightMessageEvent":
-                    return new VampireMessageEvent(parsePlayer(event), parseTime(event), parseMessage(event));
+                    return new VampireMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
 
                 // Role Events
                 case "Werewolf.GameEngine.Roles.AllWerewolvesAssignedEvent":
@@ -134,20 +147,23 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":
                     finishGame(Alignment.COVEN);
+                    assignFinalUsersToCharacters();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VillageVictoryEvent":
                     finishGame(Alignment.VILLAGE);
+                    assignFinalUsersToCharacters();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VampireVictoryEvent":
                     finishGame(Alignment.VAMPIRE);
+                    assignFinalUsersToCharacters();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.WerewolfVictoryEvent":
                     finishGame(Alignment.WEREWOLVES);
+                    assignFinalUsersToCharacters();
                     return null;
 
                 // Other Events
                 case "Werewolf.GameEngine.Core.AnonymisedGameStartedEvent":
-                case "Werewolf.GameEngine.Core.NewIdentityAssignedEvent":
                 case "Werewolf.GameEngine.Creation.GameCreatedEvent":
                 case "Werewolf.GameEngine.Creation.GameSetToFixedLengthDayCycleEvent":
                 case "Werewolf.GameEngine.Creation.GameSpyJoinedEvent":
@@ -171,10 +187,19 @@ public class ArchivedGameParser extends AbstractGameParser {
         // Parse Methods
 
         @Override
-        protected Player parsePlayer(Map<String, Object> event) {
+        protected PlayerInstance parsePlayerInstance(Map<String, Object> event) {
             String playerName = (String) event.get("PlayerName");
             String avatarUrl = (String) event.get("PlayerName");
-            return findOrCreateUserOrSpecialPlayer(playerName, avatarUrl);
+            PlayerInstance instance = findOrCreateUserOrSpecialPlayer(playerName, avatarUrl);
+            if(instance.getUser() == null)
+                return instance; // Probably a "Special Player"
+
+            User user = instance.getUser();
+            Character character = getCharacterFor(user);
+            if(character == null)
+                return instance; // Probably a user who isn't joined to the game?
+
+            return new CharacterInstance(character, user, Vitality.ALIVE); // Todo: look this up!
         }
 
         @Override

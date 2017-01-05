@@ -4,16 +4,12 @@ import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
+import net.anomalyxii.werewolves.domain.players.*;
 import net.anomalyxii.werewolves.domain.players.Character;
-import net.anomalyxii.werewolves.domain.players.SpecialPlayer;
-import net.anomalyxii.werewolves.domain.players.User;
 
 import java.net.URI;
 import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.regex.Matcher;
 
 /**
  * Created by Anomaly on 05/01/2017.
@@ -33,11 +29,18 @@ public abstract class GameContext {
     private final Map<String, User> users = new HashMap<>();
     private final Map<String, Character> characters = new HashMap<>();
 
+    // Track the events
     private final List<Event> preGameEvents = new ArrayList<>();
     private final List<Event> postGameEvents = new ArrayList<>();
     private final Deque<Day> days = new ArrayDeque<>();
     private final Map<Day, List<Event>> dayGameEvents = new HashMap<>();
     private final Map<Day, List<Event>> nightGameEvents = new HashMap<>();
+
+    // Track the User <-> Character linkings and similar
+    private final Map<User, Character> userCharacterMap = new HashMap<>();
+    private final Map<Character, User> characterUserMap = new HashMap<>();
+    private final Map<User, Vitality> userVitalityMap = new HashMap<>();
+    private final Map<User, Role> userRoleMap = new HashMap<>();
 
     // ******************************
     // Process Methods
@@ -46,8 +49,8 @@ public abstract class GameContext {
     public void process(Map<String, Object> event) {
 
         // Lookup the player
-        Player player = parsePlayer(event);
-        players.add(player);
+        PlayerInstance player = parsePlayerInstance(event);
+        players.add(player.getPlayer());
 
         Day currentDay = days.peekLast();
         List<Event> currentPhase = gameStarted
@@ -64,7 +67,7 @@ public abstract class GameContext {
 
     }
 
-    protected abstract Event parseEvent(Player player, Map<String, Object> event);
+    protected abstract Event parseEvent(PlayerInstance player, Map<String, Object> event);
 
     // ******************************
     // Build Methods
@@ -143,7 +146,7 @@ public abstract class GameContext {
 
     // Common Parsing Functions
 
-    protected abstract Player parsePlayer(Map<String, Object> event);
+    protected abstract PlayerInstance parsePlayerInstance(Map<String, Object> event);
 
     protected abstract String parseType(Map<String, Object> event);
 
@@ -153,155 +156,192 @@ public abstract class GameContext {
 
     // Look-up Players + Characters
 
-    protected Player findOrCreatePlayer(String name, String avatarUrl) {
+    protected PlayerInstance findOrCreatePlayer(String name, String avatarUrl) {
         return isGameStarted()
                ? findOrCreateCharacter(name, avatarUrl)
                : findOrCreateUser(name, avatarUrl);
     }
 
-    protected Player getPlayer(String name) {
+    protected PlayerInstance getPlayer(String name) {
         return isGameStarted()
                ? getCharacter(name)
                : getUser(name);
     }
 
-    protected Player findPlayer(String name) {
+    protected PlayerInstance findPlayer(String name) {
         return isGameStarted()
                ? findCharacter(name)
                : findUser(name);
     }
 
-    protected Player getSpecialPlayer(String name) {
-        Player player = findSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance getSpecialPlayer(String name) {
+        PlayerInstance instance = findSpecialPlayer(name);
+        if (instance != null)
+            return instance;
         throw new IllegalArgumentException("SpecialPlayer '" + name + "' was not found");
     }
 
-    protected Player findSpecialPlayer(String name) {
+    protected PlayerInstance findSpecialPlayer(String name) {
         if (name == null)
-            return Player.ANONYMOUS;
+            return SpecialPlayerInstance.ANONYMOUS;
 
         if (Player.MODERATOR.getName().equals(name))
-            return Player.MODERATOR;
+            return PlayerInstance.MODERATOR;
 
         return null;
     }
 
-    protected User getUser(String name) {
-        User user = findUser(name);
-        if (user != null)
-            return user;
+    protected UserInstance getUser(String name) {
+        UserInstance instance = findUser(name);
+        if (instance != null)
+            return instance;
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
-    protected User findUser(String name) {
-        return users.get(name);
+    protected UserInstance findUser(String name) {
+        User user = users.get(name);
+        if(user == null)
+            return null;
+
+        return new UserInstance(user);
     }
 
-    protected User findOrCreateUser(String name, String avatarUrl) {
-        User user = findUser(name);
-        if (user != null)
-            return user;
+    protected UserInstance findOrCreateUser(String name, String avatarUrl) {
+        UserInstance instance = findUser(name);
+        if (instance != null)
+            return instance;
 
         URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
 
-        user = new User(name, uri);
+        User user = new User(name, uri);
         users.put(name, user);
-        return user;
+        return new UserInstance(user);
     }
 
-    protected Player getUserOrSpecialPlayer(String name) {
-        Player player = findUserOrSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance getUserOrSpecialPlayer(String name) {
+        PlayerInstance instance = findUserOrSpecialPlayer(name);
+        if (instance != null)
+            return instance;
 
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
-    protected Player findUserOrSpecialPlayer(String name) {
-        Player player = findSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance findUserOrSpecialPlayer(String name) {
+        PlayerInstance instance = findSpecialPlayer(name);
+        if (instance != null)
+            return instance;
 
-        return users.get(name);
+        return findUser(name);
     }
 
-    protected Player findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
-        Player player = findSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
+        PlayerInstance playerInstance = findSpecialPlayer(name);
+        if (playerInstance != null)
+            return playerInstance;
 
-        User user = findUser(name);
-        if (user != null)
-            return user;
-
-        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
-
-        user = new User(name, uri);
-        users.put(name, user);
-        return user;
+        return findOrCreateUser(name, avatarUrl);
     }
 
-    protected Character getCharacter(String name) {
-        Character character = findCharacter(name);
-        if (character != null)
-            return character;
+    protected CharacterInstance getCharacter(String name) {
+        CharacterInstance instance = findCharacter(name);
+        if (instance != null)
+            return instance;
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
-    protected Character findCharacter(String name) {
-        return characters.get(name);
+    protected CharacterInstance findCharacter(String name) {
+        Character character = characters.get(name);
+        if (character == null)
+            return null;
+
+        User user = getUserFromCharacter(character);
+        return new CharacterInstance(character, user, Vitality.ALIVE); // Todo: track this!
     }
 
-    protected Character findOrCreateCharacter(String name, String avatarUrl) {
-        Character character = findCharacter(name);
-        if (character != null)
-            return character;
+    protected CharacterInstance findOrCreateCharacter(String name, String avatarUrl) {
+        CharacterInstance instance = findCharacter(name);
+        if (instance != null)
+            return instance;
 
         URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
 
-        character = new Character(name, uri);
+        Character character = new Character(name, uri);
         characters.put(name, character);
-        return character;
+
+        User user = getUserFromCharacter(character);
+        return new CharacterInstance(character, user, Vitality.ALIVE); // If it's new, it must be alive, right??
     }
 
-    protected Player getCharacterOrSpecialPlayer(String name) {
-        Player player = findCharacterOrSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance getCharacterOrSpecialPlayer(String name) {
+        PlayerInstance instance = findCharacterOrSpecialPlayer(name);
+        if (instance != null)
+            return instance;
 
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
-    protected Player findCharacterOrSpecialPlayer(String name) {
-        Player player = findSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance findCharacterOrSpecialPlayer(String name) {
+        PlayerInstance instance = findSpecialPlayer(name);
+        if (instance != null)
+            return instance;
 
-        return characters.get(name);
+        return findCharacter(name);
     }
 
-    protected Player findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
-        Player player = findSpecialPlayer(name);
-        if (player != null)
-            return player;
+    protected PlayerInstance findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
+        PlayerInstance playerInstance = findSpecialPlayer(name);
+        if (playerInstance != null)
+            return playerInstance;
 
-        Character character = findCharacter(name);
-        if (character != null)
-            return character;
-
-        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
-
-        character = new Character(name, uri);
-        characters.put(name, character);
-        return character;
+        return findOrCreateCharacter(name, avatarUrl);
     }
 
-    // Look-up Roles and Alignments
+    // Look-up User Characters, Roles, Alignments, etc
 
-    protected Role getRole(String role) {
-        return Role.forString(role);
+    /**
+     * Look up the {@link Character} assigned
+     * to a specific {@link User}.
+     *
+     * @param user the {@link User} to look up
+     * @return the {@link Character} belonging to that {@link User}
+     */
+    protected Character getCharacterFor(User user) {
+        return userCharacterMap.get(user);
+    }
+
+    /**
+     * Look up the {@link Role} assigned to a
+     * specific {@link User}.
+     *
+     * @param user the {@link User} to look up
+     * @return the {@link Role} belonging to that {@link User}
+     */
+    protected Role getRoleForUser(User user) {
+        return userRoleMap.get(user);
+    }
+
+    /**
+     * Look up the {@link User} who is assigned
+     * to a specific {@link Character}.
+     *
+     * @param character the {@link Character} to look up
+     * @return the {@link User} assigned to that {@link Character}
+     */
+    protected User getUserFromCharacter(Character character) {
+        return characterUserMap.get(character);
+    }
+
+    protected void assignUserToCharacter(User user, Character character) {
+        userCharacterMap.put(user, character);
+        characterUserMap.put(character, user);
+    }
+
+    protected void swapUserCharacters(User first, User second) {
+        Character firstCharacter = getCharacterFor(first);
+        Character secondCharacter = getCharacterFor(second);
+
+        assignUserToCharacter(first, secondCharacter);
+        assignUserToCharacter(second, firstCharacter);
     }
 
     // Phase Functions
@@ -341,6 +381,16 @@ public abstract class GameContext {
 
         setWinningAlignment(winningAlignment);
         setGameFinished(true);
+    }
+
+    // Other Helpers
+
+    protected Role getRole(String role) {
+        return Role.forString(role);
+    }
+
+    protected void assignFinalUsersToCharacters() {
+        userCharacterMap.forEach((user, character) -> character.setUser(user));
     }
 
 }
