@@ -1,0 +1,4846 @@
+[
+  {
+    "playerName": "Rubin_1998",
+    "avatarUrl": "http://www.gravatar.com/avatar/e48062bca4641eefbc58b818a972dcfd?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:43:16.212+00:00",
+    "formattedTimeStamp": "Sat 20:43:16",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Rubin_1998",
+    "avatarUrl": "http://www.gravatar.com/avatar/e48062bca4641eefbc58b818a972dcfd?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:43:16.212+00:00",
+    "formattedTimeStamp": "Sat 20:43:16",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Aleg",
+    "avatarUrl": "http://www.gravatar.com/avatar/410430d763e48d2cc00c514eff9643b9?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:43:42.869+00:00",
+    "formattedTimeStamp": "Sat 20:43:42",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Aleg",
+    "avatarUrl": "http://www.gravatar.com/avatar/410430d763e48d2cc00c514eff9643b9?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:43:42.869+00:00",
+    "formattedTimeStamp": "Sat 20:43:42",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "iMartyn",
+    "avatarUrl": "http://www.gravatar.com/avatar/79de4adbcc6dc3c1114f7833ea928c59?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:45:41.651+00:00",
+    "formattedTimeStamp": "Sat 20:45:41",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "iMartyn",
+    "avatarUrl": "http://www.gravatar.com/avatar/79de4adbcc6dc3c1114f7833ea928c59?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:45:41.651+00:00",
+    "formattedTimeStamp": "Sat 20:45:41",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "BabyPigalump",
+    "avatarUrl": "http://www.gravatar.com/avatar/1b2525253f424335817d319302415b2b?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:46:00.542+00:00",
+    "formattedTimeStamp": "Sat 20:46:00",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "BabyPigalump",
+    "avatarUrl": "http://www.gravatar.com/avatar/1b2525253f424335817d319302415b2b?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:46:00.542+00:00",
+    "formattedTimeStamp": "Sat 20:46:00",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Giovanniboyy",
+    "avatarUrl": "http://www.gravatar.com/avatar/43a7e6df17ea3d3d09e8fb58c5c09211?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:51:33.310+00:00",
+    "formattedTimeStamp": "Sat 20:51:33",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Giovanniboyy",
+    "avatarUrl": "http://www.gravatar.com/avatar/43a7e6df17ea3d3d09e8fb58c5c09211?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T20:51:33.310+00:00",
+    "formattedTimeStamp": "Sat 20:51:33",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "ImTownSRSLY",
+    "avatarUrl": "http://www.gravatar.com/avatar/9705f530e894f26ec468cf89d7999a55?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:10:29.567+00:00",
+    "formattedTimeStamp": "Sat 21:10:29",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "ImTownSRSLY",
+    "avatarUrl": "http://www.gravatar.com/avatar/9705f530e894f26ec468cf89d7999a55?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:10:29.567+00:00",
+    "formattedTimeStamp": "Sat 21:10:29",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "aheadofyourtime",
+    "avatarUrl": "http://www.gravatar.com/avatar/5c3ddd99a84e03f8dc07a502773a0c54?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:11:05.255+00:00",
+    "formattedTimeStamp": "Sat 21:11:05",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "aheadofyourtime",
+    "avatarUrl": "http://www.gravatar.com/avatar/5c3ddd99a84e03f8dc07a502773a0c54?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:11:05.255+00:00",
+    "formattedTimeStamp": "Sat 21:11:05",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Narsil",
+    "avatarUrl": "http://www.gravatar.com/avatar/cf2570318b0216016f87f420be0f3277?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:11:39.146+00:00",
+    "formattedTimeStamp": "Sat 21:11:39",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Narsil",
+    "avatarUrl": "http://www.gravatar.com/avatar/cf2570318b0216016f87f420be0f3277?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:11:39.146+00:00",
+    "formattedTimeStamp": "Sat 21:11:39",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "XII",
+    "avatarUrl": "http://www.gravatar.com/avatar/77c8fa831d8bae58e27aefa9ea826c72?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:12:09.865+00:00",
+    "formattedTimeStamp": "Sat 21:12:09",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "XII",
+    "avatarUrl": "http://www.gravatar.com/avatar/77c8fa831d8bae58e27aefa9ea826c72?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:12:09.865+00:00",
+    "formattedTimeStamp": "Sat 21:12:09",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Veletala",
+    "avatarUrl": "http://www.gravatar.com/avatar/bfae54e62cd322f43355d4e8d9c46684?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:18:04.227+00:00",
+    "formattedTimeStamp": "Sat 21:18:04",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Veletala",
+    "avatarUrl": "http://www.gravatar.com/avatar/bfae54e62cd322f43355d4e8d9c46684?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:18:04.227+00:00",
+    "formattedTimeStamp": "Sat 21:18:04",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "TheSilentOne",
+    "avatarUrl": "http://www.gravatar.com/avatar/deb33b09c7c89e5f2632d335be3175a0?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:18:14.368+00:00",
+    "formattedTimeStamp": "Sat 21:18:14",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "TheSilentOne",
+    "avatarUrl": "http://www.gravatar.com/avatar/deb33b09c7c89e5f2632d335be3175a0?s=200&d=wavatar",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:18:14.368+00:00",
+    "formattedTimeStamp": "Sat 21:18:14",
+    "__type": "PlayerJoined"
+  },
+  {
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:38.847+00:00",
+    "formattedTimeStamp": "Sat 21:32:38",
+    "__type": "GameStarted"
+  },
+  {
+    "dayNumber": 1,
+    "phaseLength": 10,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:38.847+00:00",
+    "formattedTimeStamp": "Sat 21:32:38",
+    "__type": "DayStarted"
+  },
+  {
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:39.655+00:00",
+    "formattedTimeStamp": "Sat 21:32:39",
+    "__type": "AnonymisedGameStarted"
+  },
+  {
+    "playerName": "LoisLane",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/loislane.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:39.846+00:00",
+    "formattedTimeStamp": "Sat 21:32:39",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "LoisLane",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/loislane.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:39.846+00:00",
+    "formattedTimeStamp": "Sat 21:32:39",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Batman",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/batman.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:41.016+00:00",
+    "formattedTimeStamp": "Sat 21:32:41",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Batman",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/batman.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:41.016+00:00",
+    "formattedTimeStamp": "Sat 21:32:41",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Deadshot",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/deadshot.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:42.487+00:00",
+    "formattedTimeStamp": "Sat 21:32:42",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Deadshot",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/deadshot.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:42.487+00:00",
+    "formattedTimeStamp": "Sat 21:32:42",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "LuciusFox",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/luciusfox.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:43.399+00:00",
+    "formattedTimeStamp": "Sat 21:32:43",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "LuciusFox",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/luciusfox.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:43.399+00:00",
+    "formattedTimeStamp": "Sat 21:32:43",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "JamesGordon",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/jamesgordon.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:44.576+00:00",
+    "formattedTimeStamp": "Sat 21:32:44",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "JamesGordon",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/jamesgordon.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:44.576+00:00",
+    "formattedTimeStamp": "Sat 21:32:44",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Arrow",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/arrow.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:45.789+00:00",
+    "formattedTimeStamp": "Sat 21:32:45",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Arrow",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/arrow.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:45.789+00:00",
+    "formattedTimeStamp": "Sat 21:32:45",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Enchantress",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/enchantress.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:47.158+00:00",
+    "formattedTimeStamp": "Sat 21:32:47",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Enchantress",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/enchantress.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:47.158+00:00",
+    "formattedTimeStamp": "Sat 21:32:47",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Killercroc",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/killercroc.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:48.504+00:00",
+    "formattedTimeStamp": "Sat 21:32:48",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Killercroc",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/killercroc.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:48.504+00:00",
+    "formattedTimeStamp": "Sat 21:32:48",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "It has begun! :D ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:49.467+00:00",
+    "formattedTimeStamp": "Sat 21:32:49",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/catwoman.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:50.028+00:00",
+    "formattedTimeStamp": "Sat 21:32:50",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Catwoman",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/catwoman.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:50.028+00:00",
+    "formattedTimeStamp": "Sat 21:32:50",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "Flash",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/flash.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:51.358+00:00",
+    "formattedTimeStamp": "Sat 21:32:51",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "Flash",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/flash.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:51.358+00:00",
+    "formattedTimeStamp": "Sat 21:32:51",
+    "__type": "PlayerJoined"
+  },
+  {
+    "playerName": "ClarkKent",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/clarkkent.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:52.570+00:00",
+    "formattedTimeStamp": "Sat 21:32:52",
+    "__type": "JoinGame"
+  },
+  {
+    "playerName": "ClarkKent",
+    "avatarUrl": "http://werewolv.es/content/images/avatars/dc/clarkkent.png",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:52.570+00:00",
+    "formattedTimeStamp": "Sat 21:32:52",
+    "__type": "PlayerJoined"
+  },
+  {
+    "message": "There are: 1 Shapeshifter, 1 Alphawolf, 1 Lycan, 1 Seer, 1 Protector, 1 Gravedigger, 1 Messiah and 4 Villagers.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:32:57.995+00:00",
+    "formattedTimeStamp": "Sat 21:32:57",
+    "__type": "ModeratorMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Let the games begin",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:01.608+00:00",
+    "formattedTimeStamp": "Sat 21:33:01",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I'm jealous of whoever Flash is",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:10.374+00:00",
+    "formattedTimeStamp": "Sat 21:33:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "These roles need documenting Mark!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:15.671+00:00",
+    "formattedTimeStamp": "Sat 21:33:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I'm Batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:25.046+00:00",
+    "formattedTimeStamp": "Sat 21:33:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "I am Batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:31.890+00:00",
+    "formattedTimeStamp": "Sat 21:33:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Moderator",
+    "message": "/me nods towards the \"how to play\" link at the top",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:34.702+00:00",
+    "formattedTimeStamp": "Sat 21:33:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": ":O",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:36.640+00:00",
+    "formattedTimeStamp": "Sat 21:33:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "B-b-b-b-b-batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:38.249+00:00",
+    "formattedTimeStamp": "Sat 21:33:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "nanananananana bat maaan",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:33:56.062+00:00",
+    "formattedTimeStamp": "Sat 21:33:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "xD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:02.327+00:00",
+    "formattedTimeStamp": "Sat 21:34:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "=(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:08.890+00:00",
+    "formattedTimeStamp": "Sat 21:34:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "lol",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:13.046+00:00",
+    "formattedTimeStamp": "Sat 21:34:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "got the lamest shit from the DC universe",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:23.140+00:00",
+    "formattedTimeStamp": "Sat 21:34:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Arrow is actually my favorite out of all. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:38.171+00:00",
+    "formattedTimeStamp": "Sat 21:34:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "Oo whiny bitch",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:46.734+00:00",
+    "formattedTimeStamp": "Sat 21:34:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Lol, Arrow is misunderstood.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:48.218+00:00",
+    "formattedTimeStamp": "Sat 21:34:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "poor Lycan...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:34:57.609+00:00",
+    "formattedTimeStamp": "Sat 21:34:57",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "going purely by the show, just saying",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:35:02.015+00:00",
+    "formattedTimeStamp": "Sat 21:35:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "He does love to have a moan about it.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:35:03.468+00:00",
+    "formattedTimeStamp": "Sat 21:35:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Lycan doesn't know they're lycan, right?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:35:17.437+00:00",
+    "formattedTimeStamp": "Sat 21:35:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yes.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:35:20.890+00:00",
+    "formattedTimeStamp": "Sat 21:35:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "poor, misunderstood lycan",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:35:43.781+00:00",
+    "formattedTimeStamp": "Sat 21:35:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Can I just say for the record, that if Arrow, Flash and Batman can't deal with 2 pesky wolves... then they're all hype.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:13.141+00:00",
+    "formattedTimeStamp": "Sat 21:36:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I agree",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:29.406+00:00",
+    "formattedTimeStamp": "Sat 21:36:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I'm Batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:37.688+00:00",
+    "formattedTimeStamp": "Sat 21:36:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Couldn't agree more",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:43.000+00:00",
+    "formattedTimeStamp": "Sat 21:36:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "I think we´re supposed to be on a vacation and might have had too many drinks",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:43.610+00:00",
+    "formattedTimeStamp": "Sat 21:36:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Catwoman, how do you know that Arrow, Flash and Batman aren't wolves? ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:44.813+00:00",
+    "formattedTimeStamp": "Sat 21:36:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "!!! Batman!?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:50.688+00:00",
+    "formattedTimeStamp": "Sat 21:36:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": ":O",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:53.860+00:00",
+    "formattedTimeStamp": "Sat 21:36:53",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Votes to put Catwoman on trial.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:54.235+00:00",
+    "formattedTimeStamp": "Sat 21:36:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "The rest of us will just have to show the \"Heroes\" how it's done.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:36:56.766+00:00",
+    "formattedTimeStamp": "Sat 21:36:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "Batman loves the night... suspicious",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:04.250+00:00",
+    "formattedTimeStamp": "Sat 21:37:04",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "!!! Arrow!? ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:15.672+00:00",
+    "formattedTimeStamp": "Sat 21:37:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "oh, sorry, didn't see you there Smallville.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:17.797+00:00",
+    "formattedTimeStamp": "Sat 21:37:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "When can we vote?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:18.282+00:00",
+    "formattedTimeStamp": "Sat 21:37:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "after someone's died",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:25.563+00:00",
+    "formattedTimeStamp": "Sat 21:37:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Ahh",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:29.719+00:00",
+    "formattedTimeStamp": "Sat 21:37:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "!!! Random person!?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:31.001+00:00",
+    "formattedTimeStamp": "Sat 21:37:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Moderator",
+    "message": "there is no lynching on day 1, only bants, man.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:53.063+00:00",
+    "formattedTimeStamp": "Sat 21:37:53",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "Morgan Freeman should leave this realm, so he can take his rightful place among the gods",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:37:58.673+00:00",
+    "formattedTimeStamp": "Sat 21:37:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Wow it is the Arrow, so cool! Why does nobody loves Arrow :(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:00.766+00:00",
+    "formattedTimeStamp": "Sat 21:38:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I totally agree",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:10.423+00:00",
+    "formattedTimeStamp": "Sat 21:38:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I know",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:10.891+00:00",
+    "formattedTimeStamp": "Sat 21:38:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "lois, enchantress, clark?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:13.391+00:00",
+    "formattedTimeStamp": "Sat 21:38:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "you all here?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:16.563+00:00",
+    "formattedTimeStamp": "Sat 21:38:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "nvm, i see lois",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:25.438+00:00",
+    "formattedTimeStamp": "Sat 21:38:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "umm...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:25.704+00:00",
+    "formattedTimeStamp": "Sat 21:38:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Hmmmmm",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:29.751+00:00",
+    "formattedTimeStamp": "Sat 21:38:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I hope so",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:32.751+00:00",
+    "formattedTimeStamp": "Sat 21:38:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "lois is here",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:34.360+00:00",
+    "formattedTimeStamp": "Sat 21:38:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "they had a cool premise in S1 and made it worse each and every season =D",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:36.204+00:00",
+    "formattedTimeStamp": "Sat 21:38:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": ":Thinking:",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:38:44.064+00:00",
+    "formattedTimeStamp": "Sat 21:38:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "so the wolves have to be part-\"human\"? ;-)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:09.829+00:00",
+    "formattedTimeStamp": "Sat 21:39:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:24.689+00:00",
+    "formattedTimeStamp": "Sat 21:39:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "rules out everyone but Lois and Clark ;-)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:30.892+00:00",
+    "formattedTimeStamp": "Sat 21:39:30",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "lewis and clark",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:37.595+00:00",
+    "formattedTimeStamp": "Sat 21:39:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "<3",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:42.205+00:00",
+    "formattedTimeStamp": "Sat 21:39:42",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "they're the only ones using their real names.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:39:47.173+00:00",
+    "formattedTimeStamp": "Sat 21:39:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "oi, Clark Kent is the Alias, sorta",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:06.549+00:00",
+    "formattedTimeStamp": "Sat 21:40:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "in a way...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:17.299+00:00",
+    "formattedTimeStamp": "Sat 21:40:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "okay, maybe not, I'm just banting for the sake of bants",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:18.720+00:00",
+    "formattedTimeStamp": "Sat 21:40:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "message": "so are we all =)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:27.346+00:00",
+    "formattedTimeStamp": "Sat 21:40:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "Kal-El",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:34.674+00:00",
+    "formattedTimeStamp": "Sat 21:40:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "nightNumber": 1,
+    "phaseLength": 5,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:40:44.518+00:00",
+    "formattedTimeStamp": "Sat 21:40:44",
+    "__type": "NightStarted"
+  },
+  {
+    "playerName": "Arrow",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:45:53.426+00:00",
+    "formattedTimeStamp": "Sat 21:45:53",
+    "__type": "PlayerKilled"
+  },
+  {
+    "dayNumber": 2,
+    "phaseLength": 30,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:45:54.645+00:00",
+    "formattedTimeStamp": "Sat 21:45:54",
+    "__type": "DayStarted"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Why doesn't it surprise me that Lois knows his _real_ name?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:00.176+00:00",
+    "formattedTimeStamp": "Sat 21:46:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "timeLeft": 25,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:05.989+00:00",
+    "formattedTimeStamp": "Sat 21:46:05",
+    "__type": "VillageNominationsOpened"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "NOOOOOOOOOOOOOOOOOO",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:09.957+00:00",
+    "formattedTimeStamp": "Sat 21:46:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Why arrow :(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:19.457+00:00",
+    "formattedTimeStamp": "Sat 21:46:19",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "hm, that's intersting",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:20.879+00:00",
+    "formattedTimeStamp": "Sat 21:46:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Oh great, something else that Arrow gets to bitch about, being killed again.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:20.926+00:00",
+    "formattedTimeStamp": "Sat 21:46:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "why wouldnt i know it?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:24.145+00:00",
+    "formattedTimeStamp": "Sat 21:46:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "a Messiah in the game and we don't have two deaths night one?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:37.411+00:00",
+    "formattedTimeStamp": "Sat 21:46:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Good point Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:48.051+00:00",
+    "formattedTimeStamp": "Sat 21:46:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "Guess he didn't have a silver arrow.. hah..ha.. hmm",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:46:53.067+00:00",
+    "formattedTimeStamp": "Sat 21:46:53",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "maybe messiah is waiting a few days?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:05.598+00:00",
+    "formattedTimeStamp": "Sat 21:47:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "The Messiah need to die tonight or never.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:12.473+00:00",
+    "formattedTimeStamp": "Sat 21:47:12",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "he must not have been a deadshot with it anyways!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:17.145+00:00",
+    "formattedTimeStamp": "Sat 21:47:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Or the protector did their thang",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:18.895+00:00",
+    "formattedTimeStamp": "Sat 21:47:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "Ohhh",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:29.302+00:00",
+    "formattedTimeStamp": "Sat 21:47:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "Clark? love?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:40.364+00:00",
+    "formattedTimeStamp": "Sat 21:47:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "croc love?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:47:49.724+00:00",
+    "formattedTimeStamp": "Sat 21:47:49",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Everybody love?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:14.943+00:00",
+    "formattedTimeStamp": "Sat 21:48:14",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "^^",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:20.349+00:00",
+    "formattedTimeStamp": "Sat 21:48:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "LOVE!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:20.661+00:00",
+    "formattedTimeStamp": "Sat 21:48:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "I just want somebody to hug..",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:26.833+00:00",
+    "formattedTimeStamp": "Sat 21:48:26",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:31.615+00:00",
+    "formattedTimeStamp": "Sat 21:48:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "hmf, this is a difficult one ... part of me says Prot should come out because there's a good chance that they healed a wolf target (and that target was themself) but there's a risk that we just have a brave Messiah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:33.896+00:00",
+    "formattedTimeStamp": "Sat 21:48:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": ":S",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:34.646+00:00",
+    "formattedTimeStamp": "Sat 21:48:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "B-b-b-b-bantman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:36.146+00:00",
+    "formattedTimeStamp": "Sat 21:48:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "*hugs deadshot*",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:38.068+00:00",
+    "formattedTimeStamp": "Sat 21:48:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Hmm... I dunno, there are newish players who wouldn't know to kill themselves first night - I certainly wouldn't.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:41.396+00:00",
+    "formattedTimeStamp": "Sat 21:48:41",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "mh, yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:48:54.927+00:00",
+    "formattedTimeStamp": "Sat 21:48:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "let's hope it's that",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:03.896+00:00",
+    "formattedTimeStamp": "Sat 21:49:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "okay",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:11.693+00:00",
+    "formattedTimeStamp": "Sat 21:49:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "messiah, if you are still alive",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:16.959+00:00",
+    "formattedTimeStamp": "Sat 21:49:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Seer come out tomorrow?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:18.240+00:00",
+    "formattedTimeStamp": "Sat 21:49:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "kill yourself tonight",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:21.755+00:00",
+    "formattedTimeStamp": "Sat 21:49:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "xD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:24.115+00:00",
+    "formattedTimeStamp": "Sat 21:49:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "Without context, this just got dark",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:29.146+00:00",
+    "formattedTimeStamp": "Sat 21:49:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Hello, darkness my old friend!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:46.771+00:00",
+    "formattedTimeStamp": "Sat 21:49:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I've come to talk to you again",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:49:56.318+00:00",
+    "formattedTimeStamp": "Sat 21:49:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "hey, you're not the only one who creeps about in the shadows, bat boy!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:50:25.740+00:00",
+    "formattedTimeStamp": "Sat 21:50:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "okay, awkward silence...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:18.366+00:00",
+    "formattedTimeStamp": "Sat 21:51:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "yep",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:23.584+00:00",
+    "formattedTimeStamp": "Sat 21:51:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yeahh",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:24.100+00:00",
+    "formattedTimeStamp": "Sat 21:51:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "But I'm Batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:33.991+00:00",
+    "formattedTimeStamp": "Sat 21:51:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "B-b-b-b-b-batman!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:41.960+00:00",
+    "formattedTimeStamp": "Sat 21:51:41",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "We're all just enjoying ourselves in the darkness",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:47.178+00:00",
+    "formattedTimeStamp": "Sat 21:51:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "Wait",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:51:48.506+00:00",
+    "formattedTimeStamp": "Sat 21:51:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "I regret nothing",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:52:10.679+00:00",
+    "formattedTimeStamp": "Sat 21:52:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "shush, noone's supposed to know that the lights are off, the keyboard is my shield...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:52:16.179+00:00",
+    "formattedTimeStamp": "Sat 21:52:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "XD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:52:43.101+00:00",
+    "formattedTimeStamp": "Sat 21:52:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "But should we vote? or not",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:52:45.226+00:00",
+    "formattedTimeStamp": "Sat 21:52:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I dont want to be kicked",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:00.741+00:00",
+    "formattedTimeStamp": "Sat 21:53:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Maybe just tie the votes?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:01.757+00:00",
+    "formattedTimeStamp": "Sat 21:53:01",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "No one seems to know anything as of now.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:05.163+00:00",
+    "formattedTimeStamp": "Sat 21:53:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "to state the obvious: if we don't, we don't kill a wolf.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:05.538+00:00",
+    "formattedTimeStamp": "Sat 21:53:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:06.679+00:00",
+    "formattedTimeStamp": "Sat 21:53:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Deadshot",
+    "message": "I would've voted for Arrow, only because I can't stand the guy..",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:11.773+00:00",
+    "formattedTimeStamp": "Sat 21:53:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "If we don't, we don't kill a villager",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:28.288+00:00",
+    "formattedTimeStamp": "Sat 21:53:28",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "he's in deadchat right now crying to himself",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:29.867+00:00",
+    "formattedTimeStamp": "Sat 21:53:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "take that!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:32.226+00:00",
+    "formattedTimeStamp": "Sat 21:53:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "\"Yes, officer, I hated him.. but I swear I didn't kill him\"",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:37.538+00:00",
+    "formattedTimeStamp": "Sat 21:53:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I would vote for anyone on the side of good, just for character's sake",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:53:46.867+00:00",
+    "formattedTimeStamp": "Sat 21:53:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Well lets balance",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:05.929+00:00",
+    "formattedTimeStamp": "Sat 21:54:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "isn't Catwoman basically a protagonist though?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:12.351+00:00",
+    "formattedTimeStamp": "Sat 21:54:12",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:12.414+00:00",
+    "formattedTimeStamp": "Sat 21:54:12",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "It is already balanced.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:14.742+00:00",
+    "formattedTimeStamp": "Sat 21:54:14",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "k",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:15.804+00:00",
+    "formattedTimeStamp": "Sat 21:54:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "well",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:18.867+00:00",
+    "formattedTimeStamp": "Sat 21:54:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "balance now",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:20.258+00:00",
+    "formattedTimeStamp": "Sat 21:54:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "smite prevention",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:22.883+00:00",
+    "formattedTimeStamp": "Sat 21:54:22",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "target": "Deadshot",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:26.304+00:00",
+    "formattedTimeStamp": "Sat 21:54:26",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "ClarkKent",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:27.023+00:00",
+    "formattedTimeStamp": "Sat 21:54:27",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "Flash",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:30.133+00:00",
+    "formattedTimeStamp": "Sat 21:54:30",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:32.930+00:00",
+    "formattedTimeStamp": "Sat 21:54:32",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:36.351+00:00",
+    "formattedTimeStamp": "Sat 21:54:36",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "since we're doing this",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:37.430+00:00",
+    "formattedTimeStamp": "Sat 21:54:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:40.195+00:00",
+    "formattedTimeStamp": "Sat 21:54:40",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "3 afk?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:51.570+00:00",
+    "formattedTimeStamp": "Sat 21:54:51",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "anti ^-^",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:54.305+00:00",
+    "formattedTimeStamp": "Sat 21:54:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Are Clark and Flash even here?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:54:56.367+00:00",
+    "formattedTimeStamp": "Sat 21:54:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": ":(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:55:00.195+00:00",
+    "formattedTimeStamp": "Sat 21:55:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "nightNumber": 2,
+    "phaseLength": 5,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T21:55:06.320+00:00",
+    "formattedTimeStamp": "Sat 21:55:06",
+    "__type": "NightStarted"
+  },
+  {
+    "playerName": "Deadshot",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:18.510+00:00",
+    "formattedTimeStamp": "Sat 22:00:18",
+    "__type": "PlayerKilled"
+  },
+  {
+    "playerName": "Flash",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:19.713+00:00",
+    "__type": "WarnedForInactivity",
+    "formattedTimeStamp": "Sat 22:00:19",
+    "isChatEvent": false
+  },
+  {
+    "playerName": "ClarkKent",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:20.323+00:00",
+    "__type": "WarnedForInactivity",
+    "formattedTimeStamp": "Sat 22:00:20",
+    "isChatEvent": false
+  },
+  {
+    "playerName": "Deadshot",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:21.479+00:00",
+    "__type": "WarnedForInactivity",
+    "formattedTimeStamp": "Sat 22:00:21",
+    "isChatEvent": false
+  },
+  {
+    "dayNumber": 3,
+    "phaseLength": 30,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:22.088+00:00",
+    "formattedTimeStamp": "Sat 22:00:22",
+    "__type": "DayStarted"
+  },
+  {
+    "timeLeft": 25,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:32.854+00:00",
+    "formattedTimeStamp": "Sat 22:00:32",
+    "__type": "VillageNominationsOpened"
+  },
+  {
+    "playerName": "Flash",
+    "message": "hmmm",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:48.854+00:00",
+    "formattedTimeStamp": "Sat 22:00:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "he speaks!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:00:56.276+00:00",
+    "formattedTimeStamp": "Sat 22:00:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "He's alive",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:03.432+00:00",
+    "formattedTimeStamp": "Sat 22:01:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "be sure to vote today, flash!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:07.401+00:00",
+    "formattedTimeStamp": "Sat 22:01:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "yeah kinda missed it",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:09.823+00:00",
+    "formattedTimeStamp": "Sat 22:01:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "IT'S ALIIIIIVE",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:10.635+00:00",
+    "formattedTimeStamp": "Sat 22:01:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "well, he made a noise...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:11.370+00:00",
+    "formattedTimeStamp": "Sat 22:01:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "yeah will do",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:13.026+00:00",
+    "formattedTimeStamp": "Sat 22:01:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "sry guys, phone rang :S",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:23.198+00:00",
+    "formattedTimeStamp": "Sat 22:01:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "and if you are the messiah, kill yourself tonight",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:41.620+00:00",
+    "formattedTimeStamp": "Sat 22:01:41",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "we'll forgive you. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:45.011+00:00",
+    "formattedTimeStamp": "Sat 22:01:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "... Seer, if you found 2 villagers, it is good to come out today anyways imo. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:45.292+00:00",
+    "formattedTimeStamp": "Sat 22:01:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "Have you seen Clark? :\"(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:01:46.745+00:00",
+    "formattedTimeStamp": "Sat 22:01:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "will do Killer :P",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:09.558+00:00",
+    "formattedTimeStamp": "Sat 22:02:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Doesn't matter what you found, come out today. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:13.730+00:00",
+    "formattedTimeStamp": "Sat 22:02:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I think the protector should come out too?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:30.777+00:00",
+    "formattedTimeStamp": "Sat 22:02:30",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Oh damn O_O... Tonight hopefully isn't too late...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:35.261+00:00",
+    "formattedTimeStamp": "Sat 22:02:35",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i don't think so. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:43.980+00:00",
+    "formattedTimeStamp": "Sat 22:02:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "I wanted earlier, then the phone rang. I'm really sry",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:02:52.324+00:00",
+    "formattedTimeStamp": "Sat 22:02:52",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "If Flash really is Messiah that means protector failed twice in a row.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:03.089+00:00",
+    "formattedTimeStamp": "Sat 22:03:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Why would you out the protector?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:04.183+00:00",
+    "formattedTimeStamp": "Sat 22:03:04",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "We have 0 clue right now though...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:20.074+00:00",
+    "formattedTimeStamp": "Sat 22:03:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "because he is a wolf!!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:21.136+00:00",
+    "formattedTimeStamp": "Sat 22:03:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Well, to have him protect us ^^",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:21.558+00:00",
+    "formattedTimeStamp": "Sat 22:03:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:30.011+00:00",
+    "formattedTimeStamp": "Sat 22:03:30",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:36.402+00:00",
+    "formattedTimeStamp": "Sat 22:03:36",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "James, real answer, why would you want protector to reveal himself?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:42.746+00:00",
+    "formattedTimeStamp": "Sat 22:03:42",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "if he is alive he should keep quiet",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:43.340+00:00",
+    "formattedTimeStamp": "Sat 22:03:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Dont go and make assumptions",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:43.605+00:00",
+    "formattedTimeStamp": "Sat 22:03:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "That's the protectors job!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:44.730+00:00",
+    "formattedTimeStamp": "Sat 22:03:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:45.777+00:00",
+    "formattedTimeStamp": "Sat 22:03:45",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:52.636+00:00",
+    "formattedTimeStamp": "Sat 22:03:52",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Well im the protector",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:03:58.699+00:00",
+    "formattedTimeStamp": "Sat 22:03:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:03.715+00:00",
+    "formattedTimeStamp": "Sat 22:04:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "So if you want to kill me ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:08.433+00:00",
+    "formattedTimeStamp": "Sat 22:04:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:11.402+00:00",
+    "formattedTimeStamp": "Sat 22:04:11",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Flash",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:15.574+00:00",
+    "formattedTimeStamp": "Sat 22:04:15",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:20.324+00:00",
+    "formattedTimeStamp": "Sat 22:04:20",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:20.777+00:00",
+    "formattedTimeStamp": "Sat 22:04:20",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "O_o???",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:21.371+00:00",
+    "formattedTimeStamp": "Sat 22:04:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "wait, any counter claims?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:25.340+00:00",
+    "formattedTimeStamp": "Sat 22:04:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Why are people all voting a protector after he claim?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:38.918+00:00",
+    "formattedTimeStamp": "Sat 22:04:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Lucius, who did you protect?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:39.637+00:00",
+    "formattedTimeStamp": "Sat 22:04:39",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Good job guys! kill the me your protectro",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:40.356+00:00",
+    "formattedTimeStamp": "Sat 22:04:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "wait, James",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:48.621+00:00",
+    "formattedTimeStamp": "Sat 22:04:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "w/e",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:04:50.590+00:00",
+    "formattedTimeStamp": "Sat 22:04:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I protected catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:01.262+00:00",
+    "formattedTimeStamp": "Sat 22:05:01",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:03.090+00:00",
+    "formattedTimeStamp": "Sat 22:05:03",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Killercroc",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:03.528+00:00",
+    "formattedTimeStamp": "Sat 22:05:03",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "and night one?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:15.293+00:00",
+    "formattedTimeStamp": "Sat 22:05:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "let's trust james",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:17.043+00:00",
+    "formattedTimeStamp": "Sat 22:05:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "no counter claim",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:21.340+00:00",
+    "formattedTimeStamp": "Sat 22:05:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:24.934+00:00",
+    "formattedTimeStamp": "Sat 22:05:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "please tie the vote people",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:40.122+00:00",
+    "formattedTimeStamp": "Sat 22:05:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:44.028+00:00",
+    "formattedTimeStamp": "Sat 22:05:44",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Batman",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:44.497+00:00",
+    "formattedTimeStamp": "Sat 22:05:44",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:47.450+00:00",
+    "formattedTimeStamp": "Sat 22:05:47",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:54.528+00:00",
+    "formattedTimeStamp": "Sat 22:05:54",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:05:54.606+00:00",
+    "formattedTimeStamp": "Sat 22:05:54",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "^^",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:03.637+00:00",
+    "formattedTimeStamp": "Sat 22:06:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I am skeptical of LoisLane a bit... ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:05.200+00:00",
+    "formattedTimeStamp": "Sat 22:06:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:12.669+00:00",
+    "formattedTimeStamp": "Sat 22:06:12",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:12.997+00:00",
+    "formattedTimeStamp": "Sat 22:06:12",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Why?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:19.731+00:00",
+    "formattedTimeStamp": "Sat 22:06:19",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yeah why?/",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:24.966+00:00",
+    "formattedTimeStamp": "Sat 22:06:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "why?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:34.763+00:00",
+    "formattedTimeStamp": "Sat 22:06:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "=_= She doesn't talk much.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:35.622+00:00",
+    "formattedTimeStamp": "Sat 22:06:35",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "\"Skeptical\"... I'm pretty sure she does exist",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:36.981+00:00",
+    "formattedTimeStamp": "Sat 22:06:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": ":D",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:42.810+00:00",
+    "formattedTimeStamp": "Sat 22:06:42",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "XD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:45.794+00:00",
+    "formattedTimeStamp": "Sat 22:06:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:50.841+00:00",
+    "formattedTimeStamp": "Sat 22:06:50",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yeah she doesn't talk much",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:06:56.763+00:00",
+    "formattedTimeStamp": "Sat 22:06:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i'm not a natural speaker sorry",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:02.294+00:00",
+    "formattedTimeStamp": "Sat 22:07:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "hmm",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:07.872+00:00",
+    "formattedTimeStamp": "Sat 22:07:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "defend yourself, so we can say you've gone defensive!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:13.560+00:00",
+    "formattedTimeStamp": "Sat 22:07:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "JamesGordon list checks again now.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:17.779+00:00",
+    "formattedTimeStamp": "Sat 22:07:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "*Visits",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:24.122+00:00",
+    "formattedTimeStamp": "Sat 22:07:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "or don't defend yourself, so we know it's true",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:40.294+00:00",
+    "formattedTimeStamp": "Sat 22:07:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "night 1: LoisLane Night 2: Catwomam",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:07:47.357+00:00",
+    "formattedTimeStamp": "Sat 22:07:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "day 3 revealed himself, leaving his teammates puzzled",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:06.310+00:00",
+    "formattedTimeStamp": "Sat 22:08:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So naturally wolves should go for Catwoman tonight.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:07.810+00:00",
+    "formattedTimeStamp": "Sat 22:08:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "If Catwoman not dead then... Hmmm",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:19.591+00:00",
+    "formattedTimeStamp": "Sat 22:08:19",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "oh fecking wonderful.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:27.888+00:00",
+    "formattedTimeStamp": "Sat 22:08:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Seer not coming out is worrying.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:30.154+00:00",
+    "formattedTimeStamp": "Sat 22:08:30",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "then it's because you mentioned this before nightfall!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:31.123+00:00",
+    "formattedTimeStamp": "Sat 22:08:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So I think Seer is likely dead now.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:37.951+00:00",
+    "formattedTimeStamp": "Sat 22:08:37",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Could be yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:45.545+00:00",
+    "formattedTimeStamp": "Sat 22:08:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Or AFK (Clark)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:52.185+00:00",
+    "formattedTimeStamp": "Sat 22:08:52",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Or Clark...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:52.482+00:00",
+    "formattedTimeStamp": "Sat 22:08:52",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yikes",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:55.498+00:00",
+    "formattedTimeStamp": "Sat 22:08:55",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "so dead",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:57.123+00:00",
+    "formattedTimeStamp": "Sat 22:08:57",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "or doesn't think they have enough info",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:08:57.170+00:00",
+    "formattedTimeStamp": "Sat 22:08:57",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "because Clark is gonna be smited :?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:03.232+00:00",
+    "formattedTimeStamp": "Sat 22:09:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "ClarkKent doesn't really talk...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:11.701+00:00",
+    "formattedTimeStamp": "Sat 22:09:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I meant Clark could be the seer...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:21.717+00:00",
+    "formattedTimeStamp": "Sat 22:09:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "understatement of the year",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:22.608+00:00",
+    "formattedTimeStamp": "Sat 22:09:22",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "yeah, that's unfortunate :'(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:32.076+00:00",
+    "formattedTimeStamp": "Sat 22:09:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Flash",
+    "message": "lol",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:32.358+00:00",
+    "formattedTimeStamp": "Sat 22:09:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "there are only two wolf... i get why the seer haven't found any ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:32.358+00:00",
+    "formattedTimeStamp": "Sat 22:09:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "wait",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:57.217+00:00",
+    "formattedTimeStamp": "Sat 22:09:57",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "wait wait wait",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:09:59.545+00:00",
+    "formattedTimeStamp": "Sat 22:09:59",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "or maybe all his talking is getting eaten my the server, like 1 in 20 of mine are",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:01.795+00:00",
+    "formattedTimeStamp": "Sat 22:10:01",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "JG.. why the hell didn't you protect yourself night one?!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:07.623+00:00",
+    "formattedTimeStamp": "Sat 22:10:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "for the same reason he revealed on day 3",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:21.342+00:00",
+    "formattedTimeStamp": "Sat 22:10:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Killercroc",
+    "message": "he's newb",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:24.014+00:00",
+    "formattedTimeStamp": "Sat 22:10:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I though that would be selfish xD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:24.108+00:00",
+    "formattedTimeStamp": "Sat 22:10:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "if you refresh you can see those messenges",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:24.155+00:00",
+    "formattedTimeStamp": "Sat 22:10:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "touche",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:28.499+00:00",
+    "formattedTimeStamp": "Sat 22:10:28",
+    "__type": "VillageMessage"
+  },
+  {
+    "nightNumber": 3,
+    "phaseLength": 5,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:10:35.499+00:00",
+    "formattedTimeStamp": "Sat 22:10:35",
+    "__type": "NightStarted"
+  },
+  {
+    "playerName": "Flash",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:47.141+00:00",
+    "formattedTimeStamp": "Sat 22:15:47",
+    "__type": "PlayerKilled"
+  },
+  {
+    "playerName": "Killercroc",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:48.923+00:00",
+    "formattedTimeStamp": "Sat 22:15:48",
+    "__type": "PlayerKilled"
+  },
+  {
+    "playerName": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:50.157+00:00",
+    "__type": "WarnedForInactivity",
+    "formattedTimeStamp": "Sat 22:15:50",
+    "isChatEvent": false
+  },
+  {
+    "playerName": "ClarkKent",
+    "reason": "Inactivity",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:51.298+00:00",
+    "formattedTimeStamp": "Sat 22:15:51",
+    "__type": "PlayerSmited"
+  },
+  {
+    "dayNumber": 4,
+    "phaseLength": 30,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:52.501+00:00",
+    "formattedTimeStamp": "Sat 22:15:52",
+    "__type": "DayStarted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:15:59.563+00:00",
+    "formattedTimeStamp": "Sat 22:15:59",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "welp",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:02.657+00:00",
+    "formattedTimeStamp": "Sat 22:16:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "timeLeft": 25,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:03.845+00:00",
+    "formattedTimeStamp": "Sat 22:16:03",
+    "__type": "VillageNominationsOpened"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So only 4 villagers",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:05.001+00:00",
+    "formattedTimeStamp": "Sat 22:16:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "And 2 wolves",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:07.923+00:00",
+    "formattedTimeStamp": "Sat 22:16:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "I guess Flash really was Messiah?! :D",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:08.532+00:00",
+    "formattedTimeStamp": "Sat 22:16:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i  guess ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:18.079+00:00",
+    "formattedTimeStamp": "Sat 22:16:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "If Clark is wolf then lucky us :/",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:24.345+00:00",
+    "formattedTimeStamp": "Sat 22:16:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "seer really needs to come out now",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:27.251+00:00",
+    "formattedTimeStamp": "Sat 22:16:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yepp",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:32.657+00:00",
+    "formattedTimeStamp": "Sat 22:16:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "because if we lynch wrongly it's game over",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:35.642+00:00",
+    "formattedTimeStamp": "Sat 22:16:35",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "He needed to come out yesterday -_-",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:38.079+00:00",
+    "formattedTimeStamp": "Sat 22:16:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Yep",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:39.392+00:00",
+    "formattedTimeStamp": "Sat 22:16:39",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "if Flas is ssr unlucky us ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:43.970+00:00",
+    "formattedTimeStamp": "Sat 22:16:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "SEER?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:47.407+00:00",
+    "formattedTimeStamp": "Sat 22:16:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Flash can't be seer ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:54.204+00:00",
+    "formattedTimeStamp": "Sat 22:16:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Well maybe seer's just dead",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:16:55.001+00:00",
+    "formattedTimeStamp": "Sat 22:16:55",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "wait wait",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:00.986+00:00",
+    "formattedTimeStamp": "Sat 22:17:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "I hope not!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:02.345+00:00",
+    "formattedTimeStamp": "Sat 22:17:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "He won't make it -_-",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:06.408+00:00",
+    "formattedTimeStamp": "Sat 22:17:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Flash could have been SS",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:08.673+00:00",
+    "formattedTimeStamp": "Sat 22:17:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "and that could have been an alpha kill o_0",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:16.142+00:00",
+    "formattedTimeStamp": "Sat 22:17:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "No reason to SS tho",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:17.845+00:00",
+    "formattedTimeStamp": "Sat 22:17:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "No need for Alpha to kill Flash.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:29.189+00:00",
+    "formattedTimeStamp": "Sat 22:17:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "no, I mean",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:33.939+00:00",
+    "formattedTimeStamp": "Sat 22:17:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Flash claimed messiah right? what if he was SS and \"died\" by shifting into someone",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:48.955+00:00",
+    "formattedTimeStamp": "Sat 22:17:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "and then Croc was the alpha kill",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:17:56.986+00:00",
+    "formattedTimeStamp": "Sat 22:17:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Mind-Blown",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:05.392+00:00",
+    "formattedTimeStamp": "Sat 22:18:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah that is possible but Messiah should have been revived?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:08.939+00:00",
+    "formattedTimeStamp": "Sat 22:18:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "if I was GD, I wouldn't check Flash after his Messiah claim",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:10.174+00:00",
+    "formattedTimeStamp": "Sat 22:18:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "*explosion*",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:12.017+00:00",
+    "formattedTimeStamp": "Sat 22:18:12",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "so the SS would go unnoticed?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:21.830+00:00",
+    "formattedTimeStamp": "Sat 22:18:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Idk how many of them should have been revived already...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:23.127+00:00",
+    "formattedTimeStamp": "Sat 22:18:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "GD could only check Flash night 2.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:39.908+00:00",
+    "formattedTimeStamp": "Sat 22:18:39",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Could only check DS night 3.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:49.705+00:00",
+    "formattedTimeStamp": "Sat 22:18:49",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "And it is day 4.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:18:53.674+00:00",
+    "formattedTimeStamp": "Sat 22:18:53",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "so when is flash supposed to revive?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:19:39.909+00:00",
+    "formattedTimeStamp": "Sat 22:19:39",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "in 3 days",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:19:45.799+00:00",
+    "formattedTimeStamp": "Sat 22:19:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:19:46.096+00:00",
+    "formattedTimeStamp": "Sat 22:19:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Ha... ha...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:19:48.815+00:00",
+    "formattedTimeStamp": "Sat 22:19:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "but the game won't last that long -_-",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:19:54.440+00:00",
+    "formattedTimeStamp": "Sat 22:19:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I think day after tomorrow",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:00.487+00:00",
+    "formattedTimeStamp": "Sat 22:20:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Day 6...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:09.065+00:00",
+    "formattedTimeStamp": "Sat 22:20:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah I said that dying was a bad idea...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:12.003+00:00",
+    "formattedTimeStamp": "Sat 22:20:12",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I doubt we'll last that long. :(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:17.768+00:00",
+    "formattedTimeStamp": "Sat 22:20:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "JG, you need to vote too",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:25.487+00:00",
+    "formattedTimeStamp": "Sat 22:20:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Dammit should have claimed seer for fun... -_-",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:33.472+00:00",
+    "formattedTimeStamp": "Sat 22:20:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "otherwise you get smitten",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:35.003+00:00",
+    "formattedTimeStamp": "Sat 22:20:35",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "no, wait, that's the wrong verb",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:43.143+00:00",
+    "formattedTimeStamp": "Sat 22:20:43",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:43.425+00:00",
+    "formattedTimeStamp": "Sat 22:20:43",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "thanks ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:47.784+00:00",
+    "formattedTimeStamp": "Sat 22:20:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:49.362+00:00",
+    "formattedTimeStamp": "Sat 22:20:49",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "^^\\",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:52.659+00:00",
+    "formattedTimeStamp": "Sat 22:20:52",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:53.581+00:00",
+    "formattedTimeStamp": "Sat 22:20:53",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:20:56.550+00:00",
+    "formattedTimeStamp": "Sat 22:20:56",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:03.128+00:00",
+    "formattedTimeStamp": "Sat 22:21:03",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Nothing personal ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:04.206+00:00",
+    "formattedTimeStamp": "Sat 22:21:04",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Alpha",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:08.222+00:00",
+    "formattedTimeStamp": "Sat 22:21:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Didn't use ability yet.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:11.722+00:00",
+    "formattedTimeStamp": "Sat 22:21:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:15.581+00:00",
+    "formattedTimeStamp": "Sat 22:21:15",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So if we do not lynch wolf",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:15.628+00:00",
+    "formattedTimeStamp": "Sat 22:21:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Today.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:17.128+00:00",
+    "formattedTimeStamp": "Sat 22:21:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "We lose.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:18.519+00:00",
+    "formattedTimeStamp": "Sat 22:21:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "we need to get serious",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:23.488+00:00",
+    "formattedTimeStamp": "Sat 22:21:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "I have two questions now: why is Catwoman still alive; why is JG still alive?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:24.691+00:00",
+    "formattedTimeStamp": "Sat 22:21:24",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Unless Clark is a wolf. ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:29.144+00:00",
+    "formattedTimeStamp": "Sat 22:21:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "JG, who did you protect last night?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:38.284+00:00",
+    "formattedTimeStamp": "Sat 22:21:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Why shouldn't i be alive>",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:44.019+00:00",
+    "formattedTimeStamp": "Sat 22:21:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:44.972+00:00",
+    "formattedTimeStamp": "Sat 22:21:44",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:45.035+00:00",
+    "formattedTimeStamp": "Sat 22:21:45",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Myself",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:47.503+00:00",
+    "formattedTimeStamp": "Sat 22:21:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah Catwoman was free to kill...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:54.331+00:00",
+    "formattedTimeStamp": "Sat 22:21:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I though they would kill me once they knew who i am",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:21:58.550+00:00",
+    "formattedTimeStamp": "Sat 22:21:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Should GD come out? He might have usefull information",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:02.519+00:00",
+    "formattedTimeStamp": "Sat 22:22:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:03.019+00:00",
+    "formattedTimeStamp": "Sat 22:22:03",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:04.769+00:00",
+    "formattedTimeStamp": "Sat 22:22:04",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "just for balance for a sec",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:08.785+00:00",
+    "formattedTimeStamp": "Sat 22:22:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "He must.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:11.863+00:00",
+    "formattedTimeStamp": "Sat 22:22:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:17.925+00:00",
+    "formattedTimeStamp": "Sat 22:22:17",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:19.019+00:00",
+    "formattedTimeStamp": "Sat 22:22:19",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Right now we have 0 info.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:19.628+00:00",
+    "formattedTimeStamp": "Sat 22:22:19",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "ok, well I'm the GD :)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:27.519+00:00",
+    "formattedTimeStamp": "Sat 22:22:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "yes he must",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:28.394+00:00",
+    "formattedTimeStamp": "Sat 22:22:28",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Should i have protected someone else than",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:29.206+00:00",
+    "formattedTimeStamp": "Sat 22:22:29",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "We have 3 minutes.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:32.425+00:00",
+    "formattedTimeStamp": "Sat 22:22:32",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "because",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:33.597+00:00",
+    "formattedTimeStamp": "Sat 22:22:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I'm just a villager, and we basically gave them this suspicion to throw at us later by saying it earlier.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:45.863+00:00",
+    "formattedTimeStamp": "Sat 22:22:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I though they would kill me once they knew who i am",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:47.675+00:00",
+    "formattedTimeStamp": "Sat 22:22:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Arrow and Deadshot were both villagers, so Clark Kent was probably the seer",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:22:59.206+00:00",
+    "formattedTimeStamp": "Sat 22:22:59",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "O_O",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:07.941+00:00",
+    "formattedTimeStamp": "Sat 22:23:07",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I am vanilla too",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:10.988+00:00",
+    "formattedTimeStamp": "Sat 22:23:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "ffs",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:13.332+00:00",
+    "formattedTimeStamp": "Sat 22:23:13",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Okay so",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:18.347+00:00",
+    "formattedTimeStamp": "Sat 22:23:18",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Batman clear and Gordon clear.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:26.207+00:00",
+    "formattedTimeStamp": "Sat 22:23:26",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Or are they??",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:38.550+00:00",
+    "formattedTimeStamp": "Sat 22:23:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "what>",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:48.910+00:00",
+    "formattedTimeStamp": "Sat 22:23:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "Batman check Flash tonight!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:23:58.394+00:00",
+    "formattedTimeStamp": "Sat 22:23:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "It is pretty good chance to claim GD now since... Ugh.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:02.722+00:00",
+    "formattedTimeStamp": "Sat 22:24:02",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "sure",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:03.269+00:00",
+    "formattedTimeStamp": "Sat 22:24:03",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "Yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:12.785+00:00",
+    "formattedTimeStamp": "Sat 22:24:12",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So 4 vanillas...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:17.957+00:00",
+    "formattedTimeStamp": "Sat 22:24:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "protector do your thang",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:22.613+00:00",
+    "formattedTimeStamp": "Sat 22:24:22",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I Trust Enchantress the most...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:23.675+00:00",
+    "formattedTimeStamp": "Sat 22:24:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Lois should be wolf then",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:38.378+00:00",
+    "formattedTimeStamp": "Sat 22:24:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:40.191+00:00",
+    "formattedTimeStamp": "Sat 22:24:40",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:40.347+00:00",
+    "formattedTimeStamp": "Sat 22:24:40",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "JamesGordon",
+    "message": "I dont kwo who to protect",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:44.816+00:00",
+    "formattedTimeStamp": "Sat 22:24:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:47.878+00:00",
+    "formattedTimeStamp": "Sat 22:24:47",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:48.082+00:00",
+    "formattedTimeStamp": "Sat 22:24:48",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "message": "There is also a Lycan...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:24:59.628+00:00",
+    "formattedTimeStamp": "Sat 22:24:59",
+    "__type": "VillageMessage"
+  },
+  {
+    "nightNumber": 4,
+    "phaseLength": 5,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:25:04.425+00:00",
+    "formattedTimeStamp": "Sat 22:25:04",
+    "__type": "NightStarted"
+  },
+  {
+    "playerName": "JamesGordon",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:14.019+00:00",
+    "formattedTimeStamp": "Sat 22:30:14",
+    "__type": "PlayerKilled"
+  },
+  {
+    "dayNumber": 5,
+    "phaseLength": 30,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:14.660+00:00",
+    "formattedTimeStamp": "Sat 22:30:14",
+    "__type": "DayStarted"
+  },
+  {
+    "timeLeft": 25,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:25.894+00:00",
+    "formattedTimeStamp": "Sat 22:30:25",
+    "__type": "VillageNominationsOpened"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Nice only 1 kill tonight!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:31.379+00:00",
+    "formattedTimeStamp": "Sat 22:30:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:31.863+00:00",
+    "formattedTimeStamp": "Sat 22:30:31",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Batman",
+    "message": "What a waste... Flash is in fact... the Messiah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:38.472+00:00",
+    "formattedTimeStamp": "Sat 22:30:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "if we don't lynch, we loose.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:40.175+00:00",
+    "formattedTimeStamp": "Sat 22:30:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:42.113+00:00",
+    "formattedTimeStamp": "Sat 22:30:42",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "why lucius??",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:49.519+00:00",
+    "formattedTimeStamp": "Sat 22:30:49",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "So that means Alpha used ability already",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:51.410+00:00",
+    "formattedTimeStamp": "Sat 22:30:51",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "you last minute voted me",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:56.754+00:00",
+    "formattedTimeStamp": "Sat 22:30:56",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "And hit the protect",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:30:58.863+00:00",
+    "formattedTimeStamp": "Sat 22:30:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "or Clark was Alpha and Croc was seer?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:04.925+00:00",
+    "formattedTimeStamp": "Sat 22:31:04",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:20.629+00:00",
+    "formattedTimeStamp": "Sat 22:31:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "or we have a dumb alpha",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:22.332+00:00",
+    "formattedTimeStamp": "Sat 22:31:22",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "Croc would have revealed when he was alive",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:25.957+00:00",
+    "formattedTimeStamp": "Sat 22:31:25",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "hope for the best, plan for the worst",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:33.785+00:00",
+    "formattedTimeStamp": "Sat 22:31:33",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah what Batman said",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:38.707+00:00",
+    "formattedTimeStamp": "Sat 22:31:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Check Flash is pretty useless tho consider there is Croc and Clark ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:31:59.957+00:00",
+    "formattedTimeStamp": "Sat 22:31:59",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "so Croc was the seer?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:11.410+00:00",
+    "formattedTimeStamp": "Sat 22:32:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "2 wolves left should be Lois and Catwoman.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:19.879+00:00",
+    "formattedTimeStamp": "Sat 22:32:19",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "no..... probably not",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:21.910+00:00",
+    "formattedTimeStamp": "Sat 22:32:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "why do you say that?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:34.144+00:00",
+    "formattedTimeStamp": "Sat 22:32:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i'm still waiting for you to answer me",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:36.472+00:00",
+    "formattedTimeStamp": "Sat 22:32:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I'm not a wolf",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:39.707+00:00",
+    "formattedTimeStamp": "Sat 22:32:39",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "- said every wolf ever",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:47.972+00:00",
+    "formattedTimeStamp": "Sat 22:32:47",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I'm a vanilla",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:32:50.676+00:00",
+    "formattedTimeStamp": "Sat 22:32:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Yeah this is the problem... We are all vanillas here -_-",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:33:05.426+00:00",
+    "formattedTimeStamp": "Sat 22:33:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I mean, catwoman isn't _very_ vanilla...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:33:06.347+00:00",
+    "formattedTimeStamp": "Sat 22:33:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Lois doesn't speak much. And I didn't look at clock and know that it was last minute vote.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:33:31.707+00:00",
+    "formattedTimeStamp": "Sat 22:33:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I just realized that you should be lynched so I voted you Lois... I trust Enchantress most, Catwoman 2nd, and you last.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:34:00.941+00:00",
+    "formattedTimeStamp": "Sat 22:34:00",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "but if it helps, my main suspicions are Lois and Lucius...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:34:09.051+00:00",
+    "formattedTimeStamp": "Sat 22:34:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "What about you Enchantress? What do you think?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:34:36.847+00:00",
+    "formattedTimeStamp": "Sat 22:34:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "well you are on top of my list now Lucius ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:34:42.301+00:00",
+    "formattedTimeStamp": "Sat 22:34:42",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i told why it's hard for to keep the track",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:05.738+00:00",
+    "formattedTimeStamp": "Sat 22:35:05",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "I think I should just go kill myself and save the wolves some trouble...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:06.988+00:00",
+    "formattedTimeStamp": "Sat 22:35:06",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "You suggested GD to check Flash...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:14.707+00:00",
+    "formattedTimeStamp": "Sat 22:35:14",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Catwoman didn't die when protector revealed protecting her, yet she's still alive",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:28.848+00:00",
+    "formattedTimeStamp": "Sat 22:35:28",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Yeah, I assumed to try and catch GD out?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:36.894+00:00",
+    "formattedTimeStamp": "Sat 22:35:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Ugh... 4 vanillas, no one done anything too wrong in particular...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:40.269+00:00",
+    "formattedTimeStamp": "Sat 22:35:40",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Lois doesn't speak much, and hasn't really added much imho?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:35:48.769+00:00",
+    "formattedTimeStamp": "Sat 22:35:48",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "Lucius seems overly trusting of me, which raises my suspicions a bit",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:11.848+00:00",
+    "formattedTimeStamp": "Sat 22:36:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "so we've got \"the quiet one\" and \"the one taking the lead\"...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:17.723+00:00",
+    "formattedTimeStamp": "Sat 22:36:17",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "and Batman, well",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:20.176+00:00",
+    "formattedTimeStamp": "Sat 22:36:20",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "it's so easy to claim GD at this point",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:27.504+00:00",
+    "formattedTimeStamp": "Sat 22:36:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "so 3 of you suspect lois?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:34.379+00:00",
+    "formattedTimeStamp": "Sat 22:36:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "i'm just vanilla what info can i give??",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:50.160+00:00",
+    "formattedTimeStamp": "Sat 22:36:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Damn that doesn't make too much sense too...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:50.848+00:00",
+    "formattedTimeStamp": "Sat 22:36:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "I kinda believe batman...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:36:54.973+00:00",
+    "formattedTimeStamp": "Sat 22:36:54",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "We got 4 minutes. For Enchantress and Catwoman to be together... ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:22.363+00:00",
+    "formattedTimeStamp": "Sat 22:37:22",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Enchantress votes Catwoman first.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:31.207+00:00",
+    "formattedTimeStamp": "Sat 22:37:31",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I vote Catwoman then",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:34.582+00:00",
+    "formattedTimeStamp": "Sat 22:37:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Enchantress takes vote off.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:38.926+00:00",
+    "formattedTimeStamp": "Sat 22:37:38",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Seems possible...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:44.598+00:00",
+    "formattedTimeStamp": "Sat 22:37:44",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:49.129+00:00",
+    "formattedTimeStamp": "Sat 22:37:49",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:51.504+00:00",
+    "formattedTimeStamp": "Sat 22:37:51",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:51.817+00:00",
+    "formattedTimeStamp": "Sat 22:37:51",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:55.692+00:00",
+    "formattedTimeStamp": "Sat 22:37:55",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:37:55.770+00:00",
+    "formattedTimeStamp": "Sat 22:37:55",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "That tips the balance for me.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:08.411+00:00",
+    "formattedTimeStamp": "Sat 22:38:08",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "-_- What a disaster :(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:11.473+00:00",
+    "formattedTimeStamp": "Sat 22:38:11",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:12.020+00:00",
+    "formattedTimeStamp": "Sat 22:38:12",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "WOAH",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:16.536+00:00",
+    "formattedTimeStamp": "Sat 22:38:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Enchantress",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:21.036+00:00",
+    "formattedTimeStamp": "Sat 22:38:21",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:21.504+00:00",
+    "formattedTimeStamp": "Sat 22:38:21",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "(just to quote the word of God from another game: \"Please don't spam votes unnecessarily\")",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:23.098+00:00",
+    "formattedTimeStamp": "Sat 22:38:23",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "Didn't spam intentionally only clicked three times.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:46.942+00:00",
+    "formattedTimeStamp": "Sat 22:38:46",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "CW: you said you were suspicious... did you ever give reaosns?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:38:50.239+00:00",
+    "formattedTimeStamp": "Sat 22:38:50",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "Like I said, my vote between lois and lucious.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:01.458+00:00",
+    "formattedTimeStamp": "Sat 22:39:01",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "afraid it's nothing but gut feeling.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:09.833+00:00",
+    "formattedTimeStamp": "Sat 22:39:09",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:17.833+00:00",
+    "formattedTimeStamp": "Sat 22:39:17",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:18.520+00:00",
+    "formattedTimeStamp": "Sat 22:39:18",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:19.114+00:00",
+    "formattedTimeStamp": "Sat 22:39:19",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:21.255+00:00",
+    "formattedTimeStamp": "Sat 22:39:21",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:21.474+00:00",
+    "formattedTimeStamp": "Sat 22:39:21",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "sorry Lucius, I just wanted to ensure it didn't happen more",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:21.474+00:00",
+    "formattedTimeStamp": "Sat 22:39:21",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "but if we leave it tied we die.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:27.192+00:00",
+    "formattedTimeStamp": "Sat 22:39:27",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:31.302+00:00",
+    "formattedTimeStamp": "Sat 22:39:31",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:31.583+00:00",
+    "formattedTimeStamp": "Sat 22:39:31",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "no ww death = ww win.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:34.505+00:00",
+    "formattedTimeStamp": "Sat 22:39:34",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "-_-...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:36.396+00:00",
+    "formattedTimeStamp": "Sat 22:39:36",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "I will follow Batman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:42.958+00:00",
+    "formattedTimeStamp": "Sat 22:39:42",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "what?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:45.286+00:00",
+    "formattedTimeStamp": "Sat 22:39:45",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Batman",
+    "message": "it's all or nothing right now",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:49.364+00:00",
+    "formattedTimeStamp": "Sat 22:39:49",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "message": "we've not killed a SINGLE sodding person this game.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:52.396+00:00",
+    "formattedTimeStamp": "Sat 22:39:52",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "message": "you are making a mistake",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:39:58.036+00:00",
+    "formattedTimeStamp": "Sat 22:39:58",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:04.396+00:00",
+    "formattedTimeStamp": "Sat 22:40:04",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:04.833+00:00",
+    "formattedTimeStamp": "Sat 22:40:04",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:06.755+00:00",
+    "formattedTimeStamp": "Sat 22:40:06",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Enchantress",
+    "target": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:07.193+00:00",
+    "formattedTimeStamp": "Sat 22:40:07",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:10.333+00:00",
+    "formattedTimeStamp": "Sat 22:40:10",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "idk",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:10.755+00:00",
+    "formattedTimeStamp": "Sat 22:40:10",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:13.505+00:00",
+    "formattedTimeStamp": "Sat 22:40:13",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:13.740+00:00",
+    "formattedTimeStamp": "Sat 22:40:13",
+    "__type": "VillageNomination"
+  },
+  {
+    "playerName": "Enchantress",
+    "message": "halp",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:15.302+00:00",
+    "formattedTimeStamp": "Sat 22:40:15",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "message": "OH GOD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:16.818+00:00",
+    "formattedTimeStamp": "Sat 22:40:16",
+    "__type": "VillageMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "LoisLane",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:24.380+00:00",
+    "formattedTimeStamp": "Sat 22:40:24",
+    "__type": "VillageNominationRetracted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "target": "Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:25.005+00:00",
+    "formattedTimeStamp": "Sat 22:40:25",
+    "__type": "VillageNomination"
+  },
+  {
+    "nightNumber": 5,
+    "phaseLength": 5,
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:26.193+00:00",
+    "formattedTimeStamp": "Sat 22:40:26",
+    "__type": "NightStarted"
+  },
+  {
+    "playerName": "LuciusFox",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:26.912+00:00",
+    "formattedTimeStamp": "Sat 22:40:26",
+    "__type": "PlayerLynched"
+  },
+  {
+    "werewolves": [
+      {
+        "playerName": "Enchantress",
+        "originalName": "XII",
+        "role": "Shapeshifter"
+      },
+      {
+        "playerName": "LoisLane",
+        "originalName": "Aleg",
+        "role": "Alphawolf"
+      }
+    ],
+    "villagers": [
+      {
+        "playerName": "Catwoman",
+        "originalName": "iMartyn",
+        "role": "Lycan"
+      },
+      {
+        "playerName": "Killercroc",
+        "originalName": "BabyPigalump",
+        "role": "Seer"
+      },
+      {
+        "playerName": "JamesGordon",
+        "originalName": "Rubin_1998",
+        "role": "Protector"
+      },
+      {
+        "playerName": "Batman",
+        "originalName": "Giovanniboyy",
+        "role": "Gravedigger"
+      },
+      {
+        "playerName": "Flash",
+        "originalName": "ImTownSRSLY",
+        "role": "Messiah"
+      },
+      {
+        "playerName": "ClarkKent",
+        "originalName": "aheadofyourtime",
+        "role": "Villager"
+      },
+      {
+        "playerName": "Arrow",
+        "originalName": "Narsil",
+        "role": "Villager"
+      },
+      {
+        "playerName": "Deadshot",
+        "originalName": "Veletala",
+        "role": "Villager"
+      },
+      {
+        "playerName": "LuciusFox",
+        "originalName": "TheSilentOne",
+        "role": "Villager"
+      }
+    ],
+    "neutrals": [],
+    "coven": [],
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:39.333+00:00",
+    "formattedTimeStamp": "Sat 22:40:39",
+    "__type": "WerewolfVictory"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "We won",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:41.693+00:00",
+    "formattedTimeStamp": "Sat 22:40:41",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "Unlucky..",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:43.037+00:00",
+    "formattedTimeStamp": "Sat 22:40:43",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "ffs",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:45.490+00:00",
+    "formattedTimeStamp": "Sat 22:40:45",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "my heart is rscing",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:46.662+00:00",
+    "formattedTimeStamp": "Sat 22:40:46",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "omg",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:49.052+00:00",
+    "formattedTimeStamp": "Sat 22:40:49",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:49.068+00:00",
+    "formattedTimeStamp": "Sat 22:40:49",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Flash",
+    "originalName": "ImTownSRSLY",
+    "message": "I'm sorry",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:51.037+00:00",
+    "formattedTimeStamp": "Sat 22:40:51",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "help",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:51.802+00:00",
+    "formattedTimeStamp": "Sat 22:40:51",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "I told you Croc was seer",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:52.474+00:00",
+    "formattedTimeStamp": "Sat 22:40:52",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Flash",
+    "originalName": "ImTownSRSLY",
+    "message": ":((",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:53.099+00:00",
+    "formattedTimeStamp": "Sat 22:40:53",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "and that's why you follow me...",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:57.552+00:00",
+    "formattedTimeStamp": "Sat 22:40:57",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "but did anyone believe me",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:58.255+00:00",
+    "formattedTimeStamp": "Sat 22:40:58",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "pfffft",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:40:59.943+00:00",
+    "formattedTimeStamp": "Sat 22:40:59",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Enchantress last second tho.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:14.490+00:00",
+    "formattedTimeStamp": "Sat 22:41:14",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:19.865+00:00",
+    "formattedTimeStamp": "Sat 22:41:19",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "well",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:21.553+00:00",
+    "formattedTimeStamp": "Sat 22:41:21",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "I was gonna do it two nights ago",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:31.349+00:00",
+    "formattedTimeStamp": "Sat 22:41:31",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "and missed",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:32.521+00:00",
+    "formattedTimeStamp": "Sat 22:41:32",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "x_x",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:33.771+00:00",
+    "formattedTimeStamp": "Sat 22:41:33",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "yes haha",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:37.678+00:00",
+    "formattedTimeStamp": "Sat 22:41:37",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "ufff",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:41.021+00:00",
+    "formattedTimeStamp": "Sat 22:41:41",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "village will never win without lynches folks",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:48.850+00:00",
+    "formattedTimeStamp": "Sat 22:41:48",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "*breathing* ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:41:49.318+00:00",
+    "formattedTimeStamp": "Sat 22:41:49",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Ugh unfortunate should have just stick with Lois then.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:05.990+00:00",
+    "formattedTimeStamp": "Sat 22:42:05",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "I kinda fucked up should have come out",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:14.584+00:00",
+    "formattedTimeStamp": "Sat 22:42:14",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "3 claims to Lois meant at least 1 from a village-sided person.. that's why we should have voted Lois",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:28.287+00:00",
+    "formattedTimeStamp": "Sat 22:42:28",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "not have*",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:28.506+00:00",
+    "formattedTimeStamp": "Sat 22:42:28",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "well",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:37.787+00:00",
+    "formattedTimeStamp": "Sat 22:42:37",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "you did well",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:39.162+00:00",
+    "formattedTimeStamp": "Sat 22:42:39",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "yrue dat",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:39.381+00:00",
+    "formattedTimeStamp": "Sat 22:42:39",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "You mean the seer. When did alpha fail btw?",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:42.584+00:00",
+    "formattedTimeStamp": "Sat 22:42:42",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "you saved Catwoman",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:42.819+00:00",
+    "formattedTimeStamp": "Sat 22:42:42",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Ah.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:52.397+00:00",
+    "formattedTimeStamp": "Sat 22:42:52",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "night 2, I went for CW and Alpha killed Deadshot",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:56.303+00:00",
+    "formattedTimeStamp": "Sat 22:42:56",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "Yeah :)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:57.006+00:00",
+    "formattedTimeStamp": "Sat 22:42:57",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "really? oh well that's good.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:42:57.444+00:00",
+    "formattedTimeStamp": "Sat 22:42:57",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "Yeah :)",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:05.506+00:00",
+    "formattedTimeStamp": "Sat 22:43:05",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "originalName": "Narsil",
+    "message": "sigh",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:06.381+00:00",
+    "formattedTimeStamp": "Sat 22:43:06",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "I mean, it's still a dead village.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:17.288+00:00",
+    "formattedTimeStamp": "Sat 22:43:17",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Arrow",
+    "originalName": "Narsil",
+    "message": "got to do so much =D",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:22.428+00:00",
+    "formattedTimeStamp": "Sat 22:43:22",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "yeahh",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:28.225+00:00",
+    "formattedTimeStamp": "Sat 22:43:28",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "These speed games should be held more frequently :D",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:43:50.944+00:00",
+    "formattedTimeStamp": "Sat 22:43:50",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "They shoudl yeah",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:44:01.335+00:00",
+    "formattedTimeStamp": "Sat 22:44:01",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Should have just stick with Lois. Both Enchantress and Catwoman being suspicious of Lois thrown me off.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:44:04.851+00:00",
+    "formattedTimeStamp": "Sat 22:44:04",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "Its so much fun",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:44:05.116+00:00",
+    "formattedTimeStamp": "Sat 22:44:05",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Flash",
+    "originalName": "ImTownSRSLY",
+    "message": "so much fun",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:46:34.242+00:00",
+    "formattedTimeStamp": "Sat 22:46:34",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Flash",
+    "originalName": "ImTownSRSLY",
+    "message": "still sorry that I missed the revive by one night :( I'm in shame :(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:46:47.914+00:00",
+    "formattedTimeStamp": "Sat 22:46:47",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "almost as much fun as in-person",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:46:48.992+00:00",
+    "formattedTimeStamp": "Sat 22:46:48",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "ClarkKent",
+    "originalName": "aheadofyourtime",
+    "message": "oh god im so so so so so sorry ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:46:53.836+00:00",
+    "formattedTimeStamp": "Sat 22:46:53",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "I almost missed the start cause I was trying to get to a checkpoint in DIshonored :X",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:00.117+00:00",
+    "formattedTimeStamp": "Sat 22:47:00",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Yeah I wanted to balance by the end so that Flash can revive again",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:13.383+00:00",
+    "formattedTimeStamp": "Sat 22:47:13",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "ClarkKent",
+    "originalName": "aheadofyourtime",
+    "message": "i forgot the game started and i was cleaning up from the cookies and i didnt even realize ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:13.883+00:00",
+    "formattedTimeStamp": "Sat 22:47:13",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "ClarkKent",
+    "originalName": "aheadofyourtime",
+    "message": "im so sorry omg ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:25.664+00:00",
+    "formattedTimeStamp": "Sat 22:47:25",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "But then 3 votes on me screwed up the game. It is fine ahead.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:30.243+00:00",
+    "formattedTimeStamp": "Sat 22:47:30",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": ":(",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:32.133+00:00",
+    "formattedTimeStamp": "Sat 22:47:32",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "x_x",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:36.727+00:00",
+    "formattedTimeStamp": "Sat 22:47:36",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "it's ALL your fault Clark.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:47.696+00:00",
+    "formattedTimeStamp": "Sat 22:47:47",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LuciusFox",
+    "originalName": "TheSilentOne",
+    "message": "Killer should have came out day 3, consider that Gordon didn't protect him the day before, too.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:56.196+00:00",
+    "formattedTimeStamp": "Sat 22:47:56",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Catwoman",
+    "originalName": "iMartyn",
+    "message": "typical smallville.",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:47:56.868+00:00",
+    "formattedTimeStamp": "Sat 22:47:56",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "LoisLane",
+    "originalName": "Aleg",
+    "message": "i thought enchantress was Ahead cuz i was alone and i figured she were in the kitchen ",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:48:17.430+00:00",
+    "formattedTimeStamp": "Sat 22:48:17",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "XD",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:48:31.399+00:00",
+    "formattedTimeStamp": "Sat 22:48:31",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Enchantress",
+    "originalName": "XII",
+    "message": "yeah... sorry about that x_X",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:48:46.415+00:00",
+    "formattedTimeStamp": "Sat 22:48:46",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "Batman",
+    "originalName": "Giovanniboyy",
+    "message": "It was fun though!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:49:02.478+00:00",
+    "formattedTimeStamp": "Sat 22:49:02",
+    "__type": "PostGameMessage"
+  },
+  {
+    "playerName": "JamesGordon",
+    "originalName": "Rubin_1998",
+    "message": "It was!",
+    "gameId": "spd-015",
+    "timeStamp": "2016-12-03T22:49:10.071+00:00",
+    "formattedTimeStamp": "Sat 22:49:10",
+    "__type": "PostGameMessage"
+  }
+]

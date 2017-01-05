@@ -1,0 +1,5895 @@
+[
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameCreatedEvent, Werewolf.GameEngine",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480797623789+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480797796212+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480797822869+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480797941651+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480797960542+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480798293310+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799429567+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799465255+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799499146+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799529865+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799884227+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480799894368+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameSpyJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800748623+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameStartedEvent, Werewolf.GameEngine",
+    "FirstDayLength": 10,
+    "NightLength": 5,
+    "DayLength": 30,
+    "DayDiscussionLength": 5,
+    "DefenceLength": 5,
+    "TrialLength": 5,
+    "LynchType": "MostVotes",
+    "PhaseTimeType": "TenFive",
+    "RoleAnnouncementMessageType": "Full",
+    "NumberOfWolves": 0,
+    "NumberOfShapeshifters": 1,
+    "NumberOfBloodhounds": 0,
+    "NumberOfLycans": 1,
+    "NumberOfSeers": 1,
+    "NumberOfProtectors": 1,
+    "NumberOfHuntsmen": 0,
+    "NumberOfGravediggers": 1,
+    "NumberOfGraverobbers": 0,
+    "NumberOfRevivers": 0,
+    "NumberOfHarlots": 0,
+    "NumberOfVampires": 0,
+    "NumberOfAlphaWolves": 1,
+    "NumberOfStalkers": 0,
+    "NumberOfMilitia": 0,
+    "NumberOfMessiahs": 1,
+    "NumberOfDjinn": 0,
+    "NumberOfSuccubi": 0,
+    "NumberOfWitches": 0,
+    "NumberOfShamans": 0,
+    "NumberOfPuppetmasters": 0,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800758847+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameSetToTenFiveCycle, Werewolf.GameEngine",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800759559+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.AnonymisedGameStartedEvent, Werewolf.GameEngine",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800759655+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Aleg",
+    "NewName": "LoisLane",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/loislane.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800759846+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Giovanniboyy",
+    "NewName": "Batman",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/batman.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800761016+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Veletala",
+    "NewName": "Deadshot",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/deadshot.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800762487+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "TheSilentOne",
+    "NewName": "LuciusFox",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/luciusfox.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800763399+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Rubin_1998",
+    "NewName": "JamesGordon",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/jamesgordon.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800764576+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Narsil",
+    "NewName": "Arrow",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/arrow.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800765789+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "XII",
+    "NewName": "Enchantress",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/enchantress.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800767158+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "BabyPigalump",
+    "NewName": "Killercroc",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/killercroc.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800768504+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "It has begun! :D ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800769467+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "iMartyn",
+    "NewName": "Catwoman",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/catwoman.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800770028+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "ImTownSRSLY",
+    "NewName": "Flash",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/flash.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800771358+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "aheadofyourtime",
+    "NewName": "ClarkKent",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/clarkkent.png",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800772570+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled, Werewolf.GameEngine",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800773928+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ShapeshifterAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800774021+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.AlphawolfAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800774614+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.LycanAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800774911+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.SeerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800775203+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ProtectorAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800775495+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.GravediggerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800775785+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.MessiahAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800776078+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.AllWerewolvesAssignedEvent, Werewolf.GameEngine",
+    "PlayerNames": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800776371+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800776655+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800776943+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800777276+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800777583+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.ModeratorMessageEvent, Werewolf.GameEngine",
+    "Message": "There are: 1 Shapeshifter, 1 Alphawolf, 1 Lycan, 1 Seer, 1 Protector, 1 Gravedigger, 1 Messiah and 4 Villagers.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800777995+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I am a Shapeshifter",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800778298+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "I am an Alphawolf",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800778500+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Let the games begin",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800781608+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I'm jealous of whoever Flash is",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800790374+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "These roles need documenting Mark!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800795671+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I'm Batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800805046+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "I am Batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800811890+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Moderator",
+    "Message": "/me nods towards the \"how to play\" link at the top",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800814702+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": ":O",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800816640+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "B-b-b-b-b-batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800818249+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "nanananananana bat maaan",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800836062+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "xD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800842327+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "=(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800848890+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "lol",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800853046+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "got the lamest shit from the DC universe",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800863140+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Arrow is actually my favorite out of all. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800878171+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "Oo whiny bitch",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800886734+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Lol, Arrow is misunderstood.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800888218+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "poor Lycan...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800897609+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "going purely by the show, just saying",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800902015+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "He does love to have a moan about it.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800903468+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Lycan doesn't know they're lycan, right?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800917437+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yes.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800920890+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "poor, misunderstood lycan",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800943781+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Can I just say for the record, that if Arrow, Flash and Batman can't deal with 2 pesky wolves... then they're all hype.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800973141+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I agree",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800989406+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I'm Batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480800997688+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Couldn't agree more",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801003000+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "I think we´re supposed to be on a vacation and might have had too many drinks",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801003610+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Catwoman, how do you know that Arrow, Flash and Batman aren't wolves? ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801004813+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "!!! Batman!?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801010688+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": ":O",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801013860+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Votes to put Catwoman on trial.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801014235+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "The rest of us will just have to show the \"Heroes\" how it's done.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801016766+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "Batman loves the night... suspicious",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801024250+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "!!! Arrow!? ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801035672+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "oh, sorry, didn't see you there Smallville.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801037797+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "When can we vote?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801038282+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "after someone's died",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801045563+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Ahh",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801049719+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "!!! Random person!?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801051001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Moderator",
+    "Message": "there is no lynching on day 1, only bants, man.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801073063+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "Morgan Freeman should leave this realm, so he can take his rightful place among the gods",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801078673+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Wow it is the Arrow, so cool! Why does nobody loves Arrow :(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801080766+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I totally agree",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801090423+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I know",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801090891+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "lois, enchantress, clark?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801093391+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "you all here?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801096563+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "nvm, i see lois",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801105438+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "umm...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801105704+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Hmmmmm",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801109751+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I hope so",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801112751+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "lois is here",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801114360+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "they had a cool premise in S1 and made it worse each and every season =D",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801116204+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": ":Thinking:",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801124064+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "so the wolves have to be part-\"human\"? ;-)",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801149829+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801164689+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "rules out everyone but Lois and Clark ;-)",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801170892+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "lewis and clark",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801177595+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "<3",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801182205+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "they're the only ones using their real names.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801187173+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "oi, Clark Kent is the Alias, sorta",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801206549+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "in a way...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801217299+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "okay, maybe not, I'm just banting for the sake of bants",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801218720+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "so are we all =)",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801227346+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Kal-El",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801234674+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 1,
+    "PhaseLength": 5,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801244518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801258393+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "amig@????",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801268486+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "BabyPigalump",
+    "Role": "Seer",
+    "Target": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801270096+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801278940+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "don't leave me alone",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801284330+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "shit ",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801331612+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801354315+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "mod here, I have taken over his body until he returns",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801354565+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801354925+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801363675+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "oh wait",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801383065+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wrong person",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801385300+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801391815+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "what?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801393784+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "ok I have taken over him",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801402003+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I am mod",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801404112+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": ":o",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801404534+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "sorry, I'm here",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801408347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "oh he's here",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801410737+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "dickface :p",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801414722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I am a tool, sorry.",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801419269+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I was getting to a checkpoint!",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801423409+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I don't deserve your prods",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801424722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "ok you have 2 minutes, so hurry the fuck up",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801433503+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "god -_-",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801435206+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Aleg",
+    "Target": "TheSilentOne",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801440269+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801469707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "who is the seer :)?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801481082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Aleg",
+    "Target": "iMartyn",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801496222+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "no idea",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801497082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Aleg",
+    "Target": "Narsil",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801512144+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801515598+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i'm doomed",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801521176+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801521269+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "Rubin_1998",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801550645+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "BabyPigalump",
+    "Target": "Veletala",
+    "Role": "member of the village",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801552223+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801553426+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 2,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801554645+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Why doesn't it surprise me that Lois knows his _real_ name?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801560176+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801565989+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "NOOOOOOOOOOOOOOOOOO",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801569957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Why arrow :(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801579457+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "hm, that's intersting",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801580879+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Oh great, something else that Arrow gets to bitch about, being killed again.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801580926+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "why wouldnt i know it?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801584145+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "a Messiah in the game and we don't have two deaths night one?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801597411+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Good point Enchantress",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801608051+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "Guess he didn't have a silver arrow.. hah..ha.. hmm",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801613067+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "maybe messiah is waiting a few days?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801625598+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "The Messiah need to die tonight or never.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801632473+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "he must not have been a deadshot with it anyways!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801637145+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Or the protector did their thang",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801638895+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "Ohhh",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801649302+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Clark? love?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801660364+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "croc love?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801669724+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Everybody love?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801694943+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "^^",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801700349+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "LOVE!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801700661+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "I just want somebody to hug..",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801706833+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801711615+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "hmf, this is a difficult one ... part of me says Prot should come out because there's a good chance that they healed a wolf target (and that target was themself) but there's a risk that we just have a brave Messiah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801713896+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": ":S",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801714646+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "B-b-b-b-bantman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801716146+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "*hugs deadshot*",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801718068+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Hmm... I dunno, there are newish players who wouldn't know to kill themselves first night - I certainly wouldn't.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801721396+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "mh, yeah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801734927+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "let's hope it's that",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801743896+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "okay",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801751693+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "messiah, if you are still alive",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801756959+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Seer come out tomorrow?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801758240+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "kill yourself tonight",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801761755+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "xD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801764115+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "Without context, this just got dark",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801769146+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Hello, darkness my old friend!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801786771+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I've come to talk to you again",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801796318+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "hey, you're not the only one who creeps about in the shadows, bat boy!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801825740+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "okay, awkward silence...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801878366+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "yep",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801883584+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yeahh",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801884100+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "But I'm Batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801893991+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "B-b-b-b-b-batman!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801901960+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "We're all just enjoying ourselves in the darkness",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801907178+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "Wait",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801908506+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "I regret nothing",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801930679+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "shush, noone's supposed to know that the lights are off, the keyboard is my shield...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801936179+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "XD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801963101+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "But should we vote? or not",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801965226+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I dont want to be kicked",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801980741+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Maybe just tie the votes?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801981757+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "No one seems to know anything as of now.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801985163+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "to state the obvious: if we don't, we don't kill a wolf.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801985538+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yeah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801986679+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "Message": "I would've voted for Arrow, only because I can't stand the guy..",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480801991773+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "If we don't, we don't kill a villager",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802008288+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "he's in deadchat right now crying to himself",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802009867+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "take that!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802012226+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "\"Yes, officer, I hated him.. but I swear I didn't kill him\"",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802017538+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Narsil",
+    "Message": "=´(",
+    "Recipients": [
+      "Narsil"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802021867+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I would vote for anyone on the side of good, just for character's sake",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802026867+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Well lets balance",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802045929+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "isn't Catwoman basically a protagonist though?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802052351+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802052414+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "It is already balanced.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802054742+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "k",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802055804+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "well",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802058867+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "balance now",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802060258+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "smite prevention",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802062883+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Target": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802066304+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802067023+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802070133+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802072930+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802076351+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "since we're doing this",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802077430+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802080195+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "3 afk?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802091570+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "anti ^-^",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802094305+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Are Clark and Flash even here?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802096367+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": ":(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802100195+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 2,
+    "PhaseLength": 5,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802106320+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802112117+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Let's kill CW",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802114477+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "XII",
+    "Target": "iMartyn",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802116836+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802122680+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "maybe you can Alpha the fuck out of someone too? :D",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802129571+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "yeeeey",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802136164+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "who?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802139196+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "maybe Clark?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802154586+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "BabyPigalump",
+    "Role": "Seer",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802155618+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wait, no",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802157274+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "noo",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802161118+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "if he's AFK that's stupid",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802161868+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "and i love him ",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802167946+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "probs Deadshot",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802171790+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfEnraged, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802178149+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfTargetChosen, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Veletala",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802180102+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "done",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802206571+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "woop",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802213837+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "flash never said anything?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802263446+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "maybe one of them is messiah",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802287228+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "mb",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802293619+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent, Werewolf.GameEngine",
+    "GravediggerName": "Giovanniboyy",
+    "Target": "Narsil",
+    "Role": "Villager",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802412604+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "Rubin_1998",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802413776+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "BabyPigalump",
+    "Target": "TheSilentOne",
+    "Role": "member of the village",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802414979+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfUsedEnrage, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Recipients": [
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802416760+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802418510+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802419713+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802420323+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802421479+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 3,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802422088+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802432854+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "hmmm",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802448854+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "he speaks!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802456276+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "He's alive",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802463432+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "be sure to vote today, flash!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802467401+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "yeah kinda missed it",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802469823+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "IT'S ALIIIIIVE",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802470635+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "well, he made a noise...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802471370+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "yeah will do",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802473026+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "sry guys, phone rang :S",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802483198+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "and if you are the messiah, kill yourself tonight",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802501620+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "we'll forgive you. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802505011+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "... Seer, if you found 2 villagers, it is good to come out today anyways imo. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802505292+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Have you seen Clark? :\"(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802506745+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "will do Killer :P",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802529558+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Doesn't matter what you found, come out today. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802533730+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I think the protector should come out too?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802550777+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Oh damn O_O... Tonight hopefully isn't too late...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802555261+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i don't think so. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802563980+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "I wanted earlier, then the phone rang. I'm really sry",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802572324+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "If Flash really is Messiah that means protector failed twice in a row.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802583089+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Why would you out the protector?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802584183+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "We have 0 clue right now though...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802600074+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "because he is a wolf!!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802601136+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Well, to have him protect us ^^",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802601558+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802610011+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802616402+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "James, real answer, why would you want protector to reveal himself?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802622746+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "if he is alive he should keep quiet",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802623340+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Dont go and make assumptions",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802623605+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "That's the protectors job!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802624730+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802625777+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802632636+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Well im the protector",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802638699+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802643715+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "So if you want to kill me ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802648433+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802651402+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802655574+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Rubin_1998",
+    "PlayerName": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802660324+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802660777+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "O_o???",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802661371+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "wait, any counter claims?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802665340+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Why are people all voting a protector after he claim?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802678918+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Lucius, who did you protect?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802679637+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Good job guys! kill the me your protectro",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802680356+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wait, James",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802688621+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "w/e",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802690590+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I protected catwoman",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802701262+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802703090+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802703528+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "and night one?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802715293+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "let's trust james",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802717043+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "no counter claim",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802721340+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "LoisLane",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802724934+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "please tie the vote people",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802740122+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Rubin_1998",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802744028+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802744497+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802747450+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Rubin_1998",
+    "PlayerName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802754528+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802754606+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "^^",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802763637+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I am skeptical of LoisLane a bit... ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802765200+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Giovanniboyy",
+    "PlayerName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802772669+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802772997+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Why?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802779731+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yeah why?/",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802784966+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "why?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802794763+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "=_= She doesn't talk much.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802795622+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "\"Skeptical\"... I'm pretty sure she does exist",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802796981+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": ":D",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802802810+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "XD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802805794+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802810841+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yeah she doesn't talk much",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802816763+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i'm not a natural speaker sorry",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802822294+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "hmm",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802827872+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "defend yourself, so we can say you've gone defensive!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802833560+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "JamesGordon list checks again now.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802837779+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "*Visits",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802844122+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "or don't defend yourself, so we know it's true",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802860294+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "night 1: LoisLane Night 2: Catwomam",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802867357+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "day 3 revealed himself, leaving his teammates puzzled",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802886310+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So naturally wolves should go for Catwoman tonight.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802887810+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "If Catwoman not dead then... Hmmm",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802899591+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "oh fecking wonderful.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802907888+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Seer not coming out is worrying.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802910154+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "then it's because you mentioned this before nightfall!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802911123+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So I think Seer is likely dead now.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802917951+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Could be yeah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802925545+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Or AFK (Clark)",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802932185+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Or Clark...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802932482+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yikes",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802935498+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "so dead",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802937123+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "or doesn't think they have enough info",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802937170+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "because Clark is gonna be smited :?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802943232+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "ClarkKent doesn't really talk...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802951701+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I meant Clark could be the seer...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802961717+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "understatement of the year",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802962608+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "yeah, that's unfortunate :'(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802972076+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "lol",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802972358+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "there are only two wolf... i get why the seer haven't found any ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802972358+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wait",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802997217+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wait wait wait",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480802999545+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "or maybe all his talking is getting eaten my the server, like 1 in 20 of mine are",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803001795+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "JG.. why the hell didn't you protect yourself night one?!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803007623+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "for the same reason he revealed on day 3",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803021342+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "he's newb",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803024014+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I though that would be selfish xD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803024108+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "if you refresh you can see those messenges",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803024155+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "touche",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803028499+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 3,
+    "PhaseLength": 5,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803035499+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "ImTownSRSLY",
+    "Role": "Messiah",
+    "Target": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803040874+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "Veletala",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803048249+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "BabyPigalump",
+    "Role": "Seer",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803050983+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803056686+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I'm really glad you alpha'd last night",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803061561+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "yes",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803072421+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "but why?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803083905+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i was hoping you to vote on JG ",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803100062+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "he only had 1 vote on him? :/",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803114968+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i saw 2",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803123015+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "oh, wat",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803128031+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "damn",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803129609+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "there was a tie",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803129859+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "you coul have ss tonight",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803137812+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "*grumble*",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803142953+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "oh well",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803145062+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "sooo",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803162218+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Catwoman?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803165859+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "nah",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803172718+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I'm thinking we go for JG, but idk",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803182172+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "he'd probably protect himself tonight after the reveal",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803190593+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "maybe Croc?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803192468+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "XII",
+    "Target": "BabyPigalump",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803194328+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "*crosses fingers*",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803202875+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "can I get unlucky twice in a row?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803208500+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i hope no",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803222172+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "xd",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803223937+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "this needs to be done before Flash revive",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803244266+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "ye",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803252938+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Messiah.MessiahUsedSacrifice, Werewolf.GameEngine",
+    "MessiahName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803341376+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent, Werewolf.GameEngine",
+    "GravediggerName": "Giovanniboyy",
+    "Target": "Veletala",
+    "Role": "Villager",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803343001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "BabyPigalump",
+    "Target": "Aleg",
+    "Role": "member of the wolfpack",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803344204+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "Rubin_1998",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803345954+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803347141+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803348923+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803350157+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.PlayerSmitedEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Reason": "Inactivity",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803351298+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 4,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803352501+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803359563+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "welp",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803362657+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803363845+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So only 4 villagers",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803365001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "hey flash",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803365032+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "you the messiah",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803367532+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "And 2 wolves",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803367923+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I guess Flash really was Messiah?! :D",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803368532+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "I was the seer",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803376267+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i  guess ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803378079+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "If Clark is wolf then lucky us :/",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803384345+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "seer really needs to come out now",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803387251+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yepp",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803392657+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "I checked deadshot villager, lucius villager, and loislane wolf",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803394173+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "because if we lynch wrongly it's game over",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803395642+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "He needed to come out yesterday -_-",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803398079+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Yep",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803399392+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "if Flas is ssr unlucky us ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803403970+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "SEER?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803407407+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Flash can't be seer ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803414204+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Well maybe seer's just dead",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803415001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "wait wait",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803420986+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I hope not!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803422345+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "He won't make it -_-",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803426408+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Flash could have been SS",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803428673+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "and that could have been an alpha kill o_0",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803436142+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "No reason to SS tho",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803437845+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "who just died?",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803439080+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "flash, are you messiah?",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803444736+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "No need for Alpha to kill Flash.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803449189+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "no, I mean",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803453939+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Flash claimed messiah right? what if he was SS and \"died\" by shifting into someone",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803468955+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "and then Croc was the alpha kill",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803476986+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Mind-Blown",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803485392+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah that is possible but Messiah should have been revived?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803488939+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "if I was GD, I wouldn't check Flash after his Messiah claim",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803490174+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "*explosion*",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803492017+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "so the SS would go unnoticed?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803501830+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Idk how many of them should have been revived already...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803503127+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "yes I am",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803509439+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "tell me something",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803511283+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "i am the seer",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803516221+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "GD could only check Flash night 2.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803519908+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "i saw deadshot village, luciusfox village, loislane wolf",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803526190+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Could only check DS night 3.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803529705+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "And it is day 4.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803533674+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "saw it",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803534783+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "ImTownSRSLY",
+    "Message": "I hope it's not too late :;S",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803540362+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "yea, i think it might be",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803547705+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "but we'll see",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803549955+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "good luck!",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803567862+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "SH I T ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803578799+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "so when is flash supposed to revive?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803579909+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "I FORGOT ABOUT THIS GAME ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803582518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "MOTHERFUCKER ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803585612+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "in 3 days",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803585799+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803586096+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "what were you clark?",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803587190+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "IM SO SORRY ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803587643+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Ha... ha...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803588815+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "but the game won't last that long -_-",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803594440+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I think day after tomorrow",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803600487+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "what were you, clark?",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803600690+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Day 6...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803609065+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "just checked ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803610050+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "villager ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803611862+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah I said that dying was a bad idea...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803612003+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "thank god ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803615518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I doubt we'll last that long. :(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803617768+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "JG, you need to vote too",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803625487+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Dammit should have claimed seer for fun... -_-",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803633472+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "otherwise you get smitten",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803635003+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "im gonna read back and see what's up i feel so bad oh my god ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803635956+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "no, wait, that's the wrong verb",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803643143+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803643425+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "thanks ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803647784+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803649362+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "^^\\",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803652659+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803653581+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803656550+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803663128+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Nothing personal ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803664206+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Alpha",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803668222+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "flash, if they ask why i didn't reveal on day 3, it's because my night 1 person got killed",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803668472+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Didn't use ability yet.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803671722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803675581+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So if we do not lynch wolf",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803675628+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "BabyPigalump",
+    "Message": "so I just had 1 living villager to reveal",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803676097+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Today.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803677128+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "We lose.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803678519+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "we need to get serious",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803683488+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I have two questions now: why is Catwoman still alive; why is JG still alive?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803684691+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Unless Clark is a wolf. ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803689144+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "JG, who did you protect last night?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803698284+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Why shouldn't i be alive>",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803704019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803704972+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803705035+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Myself",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803707503+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah Catwoman was free to kill...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803714331+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I though they would kill me once they knew who i am",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803718550+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Should GD come out? He might have usefull information",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803722519+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803723019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803724769+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "just for balance for a sec",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803728785+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "He must.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803731863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Giovanniboyy",
+    "PlayerName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803737925+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803739019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Right now we have 0 info.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803739628+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "ok, well I'm the GD :)",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803747519+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "yes he must",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803748394+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Should i have protected someone else than",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803749206+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "We have 3 minutes.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803752425+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "because",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803753597+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I'm just a villager, and we basically gave them this suspicion to throw at us later by saying it earlier.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803765863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I though they would kill me once they knew who i am",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803767675+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Arrow and Deadshot were both villagers, so Clark Kent was probably the seer",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803779206+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "O_O",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803787941+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I am vanilla too",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803790988+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "ffs",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803793332+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Okay so",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803798347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Batman clear and Gordon clear.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803806207+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Or are they??",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803818550+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "what>",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803828910+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Batman check Flash tonight!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803838394+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "It is pretty good chance to claim GD now since... Ugh.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803842722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "sure",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803843269+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "Yeah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803852785+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So 4 vanillas...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803857957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "protector do your thang",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803862613+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I Trust Enchantress the most...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803863675+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "flash pls tell everyone im so so so so so sorry ",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803871738+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Lois should be wolf then",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803878378+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "aheadofyourtime",
+    "Message": "i got distracted by cookie clean up :-(",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803879847+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803880191+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803880347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I dont kwo who to protect",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803884816+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "TheSilentOne",
+    "PlayerName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803887878+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803888082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "There is also a Lycan...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803899628+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 4,
+    "PhaseLength": 5,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803904425+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803909050+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "damnit",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803911207+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "BabyPigalump",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803913285+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803913644+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803914800+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I was so close to lynching",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803915394+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Rubin_1998",
+    "Role": "Protector",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803916847+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Giovanniboyy",
+    "Role": "Gravedigger",
+    "Target": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803917769+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "fuck",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803918347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "whyyyyy",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803924894+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "they'll lynch me tomorrow",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803964097+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "should i claim seer?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803971238+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "no, it's too late now",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480803977878+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I guess JD will protect Batman?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804004957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "then i'll try to shade Lucius",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804005582+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "XII",
+    "Target": "Rubin_1998",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804007753+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "yes probably",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804017691+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "he can't protect himself again, anyway",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804019347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "so I'll just kill him",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804024082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I could shift, but meh, I'm a bad impersonator",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804033847+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "let's try and get CW lynched?",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804045722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "well good luck ",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804050082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "you too",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804053910+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I'll try and time a last minute better this time",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804062597+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "x_X",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804064332+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent, Werewolf.GameEngine",
+    "GravediggerName": "Giovanniboyy",
+    "Target": "ImTownSRSLY",
+    "Role": "Messiah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804211082+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "Rubin_1998",
+    "Target": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804212254+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804214019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 5,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804214660+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "I protected Batman, because he was checking on Flash",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime",
+      "Rubin_1998"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804224613+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804225894+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Nice only 1 kill tonight!",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804231379+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804231863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Rubin_1998",
+    "Message": "But he i'm dead",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime",
+      "Rubin_1998"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804234347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "What a waste... Flash is in fact... the Messiah",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804238472+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "if we don't lynch, we loose.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804240175+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804242113+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "why lucius??",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804249519+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "So that means Alpha used ability already",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804251410+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "you last minute voted me",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804256754+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "And hit the protect",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804258863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "or Clark was Alpha and Croc was seer?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804264925+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804280629+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "or we have a dumb alpha",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804282332+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "Croc would have revealed when he was alive",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804285957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "hope for the best, plan for the worst",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804293785+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah what Batman said",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804298707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Check Flash is pretty useless tho consider there is Croc and Clark ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804319957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "so Croc was the seer?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804331410+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "2 wolves left should be Lois and Catwoman.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804339879+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "no..... probably not",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804341910+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "why do you say that?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804354144+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i'm still waiting for you to answer me",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804356472+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I'm not a wolf",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804359707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "- said every wolf ever",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804367972+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I'm a vanilla",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804370676+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Yeah this is the problem... We are all vanillas here -_-",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804385426+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I mean, catwoman isn't _very_ vanilla...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804386347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Lois doesn't speak much. And I didn't look at clock and know that it was last minute vote.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804411707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I just realized that you should be lynched so I voted you Lois... I trust Enchantress most, Catwoman 2nd, and you last.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804440941+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "but if it helps, my main suspicions are Lois and Lucius...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804449051+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "What about you Enchantress? What do you think?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804476847+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "well you are on top of my list now Lucius ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804482301+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i told why it's hard for to keep the track",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804505738+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I think I should just go kill myself and save the wolves some trouble...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804506988+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "You suggested GD to check Flash...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804514707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Catwoman didn't die when protector revealed protecting her, yet she's still alive",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804528848+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Yeah, I assumed to try and catch GD out?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804536894+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Ugh... 4 vanillas, no one done anything too wrong in particular...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804540269+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Lois doesn't speak much, and hasn't really added much imho?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804548769+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Lucius seems overly trusting of me, which raises my suspicions a bit",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804571848+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "so we've got \"the quiet one\" and \"the one taking the lead\"...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804577723+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "and Batman, well",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804580176+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "it's so easy to claim GD at this point",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804587504+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "so 3 of you suspect lois?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804594379+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i'm just vanilla what info can i give??",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804610160+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Damn that doesn't make too much sense too...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804610848+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "I kinda believe batman...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804614973+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "We got 4 minutes. For Enchantress and Catwoman to be together... ",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804642363+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Enchantress votes Catwoman first.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804651207+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I vote Catwoman then",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804654582+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Enchantress takes vote off.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804658926+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Seems possible...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804664598+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804669129+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "XII",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804671504+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804671817+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804675692+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804675770+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "That tips the balance for me.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804688411+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "-_- What a disaster :(",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804691473+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804692020+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "WOAH",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804696536+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "XII",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804701036+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804701504+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "(just to quote the word of God from another game: \"Please don't spam votes unnecessarily\")",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804703098+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Didn't spam intentionally only clicked three times.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804726942+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "CW: you said you were suspicious... did you ever give reaosns?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804730239+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "Like I said, my vote between lois and lucious.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804741458+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "afraid it's nothing but gut feeling.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804749833+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804757833+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804758520+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804759114+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804761255+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804761474+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "sorry Lucius, I just wanted to ensure it didn't happen more",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804761474+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "but if we leave it tied we die.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804767192+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804771302+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804771583+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "no ww death = ww win.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804774505+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "-_-...",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804776396+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "I will follow Batman",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804782958+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "what?",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804785286+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "it's all or nothing right now",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804789364+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "iMartyn",
+    "Message": "we've not killed a SINGLE sodding person this game.",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804792396+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "you are making a mistake",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804798036+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804804396+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804804833+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804806755+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804807193+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804810333+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "idk",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804810755+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "iMartyn",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804813505+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804813740+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "halp",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804815302+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "OH GOD",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804816818+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Aleg",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804824380+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Target": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804825005+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 5,
+    "PhaseLength": 5,
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804826193+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804826912+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "TheSilentOne",
+    "Message": "Enchantress last second",
+    "Recipients": [
+      "Narsil",
+      "Veletala",
+      "ImTownSRSLY",
+      "BabyPigalump",
+      "aheadofyourtime",
+      "Rubin_1998",
+      "TheSilentOne"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804829427+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "okay",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804832708+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "that was scary",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804836380+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "YAS",
+    "Recipients": [
+      "XII",
+      "Aleg"
+    ],
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804837505+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.After.WerewolfVictoryEvent, Werewolf.GameEngine",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804839333+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "We won",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804841693+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Unlucky..",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804843037+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "ffs",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804845490+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "my heart is rscing",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804846662+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "omg",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804849052+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "...",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804849068+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I'm sorry",
+    "PlayerName": "ImTownSRSLY",
+    "OriginalName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804851037+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "help",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804851802+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I told you Croc was seer",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804852474+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": ":((",
+    "PlayerName": "ImTownSRSLY",
+    "OriginalName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804853099+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "and that's why you follow me...",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804857552+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "but did anyone believe me",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804858255+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "pfffft",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804859943+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Enchantress last second tho.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804874490+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yeah",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804879865+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "well",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804881553+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I was gonna do it two nights ago",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804891349+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "and missed",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804892521+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "x_x",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804893771+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yes haha",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804897678+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "ufff",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804901021+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "village will never win without lynches folks",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804908850+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "*breathing* ",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804909318+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Ugh unfortunate should have just stick with Lois then.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804925990+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I kinda fucked up should have come out",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804934584+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "3 claims to Lois meant at least 1 from a village-sided person.. that's why we should have voted Lois",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804948287+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "not have*",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804948506+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "well",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804957787+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "you did well",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804959162+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yrue dat",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804959381+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "You mean the seer. When did alpha fail btw?",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804962584+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "you saved Catwoman",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804962819+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Ah.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804972397+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "night 2, I went for CW and Alpha killed Deadshot",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804976303+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Yeah :)",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804977006+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "really? oh well that's good.",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804977444+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Yeah :)",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804985506+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "sigh",
+    "PlayerName": "Narsil",
+    "OriginalName": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804986381+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I mean, it's still a dead village.",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480804997288+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "got to do so much =D",
+    "PlayerName": "Narsil",
+    "OriginalName": "Narsil",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805002428+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yeahh",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805008225+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "These speed games should be held more frequently :D",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805030944+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "They shoudl yeah",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805041335+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Should have just stick with Lois. Both Enchantress and Catwoman being suspicious of Lois thrown me off.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805044851+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Its so much fun",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805045116+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "so much fun",
+    "PlayerName": "ImTownSRSLY",
+    "OriginalName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805194242+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "still sorry that I missed the revive by one night :( I'm in shame :(",
+    "PlayerName": "ImTownSRSLY",
+    "OriginalName": "ImTownSRSLY",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805207914+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "almost as much fun as in-person",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805208992+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "oh god im so so so so so sorry ",
+    "PlayerName": "aheadofyourtime",
+    "OriginalName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805213836+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I almost missed the start cause I was trying to get to a checkpoint in DIshonored :X",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805220117+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Yeah I wanted to balance by the end so that Flash can revive again",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805233383+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "i forgot the game started and i was cleaning up from the cookies and i didnt even realize ",
+    "PlayerName": "aheadofyourtime",
+    "OriginalName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805233883+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "im so sorry omg ",
+    "PlayerName": "aheadofyourtime",
+    "OriginalName": "aheadofyourtime",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805245664+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "But then 3 votes on me screwed up the game. It is fine ahead.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805250243+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": ":(",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805252133+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "x_x",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805256727+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "it's ALL your fault Clark.",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805267696+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Killer should have came out day 3, consider that Gordon didn't protect him the day before, too.",
+    "PlayerName": "TheSilentOne",
+    "OriginalName": "TheSilentOne",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805276196+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "typical smallville.",
+    "PlayerName": "iMartyn",
+    "OriginalName": "iMartyn",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805276868+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "i thought enchantress was Ahead cuz i was alone and i figured she were in the kitchen ",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805297430+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "XD",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805311399+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yeah... sorry about that x_X",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805326415+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "It was fun though!",
+    "PlayerName": "Giovanniboyy",
+    "OriginalName": "Giovanniboyy",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805342478+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "It was!",
+    "PlayerName": "Rubin_1998",
+    "OriginalName": "Rubin_1998",
+    "GameId": "spd-015",
+    "TimeStamp": "\/Date(1480805350071+0000)\/"
+  }
+]

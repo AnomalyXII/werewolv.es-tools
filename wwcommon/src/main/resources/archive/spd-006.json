@@ -1,0 +1,5124 @@
+[
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameCreatedEvent, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354314321+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354317352+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354488192+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354613829+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354717858+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478354996291+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478355208818+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478356520840+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerLeftEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478359546309+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478359777852+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478359788195+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478360150125+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.PlayerJoinedEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478360534834+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameStartedEvent, Werewolf.GameEngine",
+    "FirstDayLength": 10,
+    "NightLength": 5,
+    "DayLength": 30,
+    "DayDiscussionLength": 5,
+    "DefenceLength": 5,
+    "TrialLength": 5,
+    "LynchType": "MostVotes",
+    "PhaseTimeType": "TenFive",
+    "RoleAnnouncementMessageType": "Full",
+    "NumberOfWolves": 1,
+    "NumberOfShapeshifters": 1,
+    "NumberOfBloodhounds": 0,
+    "NumberOfLycans": 0,
+    "NumberOfSeers": 1,
+    "NumberOfProtectors": 1,
+    "NumberOfHuntsmen": 0,
+    "NumberOfGravediggers": 0,
+    "NumberOfGraverobbers": 0,
+    "NumberOfRevivers": 1,
+    "NumberOfHarlots": 1,
+    "NumberOfVampires": 0,
+    "NumberOfAlphaWolves": 0,
+    "NumberOfStalkers": 0,
+    "NumberOfMilitia": 0,
+    "NumberOfMessiahs": 0,
+    "NumberOfDjinn": 0,
+    "NumberOfSuccubi": 0,
+    "NumberOfWitches": 1,
+    "NumberOfShamans": 0,
+    "NumberOfPuppetmasters": 0,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362023820+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Creation.GameSetToTenFiveCycle, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362023882+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.AnonymisedGameStartedEvent, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362023898+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "XII",
+    "NewName": "LoisLane",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/loislane.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362023913+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "khang123",
+    "NewName": "BlackCanary",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/blackcanary.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024007+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "enna",
+    "NewName": "Killercroc",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/killercroc.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024445+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "WindowsBob",
+    "NewName": "HarleyQuinn",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/harleyquinn.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024538+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "borissssss",
+    "NewName": "JamesGordon",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/jamesgordon.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024648+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Philosophile",
+    "NewName": "Catwoman",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/catwoman.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024695+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Kirschstein",
+    "NewName": "LuciusFox",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/luciusfox.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362024773+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Giovanniboyy",
+    "NewName": "ScareCrow",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/scarecrow.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025163+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "Aleg",
+    "NewName": "Joker",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/joker.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025226+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.NewIdentityAssignedEvent, Werewolf.GameEngine",
+    "OriginalName": "StormPooper",
+    "NewName": "ClarkKent",
+    "NewAvatarUrl": "http://werewolv.es/content/images/avatars/dc/clarkkent.png",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025288+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025366+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.WerewolfAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025366+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ShapeshifterAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025429+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.SeerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025616+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ProtectorAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025679+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ReviverAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025710+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.HarlotAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025741+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.WitchAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025757+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.ShamanAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362025788+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.AllWerewolvesAssignedEvent, Werewolf.GameEngine",
+    "PlayerNames": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026257+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026273+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.VillagerAssignedEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026304+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Core.ModeratorMessageEvent, Werewolf.GameEngine",
+    "Message": "There are: 1 Werewolf, 1 Shapeshifter, 1 Seer, 1 Protector, 1 Reviver, 1 Harlot, 1 Witch, 1 Shaman and 2 Villagers.",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026335+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "I am a Werewolf",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026366+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "I am a Shapeshifter",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026382+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I am a Witch",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026429+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "I am a Shaman",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362026460+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Moderator",
+    "Message": "refresh the page if you can't see your role. gl",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362045788+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": ":D",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362059178+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "testing 1, 2, 3",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362073959+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "\\o/",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362080334+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Ooooh",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362081975+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "looks like the 2 wolves 2 coven suggestion was taken on board",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362083069+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362085631+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": " (?°?°)?? ???",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362137693+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "I hope wolves win :|",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362166754+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "too many kill denying roles",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362186723+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Joker votes to put BlackCanary on trial ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362202676+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "A Reviver on speed game?!",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362220863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 1,
+    "PhaseLength": 5,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362220957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman, Werewolf.GameEngine",
+    "Recipients": [
+      "WindowsBob"
+    ],
+    "PlayerNames": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362220988+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "are you there?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362233972+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "aw jesus",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362237238+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Hello!",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362242191+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Aleg",
+    "Role": "Harlot",
+    "Target": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362248800+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "Hello",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362250003+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Yes! I'm Harley ;)",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362252284+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "protect me, i can revive you should the worst happen",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362261143+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "I'm a Shaman :O",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362262315+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "only just realized that this had started because of the howl xD",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362267393+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "not sure if you should redirect the wolf kill or not tonight though",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362271143+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Aleg",
+    "Role": "Harlot",
+    "Target": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362275049+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorTargetChosenEvent, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362285065+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "khang123",
+    "Role": "Protector",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362285080+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "New phone who dis",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362285112+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "XII",
+    "Role": "Seer",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362298049+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "I will sue totem now then",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362298861+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "protect",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362306236+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "use*",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362306346+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "not lure",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362307846+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362309627+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "enna",
+    "Target": "WindowsBob",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362312767+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "what?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362317424+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "protection totem can be re-used until it's broken",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362321548+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "the lure totem is a one use ",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362327861+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "ik..?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362334048+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "just making sure!",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362338751+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "i don't think we should use lure yet",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362346126+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanProtectionTargetChosen, Werewolf.GameEngine",
+    "Target": "Kirschstein",
+    "PlayerWithRole": "WindowsBob",
+    "Recipients": [
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362351532+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Philosophile",
+    "Target": "WindowsBob",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362369298+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "With a harlot in this game it is better if only I vote from now on",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362391297+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Ahh! Sorry ",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362406094+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "when do you think i should use kill",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362419593+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "if I get spotted and lynched we won't lose a special ability",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362419953+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "save or use later?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362434843+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Yeah!",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362442077+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "er, *now or use later?",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362443234+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "no worries, it is unlikely that we'll get spotted so soon",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362447015+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "morning soon",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362451343+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "and since I voted as well it should be 50/50 chance who kills her",
+    "Recipients": [
+      "Philosophile",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362476374+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "later i guess",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362489405+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "but not too late",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362495233+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.CovenNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "u might get killed",
+    "Recipients": [
+      "Kirschstein",
+      "WindowsBob"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362498170+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362523170+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "XII",
+    "Target": "enna",
+    "Role": "member of the wolfpack",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362523201+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Harlot.HarlotSawNoVisitors, Werewolf.GameEngine",
+    "Harlot": "Aleg",
+    "Target": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362523217+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362523232+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 2,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362523263+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "nooooooooooooooooooooo",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362547591+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362553466+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "haha, didn't realize this had started until the werewolf howl :P",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362559263+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Awww",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362559497+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "We need to bring justice to this town, does anyone have any information?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362634902+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "poor joker :(",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362638746+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "So...",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362648167+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": ":(",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362649964+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "ur the detective",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362653058+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "!",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362655261+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "wait, is catwoman a villain?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362670854+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "ugh, so",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362676589+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Croc is a wolf",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362686010+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Message": "I think so",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362686245+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362688682+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362693042+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Does only protector visit themself?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362693479+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "People need to be able to walk the streets, without fearing for their lives",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362695510+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Wait what",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362704854+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "seer?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362714432+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362715197+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Yes, seer",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362719479+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "She lies",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362721103+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362737634+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "anyone else want to claim seer?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362741853+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "I am harlot but I think I saw Protector ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362743587+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "ohh",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362759399+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362760540+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362763852+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Target": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362769087+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "wow, this escalated quickly",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362773790+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I totally missed the claim and only saw the vote",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362775758+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "We have no GD!!",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362784727+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I was about to suspect Canary for voting so quick",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362787117+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "no seer counter? any harlot counter to croc?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362810804+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "aactual;ly",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362815789+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "no",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362816492+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "harlot, don't say",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362818789+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "no other seer claim? would be way too lucky to first kill seer",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362819976+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Wolves are good, village is doomed ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362821648+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "don't counter-claim, harlot",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362830944+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "seer counter would be enough",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362833679+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "yes I realsied that was dumb and said so",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362840241+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Harley Seer?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362857913+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "unlikely, bye bye, wolfy",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362868303+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "why did canary vote so quickly though? ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362878271+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "i missed it too, she had already claimed",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362889849+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "only two wolves in this game and we caught one already xD",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362956707+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "that's why i want wolves to win",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362969863+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "where? ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362972128+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Be careful, guys, no GD. Maybe revive Harley I bet she's Seer unless they're keeping quiet ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362973769+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "their power are so weak this game",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362979425+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "remember there is also coven ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478362989019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "You want the wolves to win?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363025393+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Coven are probably the ones quick to bandwagon vote anyone who isn't their own ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363028518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i hope Killercroc is SSr",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363058158+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": " we will see if Harley is revived or not",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363064767+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i just want to see the world on fire ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363071845+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Not even a way to check Lois, RIP village ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363073157+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "witch or reiviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363076188+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "careful though, she could be coven :/",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363086516+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "OR SEER",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363102016+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "or wolves",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363125109+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "would be a lucky fake claim if harley was seer",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363142109+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 2,
+    "PhaseLength": 5,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363157077+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman, Werewolf.GameEngine",
+    "Recipients": [
+      "WindowsBob"
+    ],
+    "PlayerNames": [
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363157327+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363160889+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorTargetChosenEvent, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363160952+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "khang123",
+    "Role": "Protector",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363160967+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "*sigh*",
+    "Recipients": [
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363164983+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Harley are you Seer???",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363169311+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Aleg",
+    "Role": "Harlot",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363170858+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "XII",
+    "Role": "Seer",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363171920+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Philosophile",
+    "Target": "StormPooper",
+    "Recipients": [
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363189420+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "pls",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363191498+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Hello",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363368650+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorTargetChosenEvent, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363379681+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "khang123",
+    "Role": "Protector",
+    "Target": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363379696+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "What are you?",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363408164+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Why do you ask?",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363414195+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "You must be the seer",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363427570+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "And why would that be?",
+    "Recipients": [
+      "WindowsBob",
+      "enna"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363435023+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459085+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "XII",
+    "Target": "Kirschstein",
+    "Role": "member of the Coven",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459522+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Harlot.HarlotSawNoVisitors, Werewolf.GameEngine",
+    "Harlot": "Aleg",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459601+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459616+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459632+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459647+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 3,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363459694+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "omg smiting is on xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363468772+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Fox is coven",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363468788+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": ">.<",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363470007+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Omg",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363478428+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "outright lie",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363483819+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363490381+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "They didn't bring you back!!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363491584+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "merp",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363496631+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363499615+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363500553+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363502256+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "again, no seer counter claim",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363504474+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363507537+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363509193+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": ":(",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363509662+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "#bandwagon",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363524896+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I am reviver, I shall revive harly tonight",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363527458+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "Or witch",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363533911+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Reviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363539833+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "that'd be easy for a witch to claim",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363544927+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "well i'm reviver, so...",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363552098+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Harley is Seer!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363555489+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "Reviver counter claim please",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363563285+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "lol when did u die clark",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363564004+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Does anyone counter me?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363564442+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "No",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363567457+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "they can't",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363569192+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "shame i'm dead",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363569723+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Because I am the reviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363573613+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "yeah haha",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363574176+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Lmaoooooo",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363583207+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "Who knows if reviver is Clark or Harley",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363585191+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Fox is luckyy",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363588035+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "honestly this game...",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363593691+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "and it looks like the wolves did get lucky and take out seer with Harley",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363594566+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "This game is rip",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363599441+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "yeah...",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363600097+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": ":P",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363600113+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363619628+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "but, that seems too perfect",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363621643+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "Kirschstein",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363640518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363640534+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "it's unlikely, but possible",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363640627+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "My guess is that Lois is the SS and went for the risk",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363641221+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent, Werewolf.GameEngine",
+    "Target": "XII",
+    "PlayerName": "Giovanniboyy",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363641268+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363641284+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "yeah, like wolves know who is the seer and fake claim immediately",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363652487+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "but would they have the guts to claim without knowing?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363664596+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Lois + Canary?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363681361+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Even if the real seer isn't dead they have a chance of winning the flip",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363681424+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "No GD, no way to prove",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363685517+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Idk",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363692001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "they probably planned it in the night",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363692220+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "and let me repeat - I am the reviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363708986+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "AND NO ONE HAS COUNTERED THAT",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363713267+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363717017+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "i'm not buying it",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363719485+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "scarecrow is inactive",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363725329+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "And I am harlot ",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363731782+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "he's voted, doesn't look inactive to me",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363734938+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "he didnt say much",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363736110+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "how about james",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363752750+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "for you to believe Lois, either Harley or Clark were the reviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363765359+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "yup",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363773484+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "To me it is clear harley was the seer",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363774156+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "*sigh*",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363791031+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Fox could still be coven I guess",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363813859+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "Nah",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363818390+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "well he isn't reviver, so witch would be the best guess, since he would be able to revive someone to 'prove' himself",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363842249+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "Better luck next game",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363842421+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "if they don't lynch him",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363846920+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "lol",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363856545+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "they will",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363856998+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "4mins",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363860389+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "yeah, luckily",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363861701+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Canary isn't even bother to think about the possibility",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363864342+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "was really quick to follow Lois",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363870904+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I think we have found our wolves",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363873982+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Fox knows!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363882404+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "gg wp, ballsy move, you deserve the win.",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363886810+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Yeah",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363919825+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "yeah she deserve the win with a wolf and a coven found",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363923622+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Tofu knows all",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363924653+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Jk idk who he is",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363931028+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Lucius, if me and Canary are wolves, who are the two coven",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363933809+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I honestly have no idea",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363947981+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "but put it this way, for Lois to be telling the truth",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363954731+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "and me be lying, and croc be lying",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363962481+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Tofu isn't in, is he?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363967137+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "oooo",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363967793+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "oh",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363971184+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "idk xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363973559+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "don't think he joined",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363978793+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Then the harlot and reviver",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363979480+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "(one of) would be alive",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363982262+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "I'll ask him if there's another",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363985402+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "either would decredit really",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363987465+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "and as I said",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363989246+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I AM THE REVIVER.",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363991043+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "aw 2mins",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478363996465+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "idk",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364019261+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "1...",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364020620+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "i kinda believe Lois",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364032839+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 3,
+    "PhaseLength": 5,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364033839+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman, Werewolf.GameEngine",
+    "Recipients": [
+      "WindowsBob"
+    ],
+    "PlayerNames": [
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364034245+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364038073+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorTargetChosenEvent, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364038120+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "khang123",
+    "Role": "Protector",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364038136+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "u would tho",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364038948+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Rippppppp",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364044042+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "M8. bad luck",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364044339+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": ":|",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364049245+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "we tried",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364054323+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "XII",
+    "Role": "Seer",
+    "Target": "borissssss",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364056448+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "well",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364060448+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.NightTargetChosenEvent, Werewolf.GameEngine",
+    "PlayerWithRole": "Aleg",
+    "Role": "Harlot",
+    "Target": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364061745+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "u did",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364062026+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "You should have revived our beautiful seer asap brother",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364065104+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "i didn't get the chance to",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364067885+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I had hoped the reviver would bring you back",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364069604+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "that was me",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364073916+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "He deeead",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364076182+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "hah",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364079400+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "yep xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364082682+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "i decided the risk was too great, then died anyway",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364083041+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "u suck!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364085588+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "wasn't able to counter you",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364088197+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I had to risk the reviver was you",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364089072+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "yeah, it was a decent play",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364094947+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I think I had a good chance if the village thought about it",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364103416+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Canary isn't really thinking just following Lois",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364109556+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent, Werewolf.GameEngine",
+    "Werewolf": "Philosophile",
+    "Target": "khang123",
+    "Recipients": [
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364110775+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Lucious you lied to me",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364111134+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "in a 24 hour game you might have convinced people",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364120603+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I said I would bring you back, I didn't say when! :D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364128650+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Well it isn't happening now is it xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364139462+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Well, no, sorry :D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364143774+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "i tried though",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364146915+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Yes",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364150384+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "gg for that haha",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364160165+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "I nearly witch killed her",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364168696+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "but feared harlot",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364173211+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Rips , everyone gonna play again?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364175789+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "dunno",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364181336+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "btw",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364194508+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "Harlot wasn't even supposed to be in the game",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364206523+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "probably, was looking after the dog while i was alive and then died, so didn't get to do much",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364206632+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "it was ssupposed to be the fucking stalker but i miss clicked :D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364214382+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": ".",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364219320+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "haha, silly mark",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364221538+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "/forceharlot",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364225929+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Shoulda yolo'd some fake roles asap n coven x wolf forbidden love",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364240179+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "croc, i think the other wolf should've coutner claimed seer for you",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364256475+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "i would've if i was your buddy",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364265428+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Yeah i wonder who that is :/",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364275334+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": ":D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364278928+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "if I'd managed to get through the day, we were relying on Harley being the best Seer ever",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364307162+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": ":D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364307959+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Haha",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364313177+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "yeah ;)",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364317412+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Harley is our Seer. Bow down to our Seer!!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364329849+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "ah well, gg :D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364334239+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected, Werewolf.GameEngine",
+    "ProtectorName": "khang123",
+    "Target": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336286+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent, Werewolf.GameEngine",
+    "SeerName": "XII",
+    "Target": "borissssss",
+    "Role": "member of the village",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336489+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Village.Harlot.HarlotSawVisit, Werewolf.GameEngine",
+    "Harlot": "Aleg",
+    "Target": "khang123",
+    "Visitor": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336505+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336536+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336568+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.DayStartedEvent, Werewolf.GameEngine",
+    "DayNumber": 4,
+    "PhaseLength": 30,
+    "DiscussionLength": 0,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364336568+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "ooohhhhhh karma",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364341536+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "fuckkkkk",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364344302+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "you let me die",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364350114+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Kind of saw that coming",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364351661+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "i'm the reviver",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364352380+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "i protected myself last night",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364355208+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Canary SS'd out",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364355302+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "hmm",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364355598+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "dammit",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364357270+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "You are not the reviver :P",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364360067+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent, Werewolf.GameEngine",
+    "TimeLeft": 25,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364367239+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "DEAD COUNTER WOOO",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364371348+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": ":D",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364371582+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "whatcha find, Lois?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364404379+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "what have you found miss Lane? ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364407894+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "so?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364410254+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Joker hasn't spoen",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364410722+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "damn it he knows!!!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364415425+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "everyone is there",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364417300+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "don't keep us in suspense :)",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364436019+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "yes",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364443706+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "only 9 mins left",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364447519+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "Villager",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364449659+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": ":/",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364451347+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "pff",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364452581+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "who?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364454393+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "time is hurryng",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364454659+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Target": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364458612+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i'm harlot",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364464659+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Target": "Aleg",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364468221+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "suuuure",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364469784+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "Catwoman visited BlackCanary",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364475518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "ik he's a wolf",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364476206+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "*chant* Harley The Seer! Harley The Seer!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364477081+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "vanillager",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364478768+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "yeah i kinda believe joker before he even claimed harlot",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364487518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "harley the seer?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364500080+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": ";)",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364505518+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Nonsense. I am the harlot ",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364505736+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "she was the only one so who visited her so",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364509049+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "NO WAY",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364514064+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "*cough* lies",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364516767+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "NO FUCKING WAY",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364517189+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "lies",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364519517+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "vanillager also",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364529126+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "YES YOU SHOW 'IM CATWOMAN",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364530939+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "can't visit anyone",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364534392+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i hopd to checked me Lois",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364546564+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Canary you visited yourself ",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364549657+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "nah i'm not",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364556438+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "that's why i know you lied",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364561360+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "well, we lynch Cat, if anyone dies tonight we lynch Joker",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364563001+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Target": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364564829+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Hehehe",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364568641+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364571454+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Who'd you prot?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364574641+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "well",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364580985+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "ScareCrow's doing a good job laying low",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364582625+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "YOU",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364582625+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": ";-;",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364583813+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "why wouldn't you target Lois? she wouldn't have had any protection tonight",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364585016+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Lmaoooooooo ",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364588203+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "good point clark",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364593891+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "i protected you n1",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364594797+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Ty bae",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364605047+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "if Joker dies tonight, you should probably lynch me >.<",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364607562+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Aleg",
+    "Message": "i targeted her before",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364608109+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "Giovanniboyy",
+    "Target": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364620406+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": ";-; i really want you to win",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364627718+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "I wonder if Harley was Shaman",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364630062+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "Scare sliding in with that vote",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364631421+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "so i kinda lynched you in silence",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364644890+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.VillageNominationEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Target": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364649280+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "and that's why Lucius wanted to revive her",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364650999+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "XII",
+    "Message": "*shrugs*",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364659108+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "oh yeah James is there too",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364660640+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "maybe just because it was previously suggested",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364675483+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "I died first :(",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364686514+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "James has spoken a bit",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364689514+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "everyone has spoken or voted",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364695842+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "there are no AFKlers",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364698905+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "not enough though",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364702358+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Village bout 2 diiie in the hands of the fake seer. Surrender yourself to Harley to be saved from damnation!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364704311+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "ScareCrow only spoke day 1, has voted every day though",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364709467+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "ScareCrow for President",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364721154+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Ironically the new activity checker is helping him lay low",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364721404+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "yeah maybe vanillagers have nothing to do",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364726388+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Shaman should maybe use lure's n1?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364731623+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Since his name isn't called out every day",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364731716+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "who's vanila",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364735904+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Nobody here's claimed vanilla",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364757122+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "i guess Scarecrow and James",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364770966+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "no one has spoken for a while",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364783434+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "no one going to ask what role scarecrow is?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364791497+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "xDDDDD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364795434+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "^^^^",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364795575+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "There we go",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364796387+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "yep",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364799309+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "He has to be wolf",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364820105+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "he's lurking about...",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364825418+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Trying to defend Catwoman?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364830355+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "He has given no info and i don't think theres vanilla",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364833636+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "gonna say something, Scares?",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364837058+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "ok i'm sure he's a silent hero really...",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364838839+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "There are 2 villagers in the game",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364847933+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "So it is possible",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364852324+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "ah",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364856792+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "enna",
+    "Message": "Cmon scarebro!!",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364862808+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "wait theres a role list?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364865230+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Yeah, top of Day 1",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364877261+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.VillageMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "borissssss",
+    "Message": "the one this village needs, but doesn't deserve ",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364877495+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "oh yeah there is",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364878901+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Kirschstein",
+    "Message": "cos i'm in the game it wouldn't be fair for me to run a hidden setup",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364892104+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "missed it xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364893167+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "fair enough",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364902323+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "Yeah, makes sense",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364907354+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Night.NightStartedEvent, Werewolf.GameEngine",
+    "NightNumber": 4,
+    "PhaseLength": 5,
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364911776+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman, Werewolf.GameEngine",
+    "Recipients": [
+      "WindowsBob"
+    ],
+    "PlayerNames": [],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364911963+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "fack",
+    "Recipients": [
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364920853+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "oooohhh",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364937884+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364942181+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "this will be interesting",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364944119+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "StormPooper",
+    "Message": "There it is",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364946166+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "khang123",
+    "Message": "where's my kitty",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364947665+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "xD",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364951290+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "helloooooo",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364952853+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "WindowsBob",
+    "Message": "hi",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364956040+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.GhostMessageEvent, Werewolf.GameEngine",
+    "PlayerName": "Philosophile",
+    "Message": "what's everyones roles?",
+    "Recipients": [
+      "WindowsBob",
+      "enna",
+      "StormPooper",
+      "Kirschstein",
+      "khang123",
+      "Philosophile"
+    ],
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364960822+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.After.VillageVictoryEvent, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364962650+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yayyyy",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364965993+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "xD",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364967165+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "xD",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364967275+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Phases.After.VillageVictoryEvent, Werewolf.GameEngine",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364973899+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I was actually Shaman hahaha",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364974368+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "wohooo",
+    "PlayerName": "Aleg",
+    "OriginalName": "Aleg",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364974727+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "shaman?",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364976368+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "bad luck coven",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364985290+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "ikr",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364987899+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Harleyyyyyyyy ",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364988133+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "sorry croc xD",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364993415+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "wow i even guessed it right",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364997555+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "who was the shaman?",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478364999383+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Harley was the real seer, village lost.",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365007821+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "xD",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365011305+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "or at least, that is what the replay will say ;)",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365021070+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Accept ",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365027602+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "spd-007 is up if people want to play again",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365037992+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "will it now",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365038117+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "can't believe small game is so interesting",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365041414+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Accept Harley as your lord and saviour",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365041523+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "yes",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365046320+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "MORE?",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365052632+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Maybe",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365052929+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I fucked up, harlot wasn't supposed to be in the game",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365053257+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "it was supposed to be stalker",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365056085+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": ":D",
+    "PlayerName": "WindowsBob",
+    "OriginalName": "WindowsBob",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365056867+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "haha",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365094772+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "that went quite well",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365102303+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "spd-007 -> open",
+    "PlayerName": "Kirschstein",
+    "OriginalName": "Kirschstein",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365106350+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "oh man",
+    "PlayerName": "borissssss",
+    "OriginalName": "borissssss",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365110678+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "*sigh*",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365118131+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "first game where Bob and Phil weren't both wolf??",
+    "PlayerName": "XII",
+    "OriginalName": "XII",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365138287+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": ":D",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365183349+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "i demand alpha instead of normal wolf next time!",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365209692+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "i want wolves to win!",
+    "PlayerName": "khang123",
+    "OriginalName": "khang123",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365219957+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "If only their eyes had met upon the battlefield....perhaps....perhaps this story would have a different end.....",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365221301+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I just wanna be a shapeshifter!",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365223410+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "I JUST WANTED TO SHAPESHIFT",
+    "PlayerName": "enna",
+    "OriginalName": "enna",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365235020+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "last time i was SS I didn't get to do it",
+    "PlayerName": "Philosophile",
+    "OriginalName": "Philosophile",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365251441+0000)\/"
+  },
+  {
+    "__type": "Werewolf.GameEngine.Chatting.PostGameMessageEvent, Werewolf.GameEngine",
+    "Message": "Oh cool, we won",
+    "PlayerName": "StormPooper",
+    "OriginalName": "StormPooper",
+    "GameId": "spd-006",
+    "TimeStamp": "\/Date(1478365282003+0000)\/"
+  }
+]
