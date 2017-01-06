@@ -49,7 +49,7 @@ public class GameDumper {
                         .values().stream()
                         .flatMap(Collection::stream)
                         .collect(Collectors.toMap(
-                                PlayerNominationEvent::getPlayer,
+                                PlayerNominationEvent::getActualPlayer,
                                 PlayerNominationEvent::getTarget,
                                 (oldTarget, newTarget) -> newTarget))
                         .entrySet().stream()

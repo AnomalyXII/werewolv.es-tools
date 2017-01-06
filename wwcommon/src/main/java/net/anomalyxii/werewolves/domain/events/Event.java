@@ -1,8 +1,10 @@
 package net.anomalyxii.werewolves.domain.events;
 
 import net.anomalyxii.werewolves.domain.Alignment;
+import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Vitality;
+import net.anomalyxii.werewolves.domain.players.User;
 
 import java.time.OffsetDateTime;
 
@@ -18,10 +20,38 @@ public interface Event {
     // Interface Methods
     // ******************************
 
+    /**
+     * Get the {@link PlayerInstance} that
+     * triggered this event.
+     *
+     * @return the {@link PlayerInstance}
+     */
     PlayerInstance getPlayer();
 
+    /**
+     * Get the underlying {@link Player}
+     * that triggered this event.
+     *
+     * @return the {@link Player}
+     */
+    default Player getActualPlayer() {
+        return getPlayer().getPlayer();
+    }
+
+    /**
+     * Get the {@link OffsetDateTime} that
+     * this event was triggered at.
+     *
+     * @return the {@link OffsetDateTime}
+     */
     OffsetDateTime getTime();
 
+    /**
+     * Get the {@link EventType} of this
+     * event.
+     *
+     * @return the {@link EventType}
+     */
     EventType getType();
 
     // ******************************
@@ -34,12 +64,16 @@ public interface Event {
         return null;
     }
 
+    default boolean isVisibleToUser(User user) {
+        return true;
+    }
+
     // ******************************
     // Constants
     // ******************************
 
     /**
-     *
+     * Enum for each event type
      */
     enum EventType {
 
@@ -60,12 +94,12 @@ public interface Event {
         COVEN_MESSAGE,
         WEREWOLF_MESSAGE,
         VAMPIRE_MESSAGE,
+        MASON_MESSAGE,
         VILLAGE_MESSAGE,
 
         // End of constants
         ;
 
     }
-
 
 }
