@@ -1,9 +1,6 @@
 package net.anomalyxii.werewolves.parser;
 
-import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
-import net.anomalyxii.werewolves.domain.PlayerInstance;
-import net.anomalyxii.werewolves.domain.Role;
+import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.CharacterInstance;
@@ -47,13 +44,20 @@ public class LiveGameParser extends AbstractGameParser {
                 // Identity Events
 
                 case "NewIdentityAssigned":
-                    // Todo: add an event for this!
-                    User originalUser = getUser((String) event.get("originalName")).getUser();
-                    Character newCharacter = getCharacter((String) event.get("newPlayerName")).getCharacter();
-                    assignUserToCharacter(originalUser, newCharacter);
-                    return null;
                 case "IdentitySwapped":
-                    return null;
+                    String originalName = (String) event.get("originalName");
+                    User originalUser = getUser(originalName).getUser();
+                    if("NewIdentityAssigned".equalsIgnoreCase(type)) {
+                        String newPlayerName = (String) event.get("newPlayerName");
+                        Character newCharacter = getCharacter(newPlayerName).getCharacter();
+                        assignUserToCharacter(originalUser, newCharacter);
+                        return new NewIdentityAssignedEvent(getCharacter(newPlayerName), parseTime(event));
+                    } else {
+                        String characterName = (String) event.get("playerName");
+                        Character newCharacterIdentity = getCharacter(characterName).getCharacter();
+                        swapUserIntoCharacter(originalUser, newCharacterIdentity);
+                        return new NewIdentityAssignedEvent(getCharacter(characterName), parseTime(event));
+                    }
 
                 // Message Events
 
@@ -65,6 +69,8 @@ public class LiveGameParser extends AbstractGameParser {
                     return new CovenMessageEvent(player, parseTime(event), parseMessage(event));
                 case "WerewolfNightMessage": // Wolfchat
                     return new WerewolfMessageEvent(player, parseTime(event), parseMessage(event));
+                case "MasonNightMessage":
+                    return new MasonMessageEvent(player, parseTime(event), parseMessage(event));
                 case "VillageMessage": // Normalchat
                     return new VillageMessageEvent(player, parseTime(event), parseMessage(event));
 

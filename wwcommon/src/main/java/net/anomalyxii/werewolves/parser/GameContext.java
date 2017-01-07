@@ -331,6 +331,12 @@ public abstract class GameContext {
         return characterUserMap.get(character);
     }
 
+    /**
+     * Map a {@link User} to a {@link Character}
+     *
+     * @param user the {@link User}
+     * @param character the {@link Character}
+     */
     protected void assignUserToCharacter(User user, Character character) {
         userCharacterMap.put(user, character);
         characterUserMap.put(character, user);
@@ -342,6 +348,14 @@ public abstract class GameContext {
 
         assignUserToCharacter(first, secondCharacter);
         assignUserToCharacter(second, firstCharacter);
+    }
+
+    protected void swapUserIntoCharacter(User user, Character character) {
+        Character currentCharacter = getCharacterFor(user);
+        User oldUserForNewCharacter = getUserFromCharacter(character);
+
+        assignUserToCharacter(user, character);
+        assignUserToCharacter(oldUserForNewCharacter, currentCharacter);
     }
 
     // Phase Functions

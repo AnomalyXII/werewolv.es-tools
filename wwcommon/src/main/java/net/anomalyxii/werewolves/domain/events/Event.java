@@ -78,6 +78,7 @@ public interface Event {
     enum EventType {
 
         GAME_STARTED,
+        IDENTITY_ASSIGNED,
         ROLE_ASSIGNED,
 
         PLAYER_JOINED,
