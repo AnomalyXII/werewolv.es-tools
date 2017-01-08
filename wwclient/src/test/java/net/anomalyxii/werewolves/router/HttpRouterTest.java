@@ -6,6 +6,7 @@ import net.anomalyxii.werewolves.domain.Games;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 import org.mockserver.integration.ClientAndProxy;
 import org.mockserver.integration.ClientAndServer;
+import org.mockserver.mockserver.MockServer;
 import org.mockserver.model.HttpRequest;
 import org.mockserver.model.HttpResponse;
 import org.mockserver.socket.PortFactory;
@@ -31,9 +32,8 @@ import static org.testng.Assert.*;
  */
 public class HttpRouterTest {
 
-    int port = PortFactory.findFreePort();
+    private int port = PortFactory.findFreePort();
     private ClientAndServer mockServer;
-    private ClientAndProxy proxy;
 
     // ******************************
     // Set-up & Tear-down Methods
@@ -52,7 +52,6 @@ public class HttpRouterTest {
     @AfterClass
     public void afterClass() {
         mockServer.stop();
-        //proxy.stop();
     }
 
     // ******************************
@@ -200,7 +199,7 @@ public class HttpRouterTest {
         assertEquals(game.getPreGameEvents().size(), 118);
         assertEquals(game.getPostGameEvents().size(), 96);
         // Day 1 and Night 1
-        assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 28);
+        assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 29);
         assertTrue(game.getDay(0).getDayPhase().isComplete());
         assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 1);
         assertTrue(game.getDay(0).getNightPhase().isComplete());

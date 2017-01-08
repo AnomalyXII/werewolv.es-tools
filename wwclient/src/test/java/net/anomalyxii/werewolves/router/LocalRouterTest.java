@@ -64,7 +64,7 @@ public class LocalRouterTest {
         assertEquals(game.getPreGameEvents().size(), 118);
         assertEquals(game.getPostGameEvents().size(), 96);
         // Day 1 and Night 1
-        assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 28);
+        assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 29);
         assertTrue(game.getDay(0).getDayPhase().isComplete());
         assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 1);
         assertTrue(game.getDay(0).getNightPhase().isComplete());

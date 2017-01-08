@@ -5,20 +5,23 @@ import net.anomalyxii.werewolves.domain.PlayerInstance;
 import java.time.OffsetDateTime;
 
 /**
- * Created by Anomaly on 06/01/2017.
+ * Created by Anomaly on 07/01/2017.
  */
-public class NewIdentityAssignedEvent extends AbstractEvent {
+public class IdentitySwappedIntoEvent extends AbstractEvent {
 
     // ******************************
     // Members
     // ******************************
 
+    private final PlayerInstance target;
+
     // ******************************
     // Constructors
     // ******************************
 
-    public NewIdentityAssignedEvent(PlayerInstance player, OffsetDateTime timestamp) {
+    public IdentitySwappedIntoEvent(PlayerInstance player, OffsetDateTime timestamp, PlayerInstance target) {
         super(player, timestamp, EventType.IDENTITY_ASSIGNED);
+        this.target = target;
     }
 
     // ******************************
@@ -27,10 +30,7 @@ public class NewIdentityAssignedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] <%s> My new identity is: %s",
-                             getTime(),
-                             getPlayer().getUser().getName(),
-                             getPlayer().getCharacter().getName());
+        return String.format("[%tH:%<tM] ~~ %s swapped into %S", getTime(), getPlayer().getName(), target.getName());
     }
 
 }

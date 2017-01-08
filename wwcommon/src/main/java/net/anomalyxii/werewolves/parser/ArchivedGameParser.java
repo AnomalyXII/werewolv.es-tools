@@ -1,11 +1,10 @@
 package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.Alignment;
+import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
-import net.anomalyxii.werewolves.domain.Vitality;
 import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.players.Character;
-import net.anomalyxii.werewolves.domain.players.CharacterInstance;
 import net.anomalyxii.werewolves.domain.players.User;
 
 import java.time.OffsetDateTime;
@@ -41,7 +40,9 @@ public class ArchivedGameParser extends AbstractGameParser {
     private static class GameCreationContext extends GameContext {
 
         @Override
-        public Event parseEvent(PlayerInstance player, Map<String, Object> event) {
+        public Event parseEvent(PlayerInstance player, OffsetDateTime timestamp, Map<String, Object> event) {
+
+            PlayerContext playerContext = getPlayerContext();
 
             String type = (String) event.get("__type");
             type = type.split(",")[0];
@@ -50,42 +51,47 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 // Identity Events
                 case "Werewolf.GameEngine.Core.NewIdentityAssignedEvent":
-                    // Todo: add an event for this!
-                    User originalUser = getUser((String) event.get("OriginalName")).getUser();
-                    Character newCharacter = findOrCreateCharacter((String) event.get("NewName"),
-                                                                   (String) event.get("NewAvatarUrl")).getCharacter();
-                    assignUserToCharacter(originalUser, newCharacter);
-                    return null;
+                    User originalUser = playerContext.getUser((String) event.get("OriginalName"));
+                    Character newCharacter = playerContext.findOrCreateCharacter((String) event.get("NewName"),
+                                                                                 (String) event.get("NewAvatarUrl"));
+                    playerContext.assignCharacterToUser(originalUser, newCharacter);
+                    return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacter), timestamp);
 
                 case "Werewolf.GameEngine.Roles.Werewolves.Shapeshifter.ShapeshifterSwappedPlayerIdentities":
                 case "Werewolf.GameEngine.Roles.Coven.Djinn.DjinnSwappedPlayerIdentities":
-                    User firstPlayer = getUser((String) event.get("FirstPlayer")).getUser();
-                    User secondPlayer = getUser((String) event.get("SecondPlayer")).getUser();
-                    swapUserCharacters(firstPlayer, secondPlayer);
+                    User firstPlayer = playerContext.getUser((String) event.get("FirstPlayer"));
+                    User secondPlayer = playerContext.getUser((String) event.get("SecondPlayer"));
+                    playerContext.swapUserCharacters(firstPlayer, secondPlayer);
+                    return null;
+                case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapped":
+                    User puppetMasterUser = playerContext.getUser((String) event.get("Puppetmaster"));
+                    User puppetUser = playerContext.getUser((String) event.get("PlayerName"));
+                    playerContext.swapUserCharactersTemporarily(puppetMasterUser, puppetUser);
+                    //return new IdentitySwappedIntoEvent(puppetMasterInstance, timestamp, puppetInstance);
                     return null;
 
                 // Message Events
                 case "Werewolf.GameEngine.Core.ModeratorMessageEvent":
-                    return new ModeratorMessageEvent(parseTime(event), parseMessage(event));
+                    return new ModeratorMessageEvent(timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.PendingGameMessage":
                 case "Werewolf.GameEngine.Chatting.PostGameMessageEvent":
-                    return new VillageMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new VillageMessageEvent(player, timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.GhostMessageEvent":
-                    return new GraveyardMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new GraveyardMessageEvent(player, timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.VillageMessageEvent":
-                    return new VillageMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new VillageMessageEvent(player, timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.WerewolfNightMessageEvent":
-                    return new WerewolfMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new WerewolfMessageEvent(player, timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Chatting.CovenNightMessageEvent":
-                    return new CovenMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new CovenMessageEvent(player, timestamp, parseMessage(event));
 
                 case "Werewolf.GameEngine.Roles.Vampires.VampireNightMessageEvent":
-                    return new VampireMessageEvent(parsePlayerInstance(event), parseTime(event), parseMessage(event));
+                    return new VampireMessageEvent(player, timestamp, parseMessage(event));
 
                 // Role Events
 
@@ -119,9 +125,10 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Roles.NightTargetChosenEvent":
 
+                case "Werewolf.GameEngine.Roles.Coven.Djinn.PrimaryDjinnTargetChosen":
+                case "Werewolf.GameEngine.Roles.Coven.Djinn.SecondaryDjinnTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetVoted":
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapSelected":
-                case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapped":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTotemUsed":
@@ -132,6 +139,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchKillTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedKill":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedRevive":
+                case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToKill":
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToRecruit":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.UndeterminedRoleReaveledToGraveDigger":
@@ -178,20 +186,20 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return null;
 
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationEvent":
-                    User user = getUser((String) event.get("Target")).getUser();
-                    Character targetCharacter = getCharacterFor(user);
-                    return new PlayerNominationEvent(player, parseTime(event), targetCharacter);
+                    User user = playerContext.getUser((String) event.get("Target"));
+                    Character targetCharacter = playerContext.getCharacterFor(user);
+                    return new PlayerNominationEvent(player, timestamp, targetCharacter);
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent":
                     return null; // Is this silent?
 
                 case "PlayerKilled":
-                    return new PlayerKilledEvent(player, parseTime(event));
+                    return new PlayerKilledEvent(player, timestamp);
                 case "PlayerLynched":
-                    return new PlayerLynchedEvent(player, parseTime(event));
+                    return new PlayerLynchedEvent(player, timestamp);
                 case "PlayerRevived":
-                    return new PlayerRevivedEvent(player, parseTime(event));
+                    return new PlayerRevivedEvent(player, timestamp);
                 case "PlayerSmited":
-                    return new PlayerSmitedEvent(player, parseTime(event));
+                    return new PlayerSmitedEvent(player, timestamp);
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":
                     finishGame(Alignment.COVEN);
@@ -236,18 +244,12 @@ public class ArchivedGameParser extends AbstractGameParser {
 
         @Override
         protected PlayerInstance parsePlayerInstance(Map<String, Object> event) {
+            PlayerContext playerContext = getPlayerContext();
+
             String playerName = (String) event.get("PlayerName");
             String avatarUrl = (String) event.get("PlayerName");
-            PlayerInstance instance = findOrCreateUserOrSpecialPlayer(playerName, avatarUrl);
-            if (instance.getUser() == null)
-                return instance; // Probably a "Special Player"
-
-            User user = instance.getUser();
-            Character character = getCharacterFor(user);
-            if (character == null)
-                return instance; // Probably a user who isn't joined to the game?
-
-            return new CharacterInstance(character, user, Vitality.ALIVE); // Todo: look this up!
+            Player player = playerContext.findOrCreateUserOrSpecialPlayer(playerName, avatarUrl);
+            return playerContext.instanceFor(player);
         }
 
         @Override

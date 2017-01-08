@@ -1,0 +1,11 @@
+project.plugins.withType(JavaPlugin) {
+
+    test {
+
+        useTestNG() {
+            scanForTestClasses = true
+        }
+
+    }
+
+}

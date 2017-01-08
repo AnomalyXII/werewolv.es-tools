@@ -7,6 +7,11 @@
         </encoder>
     </appender>
 
+    <!-- Suppress annoying MockServer logging -->
+    <logger name='org.mockserver' level='OFF'/>
+    <logger name='io.netty' level='OFF'/>
+
+    <!-- Main logging -->
     <root level='${logging.level:-DEBUG}'>
         <appender-ref ref='STDOUT' />
     </root>

@@ -39,4 +39,22 @@ public class AbstractPlayer implements Player {
         return avatarURI;
     }
 
+    // ******************************
+    // Equals & HashCode
+    // ******************************
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        AbstractPlayer that = (AbstractPlayer) o;
+        return name.equals(that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
 }
