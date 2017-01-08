@@ -148,12 +148,16 @@ public class LiveGameParser extends AbstractGameParser {
                     return null; // Is this silent?
 
                 case "PlayerKilled":
+                    playerContext.assignVitalityToCharacter(player.getCharacter(), Vitality.DEAD);
                     return new PlayerKilledEvent(player, timestamp);
                 case "PlayerLynched":
+                    playerContext.assignVitalityToCharacter(player.getCharacter(), Vitality.DEAD);
                     return new PlayerLynchedEvent(player, timestamp);
                 case "PlayerRevived":
+                    playerContext.assignVitalityToCharacter(player.getCharacter(), Vitality.ALIVE);
                     return new PlayerRevivedEvent(player, timestamp);
                 case "PlayerSmited":
+                    playerContext.assignVitalityToCharacter(player.getCharacter(), Vitality.DEAD);
                     return new PlayerSmitedEvent(player, timestamp);
 
 

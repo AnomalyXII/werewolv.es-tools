@@ -3,6 +3,7 @@ package net.anomalyxii.werewolves.parser;
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
+import net.anomalyxii.werewolves.domain.Vitality;
 import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
@@ -144,8 +145,10 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Succubus.SecondarySuccubusTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchReviveTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchKillTargetChosen":
-                    return null;
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedKill":
+                    return null;
+                case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedRevive":
+                    playerContext.assignVitalityToUser(player.getUser(), Vitality.ALIVE);
                     return new PlayerRevivedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToKill":
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToRecruit":
@@ -160,6 +163,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected":
                     return null;
                 case "Werewolf.GameEngine.Roles.Village.Reviver.PlayerRevivedEvent":
+                    playerContext.assignVitalityToUser(player.getUser(), Vitality.ALIVE);
                     return new PlayerRevivedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawNoVisit":
@@ -203,10 +207,13 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return null; // Is this silent?
 
                 case "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent":
+                    playerContext.assignVitalityToUser(player.getUser(), Vitality.DEAD);
                     return new PlayerKilledEvent(player, timestamp);
                 case "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent":
+                    playerContext.assignVitalityToUser(player.getUser(), Vitality.DEAD);
                     return new PlayerLynchedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Phases.Day.PlayerSmitedEvent":
+                    playerContext.assignVitalityToUser(player.getUser(), Vitality.DEAD);
                     return new PlayerSmitedEvent(player, timestamp);
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":

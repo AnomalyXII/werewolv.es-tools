@@ -106,7 +106,8 @@ public abstract class AbstractEvent implements Event {
      * <li>
      * Vitality:
      * <ol>
-     * <li><code>~</code> if alive</li>
+     * <li><code>~</code> if neither alive
+     * nor dead (e.g. not in the game)</li>
      * <li><code>X</code> if dead</li>
      * <li><i>otherwise blank</i></li>
      * </ol>
@@ -139,10 +140,10 @@ public abstract class AbstractEvent implements Event {
      */
     protected char getVitalityStatus() {
         return player.isAlive()
-               ? '~'
+               ? ' '
                : player.isDead()
                  ? 'X'
-                 : ' ';
+                 : '~';
     }
 
     /**

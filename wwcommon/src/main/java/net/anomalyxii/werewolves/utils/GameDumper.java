@@ -43,7 +43,7 @@ public class GameDumper {
             DayPhase dp = day.getDayPhase();
             NightPhase np = day.getNightPhase();
 
-            System.out.printf("%s ========= New Day ========= %n", BLANK_PREFIX);
+            System.out.printf("%s ========= New Day  ========= %n", BLANK_PREFIX);
             dp.getEvents().forEach(System.out::println);
             if (dp.isComplete()) {
                 // Print the end-of-day votes:

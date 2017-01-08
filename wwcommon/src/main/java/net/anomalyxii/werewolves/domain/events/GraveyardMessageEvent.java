@@ -36,4 +36,8 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
         return fmt("(%s) %s", getPlayer().getName(), getMessage());
     }
 
+    @Override
+    protected char getChatStatus() {
+        return 'G';
+    }
 }
