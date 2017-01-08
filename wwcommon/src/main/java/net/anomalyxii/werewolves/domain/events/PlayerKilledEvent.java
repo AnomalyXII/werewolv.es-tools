@@ -23,7 +23,7 @@ public class PlayerKilledEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (x_x) %s was killed", getTime(), getPlayer().getName());
+        return String.format("%s [%tH:%<tM] (x_x) %s was killed", getStatusString(), getTime(), getPlayer().getName());
     }
 
 }

@@ -1,6 +1,5 @@
 package net.anomalyxii.werewolves.domain.events;
 
-import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
 
 import java.time.OffsetDateTime;
@@ -16,6 +15,15 @@ public class ModeratorMessageEvent extends PlayerMessageEvent {
 
     public ModeratorMessageEvent(OffsetDateTime timestamp, String message) {
         super(PlayerInstance.MODERATOR, timestamp, EventType.VILLAGE_MESSAGE, message);
+    }
+
+    // ******************************
+    // Constructors
+    // ******************************
+
+    @Override
+    protected char getVitalityStatus() {
+        return '!'; // Special for Moderator Message!
     }
 
 }

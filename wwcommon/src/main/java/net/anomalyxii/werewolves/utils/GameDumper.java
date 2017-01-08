@@ -17,6 +17,9 @@ import java.util.stream.Collectors;
  */
 public class GameDumper {
 
+    private static final String BLANK_PREFIX = "         ";
+    private static final String META_PREFIX  = "    META | ";
+
     // ******************************
     // Members
     // ******************************
@@ -29,16 +32,18 @@ public class GameDumper {
 
         game.getPreGameEvents().forEach(System.out::println);
 
-        System.out.println("        ======= Game Started =======");
+        System.out.printf("%s ======= Game Started ======= %n", BLANK_PREFIX);
         game.getUsers().stream()
                 .filter(User::isJoinedGame)
-                .forEach(user -> System.out.printf(" META | %s is participating in this game %n", user.getName()));
+                .forEach(user -> System.out.printf("%s%s is participating in this game %n",
+                                                   META_PREFIX,
+                                                   user.getName()));
 
         game.getDays().forEach(day -> {
             DayPhase dp = day.getDayPhase();
             NightPhase np = day.getNightPhase();
 
-            System.out.println("        ======= New Day =======");
+            System.out.printf("%s ========= New Day ========= %n", BLANK_PREFIX);
             dp.getEvents().forEach(System.out::println);
             if (dp.isComplete()) {
                 // Print the end-of-day votes:
@@ -55,15 +60,15 @@ public class GameDumper {
                         .entrySet().stream()
                         .sorted(Comparator.comparing(a -> a.getKey().getName()))
                         .forEach((entry) -> System.out.printf(
-                                " META | Final vote: %s -> %s%n",
+                                "%s Final vote: %s -> %s%n",
+                                META_PREFIX,
                                 entry.getKey().getName(),
                                 entry.getValue().getName()));
 
-
-                System.out.println("        ======= Night Falls =======");
+                System.out.printf("%s ======= Night Falls  ======= %n", BLANK_PREFIX);
                 np.getEvents().forEach(System.out::println);
             }
-            System.out.println("        ======= End Day =======");
+            System.out.printf("%s ========= End Day  ========= %n", BLANK_PREFIX);
         });
 
         // Game over?
@@ -73,10 +78,11 @@ public class GameDumper {
                               game.getWinningAlignment().toString().toLowerCase());
             System.out.println();
 
-            System.out.println("        ======= Role Reveals =======");
+            System.out.printf("%s ======- Role Reveal  ======= %n", BLANK_PREFIX);
             game.getCharacters().stream()
                     .sorted(Comparator.comparing(AbstractPlayer::getName))
-                    .forEach(character -> System.out.printf(" META | <%s> %s was a %s%s %n",
+                    .forEach(character -> System.out.printf("%s <%s> %s was a %s%s %n",
+                                                            META_PREFIX,
                                                             character.getName(),
                                                             character.getUser().getName(),
                                                             character.getRole(),

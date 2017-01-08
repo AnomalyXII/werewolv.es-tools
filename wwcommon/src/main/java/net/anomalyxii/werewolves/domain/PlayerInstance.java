@@ -90,4 +90,26 @@ public interface PlayerInstance {
         return getPlayer().getName();
     }
 
+    /**
+     * Convenience method for determining
+     * whether the {@link Player} is
+     * currently alive.
+     *
+     * @return {@literal true} if the player is alive, {@literal false} otherwise
+     */
+    default boolean isAlive() {
+        return getVitality() == Vitality.ALIVE;
+    }
+
+    /**
+     * Convenience method for determining
+     * whether the {@link Player} is
+     * currently dead.
+     *
+     * @return {@literal true} if the player is dead, {@literal false} otherwise
+     */
+    default boolean isDead() {
+        return getVitality() == Vitality.DEAD;
+    }
+
 }

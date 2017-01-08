@@ -23,7 +23,7 @@ public class PlayerSmitedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] >-(._.)-> %s was smited", getTime(), getPlayer().getName());
+        return fmt(">-(._.)-> %s was smited", getPlayer().getName());
     }
 
 }

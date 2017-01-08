@@ -21,4 +21,13 @@ public class MasonMessageEvent extends PlayerMessageEvent {
         super(player, timestamp, EventType.MASON_MESSAGE, message);
     }
 
+    // ******************************
+    // To String
+    // ******************************
+
+    @Override
+    protected char getChatStatus() {
+        return 'M'; // Todo: do we need to add a specific Alignment in for this?
+    }
+
 }

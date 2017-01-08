@@ -27,7 +27,7 @@ public class PlayerLeftEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] <- %s has left the game", getTime(), getPlayer().getName());
+        return fmt("<- %s has left the game", getPlayer().getName());
     }
 
 }

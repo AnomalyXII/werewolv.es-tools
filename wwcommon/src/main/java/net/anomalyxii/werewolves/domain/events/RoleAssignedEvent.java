@@ -39,7 +39,7 @@ public class RoleAssignedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] %s is a %s", getTime(), getPlayer().getName(), role);
+        return fmt("%s is a %s", getPlayer().getName(), role);
     }
 
 }

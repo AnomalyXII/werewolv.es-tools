@@ -23,7 +23,7 @@ public class PlayerLynchedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (x_x) %s was lynched", getTime(), getPlayer().getName());
+        return fmt("(x_x) %s was lynched", getPlayer().getName());
     }
 
 }

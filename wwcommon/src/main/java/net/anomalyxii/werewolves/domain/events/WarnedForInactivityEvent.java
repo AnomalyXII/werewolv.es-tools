@@ -20,4 +20,14 @@ public class WarnedForInactivityEvent extends AbstractEvent {
     public WarnedForInactivityEvent(PlayerInstance player, OffsetDateTime timestamp) {
         super(player, timestamp, EventType.INACTIVITY_WARNING);
     }
+
+    // ******************************
+    // To String
+    // ******************************
+
+    @Override
+    public String toString() {
+        return fmt("Inactivity Warning: %s", getPlayer().getName());
+    }
+
 }

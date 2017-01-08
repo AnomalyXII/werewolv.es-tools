@@ -23,7 +23,7 @@ public class PlayerRevivedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (^_^) %s was revived", getTime(), getPlayer().getName());
+        return fmt("(^_^) %s was revived", getPlayer().getName());
     }
 
 }

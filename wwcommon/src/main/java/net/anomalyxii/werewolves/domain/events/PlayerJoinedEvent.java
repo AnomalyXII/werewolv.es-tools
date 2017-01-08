@@ -27,7 +27,8 @@ public class PlayerJoinedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] -> %s has joined the game", getTime(), getPlayer().getName());
+        return fmt("-> %s has joined the game",
+                                 getPlayer().getName());
     }
 
 }

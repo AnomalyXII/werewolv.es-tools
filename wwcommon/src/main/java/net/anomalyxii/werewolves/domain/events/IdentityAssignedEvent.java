@@ -27,10 +27,7 @@ public class IdentityAssignedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] <%s> My new identity is: %s",
-                             getTime(),
-                             getPlayer().getUser().getName(),
-                             getPlayer().getCharacter().getName());
+        return fmt(getPlayer(), "My new identity is: %s", getPlayer().getCharacter().getName());
     }
 
 }

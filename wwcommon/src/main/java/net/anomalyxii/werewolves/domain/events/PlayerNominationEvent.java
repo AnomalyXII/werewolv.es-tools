@@ -39,10 +39,7 @@ public class PlayerNominationEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] %s votes to lynch %s",
-                             getTime(),
-                             getPlayer().getName(),
-                             getTarget().getName());
+        return fmt("%s votes to lynch %s", getPlayer().getName(), getTarget().getName());
     }
 
 }

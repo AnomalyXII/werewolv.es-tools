@@ -33,7 +33,7 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] (%s) %s", getTime(), getPlayer().getName(), getMessage());
+        return fmt("(%s) %s", getPlayer().getName(), getMessage());
     }
 
 }

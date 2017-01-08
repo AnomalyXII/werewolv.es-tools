@@ -38,7 +38,7 @@ public abstract class PlayerMessageEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("%s %s", super.toString(), message);
+        return fmt(getPlayer(), message);
     }
 
 }

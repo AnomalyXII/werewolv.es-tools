@@ -30,7 +30,7 @@ public class IdentitySwappedIntoEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return String.format("[%tH:%<tM] ~~ %s swapped into %S", getTime(), getPlayer().getName(), target.getName());
+        return fmt("~~ %s swapped into %s", getPlayer().getName(), target.getName());
     }
 
 }
