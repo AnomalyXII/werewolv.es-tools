@@ -87,7 +87,7 @@ public class PlayerContext {
     // PlayerInstance Methods
     // ******************************
 
-    protected PlayerInstance instanceFor(Player player) {
+    public PlayerInstance instanceFor(Player player) {
         if (player == Player.MODERATOR)
             return PlayerInstance.MODERATOR;
 
@@ -101,7 +101,7 @@ public class PlayerContext {
         return null;
     }
 
-    protected PlayerInstance instanceForUser(User user) {
+    public PlayerInstance instanceForUser(User user) {
         Character character = getCharacterFor(user);
         if (character == null)
             return new UserInstance(user);
@@ -109,7 +109,7 @@ public class PlayerContext {
         return instanceForCharacter(character);
     }
 
-    protected PlayerInstance instanceForCharacter(Character character) {
+    public PlayerInstance instanceForCharacter(Character character) {
         Vitality vitality = getVitalityForCharacter(character);
 
         User user = getUserFromCharacter(character);
@@ -125,14 +125,14 @@ public class PlayerContext {
     // Player Methods
     // ******************************
 
-    protected Player getSpecialPlayer(String name) {
+    public Player getSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
         if (instance != null)
             return instance;
         throw new IllegalArgumentException("SpecialPlayer '" + name + "' was not found");
     }
 
-    protected Player findSpecialPlayer(String name) {
+    public Player findSpecialPlayer(String name) {
         if (name == null)
             return SpecialPlayer.ANONYMOUS;
 
@@ -146,14 +146,14 @@ public class PlayerContext {
     // User Methods
     // ******************************
 
-    protected User getUser(String name) {
+    public User getUser(String name) {
         User instance = findUser(name);
         if (instance != null)
             return instance;
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
-    protected User findUser(String name) {
+    public User findUser(String name) {
         User user = users.get(name);
         if (user != null)
             return user;
@@ -161,7 +161,7 @@ public class PlayerContext {
         return null;
     }
 
-    protected User findOrCreateUser(String name, String avatarUrl) {
+    public User findOrCreateUser(String name, String avatarUrl) {
         User instance = findUser(name);
         if (instance != null)
             return instance;
@@ -174,7 +174,7 @@ public class PlayerContext {
         return user;
     }
 
-    protected Player getUserOrSpecialPlayer(String name) {
+    public Player getUserOrSpecialPlayer(String name) {
         Player instance = findUserOrSpecialPlayer(name);
         if (instance != null)
             return instance;
@@ -182,7 +182,7 @@ public class PlayerContext {
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
-    protected Player findUserOrSpecialPlayer(String name) {
+    public Player findUserOrSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
         if (instance != null)
             return instance;
@@ -190,7 +190,7 @@ public class PlayerContext {
         return findUser(name);
     }
 
-    protected Player findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
+    public Player findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
         Player player = findSpecialPlayer(name);
         if (player != null)
             return player;
@@ -202,14 +202,14 @@ public class PlayerContext {
     // Character Methods
     // ******************************
 
-    protected Character getCharacter(String name) {
+    public Character getCharacter(String name) {
         Character instance = findCharacter(name);
         if (instance != null)
             return instance;
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
-    protected Character findCharacter(String name) {
+    public Character findCharacter(String name) {
         Character character = characters.get(name);
         if (character != null)
             return character;
@@ -217,7 +217,7 @@ public class PlayerContext {
         return null;
     }
 
-    protected Character findOrCreateCharacter(String name, String avatarUrl) {
+    public Character findOrCreateCharacter(String name, String avatarUrl) {
         Character instance = findCharacter(name);
         if (instance != null)
             return instance;
@@ -230,7 +230,7 @@ public class PlayerContext {
         return character;
     }
 
-    protected Player getCharacterOrSpecialPlayer(String name) {
+    public Player getCharacterOrSpecialPlayer(String name) {
         Player instance = findCharacterOrSpecialPlayer(name);
         if (instance != null)
             return instance;
@@ -238,7 +238,7 @@ public class PlayerContext {
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
-    protected Player findCharacterOrSpecialPlayer(String name) {
+    public Player findCharacterOrSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
         if (instance != null)
             return instance;
@@ -246,7 +246,7 @@ public class PlayerContext {
         return findCharacter(name);
     }
 
-    protected Player findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
+    public Player findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
         Player player = findSpecialPlayer(name);
         if (player != null)
             return player;
@@ -265,7 +265,7 @@ public class PlayerContext {
      * @param user the {@link User} to look up
      * @return the {@link Character} belonging to that {@link User}
      */
-    protected Character getCharacterFor(User user) {
+    public Character getCharacterFor(User user) {
         return userCharacterMap.get(user);
     }
 
@@ -276,7 +276,7 @@ public class PlayerContext {
      * @param character the {@link Character} to look up
      * @return the {@link User} assigned to that {@link Character}
      */
-    protected User getUserFromCharacter(Character character) {
+    public User getUserFromCharacter(Character character) {
         return characterUserMap.get(character);
     }
 
@@ -287,7 +287,7 @@ public class PlayerContext {
      * @param user the {@link User} to look up
      * @return the {@link Role} belonging to that {@link User}
      */
-    protected Role getRoleForUser(User user) {
+    public Role getRoleForUser(User user) {
         return userRoleMap.get(user);
     }
 
@@ -298,7 +298,7 @@ public class PlayerContext {
      * @param user the {@link User} to look up
      * @return the {@link Vitality} of that {@link User}
      */
-    protected Vitality getVitalityForUser(User user) {
+    public Vitality getVitalityForUser(User user) {
         Character character = getCharacterFor(user);
         if (character == null)
             return Vitality.ALIVE; // ? Maybe??
@@ -313,7 +313,7 @@ public class PlayerContext {
      * @param character the {@link Character} to look up
      * @return the {@link Vitality} of that {@link User}
      */
-    protected Vitality getVitalityForCharacter(Character character) {
+    public Vitality getVitalityForCharacter(Character character) {
         // Default to ALIVE if we're not tracking?
         return characterVitalityMap.getOrDefault(character, Vitality.ALIVE);
     }
@@ -324,14 +324,13 @@ public class PlayerContext {
      * @param user      the {@link User}
      * @param character the {@link Character}
      */
-    protected void assignCharacterToUser(User user, Character character) {
+    public void assignCharacterToUser(User user, Character character) {
         if (user == null)
             throw new IllegalArgumentException("User cannot be null");
         if (character == null)
             throw new IllegalArgumentException("Character cannot be null");
 
-        userCharacterMap.put(user, character);
-        characterUserMap.put(character, user);
+        assignCharacterToUser$(user, character);
     }
 
     /**
@@ -341,15 +340,15 @@ public class PlayerContext {
      * @param first  the first {@link User}
      * @param second the second {@link User}
      */
-    protected void swapUserCharacters(User first, User second) {
+    public void swapUserCharacters(User first, User second) {
         if (first == null || second == null)
             throw new IllegalArgumentException("User cannot be null");
 
         Character firstCharacter = getCharacterFor(first);
         Character secondCharacter = getCharacterFor(second);
 
-        assignCharacterToUser(first, secondCharacter);
-        assignCharacterToUser(second, firstCharacter);
+        assignCharacterToUser$(first, secondCharacter);
+        assignCharacterToUser$(second, firstCharacter);
     }
 
     /**
@@ -360,14 +359,17 @@ public class PlayerContext {
      * @param user      the {@link User} to swap
      * @param character the {@link Character} to become
      */
-    protected void swapUserIntoCharacter(User user, Character character) {
+    public void swapUserIntoCharacter(User user, Character character) {
         if (user == null)
             throw new IllegalArgumentException("User cannot be null");
         if (character == null)
             throw new IllegalArgumentException("Character cannot be null");
 
-        User oldUserForNewCharacter = getUserFromCharacter(character);
-        swapUserCharacters(user, oldUserForNewCharacter);
+        Character firstCharacter = getCharacterFor(user);
+        User secondUser = getUserFromCharacter(character);
+
+        assignCharacterToUser$(user, character);
+        assignCharacterToUser$(secondUser, firstCharacter);
     }
 
     /**
@@ -376,7 +378,7 @@ public class PlayerContext {
      * @param user the {@link User}
      * @param role the {@link Role}
      */
-    protected void assignRoleToUser(User user, Role role) {
+    public void assignRoleToUser(User user, Role role) {
         if (user == null)
             throw new IllegalArgumentException("User cannot be null");
         if (role == null)
@@ -391,7 +393,7 @@ public class PlayerContext {
      * @param user     the {@link User}
      * @param vitality the {@link Vitality}
      */
-    protected void assignVitalityToUser(User user, Vitality vitality) {
+    public void assignVitalityToUser(User user, Vitality vitality) {
         if (user == null)
             throw new IllegalArgumentException("User cannot be null");
 
@@ -405,7 +407,7 @@ public class PlayerContext {
      * @param character the {@link Character}
      * @param vitality  the {@link Vitality}
      */
-    protected void assignVitalityToCharacter(Character character, Vitality vitality) {
+    public void assignVitalityToCharacter(Character character, Vitality vitality) {
         if (character == null)
             throw new IllegalArgumentException("Character cannot be null");
         if (vitality == null)
@@ -421,7 +423,7 @@ public class PlayerContext {
      * @param user the {@link User}
      * @return the {@link Character}, or {@literal null} if the {@link User} is not controlling anyone
      */
-    protected Character getControlledCharacterFor(User user) {
+    public Character getControlledCharacterFor(User user) {
         return controlledUserCharacterMap.get(user);
     }
 
@@ -433,7 +435,7 @@ public class PlayerContext {
      * @param character the {@link Character} who is being controlled
      * @return the {@link User}, or {@literal null} if the {@link Character} is not being controlled
      */
-    protected User getUserControlling(Character character) {
+    public User getUserControlling(Character character) {
         return controlledCharacterUserMap.get(character);
     }
 
@@ -445,7 +447,7 @@ public class PlayerContext {
      * @param user      the {@link User} who will be controlling the target
      * @param character the {@link Character} who will be being controlled
      */
-    protected void assignControlOfCharacterToUser(User user, Character character) {
+    public void assignControlOfCharacterToUser(User user, Character character) {
         if (user == null)
             throw new IllegalArgumentException("User cannot be null");
         if (character == null)
@@ -458,7 +460,7 @@ public class PlayerContext {
         }
 
         Character originalUserCharacter = getCharacterFor(user);
-        if(!character.equals(originalUserCharacter)) {
+        if (!character.equals(originalUserCharacter)) {
             controlledUserCharacterMap.put(user, character);
             controlledCharacterUserMap.put(character, user);
         }
@@ -475,7 +477,7 @@ public class PlayerContext {
      * @param controller the {@link User} who will be controlling the target
      * @param target     the {@link User} who will be controlled
      */
-    protected void assignControlOfUserToUser(User controller, User target) {
+    public void assignControlOfUserToUser(User controller, User target) {
         if (controller == null || target == null)
             throw new IllegalArgumentException("User cannot be null");
 
@@ -486,7 +488,7 @@ public class PlayerContext {
     /**
      * Reset all the temporary swaps.
      */
-    protected void resetControlledCharacters() {
+    public void resetControlledCharacters() {
         controlledUserCharacterMap.clear();
         controlledCharacterUserMap.clear();
     }
@@ -517,6 +519,24 @@ public class PlayerContext {
      */
     public boolean isCharacterBeingControlled(Character character) {
         return controlledCharacterUserMap.containsKey(character);
+    }
+
+    // ******************************
+    // Protected Helper Methods
+    // ******************************
+
+    /**
+     * Map a {@link User} to a {@link Character}.
+     * <p>
+     * One or both of <code>user</code> and
+     * <code>character</code> may be null.
+     *
+     * @param user      the {@link User}
+     * @param character the {@link Character}
+     */
+    protected void assignCharacterToUser$(User user, Character character) {
+        userCharacterMap.put(user, character);
+        characterUserMap.put(character, user);
     }
 
 }

@@ -963,6 +963,23 @@ public class PlayerContextTest {
         assertTrue(playerContext.getCharacterFor(u2) == c1);
     }
 
+    @Test
+    public void swapUserIntoCharacter_should_correctly_swap_User_into_Character_when_target_User_is_not_set() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        playerContext.assignCharacterToUser(u1, c1);
+
+        // act
+        playerContext.swapUserIntoCharacter(u1, c2);
+
+        // assert
+        assertTrue(playerContext.getCharacterFor(u1) == c2);
+        assertNull(playerContext.getUserFromCharacter(c1));
+    }
+
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void swapUserIntoCharacter_should_throw_IllegalArgumentException_when_User_is_null() {
         // arrange
