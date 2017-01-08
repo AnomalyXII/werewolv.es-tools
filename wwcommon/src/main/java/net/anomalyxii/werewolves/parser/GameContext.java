@@ -4,10 +4,7 @@ import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
-import net.anomalyxii.werewolves.domain.players.*;
-import net.anomalyxii.werewolves.domain.players.Character;
 
-import java.net.URI;
 import java.time.OffsetDateTime;
 import java.util.*;
 
@@ -186,7 +183,7 @@ public abstract class GameContext {
         if (currentDay == null)
             throw new AssertionError("Should never happen!");
 
-        playerContext.resetTemporarySwaps();
+        playerContext.resetControlledCharacters();
 
         currentDay.getDayPhase().setComplete(true);
         setDayPhase(false);

@@ -23,14 +23,16 @@ public class PlayerContext {
 
     // Track the User <-> Character links
     private final Map<User, Character> userCharacterMap = new HashMap<>();
-    private final Map<User, Character> temporaryUserCharacterMap = new HashMap<>();
     private final Map<Character, User> characterUserMap = new HashMap<>();
-    private final Map<Character, User> temporaryCharacterUserMap = new HashMap<>();
 
     // Track the User <-> Role and Character <-> Vitality links
     //   - we track Character <-> Vitality as it's more reliable in "live" games
     private final Map<User, Role> userRoleMap = new HashMap<>();
     private final Map<Character, Vitality> characterVitalityMap = new HashMap<>();
+
+    // Track the User <-> Character links for "controlling" Users (e.g. PuppetMaster)
+    private final Map<User, Character> controlledUserCharacterMap = new HashMap<>();
+    private final Map<Character, User> controlledCharacterUserMap = new HashMap<>();
 
     // ******************************
     // Getters
@@ -104,13 +106,6 @@ public class PlayerContext {
         if (character == null)
             return new UserInstance(user);
 
-        // For puppet swaps in archived games :/
-        if (isUserTemporarilySwapped(user)) {
-            Character originalCharacter = userCharacterMap.get(user);
-            return instanceForCharacter(originalCharacter);
-        }
-
-        // Normal
         return instanceForCharacter(character);
     }
 
@@ -118,10 +113,11 @@ public class PlayerContext {
         Vitality vitality = getVitalityForCharacter(character);
 
         User user = getUserFromCharacter(character);
-        if (isUserTemporarilySwapped(user)) {
-            User originalUser = characterUserMap.get(character);
-            return new CharacterControlledInstance(character, user, originalUser, vitality);
+        if (isCharacterBeingControlled(character)) {
+            User controllingUser = getUserControlling(character);
+            return new CharacterControlledInstance(character, controllingUser, user, vitality);
         }
+
         return new CharacterInstance(character, user, vitality);
     }
 
@@ -270,8 +266,6 @@ public class PlayerContext {
      * @return the {@link Character} belonging to that {@link User}
      */
     protected Character getCharacterFor(User user) {
-        if (temporaryUserCharacterMap.containsKey(user))
-            return temporaryUserCharacterMap.get(user);
         return userCharacterMap.get(user);
     }
 
@@ -283,8 +277,6 @@ public class PlayerContext {
      * @return the {@link User} assigned to that {@link Character}
      */
     protected User getUserFromCharacter(Character character) {
-        if (temporaryCharacterUserMap.containsKey(character))
-            return temporaryCharacterUserMap.get(character);
         return characterUserMap.get(character);
     }
 
@@ -343,33 +335,6 @@ public class PlayerContext {
     }
 
     /**
-     * Map a {@link User} to a {@link Character}
-     * temporarily. This will be reset every day
-     * at night fall.
-     *
-     * @param user      the {@link User}
-     * @param character the {@link Character}
-     */
-    protected void assignCharacterToUserTemporarily(User user, Character character) {
-        if (user == null)
-            throw new IllegalArgumentException("User cannot be null");
-        if (character == null)
-            throw new IllegalArgumentException("Character cannot be null");
-
-        if (userCharacterMap.containsKey(user)) {
-            Character originalCharacter = userCharacterMap.get(user);
-            if (character.equals(originalCharacter)) {
-                temporaryUserCharacterMap.remove(user);
-                temporaryCharacterUserMap.remove(character);
-                return;
-            }
-        }
-
-        temporaryUserCharacterMap.put(user, character);
-        temporaryCharacterUserMap.put(character, user);
-    }
-
-    /**
      * Swap the assigned identity ({@link Character})
      * of two {@link User Users}.
      *
@@ -403,58 +368,6 @@ public class PlayerContext {
 
         User oldUserForNewCharacter = getUserFromCharacter(character);
         swapUserCharacters(user, oldUserForNewCharacter);
-    }
-
-    /**
-     * Swap the assigned identity ({@link Character})
-     * of two {@link User Users}.
-     * <p>
-     * This effect will only persist until nightfall,
-     * at which point both users will return to their
-     * original identities.
-     *
-     * @param first  the first {@link User}
-     * @param second the second {@link User}
-     */
-    protected void swapUserCharactersTemporarily(User first, User second) {
-        if (first == null || second == null)
-            throw new IllegalArgumentException("User cannot be null");
-
-        // Reset Puppet swaps
-        if (first.equals(second)) {
-            resetTemporarySwapForUser(first);
-            return;
-        }
-
-        Character firstCharacter = getCharacterFor(first);
-        Character secondCharacter = getCharacterFor(second);
-        assignCharacterToUserTemporarily(first, secondCharacter);
-        assignCharacterToUserTemporarily(second, firstCharacter);
-    }
-
-    /**
-     * Swap the assigned identity ({@link Character})
-     * of two {@link User Users} by swapping a given
-     * {@link User} into a given {@link Character}.
-     * <p>
-     * This effect will only persist until nightfall,
-     * at which point both users will return to their
-     * original identities.
-     *
-     * @param user      the {@link User} to swap
-     * @param character the {@link Character} to become
-     */
-    protected void swapUserIntoCharacterTemporarily(User user, Character character) {
-        if (user == null)
-            throw new IllegalArgumentException("User cannot be null");
-        if (character == null)
-            throw new IllegalArgumentException("Character cannot be null");
-
-        Character currentCharacter = getCharacterFor(user);
-        User oldUserForNewCharacter = getUserFromCharacter(character);
-
-        assignCharacterToUserTemporarily(user, character);
-        assignCharacterToUserTemporarily(oldUserForNewCharacter, currentCharacter);
     }
 
     /**
@@ -502,11 +415,80 @@ public class PlayerContext {
     }
 
     /**
+     * Get the {@link Character} that a given
+     * {@link User} is currently controlling.
+     *
+     * @param user the {@link User}
+     * @return the {@link Character}, or {@literal null} if the {@link User} is not controlling anyone
+     */
+    protected Character getControlledCharacterFor(User user) {
+        return controlledUserCharacterMap.get(user);
+    }
+
+    /**
+     * Get the {@link User} that a given
+     * {@link Character} is currently
+     * being controlled by.
+     *
+     * @param character the {@link Character} who is being controlled
+     * @return the {@link User}, or {@literal null} if the {@link Character} is not being controlled
+     */
+    protected User getUserControlling(Character character) {
+        return controlledCharacterUserMap.get(character);
+    }
+
+    /**
+     * Map a {@link User} to a {@link Character}
+     * temporarily. This will be reset every day
+     * at night fall.
+     *
+     * @param user      the {@link User} who will be controlling the target
+     * @param character the {@link Character} who will be being controlled
+     */
+    protected void assignControlOfCharacterToUser(User user, Character character) {
+        if (user == null)
+            throw new IllegalArgumentException("User cannot be null");
+        if (character == null)
+            throw new IllegalArgumentException("Character cannot be null");
+
+        // Reset first
+        if (controlledUserCharacterMap.containsKey(user)) {
+            Character previouslyControlledCharacter = controlledUserCharacterMap.remove(user);
+            controlledCharacterUserMap.remove(previouslyControlledCharacter);
+        }
+
+        Character originalUserCharacter = getCharacterFor(user);
+        if(!character.equals(originalUserCharacter)) {
+            controlledUserCharacterMap.put(user, character);
+            controlledCharacterUserMap.put(character, user);
+        }
+    }
+
+    /**
+     * Swap the assigned identity ({@link Character})
+     * of two {@link User Users}.
+     * <p>
+     * This effect will only persist until nightfall,
+     * at which point both users will return to their
+     * original identities.
+     *
+     * @param controller the {@link User} who will be controlling the target
+     * @param target     the {@link User} who will be controlled
+     */
+    protected void assignControlOfUserToUser(User controller, User target) {
+        if (controller == null || target == null)
+            throw new IllegalArgumentException("User cannot be null");
+
+        Character character = getCharacterFor(target);
+        assignControlOfCharacterToUser(controller, character);
+    }
+
+    /**
      * Reset all the temporary swaps.
      */
-    protected void resetTemporarySwaps() {
-        temporaryUserCharacterMap.clear();
-        temporaryCharacterUserMap.clear();
+    protected void resetControlledCharacters() {
+        controlledUserCharacterMap.clear();
+        controlledCharacterUserMap.clear();
     }
 
     // ******************************
@@ -515,45 +497,26 @@ public class PlayerContext {
 
     /**
      * Check if the given {@link User}
-     * has been temporarily swapped.
+     * has taken control of a different
+     * {@link Character}.
      *
      * @param user the {@link User} to check
      * @return {@literal true} if the {@link User} has been temporarily swapped, {@literal false} otherwise
      */
-    public boolean isUserTemporarilySwapped(User user) {
-        return temporaryUserCharacterMap.containsKey(user);
+    public boolean isUserControlling(User user) {
+        return controlledUserCharacterMap.containsKey(user);
     }
 
     /**
      * Check if the given {@link Character}
-     * has been temporarily swapped.
+     * has been taken control of by another
+     * {@link User}.
      *
      * @param character the {@link Character} to check
      * @return {@literal true} if the {@link Character} has been temporarily swapped, {@literal false} otherwise
      */
-    public boolean isCharacterTemporarilySwapped(Character character) {
-        return temporaryCharacterUserMap.containsKey(character);
-    }
-
-    // ******************************
-    // Protected Helper Methods
-    // ******************************
-
-    /**
-     * Recursively reset all the temporary
-     * swaps for a given {@link User}.
-     *
-     * @param user the {@link User} to reset
-     */
-    protected void resetTemporarySwapForUser(User user) {
-        Character swappedCharacter = temporaryUserCharacterMap.remove(user);
-        temporaryCharacterUserMap.remove(swappedCharacter);
-        if (swappedCharacter == null)
-            return;
-
-        Character originalCharacter = userCharacterMap.get(user);
-        User swappedUser = temporaryCharacterUserMap.get(originalCharacter);
-        resetTemporarySwapForUser(swappedUser);
+    public boolean isCharacterBeingControlled(Character character) {
+        return controlledCharacterUserMap.containsKey(character);
     }
 
 }

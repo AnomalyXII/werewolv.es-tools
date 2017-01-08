@@ -191,18 +191,18 @@ public class PlayerContextTest {
         Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
         playerContext.assignCharacterToUser(u1, c1);
         playerContext.assignCharacterToUser(u2, c2);
-        playerContext.swapUserCharactersTemporarily(u1, u2);
+        playerContext.assignControlOfCharacterToUser(u1, c2);
 
         // act
-        PlayerInstance instance = playerContext.instanceFor(c1);
+        PlayerInstance instance = playerContext.instanceFor(c2);
 
         // assert
         assertNotNull(instance);
         assertTrue(instance instanceof CharacterControlledInstance);
-        assertEquals(instance.getPlayer(), c1);
-        assertEquals(instance.getCharacter(), c1);
-        assertEquals(instance.getUser(), u2);
-        assertEquals(((CharacterControlledInstance) instance).getOriginalUser(), u1);
+        assertEquals(instance.getPlayer(), c2);
+        assertEquals(instance.getCharacter(), c2);
+        assertEquals(instance.getUser(), u1);
+        assertEquals(((CharacterControlledInstance) instance).getOriginalUser(), u2);
     }
 
     @Test
@@ -287,18 +287,18 @@ public class PlayerContextTest {
         Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
         playerContext.assignCharacterToUser(u1, c1);
         playerContext.assignCharacterToUser(u2, c2);
-        playerContext.swapUserCharactersTemporarily(u1, u2);
+        playerContext.assignControlOfUserToUser(u1, u2);
 
         // act
-        PlayerInstance instance = playerContext.instanceForCharacter(c1);
+        PlayerInstance instance = playerContext.instanceForCharacter(c2);
 
         // assert
         assertNotNull(instance);
         assertTrue(instance instanceof CharacterControlledInstance);
-        assertEquals(instance.getPlayer(), c1);
-        assertEquals(instance.getCharacter(), c1);
-        assertEquals(instance.getUser(), u2);
-        assertEquals(((CharacterControlledInstance) instance).getOriginalUser(), u1);
+        assertEquals(instance.getPlayer(), c2);
+        assertEquals(instance.getCharacter(), c2);
+        assertEquals(instance.getUser(), u1);
+        assertEquals(((CharacterControlledInstance) instance).getOriginalUser(), u2);
     }
 
     // Get, Find and FindOrCreate Methods
@@ -748,26 +748,6 @@ public class PlayerContextTest {
     }
 
     @Test
-    public void getCharacterFor_should_return_a_temporarily_assigned_Character_if_set() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-        playerContext.assignCharacterToUserTemporarily(u1, c2);
-
-        // act
-        Character character = playerContext.getCharacterFor(u1);
-
-        // assert
-        assertNotNull(character);
-        assertTrue(character == c2);
-    }
-
-    @Test
     public void getUserFromCharacter_should_return_an_assigned_User() {
         // arrange
         PlayerContext playerContext = new PlayerContext();
@@ -777,26 +757,6 @@ public class PlayerContextTest {
 
         // act
         User user = playerContext.getUserFromCharacter(c1);
-
-        // assert
-        assertNotNull(user);
-        assertTrue(user == u1);
-    }
-
-    @Test
-    public void getUserFromCharacter_should_return_a_temporarily_assigned_User_if_Set() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-        playerContext.assignCharacterToUserTemporarily(u1, c2);
-
-        // act
-        User user = playerContext.getUserFromCharacter(c2);
 
         // assert
         assertNotNull(user);
@@ -891,7 +851,7 @@ public class PlayerContextTest {
     }
 
     @Test
-    public void assignUserToCharacterTemporarily_should_succeed_if_both_User_and_Character_are_set() {
+    public void assignControlOfCharacterToUser_should_succeed_if_both_User_and_Character_are_set() {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -902,14 +862,14 @@ public class PlayerContextTest {
         playerContext.assignCharacterToUser(u2, c2);
 
         // act
-        playerContext.assignCharacterToUserTemporarily(u1, c2);
+        playerContext.assignControlOfCharacterToUser(u1, c2);
 
         // assert
         assertNotNull(playerContext.getCharacterFor(u1)); // Tested in more rigor above!
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void assignUserToCharacterTemporarily_should_throw_IllegalArgumentException_if_User_is_null() {
+    public void assignControlOfCharacterToUser_should_throw_IllegalArgumentException_if_User_is_null() {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -918,14 +878,14 @@ public class PlayerContextTest {
         playerContext.assignCharacterToUser(u1, c1);
 
         // act
-        playerContext.assignCharacterToUserTemporarily(null, c2);
+        playerContext.assignControlOfCharacterToUser(null, c2);
 
         // assert
         fail("Should have thrown an exception!");
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
-    public void assignUserToCharacterTemporarily_should_throw_IllegalArgumentException_if_Character_is_null() {
+    public void assignControlOfCharacterToUser_should_throw_IllegalArgumentException_if_Character_is_null() {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -933,7 +893,7 @@ public class PlayerContextTest {
         playerContext.assignCharacterToUser(u1, c1);
 
         // act
-        playerContext.assignCharacterToUserTemporarily(u1, null);
+        playerContext.assignControlOfCharacterToUser(u1, null);
 
         // assert
         fail("Should have thrown an exception!");
@@ -1024,175 +984,6 @@ public class PlayerContextTest {
 
         // act
         playerContext.swapUserCharacters(u1, null);
-
-        // assert
-        fail("Should have thrown an exception!");
-    }
-
-    @Test
-    public void swapUserCharactersTemporarily_should_correctly_swap_two_Users() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-
-        // act
-        playerContext.swapUserCharactersTemporarily(u1, u2);
-
-        // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c2);
-        assertTrue(playerContext.getCharacterFor(u2) == c1);
-    }
-
-    @Test
-    public void swapUserCharactersTemporarily_should_reset_User_if_they_return_to_the_original_Character() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        User u3 = playerContext.findOrCreateUser("user3", "user3.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        Character c3 = playerContext.findOrCreateCharacter("character3", "character3.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-        playerContext.assignCharacterToUser(u3, c3);
-
-        // act
-        playerContext.swapUserCharactersTemporarily(u1, u2);
-        playerContext.swapUserCharactersTemporarily(u2, u3);
-        playerContext.swapUserCharactersTemporarily(u3, u1);
-
-        // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c1);
-        assertTrue(playerContext.getCharacterFor(u2) == c3);
-        assertTrue(playerContext.getCharacterFor(u3) == c2);
-        assertFalse(playerContext.isUserTemporarilySwapped(u1));
-        assertTrue(playerContext.isUserTemporarilySwapped(u2));
-        assertTrue(playerContext.isUserTemporarilySwapped(u3));
-    }
-
-    @Test
-    public void swapUserCharactersTemporarily_should_reset_all_affected_Users_if_Users_are_the_same() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        User u3 = playerContext.findOrCreateUser("user3", "user3.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        Character c3 = playerContext.findOrCreateCharacter("character3", "character3.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-        playerContext.assignCharacterToUser(u3, c3);
-
-        // act
-        playerContext.swapUserCharactersTemporarily(u1, u2);
-        playerContext.swapUserCharactersTemporarily(u1, u3);
-        playerContext.swapUserCharactersTemporarily(u1, u1);
-
-        // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c1);
-        assertTrue(playerContext.getCharacterFor(u2) == c2);
-        assertTrue(playerContext.getCharacterFor(u3) == c3);
-        assertFalse(playerContext.isUserTemporarilySwapped(u1));
-        assertFalse(playerContext.isUserTemporarilySwapped(u2));
-        assertFalse(playerContext.isUserTemporarilySwapped(u3));
-    }
-
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void swapUserCharactersTemporarily_should_throw_IllegalArgumentException_when_first_User_is_null() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-
-        // act
-        playerContext.swapUserCharactersTemporarily(null, u2);
-
-        // assert
-        fail("Should have thrown an exception!");
-    }
-
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void swapUserCharactersTemporarily_should_throw_IllegalArgumentException_when_second_User_is_null() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-
-        // act
-        playerContext.swapUserCharactersTemporarily(u1, null);
-
-        // assert
-        fail("Should have thrown an exception!");
-    }
-
-    @Test
-    public void swapUserIntoCharacterTemporarily_should_correctly_swap_User_into_Character() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-
-        // act
-        playerContext.swapUserIntoCharacterTemporarily(u1, c2);
-
-        // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c2);
-        assertTrue(playerContext.getCharacterFor(u2) == c1);
-    }
-
-
-    @Test
-    public void swapUserIntoCharacterTemporarily_should_reset_User_if_Character_is_original() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
-        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-        playerContext.assignCharacterToUser(u1, c1);
-        playerContext.assignCharacterToUser(u2, c2);
-
-        // act
-        playerContext.swapUserIntoCharacterTemporarily(u1, c2);
-        playerContext.swapUserIntoCharacterTemporarily(u1, c1);
-
-        // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c1);
-        assertTrue(playerContext.getCharacterFor(u2) == c2);
-        assertFalse(playerContext.isUserTemporarilySwapped(u1));
-        assertFalse(playerContext.isUserTemporarilySwapped(u2));
-    }
-
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void swapUserIntoCharacterTemporarily_should_throw_IllegalArgumentException_when_User_is_null() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
-
-        // act
-        playerContext.swapUserIntoCharacterTemporarily(null, c2);
-
-        // assert
-        fail("Should have thrown an exception!");
-    }
-
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void swapUserIntoCharacterTemporarily_should_throw_IllegalArgumentException_when_Character_is_null() {
-        // arrange
-        PlayerContext playerContext = new PlayerContext();
-        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
-
-        // act
-        playerContext.swapUserIntoCharacterTemporarily(u1, null);
 
         // assert
         fail("Should have thrown an exception!");
@@ -1329,7 +1120,7 @@ public class PlayerContextTest {
     }
 
     @Test
-    public void resetTemporarySwaps_should_reset_temporary_Character_assignments() {
+    public void getControlledCharacterFor_should_return_controlled_Character() {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -1338,22 +1129,133 @@ public class PlayerContextTest {
         Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
         playerContext.assignCharacterToUser(u1, c1);
         playerContext.assignCharacterToUser(u2, c2);
-        playerContext.swapUserIntoCharacterTemporarily(u1, c2);
-        assertTrue(playerContext.getCharacterFor(u1) == c2);
-        assertTrue(playerContext.getCharacterFor(u2) == c1);
+        playerContext.assignControlOfCharacterToUser(u1, c2);
 
         // act
-        playerContext.resetTemporarySwaps();
+        Character character = playerContext.getControlledCharacterFor(u1);
 
         // assert
-        assertTrue(playerContext.getCharacterFor(u1) == c1);
-        assertTrue(playerContext.getCharacterFor(u2) == c2);
+        assertNotNull(character);
+        assertTrue(character == c2);
+    }
+
+    @Test
+    public void getUserControlling_should_return_controlling_User() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        playerContext.assignCharacterToUser(u1, c1);
+        playerContext.assignCharacterToUser(u2, c2);
+        playerContext.assignControlOfCharacterToUser(u1, c2);
+
+        // act
+        User user = playerContext.getUserControlling(c2);
+
+        // assert
+        assertNotNull(user);
+        assertTrue(user == u1);
+    }
+
+    @Test
+    public void assignControlOfCharacterToUser_should_correctly_assign_control_of_Character_to_User() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        playerContext.assignCharacterToUser(u1, c1);
+        playerContext.assignCharacterToUser(u2, c2);
+
+        // act
+        playerContext.assignControlOfCharacterToUser(u1, c2);
+
+        // assert
+        assertTrue(playerContext.isUserControlling(u1));
+        assertTrue(playerContext.isCharacterBeingControlled(c2));
+        assertTrue(playerContext.getControlledCharacterFor(u1) == c2);
+        assertTrue(playerContext.getUserControlling(c2) == u1);
+    }
+
+    @Test
+    public void assignControlOfCharacterToUser_should_reset_User_if_they_return_to_the_original_Character() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
+        User u3 = playerContext.findOrCreateUser("user3", "user3.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        Character c3 = playerContext.findOrCreateCharacter("character3", "character3.png");
+        playerContext.assignCharacterToUser(u1, c1);
+        playerContext.assignCharacterToUser(u2, c2);
+        playerContext.assignCharacterToUser(u3, c3);
+
+        // act
+        playerContext.assignControlOfCharacterToUser(u1, c2);
+        playerContext.assignControlOfCharacterToUser(u1, c1);
+
+        // assert
+        assertFalse(playerContext.isUserControlling(u1));
+        assertFalse(playerContext.isCharacterBeingControlled(c2));
+        assertNull(playerContext.getControlledCharacterFor(u1));
+        assertNull(playerContext.getUserControlling(c2));
+    }
+
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void assignControlOfCharacterToUser_should_throw_IllegalArgumentException_when_User_is_null() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+
+        // act
+        playerContext.assignControlOfCharacterToUser(null, c2);
+
+        // assert
+        fail("Should have thrown an exception!");
+    }
+
+    @Test(expectedExceptions = IllegalArgumentException.class)
+    public void assignControlOfCharacterToUser_should_throw_IllegalArgumentException_when_Character_is_null() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+
+        // act
+        playerContext.assignControlOfCharacterToUser(u1, null);
+
+        // assert
+        fail("Should have thrown an exception!");
+    }
+
+
+    @Test
+    public void resetControlledCharacters_should_reset_temporary_Character_control() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        playerContext.assignCharacterToUser(u1, c1);
+        playerContext.assignCharacterToUser(u2, c2);
+        playerContext.assignControlOfUserToUser(u1, u2);
+        assertTrue(playerContext.isCharacterBeingControlled(c2));
+
+        // act
+        playerContext.resetControlledCharacters();
+
+        // assert
+        assertFalse(playerContext.isCharacterBeingControlled(c2));
     }
 
     // Miscellaneous Helper Methods
 
     @Test
-    public void isUserTemporarilySwapped_should_correctly_identify_temporarily_swapped_users() throws Exception {
+    public void isUserControlling_should_correctly_identify_controlling_users() throws Exception {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -1365,16 +1267,16 @@ public class PlayerContextTest {
         playerContext.assignCharacterToUser(u1, c1);
         playerContext.assignCharacterToUser(u2, c2);
         playerContext.assignCharacterToUser(u3, c3);
-        playerContext.swapUserCharactersTemporarily(u1, u2);
+        playerContext.assignControlOfUserToUser(u1, u2);
 
         // act & assert
-        assertTrue(playerContext.isUserTemporarilySwapped(u1));
-        assertTrue(playerContext.isUserTemporarilySwapped(u2));
-        assertFalse(playerContext.isUserTemporarilySwapped(u3));
+        assertTrue(playerContext.isUserControlling(u1));
+        assertFalse(playerContext.isUserControlling(u2));
+        assertFalse(playerContext.isUserControlling(u3));
     }
 
     @Test
-    public void isCharacterTemporarilySwapped_should_pass() throws Exception {
+    public void isCharacterBeingControlled_should_correctly_identify_controlled_characters() throws Exception {
         // arrange
         PlayerContext playerContext = new PlayerContext();
         User u1 = playerContext.findOrCreateUser("user1", "user1.png");
@@ -1386,12 +1288,12 @@ public class PlayerContextTest {
         playerContext.assignCharacterToUser(u1, c1);
         playerContext.assignCharacterToUser(u2, c2);
         playerContext.assignCharacterToUser(u3, c3);
-        playerContext.swapUserCharactersTemporarily(u1, u2);
+        playerContext.assignControlOfCharacterToUser(u1, c2);
 
         // act & assert
-        assertTrue(playerContext.isCharacterTemporarilySwapped(c1));
-        assertTrue(playerContext.isCharacterTemporarilySwapped(c2));
-        assertFalse(playerContext.isCharacterTemporarilySwapped(c3));
+        assertFalse(playerContext.isCharacterBeingControlled(c1));
+        assertTrue(playerContext.isCharacterBeingControlled(c2));
+        assertFalse(playerContext.isCharacterBeingControlled(c3));
     }
 
     // ******************************

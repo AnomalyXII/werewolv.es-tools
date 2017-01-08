@@ -52,22 +52,22 @@ public class ArchivedGameParserTest {
             // Day 1 and Night 1
             assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 31);
             assertTrue(game.getDay(0).getDayPhase().isComplete());
-            assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 32);
+            assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 33);
             assertTrue(game.getDay(0).getNightPhase().isComplete());
             // Day 1 and Night 2
             assertEquals(game.getDay(1).getDayPhase().getEvents().size(), 335);
             assertTrue(game.getDay(1).getDayPhase().isComplete());
-            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 21);
+            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 22);
             assertTrue(game.getDay(1).getNightPhase().isComplete());
             // Day 1 and Night 3
             assertEquals(game.getDay(2).getDayPhase().getEvents().size(), 354);
             assertTrue(game.getDay(2).getDayPhase().isComplete());
-            assertEquals(game.getDay(2).getNightPhase().getEvents().size(), 137);
+            assertEquals(game.getDay(2).getNightPhase().getEvents().size(), 141);
             assertTrue(game.getDay(2).getNightPhase().isComplete());
             // Day 1 and Night 4
             assertEquals(game.getDay(3).getDayPhase().getEvents().size(), 288);
             assertTrue(game.getDay(3).getDayPhase().isComplete());
-            assertEquals(game.getDay(3).getNightPhase().getEvents().size(), 3);
+            assertEquals(game.getDay(3).getNightPhase().getEvents().size(), 4);
             assertTrue(game.getDay(3).getNightPhase().isComplete());
         }
     }

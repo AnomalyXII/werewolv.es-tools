@@ -66,7 +66,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapped":
                     User puppetMasterUser = playerContext.getUser((String) event.get("Puppetmaster"));
                     User puppetUser = playerContext.getUser((String) event.get("PlayerName"));
-                    playerContext.swapUserCharactersTemporarily(puppetMasterUser, puppetUser);
+                    playerContext.assignControlOfUserToUser(puppetMasterUser, puppetUser);
                     //return new IdentitySwappedIntoEvent(puppetMasterInstance, timestamp, puppetInstance);
                     return null;
 
@@ -127,7 +127,14 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Roles.Coven.Djinn.PrimaryDjinnTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Djinn.SecondaryDjinnTargetChosen":
+                    return null;
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetVoted":
+                    User puppetWhoVoted = playerContext.getUser((String) event.get("Puppet"));
+                    User puppetVoteTarget = playerContext.getUser((String) event.get("Target"));
+                    Character puppetVoteTargetCharacter = playerContext.getCharacterFor(puppetVoteTarget);
+                    return new PlayerNominationEvent(playerContext.instanceForUser(puppetWhoVoted),
+                                                     timestamp,
+                                                     puppetVoteTargetCharacter);
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapSelected":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTargetChosen":
@@ -137,8 +144,9 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Succubus.SecondarySuccubusTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchReviveTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchKillTargetChosen":
+                    return null;
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedKill":
-                case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedRevive":
+                    return new PlayerRevivedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToKill":
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToRecruit":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent":
@@ -150,7 +158,9 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Village.Messiah.MessiahUsedSacrifice":
                 case "Werewolf.GameEngine.Roles.Village.Militia.MilitiaUsedKill":
                 case "Werewolf.GameEngine.Roles.Village.Protector.ProtectorProtected":
+                    return null;
                 case "Werewolf.GameEngine.Roles.Village.Reviver.PlayerRevivedEvent":
+                    return new PlayerRevivedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawNoVisit":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawVisit":
@@ -192,13 +202,11 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent":
                     return null; // Is this silent?
 
-                case "PlayerKilled":
+                case "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent":
                     return new PlayerKilledEvent(player, timestamp);
-                case "PlayerLynched":
+                case "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent":
                     return new PlayerLynchedEvent(player, timestamp);
-                case "PlayerRevived":
-                    return new PlayerRevivedEvent(player, timestamp);
-                case "PlayerSmited":
+                case "Werewolf.GameEngine.Phases.Day.PlayerSmitedEvent":
                     return new PlayerSmitedEvent(player, timestamp);
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":
@@ -221,9 +229,6 @@ public class ArchivedGameParser extends AbstractGameParser {
                 // Other Events
                 case "Werewolf.GameEngine.Creation.GameCreatedEvent":
                 case "Werewolf.GameEngine.Creation.GameSpyJoinedEvent":
-                case "Werewolf.GameEngine.Phases.Day.PlayerLynchedEvent":
-                case "Werewolf.GameEngine.Phases.Day.PlayerSmitedEvent":
-                case "Werewolf.GameEngine.Phases.Night.PlayerKilledEvent":
                 case "Werewolf.GameEngine.Phases.Night.ShapeshifterAbilityActivated":
                 case "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent":
                 case "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled":
