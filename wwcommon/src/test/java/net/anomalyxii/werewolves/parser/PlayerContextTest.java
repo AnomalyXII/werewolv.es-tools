@@ -1076,6 +1076,34 @@ public class PlayerContextTest {
         assertTrue(playerContext.isUserTemporarilySwapped(u3));
     }
 
+    @Test
+    public void swapUserCharactersTemporarily_should_reset_all_affected_Users_if_Users_are_the_same() {
+        // arrange
+        PlayerContext playerContext = new PlayerContext();
+        User u1 = playerContext.findOrCreateUser("user1", "user1.png");
+        User u2 = playerContext.findOrCreateUser("user2", "user2.png");
+        User u3 = playerContext.findOrCreateUser("user3", "user3.png");
+        Character c1 = playerContext.findOrCreateCharacter("character1", "character1.png");
+        Character c2 = playerContext.findOrCreateCharacter("character2", "character2.png");
+        Character c3 = playerContext.findOrCreateCharacter("character3", "character3.png");
+        playerContext.assignCharacterToUser(u1, c1);
+        playerContext.assignCharacterToUser(u2, c2);
+        playerContext.assignCharacterToUser(u3, c3);
+
+        // act
+        playerContext.swapUserCharactersTemporarily(u1, u2);
+        playerContext.swapUserCharactersTemporarily(u1, u3);
+        playerContext.swapUserCharactersTemporarily(u1, u1);
+
+        // assert
+        assertTrue(playerContext.getCharacterFor(u1) == c1);
+        assertTrue(playerContext.getCharacterFor(u2) == c2);
+        assertTrue(playerContext.getCharacterFor(u3) == c3);
+        assertFalse(playerContext.isUserTemporarilySwapped(u1));
+        assertFalse(playerContext.isUserTemporarilySwapped(u2));
+        assertFalse(playerContext.isUserTemporarilySwapped(u3));
+    }
+
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void swapUserCharactersTemporarily_should_throw_IllegalArgumentException_when_first_User_is_null() {
         // arrange

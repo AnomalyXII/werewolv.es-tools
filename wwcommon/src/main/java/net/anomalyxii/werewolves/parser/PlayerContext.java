@@ -104,6 +104,13 @@ public class PlayerContext {
         if (character == null)
             return new UserInstance(user);
 
+        // For puppet swaps in archived games :/
+        if (isUserTemporarilySwapped(user)) {
+            Character originalCharacter = userCharacterMap.get(user);
+            return instanceForCharacter(originalCharacter);
+        }
+
+        // Normal
         return instanceForCharacter(character);
     }
 
@@ -111,7 +118,7 @@ public class PlayerContext {
         Vitality vitality = getVitalityForCharacter(character);
 
         User user = getUserFromCharacter(character);
-        if(isUserTemporarilySwapped(user)) {
+        if (isUserTemporarilySwapped(user)) {
             User originalUser = characterUserMap.get(character);
             return new CharacterControlledInstance(character, user, originalUser, vitality);
         }
@@ -349,9 +356,9 @@ public class PlayerContext {
         if (character == null)
             throw new IllegalArgumentException("Character cannot be null");
 
-        if(userCharacterMap.containsKey(user)) {
+        if (userCharacterMap.containsKey(user)) {
             Character originalCharacter = userCharacterMap.get(user);
-            if(character.equals(originalCharacter)) {
+            if (character.equals(originalCharacter)) {
                 temporaryUserCharacterMap.remove(user);
                 temporaryCharacterUserMap.remove(character);
                 return;
@@ -394,11 +401,8 @@ public class PlayerContext {
         if (character == null)
             throw new IllegalArgumentException("Character cannot be null");
 
-        Character currentCharacter = getCharacterFor(user);
         User oldUserForNewCharacter = getUserFromCharacter(character);
-
-        assignCharacterToUser(user, character);
-        assignCharacterToUser(oldUserForNewCharacter, currentCharacter);
+        swapUserCharacters(user, oldUserForNewCharacter);
     }
 
     /**
@@ -415,6 +419,12 @@ public class PlayerContext {
     protected void swapUserCharactersTemporarily(User first, User second) {
         if (first == null || second == null)
             throw new IllegalArgumentException("User cannot be null");
+
+        // Reset Puppet swaps
+        if (first.equals(second)) {
+            resetTemporarySwapForUser(first);
+            return;
+        }
 
         Character firstCharacter = getCharacterFor(first);
         Character secondCharacter = getCharacterFor(second);
@@ -500,7 +510,7 @@ public class PlayerContext {
     }
 
     // ******************************
-    // Helper Methods
+    // Public Helper Methods
     // ******************************
 
     /**
@@ -523,6 +533,27 @@ public class PlayerContext {
      */
     public boolean isCharacterTemporarilySwapped(Character character) {
         return temporaryCharacterUserMap.containsKey(character);
+    }
+
+    // ******************************
+    // Protected Helper Methods
+    // ******************************
+
+    /**
+     * Recursively reset all the temporary
+     * swaps for a given {@link User}.
+     *
+     * @param user the {@link User} to reset
+     */
+    protected void resetTemporarySwapForUser(User user) {
+        Character swappedCharacter = temporaryUserCharacterMap.remove(user);
+        temporaryCharacterUserMap.remove(swappedCharacter);
+        if (swappedCharacter == null)
+            return;
+
+        Character originalCharacter = userCharacterMap.get(user);
+        User swappedUser = temporaryCharacterUserMap.get(originalCharacter);
+        resetTemporarySwapForUser(swappedUser);
     }
 
 }
