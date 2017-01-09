@@ -7,21 +7,14 @@ import java.time.OffsetDateTime;
 /**
  * Created by Anomaly on 07/01/2017.
  */
-public class IdentitySwappedIntoEvent extends AbstractEvent {
-
-    // ******************************
-    // Members
-    // ******************************
-
-    private final PlayerInstance target;
+public class IdentitySwappedIntoEvent extends AbstractTargettedEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
     public IdentitySwappedIntoEvent(PlayerInstance player, OffsetDateTime timestamp, PlayerInstance target) {
-        super(player, timestamp, EventType.IDENTITY_ASSIGNED);
-        this.target = target;
+        super(player, timestamp, EventType.IDENTITY_ASSIGNED, target);
     }
 
     // ******************************
@@ -30,7 +23,7 @@ public class IdentitySwappedIntoEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return fmt("~~ %s swapped into %s", getPlayer().getName(), target.getName());
+        return fmt("~~ %s swapped into %s", getPlayer().getName(), getTarget().getName());
     }
 
 }

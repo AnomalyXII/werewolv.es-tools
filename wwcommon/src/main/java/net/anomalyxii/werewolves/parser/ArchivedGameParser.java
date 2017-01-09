@@ -1,9 +1,6 @@
 package net.anomalyxii.werewolves.parser;
 
-import net.anomalyxii.werewolves.domain.Alignment;
-import net.anomalyxii.werewolves.domain.Player;
-import net.anomalyxii.werewolves.domain.PlayerInstance;
-import net.anomalyxii.werewolves.domain.Vitality;
+import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
@@ -67,9 +64,10 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapped":
                     User puppetMasterUser = playerContext.getUser((String) event.get("Puppetmaster"));
                     User puppetUser = playerContext.getUser((String) event.get("PlayerName"));
+                    PlayerInstance puppetMasterInstance = playerContext.instanceFor(puppetMasterUser);
+                    PlayerInstance puppetInstance = playerContext.instanceFor(puppetUser);
                     playerContext.assignControlOfUserToUser(puppetMasterUser, puppetUser);
-                    //return new IdentitySwappedIntoEvent(puppetMasterInstance, timestamp, puppetInstance);
-                    return null;
+                    return new IdentitySwappedIntoEvent(puppetMasterInstance, timestamp, puppetInstance);
 
                 // Message Events
                 case "Werewolf.GameEngine.Core.ModeratorMessageEvent":
@@ -97,32 +95,79 @@ public class ArchivedGameParser extends AbstractGameParser {
                 // Role Events
 
                 case "Werewolf.GameEngine.Roles.AlphawolfAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.ALPHAWOLF);
+                    return new RoleAssignedEvent(player, timestamp, Role.ALPHAWOLF);
                 case "Werewolf.GameEngine.Roles.BloodhoundAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.BLOODHOUND);
+                    return new RoleAssignedEvent(player, timestamp, Role.BLOODHOUND);
                 case "Werewolf.GameEngine.Roles.ShapeshifterAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.SHAPESHIFTER);
+                    return new RoleAssignedEvent(player, timestamp, Role.SHAPESHIFTER);
                 case "Werewolf.GameEngine.Roles.WerewolfAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.WEREWOLF);
+                    return new RoleAssignedEvent(player, timestamp, Role.WEREWOLF);
                 case "Werewolf.GameEngine.Roles.AllWerewolvesAssignedEvent":
+                    return null;
 
                 case "Werewolf.GameEngine.Roles.DjinnAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.DJINN);
+                    return new RoleAssignedEvent(player, timestamp, Role.DJINN);
                 case "Werewolf.GameEngine.Roles.PuppetAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.PUPPET);
+                    return new RoleAssignedEvent(player, timestamp, Role.PUPPET);
                 case "Werewolf.GameEngine.Roles.PuppetmasterAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.PUPPETMASTER);
+                    return new RoleAssignedEvent(player, timestamp, Role.PUPPETMASTER);
                 case "Werewolf.GameEngine.Roles.SuccubusAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.SUCCUBUS);
+                    return new RoleAssignedEvent(player, timestamp, Role.SUCCUBUS);
                 case "Werewolf.GameEngine.Roles.WitchAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.WITCH);
+                    return new RoleAssignedEvent(player, timestamp, Role.WITCH);
 
                 case "Werewolf.GameEngine.Roles.VampireAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.VAMPIRE);
+                    return new RoleAssignedEvent(player, timestamp, Role.VAMPIRE);
                 case "Werewolf.GameEngine.Roles.FamiliarStalkerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.FAMILIAR);
+                    return new RoleAssignedEvent(player, timestamp, Role.FAMILIAR);
 
                 case "Werewolf.GameEngine.Roles.GravediggerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.GRAVEDIGGER);
+                    return new RoleAssignedEvent(player, timestamp, Role.GRAVEDIGGER);
                 case "Werewolf.GameEngine.Roles.HarlotAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.HARLOT);
+                    return new RoleAssignedEvent(player, timestamp, Role.HARLOT);
                 case "Werewolf.GameEngine.Roles.HuntsmanAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.HUNTSMAN);
+                    return new RoleAssignedEvent(player, timestamp, Role.HUNTSMAN);
                 case "Werewolf.GameEngine.Roles.LycanAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.LYCAN);
+                    return new RoleAssignedEvent(player, timestamp, Role.LYCAN);
                 case "Werewolf.GameEngine.Roles.MessiahAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.MESSIAH);
+                    return new RoleAssignedEvent(player, timestamp, Role.MESSIAH);
                 case "Werewolf.GameEngine.Roles.MilitiaAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.MILITIA);
+                    return new RoleAssignedEvent(player, timestamp, Role.MILITIA);
                 case "Werewolf.GameEngine.Roles.ProtectorAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.PROTECTOR);
+                    return new RoleAssignedEvent(player, timestamp, Role.PROTECTOR);
                 case "Werewolf.GameEngine.Roles.ReviverAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.REVIVER);
+                    return new RoleAssignedEvent(player, timestamp, Role.REVIVER);
                 case "Werewolf.GameEngine.Roles.SeerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.SEER);
+                    return new RoleAssignedEvent(player, timestamp, Role.SEER);
                 case "Werewolf.GameEngine.Roles.ShamanAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.SHAMAN);
+                    return new RoleAssignedEvent(player, timestamp, Role.SHAMAN);
                 case "Werewolf.GameEngine.Roles.StalkerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.STALKER);
+                    return new RoleAssignedEvent(player, timestamp, Role.STALKER);
                 case "Werewolf.GameEngine.Roles.VillagerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.VILLAGER);
+                    return new RoleAssignedEvent(player, timestamp, Role.VILLAGER);
 
                 case "Werewolf.GameEngine.Roles.NightTargetChosenEvent":
 
@@ -135,7 +180,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                     Character puppetVoteTargetCharacter = playerContext.getCharacterFor(puppetVoteTarget);
                     return new PlayerNominationEvent(playerContext.instanceForUser(puppetWhoVoted),
                                                      timestamp,
-                                                     puppetVoteTargetCharacter);
+                                                     playerContext.instanceFor(puppetVoteTargetCharacter));
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetmasterSwapSelected":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.CovenMembersShownToShaman":
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTargetChosen":
@@ -146,10 +191,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchReviveTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchKillTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedKill":
-                    return null;
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedRevive":
-                    playerContext.assignVitalityToUser(player.getUser(), Vitality.ALIVE);
-                    return new PlayerRevivedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToKill":
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSwitchedToRecruit":
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.RoleRevealedToGravediggerEvent":
@@ -172,7 +214,14 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfTargetChosen":
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfUsedEnrage":
                 case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.RoleRevealedToBloodhoundEvent":
+                case "Werewolf.GameEngine.Phases.Night.ShapeshifterAbilityActivated": // Old?
                     return null;
+                case "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent": // Old?
+                    User werewolfVoter = playerContext.getUser((String) event.get("Werewolf"));
+                    User werewolfVoteTarget = playerContext.getUser((String) event.get("Target"));
+                    return new WerewolfVoteEvent(playerContext.instanceFor(werewolfVoter),
+                                                 timestamp,
+                                                 playerContext.instanceFor(werewolfVoteTarget));
 
                 // Game Phase Events
 
@@ -202,7 +251,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationEvent":
                     User user = playerContext.getUser((String) event.get("Target"));
                     Character targetCharacter = playerContext.getCharacterFor(user);
-                    return new PlayerNominationEvent(player, timestamp, targetCharacter);
+                    return new PlayerNominationEvent(player, timestamp, playerContext.instanceFor(targetCharacter));
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationRetractedEvent":
                     return null; // Is this silent?
 
@@ -236,10 +285,10 @@ public class ArchivedGameParser extends AbstractGameParser {
                 // Other Events
                 case "Werewolf.GameEngine.Creation.GameCreatedEvent":
                 case "Werewolf.GameEngine.Creation.GameSpyJoinedEvent":
-                case "Werewolf.GameEngine.Phases.Night.ShapeshifterAbilityActivated":
-                case "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent":
                 case "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled":
+                    return null;
                 case "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity":
+                    return new WarnedForInactivityEvent(player, timestamp);
                 case "Werewolf.GameEngine.PlayerActivity.PlayerCheckedGame":
                 case "Werewolf.GameEngine.PlayerActivity.PlayerActiveDuringLastDay":
                     return null;

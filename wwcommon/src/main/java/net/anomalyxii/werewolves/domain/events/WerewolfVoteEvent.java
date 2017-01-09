@@ -8,14 +8,14 @@ import java.time.OffsetDateTime;
 /**
  * Created by Anomaly on 03/12/2016.
  */
-public class WerewolfVoteEvent extends PlayerMessageEvent {
+public class WerewolfVoteEvent extends AbstractTargettedEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
-    public WerewolfVoteEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
-        super(player, timestamp, EventType.WEREWOLF_MESSAGE, message);
+    public WerewolfVoteEvent(PlayerInstance player, OffsetDateTime timestamp, PlayerInstance target) {
+        super(player, timestamp, EventType.WEREWOLF_VOTE, target);
     }
 
     // ******************************
@@ -25,6 +25,15 @@ public class WerewolfVoteEvent extends PlayerMessageEvent {
     @Override
     public Alignment getAlignmentVisibility() {
         return Alignment.WEREWOLVES;
+    }
+
+    // ******************************
+    // To String
+    // ******************************
+
+    @Override
+    public String toString() {
+        return fmt("%s votes to kill %s", getPlayer().getName(), getTarget().getName());
     }
 
 }

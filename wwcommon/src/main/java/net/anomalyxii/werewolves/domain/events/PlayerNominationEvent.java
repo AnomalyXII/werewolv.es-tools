@@ -8,29 +8,14 @@ import java.time.OffsetDateTime;
 /**
  * Created by Anomaly on 26/11/2016.
  */
-public class PlayerNominationEvent extends AbstractEvent {
-
-    // ******************************
-    // Members
-    // ******************************
-
-    private final Character target;
+public class PlayerNominationEvent extends AbstractTargettedEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
-    public PlayerNominationEvent(PlayerInstance player, OffsetDateTime timestamp, Character target) {
-        super(player, timestamp, EventType.NOMINATION);
-        this.target = target;
-    }
-
-    // ******************************
-    // Getters
-    // ******************************
-
-    public Character getTarget() {
-        return target;
+    public PlayerNominationEvent(PlayerInstance player, OffsetDateTime timestamp, PlayerInstance target) {
+        super(player, timestamp, EventType.NOMINATION, target);
     }
 
     // ******************************

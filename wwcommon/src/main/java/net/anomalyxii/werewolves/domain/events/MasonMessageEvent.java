@@ -10,10 +10,6 @@ import java.time.OffsetDateTime;
 public class MasonMessageEvent extends PlayerMessageEvent {
 
     // ******************************
-    // Members
-    // ******************************
-
-    // ******************************
     // Constructors
     // ******************************
 

@@ -91,6 +91,7 @@ public interface Event {
         INACTIVITY_WARNING,
 
         NOMINATION,
+        WEREWOLF_VOTE,
 
         COVEN_MESSAGE,
         WEREWOLF_MESSAGE,

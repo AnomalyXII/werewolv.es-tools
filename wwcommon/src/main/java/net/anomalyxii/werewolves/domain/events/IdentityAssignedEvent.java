@@ -10,10 +10,6 @@ import java.time.OffsetDateTime;
 public class IdentityAssignedEvent extends AbstractEvent {
 
     // ******************************
-    // Members
-    // ******************************
-
-    // ******************************
     // Constructors
     // ******************************
 
@@ -27,7 +23,7 @@ public class IdentityAssignedEvent extends AbstractEvent {
 
     @Override
     public String toString() {
-        return fmt(getPlayer(), "My new identity is: %s", getPlayer().getCharacter().getName());
+        return fmt("%s is now %s", getPlayer().getUser().getName(), getPlayer().getCharacter().getName());
     }
 
 }

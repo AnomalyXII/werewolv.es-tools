@@ -141,9 +141,8 @@ public class LiveGameParser extends AbstractGameParser {
                     return null;
 
                 case "VillageNomination":
-                    // Todo: should this use an instance too??
                     Character targetCharacter = playerContext.getCharacter((String) event.get("target"));
-                    return new PlayerNominationEvent(player, timestamp, targetCharacter);
+                    return new PlayerNominationEvent(player, timestamp, playerContext.instanceFor(targetCharacter));
                 case "VillageNominationRetracted":
                     return null; // Is this silent?
 
@@ -184,10 +183,14 @@ public class LiveGameParser extends AbstractGameParser {
 
                 case "GameSpyJoined":
                 case "HostRightsGranted":
+                    return null;
                 case "WarnedForInactivity":
+                    return new WarnedForInactivityEvent(player, timestamp);
                 case "PlayerRoleRevealed":
                 case "PlayerActiveDuringLastDay":
+                    return null;
                 case "WerewolfVote":
+                    return null;
                 case "NightTargetChosen":
                     return null;
 

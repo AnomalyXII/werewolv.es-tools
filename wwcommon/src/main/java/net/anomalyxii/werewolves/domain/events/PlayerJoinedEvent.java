@@ -10,10 +10,6 @@ import java.time.OffsetDateTime;
 public class PlayerJoinedEvent extends AbstractEvent {
 
     // ******************************
-    // Members
-    // ******************************
-
-    // ******************************
     // Constructors
     // ******************************
 

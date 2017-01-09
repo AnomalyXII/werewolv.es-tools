@@ -10,10 +10,6 @@ import java.time.OffsetDateTime;
 public class IdentitySwappedEvent extends AbstractEvent {
 
     // ******************************
-    // Members
-    // ******************************
-
-    // ******************************
     // Constructors
     // ******************************
 

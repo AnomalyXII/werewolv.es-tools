@@ -10,10 +10,6 @@ import java.time.OffsetDateTime;
 public class WarnedForInactivityEvent extends AbstractEvent {
 
     // ******************************
-    // Members
-    // ******************************
-
-    // ******************************
     // Constructors
     // ******************************
 
