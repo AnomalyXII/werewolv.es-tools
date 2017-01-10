@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.events.role.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
 
@@ -135,6 +136,9 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.GravediggerAssignedEvent":
                     playerContext.assignRoleToUser(player.getUser(), Role.GRAVEDIGGER);
                     return new RoleAssignedEvent(player, timestamp, Role.GRAVEDIGGER);
+                case "Werewolf.GameEngine.Roles.GraverobberAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.GRAVEROBBER);
+                    return new RoleAssignedEvent(player, timestamp, Role.GRAVEROBBER);
                 case "Werewolf.GameEngine.Roles.HarlotAssignedEvent":
                     playerContext.assignRoleToUser(player.getUser(), Role.HARLOT);
                     return new RoleAssignedEvent(player, timestamp, Role.HARLOT);
@@ -170,6 +174,19 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return new RoleAssignedEvent(player, timestamp, Role.VILLAGER);
 
                 case "Werewolf.GameEngine.Roles.NightTargetChosenEvent":
+                    PlayerInstance playerWithRole = getInstanceForUser(event, "PlayerWithRole");
+                    PlayerInstance target = getInstanceForUser(event, "Target");
+
+                    Role roleForPlayer = playerContext.getRoleForUser(playerWithRole.getUser());
+                    switch(roleForPlayer) {
+                        case GRAVEDIGGER:
+                            return new GraveDiggerTargetChosenEvent(playerWithRole, timestamp, target);
+                        case GRAVEROBBER:
+                            return new GraveRobberTargetChosenEvent(playerWithRole, timestamp, target);
+                        case REVIVER:
+                            return new ReviverTargetChosenEvent(playerWithRole, timestamp, target);
+                    }
+                    return null;
 
                 case "Werewolf.GameEngine.Roles.Coven.Djinn.PrimaryDjinnTargetChosen":
                 case "Werewolf.GameEngine.Roles.Coven.Djinn.SecondaryDjinnTargetChosen":
@@ -207,21 +224,31 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Village.Reviver.PlayerRevivedEvent":
                     playerContext.assignVitalityToUser(player.getUser(), Vitality.ALIVE);
                     return new PlayerRevivedEvent(player, timestamp);
+                case "Werewolf.GameEngine.Roles.Village.Reviver.ReviverUsedAbility":
                 case "Werewolf.GameEngine.Roles.Village.Seer.RoleRevealedToSeerEvent":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawNoVisit":
                 case "Werewolf.GameEngine.Roles.Village.Stalker.StalkerSawVisit":
+                    return null;
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfEnraged":
+                    return new AlphawolfEnragedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfTargetChosen":
+                    return new AlphawolfTargetChosenEvent(player, timestamp, getInstanceForUser(event, "Target"));
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfUsedEnrage":
+                    // Todo: add an event with EventType.ROLE_ABILITY_USED
+                    return null;
+                case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.BloodhoundTargetChosenEvent":
                 case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.RoleRevealedToBloodhoundEvent":
                 case "Werewolf.GameEngine.Phases.Night.ShapeshifterAbilityActivated": // Old?
                     return null;
                 case "Werewolf.GameEngine.Phases.Night.WerewolfVoteEvent": // Old?
-                    User werewolfVoter = playerContext.getUser((String) event.get("Werewolf"));
-                    User werewolfVoteTarget = playerContext.getUser((String) event.get("Target"));
-                    return new WerewolfVoteEvent(playerContext.instanceFor(werewolfVoter),
+                    return new WerewolfVoteEvent(getInstanceForUser(event, "Werewolf"),
                                                  timestamp,
-                                                 playerContext.instanceFor(werewolfVoteTarget));
+                                                 getInstanceForUser(event, "Target"));
+
+                // Old events - ignore?
+                case "Werewolf.GameEngine.Roles.Village.Gravedigger.GravediggerTargetChosenEvent":
+                case "Werewolf.GameEngine.Roles.Village.Huntsman.HuntsmanTargetChosenEvent":
+                    return null;
 
                 // Game Phase Events
 
@@ -291,6 +318,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return new WarnedForInactivityEvent(player, timestamp);
                 case "Werewolf.GameEngine.PlayerActivity.PlayerCheckedGame":
                 case "Werewolf.GameEngine.PlayerActivity.PlayerActiveDuringLastDay":
+                case "Werewolf.GameEngine.Creation.SpectatorJoinedEvent":
                     return null;
 
                 default:

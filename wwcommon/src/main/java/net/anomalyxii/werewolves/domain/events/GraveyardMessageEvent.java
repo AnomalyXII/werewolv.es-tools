@@ -19,7 +19,7 @@ public class GraveyardMessageEvent extends PlayerMessageEvent {
     }
 
     // ******************************
-    // PlayerMessageEvent Methods
+    // Event Methods
     // ******************************
 
     @Override

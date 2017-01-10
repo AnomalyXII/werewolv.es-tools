@@ -80,6 +80,9 @@ public interface Event {
         GAME_STARTED,
         IDENTITY_ASSIGNED,
         ROLE_ASSIGNED,
+        ROLE_ABILITY_STARTED,
+        ROLE_ABILITY_SELECTED,
+        ROLE_ABILITY_USED,
 
         PLAYER_JOINED,
         PLAYER_LEFT,

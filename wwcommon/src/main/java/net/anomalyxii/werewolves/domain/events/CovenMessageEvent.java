@@ -19,7 +19,7 @@ public class CovenMessageEvent extends PlayerMessageEvent {
     }
 
     // ******************************
-    // PlayerMessageEvent Methods
+    // Event Methods
     // ******************************
 
     @Override

@@ -1,21 +1,22 @@
-package net.anomalyxii.werewolves.domain.events;
+package net.anomalyxii.werewolves.domain.events.role;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
+import net.anomalyxii.werewolves.domain.events.AbstractEvent;
 
 import java.time.OffsetDateTime;
 
 /**
- * Created by Anomaly on 06/01/2017.
+ * Created by Anomaly on 10/01/2017.
  */
-public class MasonMessageEvent extends PlayerMessageEvent {
+public class AlphawolfEnragedEvent extends AbstractEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
-    public MasonMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
-        super(player, timestamp, EventType.MASON_MESSAGE, message);
+    public AlphawolfEnragedEvent(PlayerInstance player, OffsetDateTime timestamp) {
+        super(player, timestamp, EventType.ROLE_ABILITY_STARTED);
     }
 
     // ******************************
@@ -24,17 +25,16 @@ public class MasonMessageEvent extends PlayerMessageEvent {
 
     @Override
     public Alignment getAlignmentVisibility() {
-        return null; // Todo: work out how to make this apply to only certain players!
+        return Alignment.WEREWOLVES;
     }
-
 
     // ******************************
     // To String
     // ******************************
 
     @Override
-    protected char getChatStatus() {
-        return 'M'; // Todo: do we need to add a specific Alignment in for this?
+    public String toString() {
+        return fmt("%s is enraged", getPlayer().getName());
     }
 
 }

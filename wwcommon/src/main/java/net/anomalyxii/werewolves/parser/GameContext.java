@@ -4,6 +4,8 @@ import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
+import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.User;
 
 import java.time.OffsetDateTime;
 import java.util.*;
@@ -137,12 +139,28 @@ public abstract class GameContext {
 
     protected abstract String parseMessage(Map<String, Object> event);
 
+    protected User getUser(Map<String, Object> event, String field) {
+        return getPlayerContext().getUser((String) event.get(field));
+    }
+
+    protected PlayerInstance getInstanceForUser(Map<String, Object> event, String field) {
+        return getPlayerContext().instanceFor(getUser(event, field));
+    }
+
+    protected Character getCharacter(Map<String, Object> event, String field) {
+        return getPlayerContext().getCharacter((String) event.get(field));
+    }
+
+    protected PlayerInstance getInstanceForCharacter(Map<String, Object> event, String field) {
+        return getPlayerContext().instanceFor(getCharacter(event, field));
+    }
+
     // Look-up Players + Characters
 
     protected PlayerInstance findOrCreatePlayer(String name, String avatarUrl) {
         Player player = isGameStarted()
-               ? playerContext.findOrCreateCharacter(name, avatarUrl)
-               : playerContext.findOrCreateUser(name, avatarUrl);
+                        ? playerContext.findOrCreateCharacter(name, avatarUrl)
+                        : playerContext.findOrCreateUser(name, avatarUrl);
         return playerContext.instanceFor(player);
     }
 

@@ -2,6 +2,8 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.events.role.AlphawolfEnragedEvent;
+import net.anomalyxii.werewolves.domain.events.role.AlphawolfTargetChosenEvent;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
 
@@ -45,14 +47,13 @@ public class LiveGameParser extends AbstractGameParser {
 
                 case "NewIdentityAssigned":
                 case "IdentitySwapped":
-                    String originalName = (String) event.get("originalName");
-                    User originalUser = playerContext.getUser(originalName);
+                    User originalUser = getUser(event, "originalName");
                     if ("NewIdentityAssigned".equalsIgnoreCase(type)) {
-                        Character newCharacter = playerContext.getCharacter((String) event.get("newPlayerName"));
+                        Character newCharacter = getCharacter(event, "newPlayerName");
                         playerContext.assignCharacterToUser(originalUser, newCharacter);
                         return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacter), timestamp);
                     } else {
-                        Character newCharacterIdentity = playerContext.getCharacter((String) event.get("playerName"));
+                        Character newCharacterIdentity = getCharacter(event, "playerName");
                         playerContext.swapUserIntoCharacter(originalUser, newCharacterIdentity);
                         return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacterIdentity),
                                                          timestamp);
@@ -80,8 +81,11 @@ public class LiveGameParser extends AbstractGameParser {
                     return new RoleAssignedEvent(player, timestamp, role);
 
                 case "AlphawolfEnraged":
+                    return new AlphawolfEnragedEvent(player, timestamp);
                 case "AlphawolfTargetChosen":
+                    return new AlphawolfTargetChosenEvent(player, timestamp, getInstanceForCharacter(event, "target"));
                 case "AlphawolfUsedEnrage":
+                    return null;
                 case "BloodhoundRevertedToWerewolf":
                 case "BloodhoundtargetChosen":
                 case "GravediggerTargetChosen":
@@ -141,8 +145,7 @@ public class LiveGameParser extends AbstractGameParser {
                     return null;
 
                 case "VillageNomination":
-                    Character targetCharacter = playerContext.getCharacter((String) event.get("target"));
-                    return new PlayerNominationEvent(player, timestamp, playerContext.instanceFor(targetCharacter));
+                    return new PlayerNominationEvent(player, timestamp, getInstanceForCharacter(event, "target"));
                 case "VillageNominationRetracted":
                     return null; // Is this silent?
 
@@ -190,7 +193,9 @@ public class LiveGameParser extends AbstractGameParser {
                 case "PlayerActiveDuringLastDay":
                     return null;
                 case "WerewolfVote":
-                    return null;
+                    return new WerewolfVoteEvent(getInstanceForCharacter(event, "werewolf"),
+                                                 timestamp,
+                                                 getInstanceForCharacter(event, "target"));
                 case "NightTargetChosen":
                     return null;
 
@@ -368,49 +373,6 @@ public class LiveGameParser extends AbstractGameParser {
                         character.setRolePossiblyIncorrectly(role);
                     });
 
-        }
-
-    }
-
-    public static final class EventBody extends HashMap<String, Object> {
-
-        // Constructors
-
-        public EventBody(Map<String, Object> data) {
-            super(data);
-        }
-
-        // Getters
-
-        public String getPlayerName() {
-            return (String) get("playerName");
-        }
-
-        public String getAvatarURL() {
-            return (String) get("avatarUrl");
-        }
-
-        public String getType() {
-            return (String) get("__type");
-        }
-
-        public String getTimestamp() {
-            return (String) get("timeStamp");
-        }
-
-        public OffsetDateTime getTime() {
-            String timestamp = getTimestamp();
-            if (timestamp == null)
-                return null;
-
-            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
-            OffsetDateTime parsedDate = OffsetDateTime.parse(timestamp, formatter);
-            return parsedDate;
-        }
-
-        @SuppressWarnings("unchecked")
-        public <T> T get(String key) {
-            return (T) super.get(key);
         }
 
     }

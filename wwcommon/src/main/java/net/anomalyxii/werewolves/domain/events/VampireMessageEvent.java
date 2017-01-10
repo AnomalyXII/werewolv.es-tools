@@ -19,7 +19,7 @@ public class VampireMessageEvent extends PlayerMessageEvent {
     }
 
     // ******************************
-    // PlayerMessageEvent Methods
+    // Event Methods
     // ******************************
 
     @Override
