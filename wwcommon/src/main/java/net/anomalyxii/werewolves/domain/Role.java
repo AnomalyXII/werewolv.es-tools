@@ -41,8 +41,8 @@ public enum Role {
     PUPPET(Alignment.COVEN),
 
     // Neutral
-    VAMPIRE(Alignment.VAMPIRE),
-    FAMILIAR(Alignment.VAMPIRE),
+    VAMPIRE(Alignment.VAMPIRES),
+    FAMILIAR(Alignment.VAMPIRES),
 
     // End of constants
     ;

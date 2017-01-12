@@ -52,12 +52,12 @@ public class ArchivedGameParserTest {
             // Day 1 and Night 1
             assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 44);
             assertTrue(game.getDay(0).getDayPhase().isComplete());
-            assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 45);
+            assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 46);
             assertTrue(game.getDay(0).getNightPhase().isComplete());
             // Day 1 and Night 2
             assertEquals(game.getDay(1).getDayPhase().getEvents().size(), 335);
             assertTrue(game.getDay(1).getDayPhase().isComplete());
-            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 35);
+            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 36);
             assertTrue(game.getDay(1).getNightPhase().isComplete());
             // Day 1 and Night 3
             assertEquals(game.getDay(2).getDayPhase().getEvents().size(), 354);

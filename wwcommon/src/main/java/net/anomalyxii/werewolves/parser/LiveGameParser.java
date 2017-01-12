@@ -10,7 +10,6 @@ import net.anomalyxii.werewolves.domain.players.User;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -179,7 +178,7 @@ public class LiveGameParser extends AbstractGameParser {
                     finishGame(Alignment.COVEN, event);
                     return null;
                 case "VampireVictory":
-                    finishGame(Alignment.VAMPIRE, event);
+                    finishGame(Alignment.VAMPIRES, event);
                     return null;
                 case "VillageVictory":
                     finishGame(Alignment.VILLAGE, event);

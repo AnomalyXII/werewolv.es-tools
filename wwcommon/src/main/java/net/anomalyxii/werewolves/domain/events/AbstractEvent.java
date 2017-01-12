@@ -120,6 +120,7 @@ public abstract class AbstractEvent implements Event {
      * <li><code>C</code> for Coven</li>
      * <li><code>V</code> for Vampire</li>
      * <li><code>M</code> for Mason</li>
+     * <li><code>D</code> for Demons</li>
      * <li><code>G</code> for Graveyard</li>
      * </ol>
      * </li>
@@ -158,12 +159,16 @@ public abstract class AbstractEvent implements Event {
             return ' ';
 
         switch (alignment) {
+            case MASONS:
+                return 'M';
             case WEREWOLVES:
                 return 'W';
             case COVEN:
                 return 'C';
-            case VAMPIRE:
+            case VAMPIRES:
                 return 'V';
+            case DEMONS:
+                return 'D';
         }
 
         return ' ';

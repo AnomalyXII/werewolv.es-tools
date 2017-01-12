@@ -24,17 +24,7 @@ public class MasonMessageEvent extends PlayerMessageEvent {
 
     @Override
     public Alignment getAlignmentVisibility() {
-        return null; // Todo: work out how to make this apply to only certain players!
-    }
-
-
-    // ******************************
-    // To String
-    // ******************************
-
-    @Override
-    protected char getChatStatus() {
-        return 'M'; // Todo: do we need to add a specific Alignment in for this?
+        return Alignment.MASONS;
     }
 
 }

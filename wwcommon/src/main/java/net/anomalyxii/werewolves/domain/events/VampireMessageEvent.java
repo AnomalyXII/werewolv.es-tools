@@ -24,7 +24,7 @@ public class VampireMessageEvent extends PlayerMessageEvent {
 
     @Override
     public Alignment getAlignmentVisibility() {
-        return Alignment.VAMPIRE;
+        return Alignment.VAMPIRES;
     }
 
 }
