@@ -356,19 +356,19 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":
                     finishGame(Alignment.COVEN);
-                    assignFinalUsersToCharacters();
+                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VampireVictoryEvent":
                     finishGame(Alignment.VAMPIRES);
-                    assignFinalUsersToCharacters();
+                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VillageVictoryEvent":
                     finishGame(Alignment.VILLAGE);
-                    assignFinalUsersToCharacters();
+                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.WerewolfVictoryEvent":
                     finishGame(Alignment.WEREWOLVES);
-                    assignFinalUsersToCharacters();
+                    finalisePlayerIdentities();
                     return null;
 
                 // Other Events

@@ -81,7 +81,7 @@ public class GameDumper {
             System.out.printf("%s ======- Role Reveal  ======= %n", BLANK_PREFIX);
             game.getCharacters().stream()
                     .sorted(Comparator.comparing(AbstractPlayer::getName))
-                    .forEach(character -> System.out.printf("%s <%s> %s was a %s%s %n",
+                    .forEach(character -> System.out.printf("%s %s (%s) was a %s%s %n",
                                                             META_PREFIX,
                                                             character.getName(),
                                                             character.getUser().getName(),

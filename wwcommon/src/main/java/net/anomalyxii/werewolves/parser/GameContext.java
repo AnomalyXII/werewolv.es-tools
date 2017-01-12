@@ -225,8 +225,17 @@ public abstract class GameContext {
         return Role.forString(role);
     }
 
-    protected void assignFinalUsersToCharacters() {
-        playerContext.allUsersWithCharacter().forEach((user, character) -> character.setUser(user));
+    protected void finalisePlayerIdentities() {
+        playerContext.allUsers().forEach(user -> {
+            Character character = playerContext.getCharacterFor(user);
+            if(character == null)
+                return;
+
+            character.setUser(user);
+
+            Role role = playerContext.getRoleForUser(user);
+            character.setRole(role);
+        });
     }
 
 }
