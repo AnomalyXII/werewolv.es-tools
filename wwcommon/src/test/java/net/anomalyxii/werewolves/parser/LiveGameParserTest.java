@@ -54,12 +54,12 @@ public class LiveGameParserTest {
             // Day 1 and Night 2
             assertEquals(game.getDay(1).getDayPhase().getEvents().size(), 333);
             assertTrue(game.getDay(1).getDayPhase().isComplete());
-            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 1);
+            assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 3);
             assertTrue(game.getDay(1).getNightPhase().isComplete());
             // Day 1 and Night 3
             assertEquals(game.getDay(2).getDayPhase().getEvents().size(), 354);
             assertTrue(game.getDay(2).getDayPhase().isComplete());
-            assertEquals(game.getDay(2).getNightPhase().getEvents().size(), 12);
+            assertEquals(game.getDay(2).getNightPhase().getEvents().size(), 13);
             assertTrue(game.getDay(2).getNightPhase().isComplete());
             // Day 1 and Night 4
             assertEquals(game.getDay(3).getDayPhase().getEvents().size(), 288);

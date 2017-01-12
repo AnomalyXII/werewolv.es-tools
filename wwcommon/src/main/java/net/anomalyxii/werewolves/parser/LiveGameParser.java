@@ -46,20 +46,16 @@ public class LiveGameParser extends AbstractGameParser {
                 // Identity Events
 
                 case "NewIdentityAssigned":
+                    Character newCharacter = getCharacter(event, "newPlayerName");
+                    playerContext.assignCharacterToUser(getUser(event, "originalName"), newCharacter);
+                    return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacter), timestamp);
                 case "IdentitySwapped":
-                    User originalUser = getUser(event, "originalName");
-                    if ("NewIdentityAssigned".equalsIgnoreCase(type)) {
-                        Character newCharacter = getCharacter(event, "newPlayerName");
-                        playerContext.assignCharacterToUser(originalUser, newCharacter);
-                        return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacter), timestamp);
-                    } else {
-                        Character newCharacterIdentity = getCharacter(event, "playerName");
-                        playerContext.swapUserIntoCharacter(originalUser, newCharacterIdentity);
-                        return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacterIdentity),
-                                                         timestamp);
-                    }
+                    Character newCharacterIdentity = getCharacter(event, "playerName");
+                    playerContext.swapUserIntoCharacter(getUser(event, "originalName"), newCharacterIdentity);
+                    return new IdentityAssignedEvent(playerContext.instanceForCharacter(newCharacterIdentity),
+                                                     timestamp);
 
-                    // Message Events
+                // Message Events
 
                 case "ModeratorMessageEvent": // Word of God
                     return new ModeratorMessageEvent(timestamp, parseMessage(event));
@@ -79,6 +75,14 @@ public class LiveGameParser extends AbstractGameParser {
                 case "RoleAssigned":
                     Role role = getRole((String) event.get("role"));
                     return new RoleAssignedEvent(player, timestamp, role);
+
+                case "NightTargetChosen":
+                    return null;
+
+                case "WerewolfVote":
+                    return new WerewolfVoteEvent(getInstanceForCharacter(event, "werewolf"),
+                                                 timestamp,
+                                                 getInstanceForCharacter(event, "target"));
 
                 case "AlphawolfEnraged":
                     return new AlphawolfEnragedEvent(player, timestamp);
@@ -191,12 +195,6 @@ public class LiveGameParser extends AbstractGameParser {
                     return new WarnedForInactivityEvent(player, timestamp);
                 case "PlayerRoleRevealed":
                 case "PlayerActiveDuringLastDay":
-                    return null;
-                case "WerewolfVote":
-                    return new WerewolfVoteEvent(getInstanceForCharacter(event, "werewolf"),
-                                                 timestamp,
-                                                 getInstanceForCharacter(event, "target"));
-                case "NightTargetChosen":
                     return null;
 
                 case "JoinGame": // Not needed?
@@ -377,9 +375,9 @@ public class LiveGameParser extends AbstractGameParser {
 
     }
 
-    // ******************************
-    // Hacky McHackface Constants
-    // ******************************
+// ******************************
+// Hacky McHackface Constants
+// ******************************
 
     private enum PlayerLookupMode {
 
