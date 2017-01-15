@@ -74,7 +74,7 @@ public enum Alignment {
         if ("member of the village".equalsIgnoreCase(msg))
             return VILLAGE;
         if ("member of the wolfpack".equalsIgnoreCase(msg))
-            return VAMPIRES;
+            return WEREWOLVES;
         if ("member of the coven".equalsIgnoreCase(msg))
             return COVEN;
         if ("puppet".equalsIgnoreCase(msg))
