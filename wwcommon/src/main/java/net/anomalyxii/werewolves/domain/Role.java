@@ -22,15 +22,15 @@ public enum Role {
     MESSIAH(Alignment.VILLAGE),
     MASONLEADER(Alignment.VILLAGE),
     TAROTREADER(Alignment.VILLAGE),
-    // COURTESAN(Alignment.VILLAGE), // Unconfirmed
-    // WITCHHUNTER(Alignment.VILLAGE), // Unconfirmed
+    WITCHHUNTER(Alignment.VILLAGE),
+    BEHOLDER(Alignment.VILLAGE),
 
     // Werewolves
     WEREWOLF(Alignment.WEREWOLVES),
     SHAPESHIFTER(Alignment.WEREWOLVES),
     ALPHAWOLF(Alignment.WEREWOLVES),
     BLOODHOUND(Alignment.WEREWOLVES),
-    // DIREWOLF(Alignment.WEREWOLVES), // Unconfirmed
+    DIREWOLF(Alignment.WEREWOLVES),
 
     // Coven
     DJINN(Alignment.COVEN),
@@ -42,7 +42,9 @@ public enum Role {
 
     // Neutral
     VAMPIRE(Alignment.VAMPIRES),
-    FAMILIAR(Alignment.VAMPIRES),
+    FAMILIARSTALKER(Alignment.VAMPIRES),
+    DEMONLORD(Alignment.DEMONS),
+    HELLHOUND(Alignment.DEMONS),
 
     // End of constants
     ;
@@ -77,7 +79,7 @@ public enum Role {
      * @return
      */
     public static Role forString(String role) {
-        return Role.valueOf(role.toUpperCase());
+        return Role.valueOf(role.toUpperCase().replace(" ", ""));
     }
 
 }

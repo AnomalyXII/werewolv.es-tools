@@ -2,8 +2,7 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
-import net.anomalyxii.werewolves.domain.events.role.AlphawolfEnragedEvent;
-import net.anomalyxii.werewolves.domain.events.role.AlphawolfTargetChosenEvent;
+import net.anomalyxii.werewolves.domain.events.role.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
 
@@ -56,7 +55,7 @@ public class LiveGameParser extends AbstractGameParser {
 
                 // Message Events
 
-                case "ModeratorMessageEvent": // Word of God
+                case "ModeratorMessage": // Word of God
                     return new ModeratorMessageEvent(timestamp, parseMessage(event));
                 case "GhostMessage": // Deadchat
                     return new GraveyardMessageEvent(player, timestamp, parseMessage(event));
@@ -64,7 +63,7 @@ public class LiveGameParser extends AbstractGameParser {
                     return new CovenMessageEvent(player, timestamp, parseMessage(event));
                 case "WerewolfNightMessage": // Wolfchat
                     return new WerewolfMessageEvent(player, timestamp, parseMessage(event));
-                case "MasonNightMessage":
+                case "MasonNightMessage": // Masonchat
                     return new MasonMessageEvent(player, timestamp, parseMessage(event));
                 case "VillageMessage": // Normalchat
                     return new VillageMessageEvent(player, timestamp, parseMessage(event));
@@ -76,6 +75,17 @@ public class LiveGameParser extends AbstractGameParser {
                     return new RoleAssignedEvent(player, timestamp, role);
 
                 case "NightTargetChosen":
+                    PlayerInstance playerWithRole = getInstanceForUser(event, "playerWithRole");
+                    PlayerInstance nightTarget = getInstanceForCharacter(event, "target");
+                    Role playerRole = getRole((String) event.get("role"));
+                    switch (playerRole) {
+                        case HARLOT:
+                            return new HarlotTargetChosenEvent(playerWithRole, timestamp, nightTarget);
+                        case SEER:
+                            return new SeerTargetChosenEvent(playerWithRole, timestamp, nightTarget);
+                        case STALKER:
+                            return new StalkerTargetChosenEvent(playerWithRole, timestamp, nightTarget);
+                    }
                     return null;
 
                 case "WerewolfVote":
@@ -87,32 +97,51 @@ public class LiveGameParser extends AbstractGameParser {
                     return new AlphawolfEnragedEvent(player, timestamp);
                 case "AlphawolfTargetChosen":
                     return new AlphawolfTargetChosenEvent(player, timestamp, getInstanceForCharacter(event, "target"));
-                case "AlphawolfUsedEnrage":
-                    return null;
-                case "BloodhoundRevertedToWerewolf":
+                case "ShapeshifterAbilityActivated":
                 case "BloodhoundtargetChosen":
                 case "GravediggerTargetChosen":
-                case "GraverobberFoundNoRole":
-                case "HarlotSawNoVisitors":
-                case "HarlotSawVisit":
-                case "HuntsmanGuarded":
-                case "MessiahResurrected":
-                case "MessiahUsedSacrifice":
-                case "MilitiaUsedKill":
-                case "ProtectorProtected":
                 case "ProtectorTargetChosen":
+                case "PuppetmasterSwapSelected":
+                case "PuppetmasterSwapped":
                 case "ReviverTargetChosen":
+                case "SeerTargetMade": // Old?
+
+                    // Role Outcome Events
+
+                case "GraverobberFoundNoRole":
+                    return null;
+                case "HarlotSawNoVisitors":
+                    return new HarlotSawVisitEvent(null, null, null, null);
+                case "HarlotSawVisit":
+                    return new HarlotSawVisitEvent(null, null, null, null);
+                case "MilitiaUsedKill":
                 case "RoleRevealedToBloodhound":
                 case "RoleRevealedToGravedigger":
+                    return null;
                 case "RoleRevealedToSeer":
-                case "SeerTargetMade":
-                case "ShapeshifterAbilityActivated":
+                    return new SeerSawAlignmentEvent(getInstanceForUser(event, "seerName"),
+                                                     timestamp,
+                                                     getInstanceForCharacter(event, "target"),
+                                                     Alignment.forMessageString((String) event.get("role")));
                 case "StalkerSawNoVisit":
+                    return new StalkerSawVisitEvent(null, null, null, null);
                 case "StalkerSawVisit":
+                    return new StalkerSawVisitEvent(null, null, null, null);
                 case "UndeterminedRoleReaveledToGraveDigger":
                     return null;
 
-                // Game Phase Events
+                case "AlphawolfUsedEnrage":
+                case "HuntsmanGuarded":
+                case "MessiahResurrected":
+                case "MessiahUsedSacrifice":
+                case "ProtectorProtected":
+                    return null;
+
+                // Other Special Role-related Events
+
+                case "BloodhoundRevertedToWerewolf":
+
+                    // Game Phase Events
 
                 case "PlayerJoined":
                     if (player instanceof User)
@@ -200,6 +229,7 @@ public class LiveGameParser extends AbstractGameParser {
                     return null;
 
                 default:
+                    System.err.println(type);
                     return null;
 
             }
@@ -349,6 +379,8 @@ public class LiveGameParser extends AbstractGameParser {
 
                 User user = playerContext.getUser(userName);
                 Role role = getRole(roleName);
+                playerContext.assignCharacterToUser(user, character);
+                playerContext.assignRoleToUser(user, role);
 
                 character.setUser(user);
                 character.setRole(role);
@@ -374,9 +406,9 @@ public class LiveGameParser extends AbstractGameParser {
 
     }
 
-// ******************************
-// Hacky McHackface Constants
-// ******************************
+    // ******************************
+    // Hacky McHackface Constants
+    // ******************************
 
     private enum PlayerLookupMode {
 

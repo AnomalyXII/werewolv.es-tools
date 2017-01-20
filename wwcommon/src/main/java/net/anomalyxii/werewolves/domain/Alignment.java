@@ -81,6 +81,8 @@ public enum Alignment {
             return PUPPETS;
         if ("vampire".equalsIgnoreCase(msg))
             return VAMPIRES;
+        if ("demon".equalsIgnoreCase(msg))
+            return DEMONS;
 
         throw new IllegalArgumentException("Invalid message string: " + msg);
     }
