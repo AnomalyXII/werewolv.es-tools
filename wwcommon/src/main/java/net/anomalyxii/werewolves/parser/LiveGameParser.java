@@ -65,6 +65,8 @@ public class LiveGameParser extends AbstractGameParser {
                     return new WerewolfMessageEvent(player, timestamp, parseMessage(event));
                 case "MasonNightMessage": // Masonchat
                     return new MasonMessageEvent(player, timestamp, parseMessage(event));
+                case "VampireNightMessage": // Normalchat
+                    return new VampireMessageEvent(player, timestamp, parseMessage(event));
                 case "VillageMessage": // Normalchat
                     return new VillageMessageEvent(player, timestamp, parseMessage(event));
 
@@ -111,9 +113,15 @@ public class LiveGameParser extends AbstractGameParser {
                 case "GraverobberFoundNoRole":
                     return null;
                 case "HarlotSawNoVisitors":
-                    return new HarlotSawVisitEvent(null, null, null, null);
+                    return new HarlotSawVisitEvent(getInstanceForUser(event, "harlot"),
+                                                   timestamp,
+                                                   getInstanceForCharacter(event, "visitor"),
+                                                   null);
                 case "HarlotSawVisit":
-                    return new HarlotSawVisitEvent(null, null, null, null);
+                    return new HarlotSawVisitEvent(getInstanceForUser(event, "harlot"),
+                                                   timestamp,
+                                                   getInstanceForCharacter(event, "visitor"),
+                                                   getInstanceForCharacter(event, "target"));
                 case "MilitiaUsedKill":
                 case "RoleRevealedToBloodhound":
                 case "RoleRevealedToGravedigger":
@@ -124,9 +132,15 @@ public class LiveGameParser extends AbstractGameParser {
                                                      getInstanceForCharacter(event, "target"),
                                                      Alignment.forMessageString((String) event.get("role")));
                 case "StalkerSawNoVisit":
-                    return new StalkerSawVisitEvent(null, null, null, null);
+                    return new StalkerSawVisitEvent(getInstanceForUser(event, "stalker"),
+                                                    timestamp,
+                                                    getInstanceForCharacter(event, "visitor"),
+                                                    null);
                 case "StalkerSawVisit":
-                    return new StalkerSawVisitEvent(null, null, null, null);
+                    return new StalkerSawVisitEvent(getInstanceForUser(event, "stalker"),
+                                                    timestamp,
+                                                    getInstanceForCharacter(event, "visitor"),
+                                                    getInstanceForCharacter(event, "target"));
                 case "UndeterminedRoleReaveledToGraveDigger":
                     return null;
 
