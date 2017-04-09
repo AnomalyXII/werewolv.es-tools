@@ -1,8 +1,8 @@
-apply plugin: 'java'
-apply plugin: 'application'
-apply from: "${rootDir}/gradle/testing.gradle"
+plugins {
+    id 'java'
+    id 'application'
+}
 
-sourceCompatibility = 1.8
 mainClassName = 'net.anomalyxii.werewolves.Main'
 
 run {

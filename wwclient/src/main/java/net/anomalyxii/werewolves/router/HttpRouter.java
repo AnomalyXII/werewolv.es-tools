@@ -56,11 +56,11 @@ public class HttpRouter implements Router {
     // ******************************
 
     public HttpRouter() {
-        this(URI.create("http://werewolv.es"));
+        this(URI.create("http://wwes.azurewebsites.net"));
     }
 
     public HttpRouter(String auth) {
-        this(URI.create("http://werewolv.es"), auth);
+        this(URI.create("http://wwes.azurewebsites.net"), auth);
     }
 
     public HttpRouter(URI host) {

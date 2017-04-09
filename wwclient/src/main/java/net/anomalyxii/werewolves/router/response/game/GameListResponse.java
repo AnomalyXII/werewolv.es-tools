@@ -10,6 +10,12 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
+ * Retrieve and parse a list of {@code active} and
+ * {@code pending} games. {@code Active} games are those that
+ * have started are no longer accepting new players, whilst
+ * {@code pending} games are those that are still in the
+ * sign-up phase and thus can still be joined.
+ * <p>
  * Created by Anomaly on 22/11/2016.
  */
 public class GameListResponse extends AbstractResponse<GameListResponse.Body> {
@@ -49,7 +55,7 @@ public class GameListResponse extends AbstractResponse<GameListResponse.Body> {
 
         // Constructors
 
-        @JsonProperty("Active")
+        @JsonProperty("active")
         public List<String> getActive() {
             return active;
         }
@@ -58,7 +64,7 @@ public class GameListResponse extends AbstractResponse<GameListResponse.Body> {
             this.active = active;
         }
 
-        @JsonProperty("Pending")
+        @JsonProperty("pending")
         public List<String> getPending() {
             return pending;
         }
