@@ -87,6 +87,7 @@ public interface Event {
         PLAYER_JOINED,
         PLAYER_LEFT,
 
+        PLAYER_MARKED,
         PLAYER_KILLED,
         PLAYER_LYNCHED,
         PLAYER_REVIVED,

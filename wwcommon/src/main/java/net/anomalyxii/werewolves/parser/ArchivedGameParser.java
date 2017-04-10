@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.events.message.*;
 import net.anomalyxii.werewolves.domain.events.role.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
@@ -335,7 +336,11 @@ public class ArchivedGameParser extends AbstractGameParser {
                 case "Werewolf.GameEngine.Roles.Village.Masons.MasonRecruited":
                 case "Werewolf.GameEngine.Roles.Village.WitchHunter.MagicUsersShown":
                 case "Werewolf.GameEngine.Roles.Village.WitchHunter.NonMagicUserRevealedToWitchHunter":
+                    return null;
                 case "Werewolf.GameEngine.Roles.Vampires.VampireSacrificeMarked":
+                    return new VampireSacrificeMarkedEvent(PlayerInstance.MODERATOR,
+                                                           timestamp,
+                                                           getInstanceForUser(event, "Target"));
 
                 // These are silent?
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTotemUsed":

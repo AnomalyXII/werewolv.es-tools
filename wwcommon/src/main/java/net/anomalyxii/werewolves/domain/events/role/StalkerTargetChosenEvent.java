@@ -4,6 +4,7 @@ import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.events.AbstractTargettedEvent;
 
 import java.time.OffsetDateTime;
+import java.util.Arrays;
 
 /**
  * Created by Anomaly on 10/01/2017.

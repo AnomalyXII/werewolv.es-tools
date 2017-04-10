@@ -10,6 +10,7 @@ import net.anomalyxii.werewolves.domain.players.User;
 
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -55,15 +56,15 @@ public class GameDumper {
                         .flatMap(Collection::stream)
                         .collect(Collectors.toMap(
                                 PlayerNominationEvent::getActualPlayer,
-                                PlayerNominationEvent::getTarget,
-                                (oldTarget, newTarget) -> newTarget))
+                                Function.identity(),
+                                (old, curr) -> curr.getTime().isAfter(old.getTime()) ? curr : old))
                         .entrySet().stream()
                         .sorted(Comparator.comparing(a -> a.getKey().getName()))
                         .forEach((entry) -> System.out.printf(
                                 "%s Final vote: %s -> %s%n",
                                 META_PREFIX,
                                 entry.getKey().getName(),
-                                entry.getValue().getName()));
+                                entry.getValue().getTarget().getName()));
 
                 System.out.printf("%s ======= Night Falls  ======= %n", BLANK_PREFIX);
                 np.getEvents().forEach(System.out::println);

@@ -1,4 +1,4 @@
-package net.anomalyxii.werewolves.domain.events;
+package net.anomalyxii.werewolves.domain.events.message;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
@@ -6,16 +6,16 @@ import net.anomalyxii.werewolves.domain.PlayerInstance;
 import java.time.OffsetDateTime;
 
 /**
- * Created by Anomaly on 06/01/2017.
+ * Created by Anomaly on 03/12/2016.
  */
-public class MasonMessageEvent extends PlayerMessageEvent {
+public class CovenMessageEvent extends PlayerMessageEvent {
 
     // ******************************
     // Constructors
     // ******************************
 
-    public MasonMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
-        super(player, timestamp, EventType.MASON_MESSAGE, message);
+    public CovenMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
+        super(player, timestamp, EventType.COVEN_MESSAGE, message);
     }
 
     // ******************************
@@ -24,7 +24,7 @@ public class MasonMessageEvent extends PlayerMessageEvent {
 
     @Override
     public Alignment getAlignmentVisibility() {
-        return Alignment.MASONS;
+        return Alignment.COVEN;
     }
 
 }

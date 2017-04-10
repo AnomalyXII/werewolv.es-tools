@@ -2,6 +2,7 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.*;
+import net.anomalyxii.werewolves.domain.events.message.*;
 import net.anomalyxii.werewolves.domain.events.role.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
@@ -65,10 +66,12 @@ public class LiveGameParser extends AbstractGameParser {
                     return new WerewolfMessageEvent(player, timestamp, parseMessage(event));
                 case "MasonNightMessage": // Masonchat
                     return new MasonMessageEvent(player, timestamp, parseMessage(event));
-                case "VampireNightMessage": // Normalchat
+                case "VampireNightMessage": // Vampirechat
                     return new VampireMessageEvent(player, timestamp, parseMessage(event));
                 case "VillageMessage": // Normalchat
                     return new VillageMessageEvent(player, timestamp, parseMessage(event));
+                case "SpectatorMessage": // Spectatorchat
+                    return new SpectatorMessageEvent(player, timestamp, parseMessage(event));
 
                 // Role Events
 
@@ -83,6 +86,8 @@ public class LiveGameParser extends AbstractGameParser {
                     switch (playerRole) {
                         case HARLOT:
                             return new HarlotTargetChosenEvent(playerWithRole, timestamp, nightTarget);
+                        case MILITIA:
+                            return new MilitiaTargetChosenEvent(playerWithRole, timestamp, nightTarget);
                         case SEER:
                             return new SeerTargetChosenEvent(playerWithRole, timestamp, nightTarget);
                         case STALKER:
@@ -154,6 +159,11 @@ public class LiveGameParser extends AbstractGameParser {
                 // Other Special Role-related Events
 
                 case "BloodhoundRevertedToWerewolf":
+
+                case "VampireSacrificeMarked":
+                    return new VampireSacrificeMarkedEvent(PlayerInstance.MODERATOR,
+                                                           timestamp,
+                                                           getInstanceForCharacter(event, "target"));
 
                     // Game Phase Events
 
@@ -283,7 +293,7 @@ public class LiveGameParser extends AbstractGameParser {
 
         protected PlayerInstance findOrCreatePlayer(String name, String avatarUrl, String type) {
 
-            Player player = null;
+            Player player;
             PlayerContext playerContext = getPlayerContext();
             LiveGameParser.PlayerLookupMode lookupMode = getLookupModeForEvent(type);
             switch (lookupMode) {
@@ -342,6 +352,8 @@ public class LiveGameParser extends AbstractGameParser {
                 case "JoinGame":
                 case "PlayerJoined":
                 case "PlayerLeft":
+                case "GameSpyJoined":
+                case "Spy":
                     return !isGameStarted()
                            ? LiveGameParser.PlayerLookupMode.PREGAME
                            : LiveGameParser.PlayerLookupMode.INGAME_LAX;
@@ -358,13 +370,15 @@ public class LiveGameParser extends AbstractGameParser {
             List<Map<String, Object>> wolves = (List<Map<String, Object>>) event.get("werewolves");
             List<Map<String, Object>> coven = (List<Map<String, Object>>) event.get("coven");
             List<Map<String, Object>> villagers = (List<Map<String, Object>>) event.get("villagers");
+            List<Map<String, Object>> demons = (List<Map<String, Object>>) event.get("demons");
             List<Map<String, Object>> other = (List<Map<String, Object>>) event.get("neutrals");
-            assignCharactersAndRolesToPlayers(wolves, coven, villagers, other);
+            assignCharactersAndRolesToPlayers(wolves, coven, villagers, demons, other);
         }
 
         private void assignCharactersAndRolesToPlayers(List<Map<String, Object>> werewolves,
                                                        List<Map<String, Object>> coven,
                                                        List<Map<String, Object>> villagers,
+                                                       List<Map<String, Object>> demons,
                                                        List<Map<String, Object>> neutrals) {
 
             PlayerContext playerContext = getPlayerContext();
@@ -377,6 +391,7 @@ public class LiveGameParser extends AbstractGameParser {
             all.addAll(werewolves);
             all.addAll(coven);
             all.addAll(villagers);
+            all.addAll(demons);
             all.addAll(neutrals);
 
             all.forEach(player -> {
@@ -404,6 +419,9 @@ public class LiveGameParser extends AbstractGameParser {
                     .stream()
                     .filter(character -> character.getUser() == null)
                     .forEach(character -> {
+                        if(spareAssignments.isEmpty())
+                            return;
+
                         Map<String, Object> player = spareAssignments.remove(0);
 
                         String userName = (String) player.get("originalName");

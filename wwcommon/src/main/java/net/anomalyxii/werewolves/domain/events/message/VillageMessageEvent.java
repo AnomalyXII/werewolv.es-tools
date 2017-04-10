@@ -1,6 +1,7 @@
-package net.anomalyxii.werewolves.domain.events;
+package net.anomalyxii.werewolves.domain.events.message;
 
 import net.anomalyxii.werewolves.domain.PlayerInstance;
+import net.anomalyxii.werewolves.domain.events.Event;
 
 import java.time.OffsetDateTime;
 
@@ -14,7 +15,7 @@ public class VillageMessageEvent extends PlayerMessageEvent {
     // ******************************
 
     public VillageMessageEvent(PlayerInstance player, OffsetDateTime timestamp, String message) {
-        super(player, timestamp, EventType.VILLAGE_MESSAGE, message);
+        super(player, timestamp, Event.EventType.VILLAGE_MESSAGE, message);
     }
 
 }

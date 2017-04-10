@@ -1,6 +1,7 @@
-package net.anomalyxii.werewolves.domain.events;
+package net.anomalyxii.werewolves.domain.events.message;
 
 import net.anomalyxii.werewolves.domain.PlayerInstance;
+import net.anomalyxii.werewolves.domain.events.AbstractEvent;
 
 import java.time.OffsetDateTime;
 
