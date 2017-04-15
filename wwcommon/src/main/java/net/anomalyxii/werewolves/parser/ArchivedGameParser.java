@@ -383,7 +383,8 @@ public class ArchivedGameParser extends AbstractGameParser {
                     // Fall through to DayStartedEvent!
 
                 case "Werewolf.GameEngine.Phases.Day.DayStartedEvent":
-                    startDayPhase();
+                    Integer dayNumber = (Integer) event.getOrDefault("DayNumber", 1);
+                    startDayPhase(dayNumber);
                     return null;
 
                 case "Werewolf.GameEngine.Phases.Night.NightStartedEvent":

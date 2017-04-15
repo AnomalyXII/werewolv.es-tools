@@ -36,7 +36,6 @@ public class SaltMineRouter implements Router {
     // Constructors
     // ******************************
 
-
     public SaltMineRouter(Path localRepositoryPath) throws GitAPIException {
         this(cloneRepository(localRepositoryPath, "https://github.com/Kirschstein/salt-mine.git"));
     }

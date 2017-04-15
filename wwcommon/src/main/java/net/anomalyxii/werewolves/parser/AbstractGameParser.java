@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.Function;
 
 /**
  * An abstract {@link GameParser} that deals with most of the
@@ -57,7 +58,7 @@ public abstract class AbstractGameParser implements GameParser<Map<String, Objec
     }
 
     @Override
-    public Game parse(String id, List<Map<String, Object>> events) {
+    public Game parse(String id, List<? extends Map<String, Object>> events) {
         GameContext context = factory.apply(id);
         events.forEach(context::process);
         return context.build();

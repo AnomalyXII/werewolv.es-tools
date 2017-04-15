@@ -31,6 +31,7 @@ public class Day {
     // Members
     // ******************************
 
+    private final int dayNumber;
     private final DayPhase dayPhase;
     private final NightPhase nightPhase;
 
@@ -38,7 +39,8 @@ public class Day {
     // Constructors
     // ******************************
 
-    public Day(DayPhase dayPhase, NightPhase nightPhase) {
+    public Day(int dayNumber, DayPhase dayPhase, NightPhase nightPhase) {
+        this.dayNumber = dayNumber;
         this.dayPhase = dayPhase;
         this.nightPhase = nightPhase;
     }
@@ -46,6 +48,10 @@ public class Day {
     // ******************************
     // Getters
     // ******************************
+
+    public int getDayNumber() {
+        return dayNumber;
+    }
 
     public DayPhase getDayPhase() {
         return dayPhase;

@@ -192,8 +192,10 @@ public class LiveGameParser extends AbstractGameParser {
                     // Fall through!
 
                 case "DayStarted":
-                    if (!isDayPhase())
-                        startDayPhase();
+                    if (isDayPhase())
+                        return null;
+                    int dayNumber = (Integer) event.getOrDefault("dayNumber", 1);
+                    startDayPhase(dayNumber);
                     return null;
 
                 case "NightStarted":
@@ -284,7 +286,7 @@ public class LiveGameParser extends AbstractGameParser {
         @Override
         protected OffsetDateTime parseTime(Map<String, Object> event) {
             String timestamp = (String) event.get("timeStamp");
-            if (timestamp == null)
+            if (Objects.isNull(timestamp))
                 return null;
 
             DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
@@ -315,11 +317,11 @@ public class LiveGameParser extends AbstractGameParser {
 
                 case INGAME_LAX:
                     player = playerContext.findCharacterOrSpecialPlayer(name);
-                    if (player != null)
+                    if (Objects.nonNull(player))
                         break;
 
                     player = playerContext.findUser(name); // Probably shouldn't happen?
-                    if (player != null)
+                    if (Objects.nonNull(player))
                         break;
 
                     player = playerContext.findOrCreateCharacter(name, avatarUrl);
@@ -332,7 +334,7 @@ public class LiveGameParser extends AbstractGameParser {
                     // identity of one of the players, but it could be an observer
                     // who will show using their User name instead
                     player = playerContext.findCharacterOrSpecialPlayer(name);
-                    if (player != null)
+                    if (Objects.nonNull(player))
                         break;
 
                     player = playerContext.findOrCreateUser(name, avatarUrl);
