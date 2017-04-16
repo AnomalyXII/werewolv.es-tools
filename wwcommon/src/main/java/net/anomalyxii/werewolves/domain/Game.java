@@ -10,11 +10,11 @@ import java.util.List;
 
 /**
  * A game of <code>werewolv.es</code>.
- *
+ * <p>
  * A game is made up of a series of
  * {@link Day days} themselves comprising
  * of a number of {@link Event events}.
- *
+ * <p>
  * Created by Anomaly on 20/11/2016.
  */
 public class Game {
@@ -23,6 +23,7 @@ public class Game {
     // Members
     // ******************************
 
+    private final String id;
     private final List<User> users = new ArrayList<>();
     private final List<Character> characters = new ArrayList<>();
     private final List<Player> specialPlayers = new ArrayList<>();
@@ -38,7 +39,8 @@ public class Game {
     // Constructors
     // ******************************
 
-    public Game() {
+    public Game(String id) {
+        this.id = id;
     }
 
     // ******************************
@@ -46,10 +48,17 @@ public class Game {
     // ******************************
 
     /**
-     * Retrieve a {@link List} of all
-     * the real identities of
-     * {@link User Users} who are in
-     * the game.
+     * Get the {@code ID} of this {@code Game}.
+     *
+     * @return the {@code ID}
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Retrieve a {@link List} of all the real identities of
+     * {@link User Users} who are in the game.
      *
      * @return a {@link List} of {@link User Users}
      */
@@ -58,10 +67,8 @@ public class Game {
     }
 
     /**
-     * Retrieve a {@link List} of all
-     * anonymised identities of
-     * {@link Character Characters}
-     * who are in the game.
+     * Retrieve a {@link List} of all anonymised identities of
+     * {@link Character Characters} who are in the game.
      *
      * @return a {@link List} of {@link Character Characters}
      */
@@ -90,10 +97,11 @@ public class Game {
     }
 
     /**
-     * Retrieve the {@link Alignment}
-     * of the team who won this game.
+     * Retrieve the {@link Alignment} of the team who won this
+     * game. Will return {@literal null} if the {@code Game} is
+     * still in progress.
      *
-     * @return
+     * @return the winning {@link Alignment}, or {@literal null}
      */
     public Alignment getWinningAlignment() {
         return winningAlignment;
@@ -104,9 +112,9 @@ public class Game {
     // ******************************
 
     public void addPlayer(Player player) {
-        if(player instanceof User)
+        if (player instanceof User)
             addUser((User) player);
-        else if(player instanceof Character)
+        else if (player instanceof Character)
             addCharacter((Character) player);
         else
             specialPlayers.add(player);

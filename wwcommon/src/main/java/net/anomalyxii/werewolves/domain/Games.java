@@ -18,14 +18,20 @@ public class Games {
 
     private final List<String> active = new ArrayList<>();
     private final List<String> pending = new ArrayList<>();
+    private final List<String> completed = new ArrayList<>();
 
     // ******************************
     // Constructors
     // ******************************
 
     public Games(List<String> active, List<String> pending) {
+        this(active, pending, Collections.emptyList());
+    }
+
+    public Games(List<String> active, List<String> pending, List<String> completed) {
         this.active.addAll(active);
         this.pending.addAll(pending);
+        this.completed.addAll(completed);
     }
 
     // ******************************
@@ -33,10 +39,9 @@ public class Games {
     // ******************************
 
     /**
-     * Retrieve a {@link List} of all <code>active</code>
-     * game IDs. An <code>active</code> game is one that
-     * has started and can no longer be joined by new
-     * players.
+     * Retrieve a {@link List} of all {@code active game IDs}. An
+     * <i>active</i> {@link Game} is one that has started and can
+     * no longer be joined by new players.
      *
      * @return a {@link List} of Game IDs
      */
@@ -45,15 +50,27 @@ public class Games {
     }
 
     /**
-     * Retrieve a {@link List} of all <code>pending</code>
-     * game IDs. A <code>pending</code> game is one that
-     * has not yet started and thus can be joined by new
-     * players.
+     * Retrieve a {@link List} of all {@code pending game IDs}.
+     * A <i>pending</i> {@link Game} is one that has not yet
+     * started and thus can be joined by new players.
      *
      * @return a {@link List} of Game IDs
      */
     public List<String> getPendingGameIDs() {
         return Collections.unmodifiableList(pending);
+    }
+
+    /**
+     * Retrieve a {@link List} of all {@code completed game IDs}.
+     *
+     * <b>This field isn't (currently) exposed by the API; it is
+     * intended to be used by clients that can return archived
+     * {@link Games}.</b>
+     *
+     * @return a {@link List} of Game IDs
+     */
+    public List<String> getCompletedGameIDs() {
+        return Collections.unmodifiableList(completed);
     }
 
 }

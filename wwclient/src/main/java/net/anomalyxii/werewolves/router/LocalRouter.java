@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * A {@link Router} implementation that attempts to load
+ * archived {@link Game} files from within the project.
+ * <p>
  * Created by Anomaly on 05/01/2017.
  */
 public class LocalRouter implements Router {
@@ -48,9 +51,7 @@ public class LocalRouter implements Router {
             if (input == null)
                 throw new RouterException("Game " + gameResourcePath + " was not found :(");
 
-            ObjectMapper objectMapper = new ObjectMapper();
-            List<Map<String, Object>> events = objectMapper.readValue(input, List.class);
-            return new LiveGameParser().parse(events);
+            return new LiveGameParser().parse(id, input);
         } catch (IOException e) {
             throw new RouterException(e);
         }

@@ -7,14 +7,18 @@ import net.anomalyxii.werewolves.domain.events.role.*;
 import net.anomalyxii.werewolves.domain.players.Character;
 import net.anomalyxii.werewolves.domain.players.User;
 
+import java.nio.file.Path;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Parse a {@link Game} taken from the archived {@code .json}.
+ * <p>
  * Created by Anomaly on 05/01/2017.
  */
 public class ArchivedGameParser extends AbstractGameParser {
@@ -38,6 +42,15 @@ public class ArchivedGameParser extends AbstractGameParser {
     // ******************************
 
     private static class GameCreationContext extends GameContext {
+
+        // Constructors
+
+        public GameCreationContext(String id) {
+            super(id);
+        }
+
+
+        // GameContext Methods
 
         @Override
         public Event parseEvent(PlayerInstance player, OffsetDateTime timestamp, Map<String, Object> event) {

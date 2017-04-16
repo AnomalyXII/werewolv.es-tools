@@ -28,6 +28,9 @@ dependencies {
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
     compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.2'
 
+    // JGit
+    compile group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '4.7.0.201704051617-r'
+
     // Apache CLI Arguments
     compile group: 'commons-cli', name: 'commons-cli', version: '1.3.1'
 

@@ -131,7 +131,7 @@ public class HttpRouterTest {
                 .respond(HttpResponse.response()
                         .withStatusCode(200)
                         .withHeader("Content-Type", "application/json")
-                        .withBody("{\"Active\":[\"ext-001\", \"ext-002\"],\"Pending\":[\"ext-003\"]}"));
+                        .withBody("{\"active\":[\"ext-001\", \"ext-002\"],\"pending\":[\"ext-003\"]}"));
 
         Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
 

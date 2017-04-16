@@ -71,9 +71,9 @@ public enum Alignment {
      * @return the {@code Alignment}
      */
     public static Alignment forMessageString(String msg) {
-        if ("member of the village".equalsIgnoreCase(msg))
+        if ("member of the village".equalsIgnoreCase(msg) || "Villager".equalsIgnoreCase(msg))
             return VILLAGE;
-        if ("member of the wolfpack".equalsIgnoreCase(msg))
+        if ("member of the wolfpack".equalsIgnoreCase(msg) || "Werewolf".equalsIgnoreCase(msg))
             return WEREWOLVES;
         if ("member of the coven".equalsIgnoreCase(msg))
             return COVEN;

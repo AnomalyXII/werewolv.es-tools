@@ -40,8 +40,8 @@ public class GameResponse extends AbstractResponse<GameResponse.Body> {
 
         // Converters
 
-        public Game toGame() {
-            return new LiveGameParser().parse(this);
+        public Game toGame(String id) {
+            return new LiveGameParser().parse(id, this);
         }
 
     }

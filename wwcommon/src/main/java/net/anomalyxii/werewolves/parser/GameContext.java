@@ -11,6 +11,9 @@ import java.time.OffsetDateTime;
 import java.util.*;
 
 /**
+ * Tracks the information needed to reconstruct a {@link Game}
+ * whilst parsing {@link Event Events} from the API.
+ *
  * Created by Anomaly on 05/01/2017.
  */
 public abstract class GameContext {
@@ -19,6 +22,7 @@ public abstract class GameContext {
     // Members
     // ******************************
 
+    private final String id;
     private boolean gameStarted = false;
     private boolean gameFinished = false;
     private boolean dayPhase = false;
@@ -33,6 +37,14 @@ public abstract class GameContext {
     private final Deque<Day> days = new ArrayDeque<>();
     private final Map<Day, List<Event>> dayGameEvents = new HashMap<>();
     private final Map<Day, List<Event>> nightGameEvents = new HashMap<>();
+
+    // ******************************
+    // Constructors
+    // ******************************
+
+    public GameContext(String id) {
+        this.id = id;
+    }
 
     // ******************************
     // Process Methods
@@ -68,7 +80,7 @@ public abstract class GameContext {
     // ******************************
 
     public Game build() {
-        Game game = new Game();
+        Game game = new Game(id);
         playerContext.allPlayers().forEach(game::addPlayer);
 
         preGameEvents.forEach(game::addPreGameEvent);

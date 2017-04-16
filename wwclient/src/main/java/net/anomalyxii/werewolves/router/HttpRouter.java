@@ -157,7 +157,7 @@ public class HttpRouter implements Router {
         logger.debug("Request /api/Game/{} - succeeded", id);
 
         return gameResponse.getContent()
-                .map(GameResponse.Body::toGame)
+                .map(body -> body.toGame(id))
                 .orElseThrow(() -> new RouterException("Game not retrieved")); // Todo: make this a better exception
 
     }

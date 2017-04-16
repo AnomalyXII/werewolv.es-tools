@@ -9,6 +9,9 @@ import java.net.URI;
 import java.util.*;
 
 /**
+ * Tracks information related to a {@link Game Game's} current
+ * {@link User Users} and {@link Character Characters}.
+ * <p>
  * Created by Anomaly on 07/01/2017.
  */
 public class PlayerContext {

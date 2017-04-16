@@ -12,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by Anomaly on 05/01/2017.
@@ -32,7 +33,13 @@ public class LiveGameParser extends AbstractGameParser {
 
     public static class GameCreationContext extends GameContext {
 
-        // Process Methods
+        // Constructors
+
+        public GameCreationContext(String id) {
+            super(id);
+        }
+
+        // GameContext Methods
 
         @Override
         public Event parseEvent(PlayerInstance player, OffsetDateTime timestamp, Map<String, Object> event) {
@@ -388,11 +395,21 @@ public class LiveGameParser extends AbstractGameParser {
             List<Map<String, Object>> spareAssignments = new ArrayList<>();
 
             List<Map<String, Object>> all = new ArrayList<>();
-            all.addAll(werewolves);
-            all.addAll(coven);
-            all.addAll(villagers);
-            all.addAll(demons);
-            all.addAll(neutrals);
+
+            if(!Objects.isNull(villagers))
+                all.addAll(villagers);
+
+            if(!Objects.isNull(werewolves))
+                all.addAll(werewolves);
+
+            if(!Objects.isNull(coven))
+                all.addAll(coven);
+
+            if(!Objects.isNull(demons))
+                all.addAll(demons);
+
+            if(!Objects.isNull(neutrals))
+                all.addAll(neutrals);
 
             all.forEach(player -> {
                 String characterName = (String) player.get("playerName");

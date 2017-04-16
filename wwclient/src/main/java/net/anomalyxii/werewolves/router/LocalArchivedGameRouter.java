@@ -41,9 +41,7 @@ public class LocalArchivedGameRouter extends LocalRouter {
             if (input == null)
                 throw new RouterException("Game " + gameResourcePath + " was not found :(");
 
-            ObjectMapper objectMapper = new ObjectMapper();
-            List<Map<String, Object>> events = objectMapper.readValue(input, List.class);
-            return new ArchivedGameParser().parse(events);
+            return new ArchivedGameParser().parse(id, input);
         } catch (IOException e) {
             throw new RouterException(e);
         }
