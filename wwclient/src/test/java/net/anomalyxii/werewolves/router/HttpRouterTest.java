@@ -25,11 +25,6 @@ import java.util.stream.Collectors;
 
 import static org.testng.Assert.*;
 
-/**
- * Test the {@link HttpRouter} class
- * <p>
- * Created by Anomaly on 27/11/2016.
- */
 public class HttpRouterTest {
 
     private int port = PortFactory.findFreePort();
@@ -73,7 +68,7 @@ public class HttpRouterTest {
                         .withStatusCode(200)
                         .withHeader("Content-Type", "application/json")
                         .withBody("{\"accessToken\":\"x12345\",\"tokenType\":\"bearer\",\"expiresIn\":360000}"));
-        Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
+        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
 
         // act
         boolean success = router.login("username", "password");
@@ -103,7 +98,7 @@ public class HttpRouterTest {
                                   "        ]\n" +
                                   "    }\n" +
                                   "}"));
-        Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
+        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
 
         // act
         boolean success = router.login("username", "password");
@@ -133,7 +128,7 @@ public class HttpRouterTest {
                         .withHeader("Content-Type", "application/json")
                         .withBody("{\"active\":[\"ext-001\", \"ext-002\"],\"pending\":[\"ext-003\"]}"));
 
-        Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
+        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
 
         // act
         Games games = router.games();
@@ -149,7 +144,7 @@ public class HttpRouterTest {
     public void games_should_handle_authentication_failures() throws RouterException {
 
         // arrange
-        Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
+        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
 
         // act
         router.games();
@@ -183,7 +178,7 @@ public class HttpRouterTest {
                                  .withHeader("Content-Type", "application/json;charset=UTF-8")
                                  .withBody(response));
 
-        Router router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
+        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
 
         // act
         Game game = router.game("ext-090");

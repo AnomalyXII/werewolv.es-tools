@@ -79,17 +79,6 @@ public class SaltMineRouter implements Router {
     // Router Methods
     // ******************************
 
-
-    @Override
-    public boolean login(String username, String password) throws RouterException {
-        return false;
-    }
-
-    @Override
-    public boolean oauth(String username, String password) throws RouterException {
-        return false;
-    }
-
     @Override
     public Games games() throws RouterException {
         if (updateBeforeRequest)
@@ -148,6 +137,16 @@ public class SaltMineRouter implements Router {
             throw new RouterException("Failed to retrieve game: " + e.getMessage(), e);
         }
     }
+
+    // ******************************
+    // AutoCloseable Methods
+    // ******************************
+
+    @Override
+    public void close() {
+        git.close();
+    }
+
 
     // ******************************
     // Helper Methods

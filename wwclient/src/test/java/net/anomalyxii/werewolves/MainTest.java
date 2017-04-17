@@ -14,11 +14,6 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 import static org.testng.Assert.fail;
 
-/**
- * Test the {@link Main} class
- *
- * Created by Anomaly on 27/11/2016.
- */
 public class MainTest {
 
     // ******************************

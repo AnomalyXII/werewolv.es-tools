@@ -5,35 +5,15 @@ import net.anomalyxii.werewolves.domain.Games;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 
 /**
+ * A gateway for interacting with the {@code werewolv.es API}.
+ * <p>
  * Created by Anomaly on 05/01/2017.
  */
-public interface Router {
+public interface Router extends AutoCloseable {
 
     // ******************************
     // Interface Methods
     // ******************************
-
-    /**
-     * Authenticate to the service
-     *
-     * @param username the username to use for authentication
-     * @param password the password to use for authentication
-     * @return {@literal true} if authentication was successful, {@literal false} otherwise
-     * @throws RouterException if anything goes wrong during authentication
-     */
-    boolean login(String username, String password) throws RouterException;
-
-
-    /**
-     * Authenticate to the service using the OAuth2 mechanism
-     *
-     * @param username the username to use for authentication
-     * @param password the password to use for authentication
-     * @return {@literal true} if authentication was successful, {@literal false} otherwise
-     * @throws RouterException if anything goes wrong during authentication
-     */
-    boolean oauth(String username, String password) throws RouterException;
-
 
     /**
      * Retrieve a list of Game IDs for any active or pending games
@@ -51,5 +31,14 @@ public interface Router {
      * @throws RouterException if anything goes wrong retrieving the game
      */
     Game game(String id) throws RouterException;
+
+    // ******************************
+    // Default Methods
+    // ******************************
+
+    @Override
+    default void close() throws Exception {
+        // Default: no-op
+    }
 
 }

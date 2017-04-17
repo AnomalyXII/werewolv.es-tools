@@ -2,53 +2,55 @@ package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Game;
+import net.anomalyxii.werewolves.domain.Games;
 import org.testng.annotations.Test;
+
+import java.net.URL;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Collections;
 
 import static org.testng.Assert.*;
 
-/**
- * Created by Anomaly on 05/01/2017.
- */
 public class LocalRouterTest {
 
     // ******************************
     // Test Methods
     // ******************************
 
-    @Test
-    public void login_should_always_return_true() throws Exception {
-        // arrange
-        LocalRouter router = new LocalRouter();
-
-        // act & assert
-        assertTrue(router.login("test", "test"));
-    }
+    // games
 
     @Test
-    public void oauth_should_always_return_true() throws Exception {
-        // arrange
-        LocalRouter router = new LocalRouter();
-
-        // act & assert
-        assertTrue(router.login("test", "test"));
-    }
-
-    @Test(expectedExceptions = UnsupportedOperationException.class)
     public void games_should_throw_UnsupportedOperationException() throws Exception {
         // arrange
-        LocalRouter router = new LocalRouter();
+        URL liveDirectoryURL = getClass().getClassLoader().getResource("live");
+        URL archiveDirectoryURL = getClass().getClassLoader().getResource("archive");
+        assertNotNull(liveDirectoryURL);
+        assertNotNull(archiveDirectoryURL);
+
+        LocalRouter router = new LocalRouter(Paths.get(liveDirectoryURL.toURI()), Paths.get(archiveDirectoryURL.toURI()));
 
         // act
-        router.games();
+        Games games = router.games();
 
         // assert
-        fail("Should have thrown an exception");
+        assertNotNull(games);
+        assertEquals(games.getPendingGameIDs(), Collections.emptyList());
+        assertEquals(games.getActiveGameIDs(), Collections.singletonList("ext-090"));
+        assertEquals(games.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
     }
 
+    // game
+
     @Test
-    public void login_should_return_game_from_resources() throws Exception {
+    public void game_should_return_game_from_resources() throws Exception {
         // arrange
-        LocalRouter router = new LocalRouter();
+        URL liveDirectoryURL = getClass().getClassLoader().getResource("live");
+        URL archiveDirectoryURL = getClass().getClassLoader().getResource("archive");
+        assertNotNull(liveDirectoryURL);
+        assertNotNull(archiveDirectoryURL);
+
+        LocalRouter router = new LocalRouter(Paths.get(liveDirectoryURL.toURI()), Paths.get(archiveDirectoryURL.toURI()));
 
         // act
         Game game = router.game("ext-090");

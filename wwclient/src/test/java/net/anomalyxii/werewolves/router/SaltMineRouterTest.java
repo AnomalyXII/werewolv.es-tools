@@ -3,24 +3,18 @@ package net.anomalyxii.werewolves.router;
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.Games;
 import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.lib.Repository;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Objects;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 
 public class SaltMineRouterTest {
 

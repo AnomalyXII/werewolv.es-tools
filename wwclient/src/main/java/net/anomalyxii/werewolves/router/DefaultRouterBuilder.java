@@ -1,8 +1,15 @@
 package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
+import org.eclipse.jgit.api.errors.GitAPIException;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 /**
+ * Build a {@link Router}.
+ * <p>
  * Created by Anomaly on 27/11/2016.
  */
 public class DefaultRouterBuilder implements RouterBuilder {
@@ -18,7 +25,7 @@ public class DefaultRouterBuilder implements RouterBuilder {
 
     @Override
     public Router forCredentials(String username, String password) throws RouterException {
-        Router router = new HttpRouter();
+        HttpRouter router = new HttpRouter();
         if (!router.oauth(username, password))
             throw new RouterException("Failed to log-in!");
 
@@ -32,7 +39,15 @@ public class DefaultRouterBuilder implements RouterBuilder {
 
     @Override
     public Router forArchivedGame(String username) throws RouterException {
-        return new LocalArchivedGameRouter(username);
+        // Todo: improve
+        try {
+            Path tmpdir = Files.createTempDirectory("wwes-saltmine-git");
+            return new SaltMineRouter(tmpdir);
+        } catch(IOException e) {
+            throw new RouterException("Failed to create temporary salt-mine directory", e);
+        } catch (GitAPIException e) {
+            throw new RouterException("Failed to clone salt-mine", e);
+        }
     }
 
 }

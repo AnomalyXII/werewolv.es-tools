@@ -11,9 +11,6 @@ import java.util.Map;
 
 import static org.testng.Assert.*;
 
-/**
- * Created by Anomaly on 08/01/2017.
- */
 public class LiveGameParserTest {
 
     // ******************************
@@ -34,10 +31,11 @@ public class LiveGameParserTest {
             LiveGameParser parser = new LiveGameParser();
 
             // act
-            Game game = parser.parse(events);
+            Game game = parser.parse("ext-090", events);
 
             // assert
             assertNotNull(game);
+            assertEquals(game.getId(), "ext-090");
             assertEquals(game.getUsers().size(), 20);
             //assertEquals(game.getCharacters().size(), 13);
             //assertEquals(game.getDays().size(), 4);
@@ -68,9 +66,5 @@ public class LiveGameParserTest {
             assertTrue(game.getDay(3).getNightPhase().isComplete());
         }
     }
-
-    // ******************************
-    // Helper Methods
-    // ******************************
 
 }

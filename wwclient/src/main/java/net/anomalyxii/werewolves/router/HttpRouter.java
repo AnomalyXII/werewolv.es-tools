@@ -30,13 +30,12 @@ import java.util.Collections;
 import java.util.Optional;
 
 /**
- * A router class that can be used to
- * conveniently access the various
- * <code>werewolv.es</code> endpoints.
+ * A {@link Router} implementation that accesses the
+ * {@code werewolv.es API} via standard {@code HTTP} requests.
  * <p>
  * Created by Anomaly on 20/11/2016.
  */
-public class HttpRouter implements Router {
+public class HttpRouter implements AuthorizedRouter {
 
     private static final Logger logger = LoggerFactory.getLogger(HttpRouter.class);
 
@@ -56,11 +55,11 @@ public class HttpRouter implements Router {
     // ******************************
 
     public HttpRouter() {
-        this(URI.create("http://wwes.azurewebsites.net"));
+        this(URI.create("http://werewolv.es"));
     }
 
     public HttpRouter(String auth) {
-        this(URI.create("http://wwes.azurewebsites.net"), auth);
+        this(URI.create("http://werewolv.es"), auth);
     }
 
     public HttpRouter(URI host) {

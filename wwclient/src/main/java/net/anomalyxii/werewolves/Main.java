@@ -46,15 +46,16 @@ public class Main {
         CommandLine arguments = getCommandLine(args);
 
         // Create a HttpRouter
-        Router router = getRouter(arguments);
+        try(Router router = getRouter(arguments)) {
 
-        // Games games = router.games();
-        // games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
-        // games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
+            // Games games = router.games();
+            // games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
+            // games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
 
-        // Fetch a game
-        Game game = router.game(arguments.getOptionValue("g"));
-        GameDumper.dump(game);
+            // Fetch a game
+            Game game = router.game(arguments.getOptionValue("g"));
+            GameDumper.dump(game);
+        }
 
     }
 
