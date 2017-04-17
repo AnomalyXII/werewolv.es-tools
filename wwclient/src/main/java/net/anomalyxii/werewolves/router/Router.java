@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 
 /**
@@ -18,10 +18,10 @@ public interface Router extends AutoCloseable {
     /**
      * Retrieve a list of Game IDs for any active or pending games
      *
-     * @return An instance of {@link Games} containing all active and pending
+     * @return An instance of {@link GamesList} containing all active and pending
      * @throws RouterException if anything goes wrong retrieving the list of games
      */
-    Games games() throws RouterException;
+    GamesList games() throws RouterException;
 
     /**
      * Retrieve the details of a {@link Game}

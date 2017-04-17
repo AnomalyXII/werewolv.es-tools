@@ -2,7 +2,7 @@ package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import org.testng.annotations.Test;
 
 import java.net.URL;
@@ -31,13 +31,13 @@ public class LocalRouterTest {
         LocalRouter router = new LocalRouter(Paths.get(liveDirectoryURL.toURI()), Paths.get(archiveDirectoryURL.toURI()));
 
         // act
-        Games games = router.games();
+        GamesList gameList = router.games();
 
         // assert
-        assertNotNull(games);
-        assertEquals(games.getPendingGameIDs(), Collections.emptyList());
-        assertEquals(games.getActiveGameIDs(), Collections.singletonList("ext-090"));
-        assertEquals(games.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
+        assertNotNull(gameList);
+        assertEquals(gameList.getPendingGameIDs(), Collections.emptyList());
+        assertEquals(gameList.getActiveGameIDs(), Collections.singletonList("ext-090"));
+        assertEquals(gameList.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
     }
 
     // game

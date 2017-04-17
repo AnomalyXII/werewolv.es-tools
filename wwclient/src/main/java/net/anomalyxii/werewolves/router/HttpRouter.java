@@ -3,7 +3,7 @@ package net.anomalyxii.werewolves.router;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.router.exceptions.RequestSerialisationException;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 import net.anomalyxii.werewolves.router.exceptions.UnsupportedContentTypeException;
@@ -122,7 +122,7 @@ public class HttpRouter implements AuthorizedRouter {
     }
 
     @Override
-    public Games games() throws RouterException {
+    public GamesList games() throws RouterException {
 
         // Fetch the IDs for active / pending games
         logger.debug("Request /api/Game - started");
@@ -136,8 +136,8 @@ public class HttpRouter implements AuthorizedRouter {
         logger.debug("Request /api/Game - succeeded");
 
         return gameResponse.getContent()
-                .map(content -> new Games(content.getActive(), content.getPending()))
-                .orElseThrow(() -> new RouterException("Games not retrieved")); // Todo: make this a better exception
+                .map(content -> new GamesList(content.getActive(), content.getPending()))
+                .orElseThrow(() -> new RouterException("GamesList not retrieved")); // Todo: make this a better exception
 
     }
 

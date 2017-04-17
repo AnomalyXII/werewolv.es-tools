@@ -10,7 +10,7 @@ import java.util.List;
  *
  * Created by Anomaly on 25/11/2016.
  */
-public class Games {
+public class GamesList {
 
     // ******************************
     // Members
@@ -24,11 +24,11 @@ public class Games {
     // Constructors
     // ******************************
 
-    public Games(List<String> active, List<String> pending) {
+    public GamesList(List<String> active, List<String> pending) {
         this(active, pending, Collections.emptyList());
     }
 
-    public Games(List<String> active, List<String> pending, List<String> completed) {
+    public GamesList(List<String> active, List<String> pending, List<String> completed) {
         this.active.addAll(active);
         this.pending.addAll(pending);
         this.completed.addAll(completed);
@@ -65,7 +65,7 @@ public class Games {
      *
      * <b>This field isn't (currently) exposed by the API; it is
      * intended to be used by clients that can return archived
-     * {@link Games}.</b>
+     * {@link GamesList}.</b>
      *
      * @return a {@link List} of Game IDs
      */

@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
 import org.testng.annotations.Test;
@@ -43,13 +43,13 @@ public class SaltMineRouterTest {
         SaltMineRouter router = new SaltMineRouter(git);
 
         // act
-        Games games = router.games();
+        GamesList gameList = router.games();
 
         // assert
-        assertNotNull(games);
-        assertEquals(games.getActiveGameIDs(), Collections.emptyList());
-        assertEquals(games.getPendingGameIDs(), Collections.emptyList());
-        assertEquals(games.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
+        assertNotNull(gameList);
+        assertEquals(gameList.getActiveGameIDs(), Collections.emptyList());
+        assertEquals(gameList.getPendingGameIDs(), Collections.emptyList());
+        assertEquals(gameList.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
     }
 
     // game

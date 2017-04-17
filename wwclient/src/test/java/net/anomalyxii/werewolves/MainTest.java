@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.router.Router;
 import net.anomalyxii.werewolves.router.RouterBuilder;
 import org.apache.commons.cli.ParseException;
@@ -44,7 +44,7 @@ public class MainTest {
         // arrange
         // Mock the router so that we don't need to do actual HTTP requests
         Router router = mock(Router.class);
-        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.games()).thenReturn(new GamesList(Collections.singletonList("ext-001"), Collections.emptyList()));
         when(router.game(anyString())).thenReturn(new Game("ext-001"));
 
         RouterBuilder builder = mock(RouterBuilder.class);
@@ -69,7 +69,7 @@ public class MainTest {
         // arrange
         // Mock the router so that we don't need to do actual HTTP requests
         Router router = mock(Router.class);
-        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.games()).thenReturn(new GamesList(Collections.singletonList("ext-001"), Collections.emptyList()));
         when(router.game(anyString())).thenReturn(new Game("ext-001"));
 
         RouterBuilder builder = mock(RouterBuilder.class);
@@ -92,7 +92,7 @@ public class MainTest {
         // arrange
         // Mock the router so that we don't need to do actual HTTP requests
         Router router = mock(Router.class);
-        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.games()).thenReturn(new GamesList(Collections.singletonList("ext-001"), Collections.emptyList()));
         when(router.game(anyString())).thenReturn(new Game("ext-001"));
 
         RouterBuilder builder = mock(RouterBuilder.class);
@@ -115,7 +115,7 @@ public class MainTest {
         // arrange
         // Mock the router so that we don't need to do actual HTTP requests
         Router router = mock(Router.class);
-        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.games()).thenReturn(new GamesList(Collections.singletonList("ext-001"), Collections.emptyList()));
         when(router.game(anyString())).thenReturn(new Game("ext-001"));
 
         RouterBuilder builder = mock(RouterBuilder.class);
@@ -138,7 +138,7 @@ public class MainTest {
         // arrange
         // Mock the router so that we don't need to do actual HTTP requests
         Router router = mock(Router.class);
-        when(router.games()).thenReturn(new Games(Collections.singletonList("ext-001"), Collections.emptyList()));
+        when(router.games()).thenReturn(new GamesList(Collections.singletonList("ext-001"), Collections.emptyList()));
         when(router.game(anyString())).thenReturn(new Game("ext-001"));
 
         RouterBuilder builder = mock(RouterBuilder.class);

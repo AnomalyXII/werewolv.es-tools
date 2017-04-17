@@ -2,11 +2,9 @@ package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
-import org.mockserver.integration.ClientAndProxy;
 import org.mockserver.integration.ClientAndServer;
-import org.mockserver.mockserver.MockServer;
 import org.mockserver.model.HttpRequest;
 import org.mockserver.model.HttpResponse;
 import org.mockserver.socket.PortFactory;
@@ -131,12 +129,12 @@ public class HttpRouterTest {
         HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
 
         // act
-        Games games = router.games();
+        GamesList gameList = router.games();
 
         // assert
-        assertNotNull(games);
-        assertEquals(games.getActiveGameIDs(), Arrays.asList("ext-001", "ext-002"));
-        assertEquals(games.getPendingGameIDs(), Collections.singletonList("ext-003"));
+        assertNotNull(gameList);
+        assertEquals(gameList.getActiveGameIDs(), Arrays.asList("ext-001", "ext-002"));
+        assertEquals(gameList.getPendingGameIDs(), Collections.singletonList("ext-003"));
 
     }
 

@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.LiveGameParser;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 
@@ -57,13 +57,13 @@ public class LocalRouter implements Router {
     // ******************************
 
     @Override
-    public Games games() throws RouterException {
+    public GamesList games() throws RouterException {
         try {
             List<String> pending = Collections.emptyList();
             List<String> active = extractGameIDsFromDirectory(liveRoot);
             List<String> complete = extractGameIDsFromDirectory(archiveRoot);
 
-            return new Games(active, pending, complete);
+            return new GamesList(active, pending, complete);
         } catch (IOException e) {
             throw new RouterException(e);
         }

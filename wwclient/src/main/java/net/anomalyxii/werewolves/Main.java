@@ -48,7 +48,7 @@ public class Main {
         // Create a HttpRouter
         try(Router router = getRouter(arguments)) {
 
-            // Games games = router.games();
+            // GamesList games = router.games();
             // games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
             // games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
 

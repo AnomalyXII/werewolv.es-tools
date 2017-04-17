@@ -1,7 +1,7 @@
 package net.anomalyxii.werewolves.router;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.Games;
+import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.ArchivedGameParser;
 import net.anomalyxii.werewolves.router.exceptions.RouterException;
 import org.eclipse.jgit.api.Git;
@@ -11,16 +11,12 @@ import org.eclipse.jgit.lib.Repository;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.SimpleFileVisitor;
-import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * A {@link Router} that fetches archived {@link Games} from
+ * A {@link Router} that fetches archived {@link GamesList} from
  * the "salt mine" (a {@link Git} repository).
  * <p>
  * Created by Anomaly on 16/04/2017.
@@ -80,7 +76,7 @@ public class SaltMineRouter implements Router {
     // ******************************
 
     @Override
-    public Games games() throws RouterException {
+    public GamesList games() throws RouterException {
         if (updateBeforeRequest)
             update(git);
 
@@ -89,11 +85,11 @@ public class SaltMineRouter implements Router {
 
         File workTree = git.getRepository().getWorkTree();
         if (Objects.isNull(workTree))
-            return new Games(active, pending);
+            return new GamesList(active, pending);
 
         File[] filesInRepository = workTree.listFiles();
         if (Objects.isNull(filesInRepository))
-            return new Games(active, pending);
+            return new GamesList(active, pending);
 
         List<String> completed = Arrays.stream(filesInRepository)
                 .filter(Objects::nonNull)
@@ -104,7 +100,7 @@ public class SaltMineRouter implements Router {
                 .map(name -> name.substring(0, name.length() - 5))
                 .collect(Collectors.toList());
 
-        return new Games(active, pending, completed);
+        return new GamesList(active, pending, completed);
     }
 
     @Override
