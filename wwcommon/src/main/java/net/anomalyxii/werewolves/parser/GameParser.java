@@ -9,6 +9,9 @@ import java.nio.file.Path;
 import java.util.List;
 
 /**
+ * A parser for turning a {@link List} of "events" into a
+ * {@link Game}.
+ *
  * Created by Anomaly on 05/01/2017.
  */
 public interface GameParser<T> {
@@ -42,6 +45,6 @@ public interface GameParser<T> {
      * @param events the {@link Game} {@link Event Events}
      * @return the parsed {@link Game}
      */
-    Game parse(String id, List<T> events);
+    Game parse(String id, List<? extends T> events);
 
 }

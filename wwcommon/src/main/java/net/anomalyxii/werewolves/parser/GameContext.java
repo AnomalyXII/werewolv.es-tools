@@ -192,14 +192,14 @@ public abstract class GameContext {
 
     // Phase Functions
 
-    protected Day startDayPhase() {
+    protected Day startDayPhase(int dayNumber) {
         Day lastDay = days.peekLast();
-        if (lastDay != null)
+        if (Objects.nonNull(lastDay))
             lastDay.getNightPhase().setComplete(true);
 
         List<Event> newDayPhase = new ArrayList<>();
         List<Event> newNightPhase = new ArrayList<>();
-        Day currentDay = new Day(new DayPhase(newDayPhase), new NightPhase(newNightPhase));
+        Day currentDay = new Day(dayNumber, new DayPhase(newDayPhase), new NightPhase(newNightPhase));
         dayGameEvents.put(currentDay, newDayPhase);
         nightGameEvents.put(currentDay, newNightPhase);
         getDays().addLast(currentDay);
@@ -210,7 +210,7 @@ public abstract class GameContext {
 
     protected Day startNightPhase() {
         Day currentDay = days.peekLast();
-        if (currentDay == null)
+        if (Objects.isNull(currentDay))
             throw new AssertionError("Should never happen!");
 
         playerContext.resetControlledCharacters();
@@ -240,7 +240,7 @@ public abstract class GameContext {
     protected void finalisePlayerIdentities() {
         playerContext.allUsers().forEach(user -> {
             Character character = playerContext.getCharacterFor(user);
-            if(character == null)
+            if(Objects.isNull(character))
                 return;
 
             character.setUser(user);

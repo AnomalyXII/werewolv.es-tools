@@ -1,5 +1,7 @@
 package net.anomalyxii.werewolves.domain;
 
+import java.util.Objects;
+
 /**
  * An alignment.
  * <p>
@@ -54,7 +56,7 @@ public enum Alignment {
      * @return the base {@code Alignment}
      */
     public Alignment baseAlignment() {
-        if(treatAs != null)
+        if(Objects.nonNull(treatAs))
             return treatAs.baseAlignment();
         return this;
     }

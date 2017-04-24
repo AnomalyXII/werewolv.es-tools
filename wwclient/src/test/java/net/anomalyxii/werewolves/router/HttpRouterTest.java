@@ -3,7 +3,16 @@ package net.anomalyxii.werewolves.router;
 import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.GamesList;
-import net.anomalyxii.werewolves.router.exceptions.RouterException;
+import net.anomalyxii.werewolves.router.http.HttpRouter;
+import net.anomalyxii.werewolves.router.http.UnhappyHttpResponseException;
+import net.anomalyxii.werewolves.router.http.auth.BearerAuth;
+import net.anomalyxii.werewolves.router.http.request.EmptyHttpRouterRequest;
+import net.anomalyxii.werewolves.router.http.request.HttpRouterRequest;
+import net.anomalyxii.werewolves.router.http.request.StandardHttpRouterRequest;
+import net.anomalyxii.werewolves.router.http.request.account.LoginRequestBean;
+import net.anomalyxii.werewolves.router.http.response.HttpRouterResponse;
+import net.anomalyxii.werewolves.router.http.response.account.LoginResponseBean;
+import net.anomalyxii.werewolves.router.http.response.game.GameListResponseBean;
 import org.mockserver.integration.ClientAndServer;
 import org.mockserver.model.HttpRequest;
 import org.mockserver.model.HttpResponse;
@@ -66,17 +75,24 @@ public class HttpRouterTest {
                         .withStatusCode(200)
                         .withHeader("Content-Type", "application/json")
                         .withBody("{\"accessToken\":\"x12345\",\"tokenType\":\"bearer\",\"expiresIn\":360000}"));
-        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
+
+        LoginRequestBean requestBean = new LoginRequestBean("username", "password");
+        HttpRouterRequest<?> request = new StandardHttpRouterRequest<>(URI.create("http://localhost:" + port + "/api/Account/Login"), null, requestBean);
+
+
+        HttpRouter router = new HttpRouter();
 
         // act
-        boolean success = router.login("username", "password");
+        HttpRouterResponse<LoginResponseBean> response = router.submit(request, LoginResponseBean.class);
 
         // assert
-        assertTrue(success);
+        assertNotNull(response);
+        assertEquals(response.getCode(), 200);
+        assertEquals(response.getContent().get().getAccessToken(), "x12345");
 
     }
 
-    @Test
+    @Test(expectedExceptions = UnhappyHttpResponseException.class)
     public void login_should_handle_authentication_failures() throws RouterException {
 
         // arrange
@@ -89,26 +105,25 @@ public class HttpRouterTest {
                         .withStatusCode(400)
                         .withHeader("Content-Type", "application/json")
                         .withBody("{\n" +
-                                  "    \"Message\": \"The request is invalid.\",\n" +
-                                  "    \"ModelState\": {\n" +
-                                  "        \"Credentials\": [\n" +
-                                  "            \"The user name or password provided is incorrect.\"\n" +
+                                  "    \"message\": \"The request is invalid.\",\n" +
+                                  "    \"modelState\": {\n" +
+                                  "        \"model.Password\": [\n" +
+                                  "            \"The Password field is required.\"\n" +
                                   "        ]\n" +
                                   "    }\n" +
                                   "}"));
-        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
+        LoginRequestBean requestBean = new LoginRequestBean("username", "password");
+        HttpRouterRequest<?> request = new StandardHttpRouterRequest<>(URI.create("http://localhost:" + port + "/api/Account/Login"), null, requestBean);
+
+
+        HttpRouter router = new HttpRouter();
 
         // act
-        boolean success = router.login("username", "password");
+        router.submit(request, LoginResponseBean.class);
 
         // assert
-        assertFalse(success);
-
+        fail("Should have thrown an exception");
     }
-
-    // oauth
-
-
 
     // games
 
@@ -126,93 +141,42 @@ public class HttpRouterTest {
                         .withHeader("Content-Type", "application/json")
                         .withBody("{\"active\":[\"ext-001\", \"ext-002\"],\"pending\":[\"ext-003\"]}"));
 
-        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
+        HttpRouterRequest<?> request = new EmptyHttpRouterRequest<>(URI.create("http://localhost:" + port + "/api/Game"), new BearerAuth("x12345z"));
+        HttpRouter router = new HttpRouter();
 
         // act
-        GamesList gameList = router.games();
+        HttpRouterResponse<GameListResponseBean> response = router.submit(request, GameListResponseBean.class);
 
         // assert
-        assertNotNull(gameList);
-        assertEquals(gameList.getActiveGameIDs(), Arrays.asList("ext-001", "ext-002"));
-        assertEquals(gameList.getPendingGameIDs(), Collections.singletonList("ext-003"));
+        assertNotNull(response);
+        assertEquals(response.getCode(), 200);
+        assertEquals(response.getContent().get().getActive(), Arrays.asList("ext-001", "ext-002"));
+        assertEquals(response.getContent().get().getPending(), Collections.singletonList("ext-003"));
 
     }
 
-    @Test(expectedExceptions = RouterException.class)
+    @Test(expectedExceptions = UnhappyHttpResponseException.class)
     public void games_should_handle_authentication_failures() throws RouterException {
 
         // arrange
-        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"));
-
-        // act
-        router.games();
-
-        // assert
-        fail("Should have thrown an exception");
-
-    }
-
-    // game
-
-    @Test
-    public void game_should_correctly_parse_a_game() throws Exception {
-
-        // arrange
-        InputStream resource = getClass().getClassLoader().getResourceAsStream("live/ext-090.json");
-        assertNotNull(resource);
-
-        String response;
-        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(resource))) {
-             response = buffer.lines().collect(Collectors.joining("\n"));
-        }
-
         mockServer // Mock the HTTP request
                 .when(HttpRequest.request()
-                              .withPath("/api/Game/ext-090")
+                              .withPath("/api/Game")
                               .withMethod("GET")
                               .withHeader("Authorization", "Bearer x12345z"))
                 .respond(HttpResponse.response()
-                                 .withStatusCode(200)
-                                 .withHeader("Content-Type", "application/json;charset=UTF-8")
-                                 .withBody(response));
+                                 .withStatusCode(401)
+                                 .withHeader("Content-Type", "application/json")
+                                 .withBody("{\"message\": \"Authorization has been denied for this request.\"}"));
 
-        HttpRouter router = new HttpRouter(URI.create("http://localhost:" + port + "/"), "x12345z");
+        HttpRouterRequest<?> request = new EmptyHttpRouterRequest<>(URI.create("http://localhost:" + port + "/api/Game"), new BearerAuth("x12345z"));
+        HttpRouter router = new HttpRouter();
 
         // act
-        Game game = router.game("ext-090");
+        router.submit(request, GameListResponseBean.class);
 
         // assert
-        assertNotNull(game);
-        assertEquals(game.getUsers().size(), 20);
-        assertEquals(game.getCharacters().size(), 13);
-        assertEquals(game.getDays().size(), 4);
-        assertEquals(game.getWinningAlignment(), Alignment.WEREWOLVES);
-
-        // Pre- and Post-Game
-        assertEquals(game.getPreGameEvents().size(), 118);
-        assertEquals(game.getPostGameEvents().size(), 96);
-        // Day 1 and Night 1
-        assertEquals(game.getDay(0).getDayPhase().getEvents().size(), 30);
-        assertTrue(game.getDay(0).getDayPhase().isComplete());
-        assertEquals(game.getDay(0).getNightPhase().getEvents().size(), 1);
-        assertTrue(game.getDay(0).getNightPhase().isComplete());
-        // Day 1 and Night 2
-        assertEquals(game.getDay(1).getDayPhase().getEvents().size(), 333);
-        assertTrue(game.getDay(1).getDayPhase().isComplete());
-        assertEquals(game.getDay(1).getNightPhase().getEvents().size(), 3);
-        assertTrue(game.getDay(1).getNightPhase().isComplete());
-        // Day 1 and Night 3
-        assertEquals(game.getDay(2).getDayPhase().getEvents().size(), 354);
-        assertTrue(game.getDay(2).getDayPhase().isComplete());
-        assertEquals(game.getDay(2).getNightPhase().getEvents().size(), 13);
-        assertTrue(game.getDay(2).getNightPhase().isComplete());
-        // Day 1 and Night 4
-        assertEquals(game.getDay(3).getDayPhase().getEvents().size(), 288);
-        assertTrue(game.getDay(3).getDayPhase().isComplete());
-        assertEquals(game.getDay(3).getNightPhase().getEvents().size(), 1);
-        assertTrue(game.getDay(3).getNightPhase().isComplete());
-
+        fail("Should have thrown an exception");
     }
-
 
 }

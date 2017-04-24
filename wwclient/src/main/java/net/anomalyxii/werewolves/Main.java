@@ -1,11 +1,10 @@
 package net.anomalyxii.werewolves;
 
-import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.router.DefaultRouterBuilder;
-import net.anomalyxii.werewolves.router.Router;
-import net.anomalyxii.werewolves.router.RouterBuilder;
-import net.anomalyxii.werewolves.router.exceptions.RouterException;
-import net.anomalyxii.werewolves.utils.GameDumper;
+import net.anomalyxii.werewolves.domain.GamesList;
+import net.anomalyxii.werewolves.router.http.HttpRouter;
+import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.impl.CompositeGameService;
+import net.anomalyxii.werewolves.services.impl.LiveGameService;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,19 +22,9 @@ public class Main {
     // Members
     // ******************************
 
-    private final RouterBuilder builder;
-
     // ******************************
     // Constructors
     // ******************************
-
-    public Main() {
-        this(new DefaultRouterBuilder());
-    }
-
-    public Main(RouterBuilder builder) {
-        this.builder = builder;
-    }
 
     // ******************************
     // Run
@@ -46,15 +35,18 @@ public class Main {
         CommandLine arguments = getCommandLine(args);
 
         // Create a HttpRouter
-        try(Router router = getRouter(arguments)) {
+        try(HttpRouter router = new HttpRouter()) {
 
-            // GamesList games = router.games();
-            // games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
-            // games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
+            GameService liveService = new LiveGameService("test01", "test01", router);
+            GameService gameService = new CompositeGameService(liveService);
+
+            GamesList games = gameService.getGameIDs();
+            games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
+            games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
 
             // Fetch a game
-            Game game = router.game(arguments.getOptionValue("g"));
-            GameDumper.dump(game);
+            // Game game = router.game(arguments.getOptionValue("g"));
+            // GameDumper.dump(game);
         }
 
     }
@@ -107,36 +99,6 @@ public class Main {
             throw new ParseException("If -A is specified, -U must also be provided");
 
         return arguments;
-
-    }
-
-    private Router getRouter(CommandLine arguments) throws RouterException {
-
-        logger.debug("Creating Router");
-
-        if (arguments.hasOption("L"))
-            return builder.forLocalGame();
-
-        if (arguments.hasOption("A")) {
-            String username = arguments.getOptionValue("U");
-            return builder.forArchivedGame(username);
-        }
-
-        // Try using a pre-auth'd token
-        if (arguments.hasOption("T"))
-            return builder.forToken(arguments.getOptionValue("T"));
-
-        // Try using a username and password
-        String username = arguments.getOptionValue("U");
-
-        // See if the password was set on the cmdline, or ask for it if not
-        String password;
-        if (arguments.hasOption("P"))
-            password = arguments.getOptionValue("P");
-        else
-            password = new String(System.console().readPassword());
-
-        return builder.forCredentials(username, password);
 
     }
 

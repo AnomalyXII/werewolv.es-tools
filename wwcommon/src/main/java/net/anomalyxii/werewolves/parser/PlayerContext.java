@@ -106,7 +106,7 @@ public class PlayerContext {
 
     public PlayerInstance instanceForUser(User user) {
         Character character = getCharacterFor(user);
-        if (character == null)
+        if (Objects.isNull(character))
             return new UserInstance(user);
 
         return instanceForCharacter(character);
@@ -130,13 +130,13 @@ public class PlayerContext {
 
     public Player getSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
         throw new IllegalArgumentException("SpecialPlayer '" + name + "' was not found");
     }
 
     public Player findSpecialPlayer(String name) {
-        if (name == null)
+        if (Objects.isNull(name))
             return SpecialPlayer.ANONYMOUS;
 
         if (Player.MODERATOR.getName().equals(name))
@@ -151,14 +151,14 @@ public class PlayerContext {
 
     public User getUser(String name) {
         User instance = findUser(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
     public User findUser(String name) {
         User user = users.get(name);
-        if (user != null)
+        if (Objects.nonNull(user))
             return user;
 
         return null;
@@ -166,10 +166,10 @@ public class PlayerContext {
 
     public User findOrCreateUser(String name, String avatarUrl) {
         User instance = findUser(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
 
-        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
+        URI uri = Objects.nonNull(avatarUrl) ? URI.create(avatarUrl) : null;
 
         User user = new User(name, uri);
         players.add(user);
@@ -179,15 +179,14 @@ public class PlayerContext {
 
     public Player getUserOrSpecialPlayer(String name) {
         Player instance = findUserOrSpecialPlayer(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
-
         throw new IllegalArgumentException("User '" + name + "' was not found");
     }
 
     public Player findUserOrSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
 
         return findUser(name);
@@ -195,7 +194,7 @@ public class PlayerContext {
 
     public Player findOrCreateUserOrSpecialPlayer(String name, String avatarUrl) {
         Player player = findSpecialPlayer(name);
-        if (player != null)
+        if (Objects.nonNull(player))
             return player;
 
         return findOrCreateUser(name, avatarUrl);
@@ -207,14 +206,14 @@ public class PlayerContext {
 
     public Character getCharacter(String name) {
         Character instance = findCharacter(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
     public Character findCharacter(String name) {
         Character character = characters.get(name);
-        if (character != null)
+        if (Objects.nonNull(character))
             return character;
 
         return null;
@@ -222,10 +221,10 @@ public class PlayerContext {
 
     public Character findOrCreateCharacter(String name, String avatarUrl) {
         Character instance = findCharacter(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
 
-        URI uri = avatarUrl != null ? URI.create(avatarUrl) : null;
+        URI uri = Objects.nonNull(avatarUrl) ? URI.create(avatarUrl) : null;
 
         Character character = new Character(name, uri);
         players.add(character);
@@ -235,15 +234,14 @@ public class PlayerContext {
 
     public Player getCharacterOrSpecialPlayer(String name) {
         Player instance = findCharacterOrSpecialPlayer(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
-
         throw new IllegalArgumentException("Character '" + name + "' was not found");
     }
 
     public Player findCharacterOrSpecialPlayer(String name) {
         Player instance = findSpecialPlayer(name);
-        if (instance != null)
+        if (Objects.nonNull(instance))
             return instance;
 
         return findCharacter(name);
@@ -251,7 +249,7 @@ public class PlayerContext {
 
     public Player findOrCreateCharacterOrSpecialPlayer(String name, String avatarUrl) {
         Player player = findSpecialPlayer(name);
-        if (player != null)
+        if (Objects.nonNull(player))
             return player;
 
         return findOrCreateCharacter(name, avatarUrl);
@@ -303,7 +301,7 @@ public class PlayerContext {
      */
     public Vitality getVitalityForUser(User user) {
         Character character = getCharacterFor(user);
-        if (character == null)
+        if (Objects.isNull(character))
             return Vitality.ALIVE; // ? Maybe??
 
         return characterVitalityMap.get(character);
@@ -328,9 +326,9 @@ public class PlayerContext {
      * @param character the {@link Character}
      */
     public void assignCharacterToUser(User user, Character character) {
-        if (user == null)
+        if (Objects.isNull(user))
             throw new IllegalArgumentException("User cannot be null");
-        if (character == null)
+        if (Objects.isNull(character))
             throw new IllegalArgumentException("Character cannot be null");
 
         assignCharacterToUser$(user, character);
@@ -344,7 +342,9 @@ public class PlayerContext {
      * @param second the second {@link User}
      */
     public void swapUserCharacters(User first, User second) {
-        if (first == null || second == null)
+        if (Objects.isNull(first))
+            throw new IllegalArgumentException("User cannot be null");
+        if (Objects.isNull(second))
             throw new IllegalArgumentException("User cannot be null");
 
         Character firstCharacter = getCharacterFor(first);
@@ -363,9 +363,9 @@ public class PlayerContext {
      * @param character the {@link Character} to become
      */
     public void swapUserIntoCharacter(User user, Character character) {
-        if (user == null)
+        if (Objects.isNull(user))
             throw new IllegalArgumentException("User cannot be null");
-        if (character == null)
+        if (Objects.isNull(character))
             throw new IllegalArgumentException("Character cannot be null");
 
         Character firstCharacter = getCharacterFor(user);
@@ -382,9 +382,9 @@ public class PlayerContext {
      * @param role the {@link Role}
      */
     public void assignRoleToUser(User user, Role role) {
-        if (user == null)
+        if (Objects.isNull(user))
             throw new IllegalArgumentException("User cannot be null");
-        if (role == null)
+        if (Objects.isNull(role))
             throw new IllegalArgumentException("Role cannot be null");
 
         userRoleMap.put(user, role);
@@ -397,7 +397,7 @@ public class PlayerContext {
      * @param vitality the {@link Vitality}
      */
     public void assignVitalityToUser(User user, Vitality vitality) {
-        if (user == null)
+        if (Objects.isNull(user))
             throw new IllegalArgumentException("User cannot be null");
 
         Character character = getCharacterFor(user);
@@ -411,12 +411,13 @@ public class PlayerContext {
      * @param vitality  the {@link Vitality}
      */
     public void assignVitalityToCharacter(Character character, Vitality vitality) {
-        if (character == null)
+        if (Objects.isNull(character))
             throw new IllegalArgumentException("Character cannot be null");
-        if (vitality == null)
+        if (Objects.isNull(vitality))
             throw new IllegalArgumentException("Vitality cannot be null");
 
         characterVitalityMap.put(character, vitality);
+        character.setCurrentVitality(vitality);
     }
 
     /**
@@ -451,9 +452,9 @@ public class PlayerContext {
      * @param character the {@link Character} who will be being controlled
      */
     public void assignControlOfCharacterToUser(User user, Character character) {
-        if (user == null)
+        if (Objects.isNull(user))
             throw new IllegalArgumentException("User cannot be null");
-        if (character == null)
+        if (Objects.isNull(character))
             throw new IllegalArgumentException("Character cannot be null");
 
         // Reset first
@@ -481,7 +482,9 @@ public class PlayerContext {
      * @param target     the {@link User} who will be controlled
      */
     public void assignControlOfUserToUser(User controller, User target) {
-        if (controller == null || target == null)
+        if (Objects.isNull(controller))
+            throw new IllegalArgumentException("User cannot be null");
+        if (Objects.isNull(target))
             throw new IllegalArgumentException("User cannot be null");
 
         Character character = getCharacterFor(target);
