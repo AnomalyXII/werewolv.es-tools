@@ -1,5 +1,6 @@
-apply plugin: 'java'
-apply from: "${rootDir}/gradle/testing.gradle"
+plugins {
+    id 'java'
+}
 
 sourceCompatibility = 1.8
 

@@ -1,18 +1,32 @@
+plugins {
+    id 'idea'
+}
+
 group 'net.anomalyxii.werewolves'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'idea'
-
 allprojects {
     repositories {
+        mavenLocal()
         mavenCentral()
     }
 }
 
 allprojects { project ->
     project.plugins.withType(JavaPlugin) {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+
+        test {
+            useTestNG() {
+                scanForTestClasses = true
+            }
+        }
+
         project.dependencies {
             testCompile group: 'org.testng', name: 'testng', version: '6.9.+'
+            testCompile group: 'org.mockito', name: 'mockito-core', version: '2.2.24'
+
         }
     }
 }

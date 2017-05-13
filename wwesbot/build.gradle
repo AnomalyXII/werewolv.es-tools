@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter() //This prevents issues with transitive dependencies
+    maven {
+        url  "https://jitpack.io"
+    }
+}
+
+dependencies {
+
+    // Werewolv.es Tools Dependencies
+    compile project(':client')
+
+    // Logger Dependencies
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+
+    // Spring Dependencies
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.5.1.RELEASE'
+
+    // Discord / etc Dependencies
+    compile group: 'net.anomalyxii.bot', name: 'irc-bot', version: '1.0-SNAPSHOT'
+    compile group: 'net.anomalyxii.bot', name: 'discord-bot', version: '1.0-SNAPSHOT'
+
+}

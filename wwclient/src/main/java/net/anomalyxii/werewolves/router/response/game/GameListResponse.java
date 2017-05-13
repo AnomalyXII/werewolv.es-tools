@@ -82,7 +82,7 @@ public class GameListResponse extends AbstractResponse<GameListResponse.Body> {
     public static DeserialisationCallback<GameListResponse> deserialisation() {
         return (response, objectMapper) -> {
             int statusCode = response.getStatusLine().getStatusCode();
-            InputStream in = null;
+            InputStream in;
             try {
                 in = response.getEntity().getContent();
             } catch (IOException e) {

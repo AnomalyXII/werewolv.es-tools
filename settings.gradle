@@ -2,7 +2,10 @@ rootProject.name = 'werewolv.es-tools'
 
 // Subprojects
 include 'wwclient'
-project(':wwclient').name = 'client'
 include 'wwcommon'
+include 'wwesbot'
+
 findProject(':wwcommon')?.name = 'common'
+findProject(':wwclient')?.name = 'client'
+findProject(':wwesbot')?.name = 'bot'
 
