@@ -240,7 +240,7 @@ public abstract class GameContext {
     protected void finalisePlayerIdentities() {
         playerContext.allUsers().forEach(user -> {
             Character character = playerContext.getCharacterFor(user);
-            if(character == null)
+            if(Objects.isNull(character))
                 return;
 
             character.setUser(user);

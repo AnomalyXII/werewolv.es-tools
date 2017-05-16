@@ -1,48 +1,40 @@
 package net.anomalyxii.werewolves.router;
 
-import org.apache.http.Header;
-import org.apache.http.entity.ContentType;
-
 import java.net.URI;
-import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 /**
+ * Contains details of a request being made via a
+ * {@link Router}.
+ * <p>
  * Created by Anomaly on 22/11/2016.
  */
-public interface RouterRequest<T> extends ContentTypeSupport {
+public interface RouterRequest<T> {
 
     // ******************************
     // Interface Methods
     // ******************************
 
+    /**
+     * Get the {@link URI} of the endpoint that this
+     * {@code RouterRequest} is being made to.
+     *
+     * @return the endpoint {@link URI}
+     */
     URI getURI();
 
-    List<Header> getHeaders();
+    /**
+     * Get the {@link Auth} to use for this {@code RouterRequest}.
+     * @return
+     */
+    Optional<Auth> getAuth();
 
-    void addHeader(Header header);
-
-    void removeHeader(Header header);
-
+    /**
+     * Get the ({@link Optional}) content that should be sent in
+     * the body of this {@code RouterRequest}.
+     *
+     * @return the {@link Optional} request body
+     */
     Optional<T> getContent();
-
-    // ******************************
-    // Default Methods
-    // ******************************
-
-    default boolean usePost() {
-        return false;
-    }
-
-    default boolean useForm() { return false; }
-
-    default List<Integer> getAcceptedStatusCodes() {
-        return Collections.singletonList(200);
-    }
-
-    default List<Integer> getRejectedStatusCodes() {
-        return Collections.singletonList(400);
-    }
 
 }

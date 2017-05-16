@@ -6,8 +6,8 @@ import net.anomalyxii.bot.api.server.Messagable;
 import net.anomalyxii.bot.api.server.Server;
 import net.anomalyxii.bot.api.server.events.MessageEvent;
 import net.anomalyxii.werewolves.domain.GamesList;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiException;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiService;
+import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.ServiceException;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
@@ -32,7 +32,7 @@ public class ListActiveGamesHandlerTest {
         when(command.isPrivate()).thenReturn(true);
         when(command.getMessageText()).thenReturn("!active");
 
-        ApiService service = mock(ApiService.class);
+        GameService service = mock(GameService.class);
         when(service.getGameIDs())
                 .thenReturn(new GamesList(Arrays.asList("tst-003", "tst-004", "tst-001"), Collections.emptyList()));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
@@ -55,7 +55,7 @@ public class ListActiveGamesHandlerTest {
         when(command.isPrivate()).thenReturn(true);
         when(command.getMessageText()).thenReturn("!active");
 
-        ApiService service = mock(ApiService.class);
+        GameService service = mock(GameService.class);
         when(service.getGameIDs()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList()));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
 
@@ -77,8 +77,8 @@ public class ListActiveGamesHandlerTest {
         when(command.isPrivate()).thenReturn(true);
         when(command.getMessageText()).thenReturn("!active");
 
-        ApiService service = mock(ApiService.class);
-        when(service.getGameIDs()).thenThrow(new ApiException("You're in a unit test!"));
+        GameService service = mock(GameService.class);
+        when(service.getGameIDs()).thenThrow(new ServiceException("You're in a unit test!"));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
 
         // act

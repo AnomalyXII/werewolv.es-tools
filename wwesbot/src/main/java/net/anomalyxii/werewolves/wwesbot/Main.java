@@ -7,12 +7,12 @@ import net.anomalyxii.bot.irc.server.IrcServer;
 import net.anomalyxii.botmanager.api.BotManager;
 import net.anomalyxii.botmanager.api.services.BotService;
 import net.anomalyxii.botmanager.spring.SpringWebManager;
+import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.wwesbot.handlers.ListActiveGamesHandler;
 import net.anomalyxii.werewolves.wwesbot.handlers.ListPendingGamesHandler;
 import net.anomalyxii.werewolves.wwesbot.handlers.StatsHandler;
 import net.anomalyxii.werewolves.wwesbot.spring.BotConfiguration;
 import net.anomalyxii.werewolves.wwesbot.spring.BotServiceConfiguration;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiService;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,7 +37,7 @@ public class Main {
     public static void main(String... args) throws Exception {
         SpringApplicationBuilder builder = new SpringApplicationBuilder()
                 .bannerMode(Banner.Mode.OFF)
-                .sources(SpringWebManager.class, BotConfiguration.class, BotServiceConfiguration.ApiServiceConfiguration.class)
+                .sources(SpringWebManager.class, BotConfiguration.class, BotServiceConfiguration.class)
                 .main(SpringWebManager.class);
 
         SpringApplication application = builder.build();
@@ -50,10 +50,10 @@ public class Main {
 
         DispatchingMessageReceivedListener dispatchListener = new DispatchingMessageReceivedListener();
 
-        ApiService apiService = context.getBean(ApiService.class);
-        dispatchListener.registerCommandHandler(new ListActiveGamesHandler(apiService));
-        dispatchListener.registerCommandHandler(new ListPendingGamesHandler(apiService));
-        dispatchListener.registerCommandHandler(new StatsHandler(apiService));
+        GameService gameService = context.getBean(GameService.class);
+        dispatchListener.registerCommandHandler(new ListActiveGamesHandler(gameService));
+        dispatchListener.registerCommandHandler(new ListPendingGamesHandler(gameService));
+        dispatchListener.registerCommandHandler(new StatsHandler(gameService));
         bot.asEventSubscriber().registerBotEventListener(dispatchListener);
 
         IDiscordClient discordClient = context.getBean(IDiscordClient.class);

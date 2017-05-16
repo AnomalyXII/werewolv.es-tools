@@ -7,8 +7,8 @@ import net.anomalyxii.bot.api.server.Server;
 import net.anomalyxii.bot.api.server.events.MessageEvent;
 import net.anomalyxii.bot.impl.handlers.AbstractCommandHandler;
 import net.anomalyxii.werewolves.domain.GamesList;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiException;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiService;
+import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.ServiceException;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -28,13 +28,13 @@ public class ListPendingGamesHandler extends AbstractCommandHandler {
     // Members
     // ******************************
 
-    private final ApiService service;
+    private final GameService service;
 
     // ******************************
     // Constructors
     // ******************************
 
-    public ListPendingGamesHandler(ApiService service) {
+    public ListPendingGamesHandler(GameService service) {
         this.service = service;
     }
 
@@ -55,7 +55,7 @@ public class ListPendingGamesHandler extends AbstractCommandHandler {
         List<String> pendingGameIDs;
         try {
             pendingGameIDs = service.getGameIDs().getPendingGameIDs();
-        } catch (ApiException e) {
+        } catch (ServiceException e) {
             // We'll send an error message instead...
             throw new Exception("Could not retrieve pending games: " + e.getMessage(), e);
         }

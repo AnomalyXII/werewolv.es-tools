@@ -23,6 +23,8 @@ public enum Role {
     MASONLEADER(Alignment.VILLAGE),
     TAROTREADER(Alignment.VILLAGE),
     WITCHHUNTER(Alignment.VILLAGE),
+    SLEEPWALKER(Alignment.VILLAGE),
+    INSOMNIAC(Alignment.VILLAGE),
     BEHOLDER(Alignment.VILLAGE),
 
     // Werewolves
@@ -30,6 +32,7 @@ public enum Role {
     SHAPESHIFTER(Alignment.WEREWOLVES),
     ALPHAWOLF(Alignment.WEREWOLVES),
     BLOODHOUND(Alignment.WEREWOLVES),
+    BLOODLETTER(Alignment.WEREWOLVES),
     DIREWOLF(Alignment.WEREWOLVES),
 
     // Coven
@@ -40,8 +43,9 @@ public enum Role {
     PUPPETMASTER(Alignment.COVEN),
     PUPPET(Alignment.COVEN),
 
-    // Neutral
+    // "Neutral"
     VAMPIRE(Alignment.VAMPIRES),
+    FAMILIAR(Alignment.VAMPIRES),
     FAMILIARSTALKER(Alignment.VAMPIRES),
     DEMONLORD(Alignment.DEMONS),
     HELLHOUND(Alignment.DEMONS),

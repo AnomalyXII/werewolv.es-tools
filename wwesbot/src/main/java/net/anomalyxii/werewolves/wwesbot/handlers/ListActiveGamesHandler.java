@@ -7,8 +7,8 @@ import net.anomalyxii.bot.api.server.Server;
 import net.anomalyxii.bot.api.server.events.MessageEvent;
 import net.anomalyxii.bot.impl.handlers.AbstractCommandHandler;
 import net.anomalyxii.werewolves.domain.GamesList;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiException;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiService;
+import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.ServiceException;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -28,13 +28,13 @@ public class ListActiveGamesHandler extends AbstractCommandHandler {
     // Members
     // ******************************
 
-    private final ApiService service;
+    private final GameService service;
 
     // ******************************
     // Constructors
     // ******************************
 
-    public ListActiveGamesHandler(ApiService service) {
+    public ListActiveGamesHandler(GameService service) {
         this.service = service;
     }
 
@@ -56,7 +56,7 @@ public class ListActiveGamesHandler extends AbstractCommandHandler {
         List<String> activeGameIDs;
         try {
             activeGameIDs = service.getGameIDs().getActiveGameIDs();
-        } catch (ApiException e) {
+        } catch (ServiceException e) {
             // We'll send an error message instead...
             throw new Exception("Could not retrieve active games: " + e.getMessage(), e);
         }

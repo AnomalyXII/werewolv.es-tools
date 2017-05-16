@@ -8,10 +8,9 @@ import net.anomalyxii.bot.api.server.Server;
 import net.anomalyxii.bot.api.server.events.MessageEvent;
 import net.anomalyxii.bot.impl.handlers.AbstractCommandHandler;
 import net.anomalyxii.werewolves.domain.Game;
+import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.ServiceException;
 import net.anomalyxii.werewolves.wwesbot.spring.domain.GameStatistics;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiException;
-import net.anomalyxii.werewolves.wwesbot.spring.services.ApiService;
-import org.springframework.boot.ApplicationArguments;
 
 import java.util.Collections;
 import java.util.List;
@@ -30,13 +29,13 @@ public class StatsHandler extends AbstractCommandHandler {
     // Attributes
     // *********************************
 
-    private final ApiService service;
+    private final GameService service;
 
     // *********************************
     // Constructors
     // *********************************
 
-    public StatsHandler(ApiService service) {
+    public StatsHandler(GameService service) {
         this.service = service;
     }
 
@@ -83,11 +82,12 @@ public class StatsHandler extends AbstractCommandHandler {
      * @param bot       the {@link Bot} that received the {@link MessageEvent}
      * @param recipient the {@link Messagable} to send the report to
      * @param gameId    the {@code game ID}
-     * @throws ApiException if the {@link Game} cannot be fetched from the API
+     * @throws ServiceException if the {@link Game} cannot be fetched from the API
      */
-    protected void handleGameStats(Bot bot, Server server, Messagable recipient, String gameId) throws ApiException {
-        GameStatistics stats = service.getGameStatistics(gameId);
-        server.say(recipient, "(stats)" + stats.toFormattedString());
+    protected void handleGameStats(Bot bot, Server server, Messagable recipient, String gameId) throws ServiceException {
+        Game game = service.getGame(gameId);
+        GameStatistics stats = new GameStatistics(game);
+        server.say(recipient, "(stats) " + stats.toFormattedString());
     }
 
     /**
@@ -97,9 +97,9 @@ public class StatsHandler extends AbstractCommandHandler {
      * @param bot       the {@link Bot} that received the {@link MessageEvent}
      * @param recipient the {@link Messagable} to send the report to
      * @param userId    the {@code user ID}
-     * @throws ApiException if the {@link Game} cannot be fetched from the API
+     * @throws ServiceException if the {@link Game} cannot be fetched from the API
      */
-    protected void handleUserStats(Bot bot, Server server, Messagable recipient, String userId) throws ApiException {
+    protected void handleUserStats(Bot bot, Server server, Messagable recipient, String userId) throws ServiceException {
 
     }
 

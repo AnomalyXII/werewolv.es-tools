@@ -172,7 +172,7 @@ public class LiveGameParser extends AbstractGameParser {
                                                            timestamp,
                                                            getInstanceForCharacter(event, "target"));
 
-                    // Game Phase Events
+                // Game Phase Events
 
                 case "PlayerJoined":
                     if (player instanceof User)
@@ -398,19 +398,19 @@ public class LiveGameParser extends AbstractGameParser {
 
             List<Map<String, Object>> all = new ArrayList<>();
 
-            if(!Objects.isNull(villagers))
+            if (!Objects.isNull(villagers))
                 all.addAll(villagers);
 
-            if(!Objects.isNull(werewolves))
+            if (!Objects.isNull(werewolves))
                 all.addAll(werewolves);
 
-            if(!Objects.isNull(coven))
+            if (!Objects.isNull(coven))
                 all.addAll(coven);
 
-            if(!Objects.isNull(demons))
+            if (!Objects.isNull(demons))
                 all.addAll(demons);
 
-            if(!Objects.isNull(neutrals))
+            if (!Objects.isNull(neutrals))
                 all.addAll(neutrals);
 
             all.forEach(player -> {
@@ -438,7 +438,7 @@ public class LiveGameParser extends AbstractGameParser {
                     .stream()
                     .filter(character -> character.getUser() == null)
                     .forEach(character -> {
-                        if(spareAssignments.isEmpty())
+                        if (spareAssignments.isEmpty())
                             return;
 
                         Map<String, Object> player = spareAssignments.remove(0);
