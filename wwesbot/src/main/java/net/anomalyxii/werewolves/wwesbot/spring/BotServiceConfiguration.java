@@ -98,7 +98,7 @@ public class BotServiceConfiguration {
         @Autowired
         public static GameService apiService(@Qualifier("liveGameService") GameService liveGameService,
                                              @Qualifier("archivedGameService") ArchivedGameService archivedGameService) {
-            return new CompositeGameService(liveGameService, archivedGameService);
+            return new CompositeGameService(archivedGameService, liveGameService);
         }
 
     }
