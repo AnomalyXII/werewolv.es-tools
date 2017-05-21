@@ -57,7 +57,7 @@ public class Main {
         bot.asEventSubscriber().registerBotEventListener(dispatchListener);
 
         IDiscordClient discordClient = context.getBean(IDiscordClient.class);
-        manager.connect(new IrcServer(URI.create("irc://irc.quakenet.org:6667")));
+        manager.connect(new IrcServer("wwes-bot", URI.create("irc://irc.quakenet.org:6667")));
         manager.connect(new DiscordServer(discordClient));
 
     }
