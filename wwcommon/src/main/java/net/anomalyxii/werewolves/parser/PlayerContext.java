@@ -109,19 +109,31 @@ public class PlayerContext {
         if (Objects.isNull(character))
             return new UserInstance(user);
 
-        return instanceForCharacter(character);
+        return instanceForCharacter(user, character);
     }
 
     public PlayerInstance instanceForCharacter(Character character) {
-        Vitality vitality = getVitalityForCharacter(character);
-
         User user = getUserFromCharacter(character);
-        if (isCharacterBeingControlled(character)) {
-            User controllingUser = getUserControlling(character);
-            return new CharacterControlledInstance(character, controllingUser, user, vitality);
+        return instanceForCharacter(user, character);
+    }
+
+    protected PlayerInstance instanceForCharacter(User user, Character character) {
+        Role role = getRoleForUser(user);
+        if(Objects.isNull(role)) {
+            role = character.getRole();
+            if(Objects.nonNull(role))
+                assignRoleToUser(user, role);
         }
 
-        return new CharacterInstance(character, user, vitality);
+        Alignment alignment = Objects.nonNull(role) ? role.getAlignment().baseAlignment() : null;
+        Vitality vitality = getVitalityForCharacter(character);
+
+        if (isCharacterBeingControlled(character)) {
+            User controllingUser = getUserControlling(character);
+            return new CharacterControlledInstance(character, controllingUser, user, alignment, vitality);
+        }
+
+        return new CharacterInstance(character, user, alignment, vitality);
     }
 
     // ******************************

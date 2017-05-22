@@ -26,6 +26,7 @@ public enum Role {
     SLEEPWALKER(Alignment.VILLAGE),
     INSOMNIAC(Alignment.VILLAGE),
     BEHOLDER(Alignment.VILLAGE),
+    ZEALOT(Alignment.VILLAGE),
 
     // Werewolves
     WEREWOLF(Alignment.WEREWOLVES),

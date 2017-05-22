@@ -1,5 +1,6 @@
 package net.anomalyxii.werewolves.domain.players;
 
+import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Vitality;
@@ -15,15 +16,17 @@ public class CharacterInstance implements PlayerInstance {
 
     private final Character character;
     private final User user;
+    private final Alignment alignment;
     private final Vitality vitality;
 
     // ******************************
     // Constructors
     // ******************************
 
-    public CharacterInstance(Character character, User user, Vitality vitality) {
+    public CharacterInstance(Character character, User user, Alignment alignment, Vitality vitality) {
         this.character = character;
         this.user = user;
+        this.alignment = alignment;
         this.vitality = vitality;
     }
 
@@ -49,6 +52,11 @@ public class CharacterInstance implements PlayerInstance {
     @Override
     public boolean isPlayerInGame() {
         return true;
+    }
+
+    @Override
+    public Alignment getAlignment() {
+        return alignment;
     }
 
     @Override

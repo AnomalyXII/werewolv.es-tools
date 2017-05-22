@@ -1,5 +1,6 @@
 package net.anomalyxii.werewolves.domain.players;
 
+import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Vitality;
 
 /**
@@ -17,8 +18,8 @@ public class CharacterControlledInstance extends CharacterInstance {
     // Constructors
     // ******************************
 
-    public CharacterControlledInstance(Character character, User user, User originalUser, Vitality vitality) {
-        super(character, user, vitality);
+    public CharacterControlledInstance(Character character, User user, User originalUser, Alignment alignment, Vitality vitality) {
+        super(character, user, alignment, vitality);
         this.originalUser = originalUser;
     }
 

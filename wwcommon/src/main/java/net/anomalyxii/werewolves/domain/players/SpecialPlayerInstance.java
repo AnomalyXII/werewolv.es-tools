@@ -1,5 +1,6 @@
 package net.anomalyxii.werewolves.domain.players;
 
+import net.anomalyxii.werewolves.domain.Alignment;
 import net.anomalyxii.werewolves.domain.Player;
 import net.anomalyxii.werewolves.domain.PlayerInstance;
 import net.anomalyxii.werewolves.domain.Vitality;
@@ -46,6 +47,11 @@ public class SpecialPlayerInstance implements PlayerInstance {
     @Override
     public boolean isPlayerInGame() {
         return false;
+    }
+
+    @Override
+    public Alignment getAlignment() {
+        return null;
     }
 
     @Override
