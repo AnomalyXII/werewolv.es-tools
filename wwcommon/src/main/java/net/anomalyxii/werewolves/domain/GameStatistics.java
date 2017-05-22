@@ -1,4 +1,4 @@
-package net.anomalyxii.werewolves.wwesbot.spring.domain;
+package net.anomalyxii.werewolves.domain;
 
 import net.anomalyxii.werewolves.domain.Day;
 import net.anomalyxii.werewolves.domain.Game;

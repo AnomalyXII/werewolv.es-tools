@@ -10,9 +10,8 @@ import net.anomalyxii.bot.impl.handlers.AbstractCommandHandler;
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.services.ServiceException;
-import net.anomalyxii.werewolves.wwesbot.spring.domain.GameStatistics;
+import net.anomalyxii.werewolves.domain.GameStatistics;
 
-import java.util.Collections;
 import java.util.List;
 
 /**

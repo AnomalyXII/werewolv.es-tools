@@ -1,6 +1,7 @@
 package net.anomalyxii.werewolves.services.impl;
 
 import net.anomalyxii.werewolves.domain.Game;
+import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.LiveGameParser;
 import net.anomalyxii.werewolves.router.Auth;
@@ -57,6 +58,11 @@ public class LiveGameService implements GameService {
     // ******************************
 
     @Override
+    public boolean doesGameExist(String id) {
+        return true; // Technically, every game exists via this service... :(
+    }
+
+    @Override
     public GamesList getGameIDs() throws ServiceException {
         HttpRouterRequestBuilder<Void> request = HttpRouterRequestBuilder.newBuilder().withEndpoint("/api/Game");
         RouterResponse<GameListResponseBean> response = routeWithAuthenticationRetry(request, GameListResponseBean.class);
@@ -72,6 +78,11 @@ public class LiveGameService implements GameService {
 
         LiveGameParser parser = new LiveGameParser();
         return parser.parse(id, responseBean);
+    }
+
+    @Override
+    public GameStatistics getGameStatistics(String id) throws ServiceException {
+        return new GameStatistics(getGame(id));
     }
 
     // ******************************

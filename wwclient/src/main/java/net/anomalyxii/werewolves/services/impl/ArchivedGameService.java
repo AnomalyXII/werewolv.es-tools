@@ -1,6 +1,7 @@
 package net.anomalyxii.werewolves.services.impl;
 
 import net.anomalyxii.werewolves.domain.Game;
+import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.ArchivedGameParser;
 import net.anomalyxii.werewolves.router.*;
@@ -41,6 +42,15 @@ public class ArchivedGameService implements GameService {
     // ******************************
     // Constructors
     // ******************************
+
+    @Override
+    public boolean doesGameExist(String id) {
+        try {
+            return getGameIDs().getCompletedGameIDs().contains(id);
+        } catch (ServiceException e) {
+            return false;
+        }
+    }
 
     @Override
     public GamesList getGameIDs() throws ServiceException {
@@ -96,20 +106,14 @@ public class ArchivedGameService implements GameService {
         }
     }
 
-    // ******************************
-    // AutoCloseable Methods
-    // ******************************
+    @Override
+    public GameStatistics getGameStatistics(String id) throws ServiceException {
+        return new GameStatistics(getGame(id));
+    }
 
     // ******************************
     // Helper Methods
     // ******************************
-
-    public static ArchivedGameService create(Path localRepositoryPath, String remoteRepositoryURI) throws GitAPIException {
-        return new ArchivedGameService(Git.cloneRepository()
-                                               .setURI(remoteRepositoryURI)
-                                               .setDirectory(localRepositoryPath.toFile())
-                                               .call());
-    }
 
     /**
      * Update a {@link Git} {@link Repository}.

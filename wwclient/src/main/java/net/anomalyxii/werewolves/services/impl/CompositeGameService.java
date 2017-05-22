@@ -1,6 +1,7 @@
 package net.anomalyxii.werewolves.services.impl;
 
 import net.anomalyxii.werewolves.domain.Game;
+import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.services.ServiceException;
@@ -39,6 +40,11 @@ public class CompositeGameService implements GameService {
     // ******************************
 
     @Override
+    public boolean doesGameExist(String id) {
+        return stream(primaryDelegate, otherDelegates).anyMatch(delegate -> delegate.doesGameExist(id));
+    }
+
+    @Override
     public GamesList getGameIDs() throws ServiceException {
         Set<String> activeGameIDs = new TreeSet<>();
         Set<String> pendingGameIDs = new TreeSet<>();
@@ -53,34 +59,27 @@ public class CompositeGameService implements GameService {
 
 
             return new GamesList(asList(activeGameIDs), asList(pendingGameIDs), asList(completedGameIDs));
-        } catch(UncheckedServiceException e) {
+        } catch (UncheckedServiceException e) {
             throw e.getCause();
         }
     }
 
     @Override
     public Game getGame(String id) throws ServiceException {
-        Game game = null;
-
-        ServiceException primaryException = null;
-        try {
-            game = primaryDelegate.getGame(id);
-        } catch(ServiceException e) {
-            // Suppress the exception and try the delegates...
-            primaryException = e;
-        }
-
-        if (Objects.nonNull(game))
-            return game;
-
-        ServiceException throwIfNotFound = primaryException;
-        return otherDelegates.stream()
+        return stream(primaryDelegate, otherDelegates)
+                .filter(delegate -> delegate.doesGameExist(id))
+                .findFirst()
                 .map(delegate -> delegate(delegate, id))
                 .filter(Optional::isPresent)
                 .map(Optional::get)
-                .findFirst()
-                .orElseThrow(() -> throwIfNotFound);
+                .orElseThrow(() -> new ServiceException("Could not find Game with ID '" + id + "'"));
     }
+
+    @Override
+    public GameStatistics getGameStatistics(String id) throws ServiceException {
+        return new GameStatistics(getGame(id));
+    }
+
 
     // ******************************
     // Private Helper Methods
@@ -121,7 +120,7 @@ public class CompositeGameService implements GameService {
      * Turn a Collection into a List
      */
     private <T> List<T> asList(Collection<T> collection) {
-        return collection instanceof  List ? (List) collection : new ArrayList<>(collection);
+        return collection instanceof List ? (List) collection : new ArrayList<>(collection);
     }
 
 }
