@@ -53,25 +53,17 @@ public class StatsHandler extends AbstractCommandHandler {
         Bot bot = command.getBot();
         Server server = command.getServer();
         MessageEvent message = command.getMessageEvent();
-        List<String> arguments = command.getArguments();
-
-        List<String> gameIds = arguments;
-        List<String> userIds = Collections.emptyList();
-        //if (arguments.containsOption("user"))
-        //    userIds = arguments.getOptionValues("user");
+        List<String> gameIds = command.getArguments();
 
         // Todo: allow parsing from non-option arguments
         // Todo: limit the number of games we'll parse??
-        if (gameIds.isEmpty() && userIds.isEmpty())
+        if (gameIds.isEmpty() && gameIds.isEmpty())
             throw new IllegalArgumentException("(stats) No games or users were specified");
 
         Messagable recipient = message.isPrivate() ? message.getSender() : message.getTarget();
 
         for (String gameId : gameIds)
             handleGameStats(bot, server, recipient, gameId);
-
-        for (String id : userIds)
-            handleUserStats(bot, server, recipient, id);
 
     }
 
@@ -88,19 +80,6 @@ public class StatsHandler extends AbstractCommandHandler {
         Game game = service.getGame(gameId);
         GameStatistics stats = new GameStatistics(game);
         server.say(recipient, "(stats) " + stats.toFormattedString());
-    }
-
-    /**
-     * Report the statistics of a specified
-     * {@code werewolv.es User}
-     *
-     * @param bot       the {@link Bot} that received the {@link MessageEvent}
-     * @param recipient the {@link Messagable} to send the report to
-     * @param userId    the {@code user ID}
-     * @throws ServiceException if the {@link Game} cannot be fetched from the API
-     */
-    protected void handleUserStats(Bot bot, Server server, Messagable recipient, String userId) throws ServiceException {
-
     }
 
 }
