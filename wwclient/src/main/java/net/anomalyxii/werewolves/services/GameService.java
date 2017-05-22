@@ -3,6 +3,7 @@ package net.anomalyxii.werewolves.services;
 import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
+// import net.anomalyxii.werewolves.wwesbot.spring.domain.GameStatistics;
 
 /**
  * A service for interacting with {@code werewolv.es}
@@ -30,7 +31,7 @@ public interface GameService {
      * of pending games (i.e. are in sign-up) and active games
      * (i.e. are currently in progress).
      *
-     * @return a {@link GamesList)
+     * @return a {@link GamesList )
      * @throws ServiceException if something goes wrong accessing the API
      */
     GamesList getGameIDs() throws ServiceException;

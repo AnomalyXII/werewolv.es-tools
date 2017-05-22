@@ -19,8 +19,10 @@ dependencies {
     // Logger Dependencies
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
 
+    // Caching Stuff
     compile group: 'javax.cache', name: 'cache-api', version: '1.0.0'
     compile group: 'org.ehcache', name: 'ehcache', version: '3.0.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-cache', version: '1.5.3.RELEASE'
 
     // Discord / etc Dependencies
     compile group: 'net.anomalyxii.bot', name: 'bot-irc', version: '1.0-SNAPSHOT'

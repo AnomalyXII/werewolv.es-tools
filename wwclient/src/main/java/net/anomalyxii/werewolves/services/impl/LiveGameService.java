@@ -1,7 +1,6 @@
 package net.anomalyxii.werewolves.services.impl;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.LiveGameParser;
 import net.anomalyxii.werewolves.router.Auth;
@@ -31,7 +30,7 @@ import java.util.Objects;
  * <p>
  * Created by Anomaly on 15/05/2017.
  */
-public class LiveGameService implements GameService {
+public class LiveGameService extends AbstractGameService {
 
     // ******************************
     // Members
@@ -78,11 +77,6 @@ public class LiveGameService implements GameService {
 
         LiveGameParser parser = new LiveGameParser();
         return parser.parse(id, responseBean);
-    }
-
-    @Override
-    public GameStatistics getGameStatistics(String id) throws ServiceException {
-        return new GameStatistics(getGame(id));
     }
 
     // ******************************

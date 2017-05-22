@@ -60,13 +60,10 @@ public class CompositeGameServiceTest {
         // arrange
         Game expected = new Game("tst-010");
         GameService primary = mock(GameService.class);
-        when(primary.doesGameExist("tst-010")).thenReturn(true);
         when(primary.getGame("tst-010")).thenReturn(expected);
         GameService secondary = mock(GameService.class);
-        when(secondary.doesGameExist("tst-010")).thenReturn(true);
         when(secondary.getGame("tst-010")).thenThrow(new AssertionError("Should not have been called"));
         GameService tertiary = mock(GameService.class);
-        when(tertiary.doesGameExist("tst-010")).thenReturn(true);
         when(tertiary.getGame("tst-010")).thenThrow(new AssertionError("Should not have been called"));
 
         CompositeGameService service = new CompositeGameService(primary, secondary, tertiary);

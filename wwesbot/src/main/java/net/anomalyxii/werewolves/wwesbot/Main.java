@@ -7,10 +7,13 @@ import net.anomalyxii.bot.irc.server.IrcServer;
 import net.anomalyxii.botmanager.api.BotManager;
 import net.anomalyxii.botmanager.api.services.BotService;
 import net.anomalyxii.botmanager.spring.SpringWebManager;
+import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.UserService;
 import net.anomalyxii.werewolves.wwesbot.handlers.ListActiveGamesHandler;
 import net.anomalyxii.werewolves.wwesbot.handlers.ListPendingGamesHandler;
 import net.anomalyxii.werewolves.wwesbot.handlers.StatsHandler;
+import net.anomalyxii.werewolves.wwesbot.handlers.UserStatsHandler;
 import net.anomalyxii.werewolves.wwesbot.spring.BotConfiguration;
 import net.anomalyxii.werewolves.wwesbot.spring.BotServiceConfiguration;
 import org.springframework.boot.Banner;
@@ -51,9 +54,13 @@ public class Main {
         DispatchingMessageReceivedListener dispatchListener = new DispatchingMessageReceivedListener();
 
         GameService gameService = context.getBean(GameService.class);
+        UserService userService = context.getBean(UserService.class);
         dispatchListener.registerCommandHandler(new ListActiveGamesHandler(gameService));
         dispatchListener.registerCommandHandler(new ListPendingGamesHandler(gameService));
         dispatchListener.registerCommandHandler(new StatsHandler(gameService));
+        dispatchListener.registerCommandHandler(new UserStatsHandler(userService));
+
+        // service.registerBotEventListener(manager, dispatchListener);
         bot.asEventSubscriber().registerBotEventListener(dispatchListener);
 
         IDiscordClient discordClient = context.getBean(IDiscordClient.class);

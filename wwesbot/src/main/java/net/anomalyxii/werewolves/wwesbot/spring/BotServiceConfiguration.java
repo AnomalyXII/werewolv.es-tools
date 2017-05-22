@@ -2,9 +2,13 @@ package net.anomalyxii.werewolves.wwesbot.spring;
 
 import net.anomalyxii.werewolves.router.http.HttpRouter;
 import net.anomalyxii.werewolves.services.GameService;
+import net.anomalyxii.werewolves.services.UserService;
 import net.anomalyxii.werewolves.services.impl.ArchivedGameService;
+import net.anomalyxii.werewolves.services.impl.ArchivedUserService;
 import net.anomalyxii.werewolves.services.impl.CompositeGameService;
 import net.anomalyxii.werewolves.services.impl.LiveGameService;
+import net.anomalyxii.werewolves.wwesbot.spring.service.CachingGameService;
+import net.anomalyxii.werewolves.wwesbot.spring.service.CachingUserService;
 import org.eclipse.jgit.api.Git;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,10 +22,13 @@ import org.springframework.stereotype.Component;
 
 import javax.cache.CacheManager;
 import javax.cache.configuration.MutableConfiguration;
+import javax.cache.expiry.CreatedExpiryPolicy;
+import javax.cache.expiry.Duration;
 import javax.cache.expiry.EternalExpiryPolicy;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Spring {@link Configuration} for services.
@@ -36,8 +43,12 @@ public class BotServiceConfiguration {
     public static class CachingSetup implements JCacheManagerCustomizer {
         @Override
         public void customize(CacheManager cacheManager) {
-            cacheManager.createCache("api", new MutableConfiguration<>()
-                    .setExpiryPolicyFactory(EternalExpiryPolicy.factoryOf())
+            cacheManager.createCache("games", new MutableConfiguration<>()
+                    .setExpiryPolicyFactory(CreatedExpiryPolicy.factoryOf(new Duration(TimeUnit.SECONDS, 3600)))
+                    .setStoreByValue(false)
+                    .setStatisticsEnabled(true));
+            cacheManager.createCache("users", new MutableConfiguration<>()
+                    .setExpiryPolicyFactory(CreatedExpiryPolicy.factoryOf(new Duration(TimeUnit.SECONDS, 3600)))
                     .setStoreByValue(false)
                     .setStatisticsEnabled(true));
         }
@@ -79,26 +90,28 @@ public class BotServiceConfiguration {
                     .call();
         }
 
-        @Bean(name = "liveGameService")
-        @Autowired
-        public static LiveGameService liveGameService(@Value("${bot.router.username:test01}") String username,
-                                                      @Value("${bot.router.password:test01}") String password,
-                                                      HttpRouter router) {
-            return new LiveGameService(username, password, router);
-        }
-
         @Bean(name = "archivedGameService")
         @Autowired
-        public static ArchivedGameService archivedGameService(Git git) {
+        public static GameService archivedGameService(Git git) {
             return new ArchivedGameService(git);
         }
 
         @Bean
         @Primary
         @Autowired
-        public static GameService apiService(@Qualifier("liveGameService") GameService liveGameService,
-                                             @Qualifier("archivedGameService") ArchivedGameService archivedGameService) {
-            return new CompositeGameService(archivedGameService, liveGameService);
+        public static GameService cachingGameService(@Qualifier("archivedGameService") GameService archivedGameService,
+                                                     @Value("${bot.router.username:test01}") String username,
+                                                     @Value("${bot.router.password:test01}") String password,
+                                                     HttpRouter router) {
+            GameService liveGameService = new LiveGameService(username, password, router);
+            GameService compositeGameService = new CompositeGameService(archivedGameService, liveGameService);
+            return new CachingGameService(compositeGameService);
+        }
+
+        @Bean
+        @Autowired
+        public static UserService cachingUserService(@Qualifier("archivedGameService") GameService archivedGameService) {
+            return new CachingUserService(new ArchivedUserService(archivedGameService));
         }
 
     }

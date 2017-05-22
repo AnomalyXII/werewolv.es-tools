@@ -1,7 +1,6 @@
 package net.anomalyxii.werewolves.services.impl;
 
 import net.anomalyxii.werewolves.domain.Game;
-import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.parser.ArchivedGameParser;
 import net.anomalyxii.werewolves.router.*;
@@ -19,11 +18,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * A basic implementation of the {@link GameService}.
- *
+ * A basic implementation of the {@link GameService} that takes
+ * information from the "salt mine" of archived games.
+ * <p>
  * Created by Anomaly on 15/05/2017.
  */
-public class ArchivedGameService implements GameService {
+public class ArchivedGameService extends AbstractGameService {
 
     // ******************************
     // Members
@@ -72,6 +72,7 @@ public class ArchivedGameService implements GameService {
                 .map(Path::getFileName)
                 .map(Path::toString)
                 .filter(name -> name.endsWith(".json"))
+                .filter(name -> !"player-stats.json".equalsIgnoreCase(name))
                 .map(name -> name.substring(0, name.length() - 5))
                 .collect(Collectors.toList());
 
@@ -84,6 +85,9 @@ public class ArchivedGameService implements GameService {
         File workTree = git.getRepository().getWorkTree();
         if (Objects.isNull(workTree))
             throw new ServiceException("Could not find game '" + id + "'");
+
+        if("player-stats".equalsIgnoreCase(id))
+            throw new ServiceException("Invalid Game ID: '" + id + "'");
 
         File[] filesInRepository = workTree.listFiles();
         if (Objects.isNull(filesInRepository))
@@ -104,11 +108,6 @@ public class ArchivedGameService implements GameService {
         } catch (IOException e) {
             throw new ServiceException("Failed to retrieve game: " + e.getMessage(), e);
         }
-    }
-
-    @Override
-    public GameStatistics getGameStatistics(String id) throws ServiceException {
-        return new GameStatistics(getGame(id));
     }
 
     // ******************************

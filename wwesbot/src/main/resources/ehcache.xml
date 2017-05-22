@@ -2,7 +2,8 @@
 
     <service>
         <jsr107:defaults>
-            <jsr107:cache name='api' template='heap-cache' />
+            <jsr107:cache name='games' template='heap-cache' />
+            <jsr107:cache name='users' template='heap-cache' />
         </jsr107:defaults>
     </service>
 
@@ -19,10 +20,10 @@
                 <events-to-fire-on>EVICTED</events-to-fire-on>
             </listener>
         </listeners>
-        <expiry>
-            <!-- Automatically expire items after 1h (is this reasonable?) -->
-            <ttl unit='minutes'>60</ttl>
-        </expiry>
+        <!--<expiry>-->
+            <!--&lt;!&ndash; Automatically expire items after 1h (is this reasonable?) &ndash;&gt;-->
+            <!--<ttl unit='minutes'>60</ttl>-->
+        <!--</expiry>-->
         <resources>
             <!-- Keep 2000 items in memory and 100MB of items on disk -->
             <heap unit='entries'>2000</heap>
