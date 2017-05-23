@@ -10,10 +10,7 @@ import net.anomalyxii.botmanager.spring.SpringWebManager;
 import net.anomalyxii.werewolves.domain.GameStatistics;
 import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.services.UserService;
-import net.anomalyxii.werewolves.wwesbot.handlers.ListActiveGamesHandler;
-import net.anomalyxii.werewolves.wwesbot.handlers.ListPendingGamesHandler;
-import net.anomalyxii.werewolves.wwesbot.handlers.StatsHandler;
-import net.anomalyxii.werewolves.wwesbot.handlers.UserStatsHandler;
+import net.anomalyxii.werewolves.wwesbot.handlers.*;
 import net.anomalyxii.werewolves.wwesbot.spring.BotConfiguration;
 import net.anomalyxii.werewolves.wwesbot.spring.BotServiceConfiguration;
 import org.springframework.boot.Banner;
@@ -57,6 +54,7 @@ public class Main {
         UserService userService = context.getBean(UserService.class);
         dispatchListener.registerCommandHandler(new ListActiveGamesHandler(gameService));
         dispatchListener.registerCommandHandler(new ListPendingGamesHandler(gameService));
+        dispatchListener.registerCommandHandler(new ListArchivedGamesHandler(gameService));
         dispatchListener.registerCommandHandler(new StatsHandler(gameService));
         dispatchListener.registerCommandHandler(new UserStatsHandler(userService));
 

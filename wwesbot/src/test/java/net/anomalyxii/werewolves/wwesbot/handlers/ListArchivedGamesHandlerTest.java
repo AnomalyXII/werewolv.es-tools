@@ -59,7 +59,7 @@ public class ListArchivedGamesHandlerTest {
         handler.handle(Command.parse(bot, server, command));
 
         // assert
-        verify(server).say(sender, "(archived) Archived games are: tst-018, tst-017, tst-016, tst-015, tst-010...tst-003, exp-005...exp-001");
+        verify(server).say(sender, "(archived) Archived games are: exp-001...exp-005, tst-003...tst-010, tst-015, tst-016, tst-017, tst-018");
     }
 
     @Test

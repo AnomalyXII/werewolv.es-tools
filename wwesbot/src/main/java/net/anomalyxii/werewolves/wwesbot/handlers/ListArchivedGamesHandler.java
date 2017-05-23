@@ -67,17 +67,17 @@ public class ListArchivedGamesHandler extends AbstractCommandHandler {
 
 
         Deque<Deque<String>> groupings = new ArrayDeque<>();
-        groupings.push(new ArrayDeque<>());
+        groupings.addLast(new ArrayDeque<>());
 
         archivedGameIDs.stream()
                 .sorted()
                 .distinct()
                 .forEach(id -> {
-                    Deque<String> ids = groupings.peek();
+                    Deque<String> ids = groupings.peekLast();
 
-                    String previousId = ids.peek();
+                    String previousId = ids.peekLast();
                     if(Objects.isNull(previousId)) {
-                        ids.push(id);
+                        ids.addLast(id);
                         return;
                     }
 
@@ -94,14 +94,14 @@ public class ListArchivedGamesHandler extends AbstractCommandHandler {
                         int number = Integer.parseInt(parts[1]);
                         int previousNumber = Integer.parseInt(previousParts[1]);
                         if(number == previousNumber + 1) {
-                            ids.push(id);
+                            ids.addLast(id);
                             return;
                         }
                     }
 
                     ids = new ArrayDeque<>();
-                    ids.addFirst(id);
-                    groupings.push(ids);
+                    ids.addLast(id);
+                    groupings.addLast(ids);
 
                 });
 
