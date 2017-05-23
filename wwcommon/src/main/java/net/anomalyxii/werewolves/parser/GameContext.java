@@ -210,8 +210,11 @@ public abstract class GameContext {
 
     protected Day startNightPhase() {
         Day currentDay = days.peekLast();
-        if (Objects.isNull(currentDay))
-            throw new AssertionError("Should never happen!");
+        if (Objects.isNull(currentDay)) {
+            // Very rarely, games might start in the night phase...
+            //   ... so immediately start and then end the day
+            currentDay = startDayPhase(1);
+        }
 
         playerContext.resetControlledCharacters();
 
