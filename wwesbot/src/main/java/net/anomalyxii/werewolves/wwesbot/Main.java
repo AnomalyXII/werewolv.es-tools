@@ -2,7 +2,10 @@ package net.anomalyxii.werewolves.wwesbot;
 
 import net.anomalyxii.bot.api.Bot;
 import net.anomalyxii.bot.api.handlers.DispatchingMessageReceivedListener;
+import net.anomalyxii.bot.api.scheduler.BotScheduler;
+import net.anomalyxii.bot.api.scheduler.ScheduledActionSpecification;
 import net.anomalyxii.bot.discord.server.DiscordServer;
+import net.anomalyxii.bot.impl.scheduler.QuartzScheduledActionSpecification;
 import net.anomalyxii.bot.irc.server.IrcServer;
 import net.anomalyxii.botmanager.api.BotManager;
 import net.anomalyxii.botmanager.api.services.BotService;
@@ -12,6 +15,7 @@ import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.services.UserService;
 import net.anomalyxii.werewolves.wwesbot.handlers.*;
 import net.anomalyxii.werewolves.wwesbot.spring.BotConfiguration;
+import net.anomalyxii.werewolves.wwesbot.spring.BotSchedulerConfiguration;
 import net.anomalyxii.werewolves.wwesbot.spring.BotServiceConfiguration;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -37,7 +41,7 @@ public class Main {
     public static void main(String... args) throws Exception {
         SpringApplicationBuilder builder = new SpringApplicationBuilder()
                 .bannerMode(Banner.Mode.OFF)
-                .sources(SpringWebManager.class, BotConfiguration.class, BotServiceConfiguration.class)
+                .sources(SpringWebManager.class, BotConfiguration.class, BotServiceConfiguration.class, BotSchedulerConfiguration.class)
                 .main(SpringWebManager.class);
 
         SpringApplication application = builder.build();
@@ -60,6 +64,12 @@ public class Main {
 
         // service.registerBotEventListener(manager, dispatchListener);
         bot.asEventSubscriber().registerBotEventListener(dispatchListener);
+
+        BotScheduler scheduler = context.getBean(BotScheduler.class);
+        scheduler.start();
+
+        ScheduledActionSpecification specification = new QuartzScheduledActionSpecification("0 */10 * * * ?")
+        scheduler.registerBot(bot);
 
         IDiscordClient discordClient = context.getBean(IDiscordClient.class);
         manager.connect(new IrcServer("wwes-bot", URI.create("irc://irc.quakenet.org:6667")));

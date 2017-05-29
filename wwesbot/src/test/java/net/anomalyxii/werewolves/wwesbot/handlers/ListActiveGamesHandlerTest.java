@@ -33,7 +33,7 @@ public class ListActiveGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!active");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs())
+        when(service.getGameIds())
                 .thenReturn(new GamesList(Arrays.asList("tst-003", "tst-004", "tst-001"), Collections.emptyList()));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
 
@@ -56,7 +56,7 @@ public class ListActiveGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!active");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList()));
+        when(service.getGameIds()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList()));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
 
         // act
@@ -78,7 +78,7 @@ public class ListActiveGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!active");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs()).thenThrow(new ServiceException("You're in a unit test!"));
+        when(service.getGameIds()).thenThrow(new ServiceException("You're in a unit test!"));
         ListActiveGamesHandler handler = new ListActiveGamesHandler(service);
 
         // act

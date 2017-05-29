@@ -40,9 +40,9 @@ public class Main {
             GameService liveService = new LiveGameService("test01", "test01", router);
             GameService gameService = new CompositeGameService(liveService);
 
-            GamesList games = gameService.getGameIDs();
-            games.getActiveGameIDs().forEach(id -> System.out.println("Active: " + id));
-            games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
+            GamesList games = gameService.getGameIds();
+            games.getActiveGameIds().forEach(id -> System.out.println("Active: " + id));
+            games.getPendingGameIds().forEach(id -> System.out.println("Pending: " + id));
 
             // Fetch a game
             // Game game = router.game(arguments.getOptionValue("g"));

@@ -37,13 +37,13 @@ public class ArchivedGameServiceTest {
         ArchivedGameService service = new ArchivedGameService(git);
 
         // act
-        GamesList gameList = service.getGameIDs();
+        GamesList gameList = service.getGameIds();
 
         // assert
         assertNotNull(gameList);
-        assertEquals(gameList.getActiveGameIDs(), Collections.emptyList());
-        assertEquals(gameList.getPendingGameIDs(), Collections.emptyList());
-        assertEquals(gameList.getCompletedGameIDs(), Arrays.asList("ext-035", "ext-036", "ext-037"));
+        assertEquals(gameList.getActiveGameIds(), Collections.emptyList());
+        assertEquals(gameList.getPendingGameIds(), Collections.emptyList());
+        assertEquals(gameList.getCompletedGameIds(), Arrays.asList("ext-035", "ext-036", "ext-037"));
     }
 
     // game

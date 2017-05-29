@@ -44,16 +44,16 @@ public class CompositeGameService extends AbstractGameService {
     }
 
     @Override
-    public GamesList getGameIDs() throws ServiceException {
+    public GamesList getGameIds() throws ServiceException {
         Set<String> activeGameIDs = new TreeSet<>();
         Set<String> pendingGameIDs = new TreeSet<>();
         Set<String> completedGameIDs = new TreeSet<>();
 
         try {
             stream(primaryDelegate, otherDelegates).map(this::delegate).forEach(list -> {
-                activeGameIDs.addAll(list.getActiveGameIDs());
-                pendingGameIDs.addAll(list.getPendingGameIDs());
-                completedGameIDs.addAll(list.getCompletedGameIDs());
+                activeGameIDs.addAll(list.getActiveGameIds());
+                pendingGameIDs.addAll(list.getPendingGameIds());
+                completedGameIDs.addAll(list.getCompletedGameIds());
             });
 
 
@@ -92,11 +92,11 @@ public class CompositeGameService extends AbstractGameService {
     // ******************************
 
     /*
-     * Delegate a call to GameService#getGameIDs safely
+     * Delegate a call to GameService#getGameIds safely
      */
     private GamesList delegate(GameService delegate) {
         try {
-            return delegate.getGameIDs();
+            return delegate.getGameIds();
         } catch (ServiceException e) {
             throw new UncheckedServiceException(e);
         }

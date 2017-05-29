@@ -33,7 +33,7 @@ public class ListPendingGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!pending");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs())
+        when(service.getGameIds())
                 .thenReturn(new GamesList(Collections.emptyList(), Arrays.asList("tst-003", "tst-004", "tst-001")));
         ListPendingGamesHandler handler = new ListPendingGamesHandler(service);
 
@@ -56,7 +56,7 @@ public class ListPendingGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!pending");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList()));
+        when(service.getGameIds()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList()));
         ListPendingGamesHandler handler = new ListPendingGamesHandler(service);
 
         // act
@@ -78,7 +78,7 @@ public class ListPendingGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!pending");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs()).thenThrow(new ServiceException("You're in a unit test!"));
+        when(service.getGameIds()).thenThrow(new ServiceException("You're in a unit test!"));
         ListPendingGamesHandler handler = new ListPendingGamesHandler(service);
 
         // act

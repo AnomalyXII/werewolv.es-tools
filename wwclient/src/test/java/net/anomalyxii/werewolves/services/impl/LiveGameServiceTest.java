@@ -25,7 +25,7 @@ public class LiveGameServiceTest {
     // Test Methods
     // ******************************
 
-    // getGameIDs
+    // getGameIds
 
     @Test
     public void games_should_return_live_games() throws Exception {
@@ -42,13 +42,13 @@ public class LiveGameServiceTest {
         LiveGameService service = new LiveGameService("username", "password", router);
 
         // act
-        GamesList gameList = service.getGameIDs();
+        GamesList gameList = service.getGameIds();
 
         // assert
         assertNotNull(gameList);
-        assertEquals(gameList.getActiveGameIDs(), Collections.singletonList("tst-001"));
-        assertEquals(gameList.getPendingGameIDs(), Collections.emptyList());
-        assertEquals(gameList.getCompletedGameIDs(), Collections.emptyList());
+        assertEquals(gameList.getActiveGameIds(), Collections.singletonList("tst-001"));
+        assertEquals(gameList.getPendingGameIds(), Collections.emptyList());
+        assertEquals(gameList.getCompletedGameIds(), Collections.emptyList());
     }
 
     // getGame

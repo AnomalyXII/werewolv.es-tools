@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * A {@link CommandHandler} that fetches a list of
- * {@link GamesList#getCompletedGameIDs() archived game IDs}
+ * {@link GamesList#getCompletedGameIds() archived game IDs}
  * from the {@code werewolv.es API}.
  * <p>
  * Created by Anomaly on 09/04/2017.
@@ -54,7 +54,7 @@ public class ListArchivedGamesHandler extends AbstractCommandHandler {
         Messagable target = message.isPrivate() ? message.getSender() : message.getTarget();
         List<String> archivedGameIDs;
         try {
-            archivedGameIDs = service.getGameIDs().getCompletedGameIDs();
+            archivedGameIDs = service.getGameIds().getCompletedGameIds();
         } catch (ServiceException e) {
             // We'll send an error message instead...
             throw new Exception("Could not retrieve archived games: " + e.getMessage(), e);

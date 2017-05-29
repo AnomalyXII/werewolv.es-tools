@@ -51,7 +51,7 @@ public class ListArchivedGamesHandlerTest {
                                                "exp-005");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs())
+        when(service.getGameIds())
                 .thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList(), completed));
         ListArchivedGamesHandler handler = new ListArchivedGamesHandler(service);
 
@@ -74,7 +74,7 @@ public class ListArchivedGamesHandlerTest {
         when(command.getMessageText()).thenReturn("!archived");
 
         GameService service = mock(GameService.class);
-        when(service.getGameIDs()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
+        when(service.getGameIds()).thenReturn(new GamesList(Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
         ListArchivedGamesHandler handler = new ListArchivedGamesHandler(service);
 
         // act

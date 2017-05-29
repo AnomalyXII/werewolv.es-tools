@@ -45,7 +45,7 @@ public class GamesList {
      *
      * @return a {@link List} of Game IDs
      */
-    public List<String> getActiveGameIDs() {
+    public List<String> getActiveGameIds() {
         return Collections.unmodifiableList(active);
     }
 
@@ -56,7 +56,7 @@ public class GamesList {
      *
      * @return a {@link List} of Game IDs
      */
-    public List<String> getPendingGameIDs() {
+    public List<String> getPendingGameIds() {
         return Collections.unmodifiableList(pending);
     }
 
@@ -69,7 +69,7 @@ public class GamesList {
      *
      * @return a {@link List} of Game IDs
      */
-    public List<String> getCompletedGameIDs() {
+    public List<String> getCompletedGameIds() {
         return Collections.unmodifiableList(completed);
     }
 

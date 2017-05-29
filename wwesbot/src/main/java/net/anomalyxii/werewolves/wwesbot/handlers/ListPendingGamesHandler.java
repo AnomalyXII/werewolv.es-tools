@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * A {@link CommandHandler} that fetches a list of
- * {@link GamesList#getPendingGameIDs() pending game IDs}
+ * {@link GamesList#getPendingGameIds() pending game IDs}
  * from the {@code werewolv.es API}.
  * <p>
  * Created by Anomaly on 09/04/2017.
@@ -54,7 +54,7 @@ public class ListPendingGamesHandler extends AbstractCommandHandler {
         Messagable target = message.isPrivate() ? message.getSender() : message.getTarget();
         List<String> pendingGameIDs;
         try {
-            pendingGameIDs = service.getGameIDs().getPendingGameIDs();
+            pendingGameIDs = service.getGameIds().getPendingGameIds();
         } catch (ServiceException e) {
             // We'll send an error message instead...
             throw new Exception("Could not retrieve pending games: " + e.getMessage(), e);

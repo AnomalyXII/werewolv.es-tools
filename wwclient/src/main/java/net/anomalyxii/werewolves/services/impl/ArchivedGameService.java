@@ -46,14 +46,14 @@ public class ArchivedGameService extends AbstractGameService {
     @Override
     public boolean doesGameExist(String id) {
         try {
-            return getGameIDs().getCompletedGameIDs().contains(id);
+            return getGameIds().getCompletedGameIds().contains(id);
         } catch (ServiceException e) {
             return false;
         }
     }
 
     @Override
-    public GamesList getGameIDs() throws ServiceException {
+    public GamesList getGameIds() throws ServiceException {
         List<String> active = Collections.emptyList();
         List<String> pending = Collections.emptyList();
 

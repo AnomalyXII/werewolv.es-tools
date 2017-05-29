@@ -34,7 +34,7 @@ public interface GameService {
      * @return a {@link GamesList )
      * @throws ServiceException if something goes wrong accessing the API
      */
-    GamesList getGameIDs() throws ServiceException;
+    GamesList getGameIds() throws ServiceException;
 
     /**
      * Return the {@link Game} with the specified {@code ID}.

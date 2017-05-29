@@ -261,6 +261,7 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                         // Vampire
                         case FAMILIARSTALKER:
+                        case FAMILIAR:
                         case VAMPIRE:
                             return null;
 

@@ -39,6 +39,10 @@ import java.util.concurrent.TimeUnit;
 @EnableCaching
 public class BotServiceConfiguration {
 
+    // ******************************
+    // Beans
+    // ******************************
+
     @Component
     public static class CachingSetup implements JCacheManagerCustomizer {
         @Override
@@ -54,12 +58,12 @@ public class BotServiceConfiguration {
         }
     }
 
+    // ******************************
+    // Nested Configuration Classes
+    // ******************************
+
     @Configuration
     public static class RouterConfiguration {
-
-        // ******************************
-        // Beans
-        // ******************************
 
         @Bean
         public static HttpRouter router() {

@@ -7,7 +7,6 @@ import net.anomalyxii.werewolves.services.ServiceException;
 import net.anomalyxii.werewolves.services.UserService;
 
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * A basic implementation of the {@link UserService} that takes
@@ -37,13 +36,13 @@ public class ArchivedUserService implements UserService {
 
     @Override
     public UserStatistics getUserStatistics(String id) throws ServiceException {
-        GamesList games = gameService.getGameIDs();
+        GamesList games = gameService.getGameIds();
 
         // Create the user object...
         User user = new User(id, null);
 
         CumulativeUserStatistics stats = new CumulativeUserStatistics(user);
-        games.getCompletedGameIDs().forEach(gameid -> {
+        games.getCompletedGameIds().forEach(gameid -> {
 
             Game game;
             try {

@@ -42,8 +42,8 @@ public class CachingGameService implements GameService {
     }
 
     @Override
-    public GamesList getGameIDs() throws ServiceException {
-        return delegate.getGameIDs();
+    public GamesList getGameIds() throws ServiceException {
+        return delegate.getGameIds();
     }
 
     @Override

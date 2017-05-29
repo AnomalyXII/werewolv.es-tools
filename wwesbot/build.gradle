@@ -29,5 +29,6 @@ dependencies {
     compile group: 'net.anomalyxii.bot', name: 'bot-discord', version: '1.0-SNAPSHOT'
     compile group: 'net.anomalyxii.bot', name: 'bot-manager-spring', version: '1.0-SNAPSHOT'
     compile group: 'net.anomalyxii.bot', name: 'bot-utils-command-handler', version: '1.0-SNAPSHOT'
+    compile group: 'net.anomalyxii.bot', name: 'bot-utils-scheduler', version: '1.0-SNAPSHOT'
 
 }

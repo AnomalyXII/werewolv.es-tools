@@ -62,7 +62,7 @@ public class LiveGameService extends AbstractGameService {
     }
 
     @Override
-    public GamesList getGameIDs() throws ServiceException {
+    public GamesList getGameIds() throws ServiceException {
         HttpRouterRequestBuilder<Void> request = HttpRouterRequestBuilder.newBuilder().withEndpoint("/api/Game");
         RouterResponse<GameListResponseBean> response = routeWithAuthenticationRetry(request, GameListResponseBean.class);
         GameListResponseBean responseBean = response.getContent().orElseThrow(() -> new ServiceException("Failed to retrieve GameList"));

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * A {@link CommandHandler} that fetches a list of
- * {@link GamesList#getActiveGameIDs() active game IDs}
+ * {@link GamesList#getActiveGameIds() active game IDs}
  * from the {@code werewolv.es API}.
  * <p>
  * Created by Anomaly on 09/04/2017.
@@ -55,7 +55,7 @@ public class ListActiveGamesHandler extends AbstractCommandHandler {
 
         List<String> activeGameIDs;
         try {
-            activeGameIDs = service.getGameIDs().getActiveGameIDs();
+            activeGameIDs = service.getGameIds().getActiveGameIds();
         } catch (ServiceException e) {
             // We'll send an error message instead...
             throw new Exception("Could not retrieve active games: " + e.getMessage(), e);
