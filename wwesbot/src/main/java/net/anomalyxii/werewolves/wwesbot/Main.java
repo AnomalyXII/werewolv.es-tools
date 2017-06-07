@@ -13,6 +13,7 @@ import net.anomalyxii.werewolves.services.UserService;
 import net.anomalyxii.werewolves.wwesbot.handlers.*;
 import net.anomalyxii.werewolves.wwesbot.spring.BotConfiguration;
 import net.anomalyxii.werewolves.wwesbot.spring.BotServiceConfiguration;
+import net.anomalyxii.werewolves.wwesbot.spring.SchedulerConfiguration;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

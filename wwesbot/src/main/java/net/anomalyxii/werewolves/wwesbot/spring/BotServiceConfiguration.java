@@ -10,6 +10,15 @@ import net.anomalyxii.werewolves.services.impl.LiveGameService;
 import net.anomalyxii.werewolves.wwesbot.spring.service.CachingGameService;
 import net.anomalyxii.werewolves.wwesbot.spring.service.CachingUserService;
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.api.PullResult;
+import org.eclipse.jgit.api.RebaseResult;
+import org.eclipse.jgit.api.ResetCommand;
+import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.lib.Ref;
+import org.eclipse.jgit.transport.FetchResult;
+import org.quartz.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,6 +26,7 @@ import org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
@@ -37,7 +47,12 @@ import java.util.concurrent.TimeUnit;
  */
 @Configuration
 @EnableCaching
+@Import(SchedulerConfiguration.class)
 public class BotServiceConfiguration {
+
+    // ******************************
+    // Beans
+    // ******************************
 
     @Component
     public static class CachingSetup implements JCacheManagerCustomizer {
@@ -54,12 +69,12 @@ public class BotServiceConfiguration {
         }
     }
 
+    // ******************************
+    // Nested Configuration Classes
+    // ******************************
+
     @Configuration
     public static class RouterConfiguration {
-
-        // ******************************
-        // Beans
-        // ******************************
 
         @Bean
         public static HttpRouter router() {
@@ -72,7 +87,8 @@ public class BotServiceConfiguration {
     public static class ApiServiceConfiguration {
 
         @Bean
-        public static Git saltmineRepository() throws Exception {
+        @Autowired
+        public static Git saltmineRepository(Scheduler scheduler) throws Exception {
 
             String tmpDir = System.getProperty("java.io.tmpdir");
             Path tmp = Paths.get(tmpDir);
@@ -80,14 +96,30 @@ public class BotServiceConfiguration {
 
             String remote = "https://github.com/Kirschstein/salt-mine.git";
 
+            Git git;
             if (Files.exists(tmpRepo))
-                return Git.open(tmpRepo.toFile());
+                git = Git.open(tmpRepo.toFile());
+            else
+                git = Git.cloneRepository()
+                        .setURI(remote)
+                        .setDirectory(tmpRepo.toFile())
+                        .call();
 
+            JobDataMap data = new JobDataMap();
+            data.put("repo", git);
+            JobDetail job = JobBuilder.newJob(GitRefreshJob.class)
+                    .withIdentity("GitRefreshJob")
+                    .usingJobData(data)
+                    .build();
 
-            return Git.cloneRepository()
-                    .setURI(remote)
-                    .setDirectory(tmpRepo.toFile())
-                    .call();
+            Trigger trigger = TriggerBuilder.newTrigger()
+                    .withIdentity("GitRefreshTrigger")
+                    .withSchedule(CronScheduleBuilder.cronSchedule("0 0 0/3 * * ?"))
+                    .build();
+
+            scheduler.scheduleJob(job, trigger);
+
+            return git;
         }
 
         @Bean(name = "archivedGameService")
@@ -112,6 +144,51 @@ public class BotServiceConfiguration {
         @Autowired
         public static UserService cachingUserService(@Qualifier("archivedGameService") GameService archivedGameService) {
             return new CachingUserService(new ArchivedUserService(archivedGameService));
+        }
+
+    }
+
+    /*
+     * A Job that will refresh a Git repo
+     */
+    public static final class GitRefreshJob implements Job {
+
+        private static final Logger logger = LoggerFactory.getLogger(GitRefreshJob.class);
+
+        @Override
+        public void execute(JobExecutionContext context) throws JobExecutionException {
+            Git git = (Git) context.getMergedJobDataMap().get("repo");
+            try {
+                update(git);
+            } catch (GitAPIException e) {
+                throw new JobExecutionException(e);
+            }
+        }
+
+        /*
+         * Update the Git repo
+         */
+        private void update(Git git) throws GitAPIException {
+            PullResult pullResult = git.pull().setRebase(true).call();
+            RebaseResult rebaseResult = pullResult.getRebaseResult();
+
+            if(!pullResult.isSuccessful()) {
+                if(rebaseResult.getStatus() == RebaseResult.Status.CONFLICTS) {
+                    logger.warn("Git `pull` reported conflicts - will reset and try again next pass!");
+                    git.reset().setMode(ResetCommand.ResetType.HARD).call();
+                    return;
+                }
+
+                logger.warn("Git `pull` was unsuccessful :(");
+                return;
+            }
+
+            if(rebaseResult.getStatus() == RebaseResult.Status.UP_TO_DATE) {
+                logger.debug("Git `pull` reported that repository is already up-to-date");
+                return;
+            }
+
+            logger.debug("Git repo is now at commit '{}'", rebaseResult.getCurrentCommit());
         }
 
     }
