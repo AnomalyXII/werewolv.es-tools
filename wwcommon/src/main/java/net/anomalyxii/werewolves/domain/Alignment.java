@@ -83,6 +83,8 @@ public enum Alignment {
             return PUPPETS;
         if ("vampire".equalsIgnoreCase(msg))
             return VAMPIRES;
+        if ("vampire familiar".equalsIgnoreCase(msg))
+            return VAMPIRES;
         if ("demon".equalsIgnoreCase(msg))
             return DEMONS;
 
