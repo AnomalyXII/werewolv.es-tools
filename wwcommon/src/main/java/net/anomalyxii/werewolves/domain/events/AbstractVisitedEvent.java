@@ -31,7 +31,7 @@ public abstract class AbstractVisitedEvent extends AbstractEvent {
     }
 
     // ******************************
-    // Constructors
+    // Getters
     // ******************************
 
     public PlayerInstance getVisitor() {

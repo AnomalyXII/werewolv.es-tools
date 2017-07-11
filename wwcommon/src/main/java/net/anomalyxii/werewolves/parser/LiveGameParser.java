@@ -225,7 +225,7 @@ public class LiveGameParser extends AbstractGameParser {
                     return new PlayerRevivedEvent(player, timestamp);
                 case "PlayerSmited":
                     playerContext.assignVitalityToCharacter(player.getCharacter(), Vitality.DEAD);
-                    return new PlayerSmitedEvent(player, timestamp);
+                    return new PlayerSmitedEvent(player, timestamp, (String) event.get("reason"));
 
 
                 case "PendingGameMessage":

@@ -87,8 +87,7 @@ public class BotServiceConfiguration {
     public static class ApiServiceConfiguration {
 
         @Bean
-        @Autowired
-        public static Git saltmineRepository(Scheduler scheduler) throws Exception {
+        public static Git git(Scheduler scheduler) throws Exception {
 
             String tmpDir = System.getProperty("java.io.tmpdir");
             Path tmp = Paths.get(tmpDir);
@@ -123,14 +122,12 @@ public class BotServiceConfiguration {
         }
 
         @Bean(name = "archivedGameService")
-        @Autowired
         public static GameService archivedGameService(Git git) {
             return new ArchivedGameService(git);
         }
 
         @Bean
         @Primary
-        @Autowired
         public static GameService cachingGameService(@Qualifier("archivedGameService") GameService archivedGameService,
                                                      @Value("${bot.router.username:test01}") String username,
                                                      @Value("${bot.router.password:test01}") String password,
@@ -141,7 +138,6 @@ public class BotServiceConfiguration {
         }
 
         @Bean
-        @Autowired
         public static UserService cachingUserService(@Qualifier("archivedGameService") GameService archivedGameService) {
             return new CachingUserService(new ArchivedUserService(archivedGameService));
         }

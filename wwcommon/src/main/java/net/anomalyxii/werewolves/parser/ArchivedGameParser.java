@@ -440,23 +440,19 @@ public class ArchivedGameParser extends AbstractGameParser {
                     return new PlayerLynchedEvent(player, timestamp);
                 case "Werewolf.GameEngine.Phases.Day.PlayerSmitedEvent":
                     playerContext.assignVitalityToUser(player.getUser(), Vitality.DEAD);
-                    return new PlayerSmitedEvent(player, timestamp);
+                    return new PlayerSmitedEvent(player, timestamp, (String) event.get("Reason"));
 
                 case "Werewolf.GameEngine.Phases.After.CovenVictoryEvent":
                     finishGame(Alignment.COVEN);
-                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VampireVictoryEvent":
                     finishGame(Alignment.VAMPIRES);
-                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.VillageVictoryEvent":
                     finishGame(Alignment.VILLAGE);
-                    finalisePlayerIdentities();
                     return null;
                 case "Werewolf.GameEngine.Phases.After.WerewolfVictoryEvent":
                     finishGame(Alignment.WEREWOLVES);
-                    finalisePlayerIdentities();
                     return null;
 
                 // Other Events

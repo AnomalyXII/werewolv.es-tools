@@ -88,6 +88,7 @@ public abstract class GameContext {
         postGameEvents.forEach(game::addPostGameEvent);
 
         game.setWinningAlignment(winner);
+        finalisePlayerIdentities();
         return game;
     }
 
