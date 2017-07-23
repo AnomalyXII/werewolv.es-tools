@@ -1,10 +1,12 @@
 package net.anomalyxii.werewolves;
 
+import net.anomalyxii.werewolves.domain.Game;
 import net.anomalyxii.werewolves.domain.GamesList;
 import net.anomalyxii.werewolves.router.http.HttpRouter;
 import net.anomalyxii.werewolves.services.GameService;
 import net.anomalyxii.werewolves.services.impl.CompositeGameService;
 import net.anomalyxii.werewolves.services.impl.LiveGameService;
+import net.anomalyxii.werewolves.utils.GameDumper;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,8 +47,8 @@ public class Main {
             games.getPendingGameIDs().forEach(id -> System.out.println("Pending: " + id));
 
             // Fetch a game
-            // Game game = router.game(arguments.getOptionValue("g"));
-            // GameDumper.dump(game);
+            Game game = gameService.getGame(arguments.getOptionValue("g"));
+            GameDumper.dump(game);
         }
 
     }

@@ -233,6 +233,24 @@ public class ArchivedGameParser extends AbstractGameParser {
                     playerContext.assignRoleToUser(player.getUser(), Role.ZEALOT);
                     return new RoleAssignedEvent(player, timestamp, Role.ZEALOT);
 
+                case "Werewolf.GameEngine.Roles.NaiveSeerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.NAIVE_SEER);
+                    return new RoleAssignedEvent(player, timestamp, Role.NAIVE_SEER);
+                case "Werewolf.GameEngine.Roles.ParanoidSeerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.PARANOID_SEER);
+                    return new RoleAssignedEvent(player, timestamp, Role.PARANOID_SEER);
+                case "Werewolf.GameEngine.Roles.InsaneSeerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.INSANE_SEER);
+                    return new RoleAssignedEvent(player, timestamp, Role.INSANE_SEER);
+                case "Werewolf.GameEngine.Roles.ChaoticSeerAssignedEvent":
+                    playerContext.assignRoleToUser(player.getUser(), Role.CHAOTIC_SEER);
+                    return new RoleAssignedEvent(player, timestamp, Role.CHAOTIC_SEER);
+
+                case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.BloodhoundRevertedToWerewolfEvent":
+                    playerContext.assignRoleToUser(playerContext.getUser((String) event.get("BloodhoundName")), Role.WEREWOLF);
+                    return new RoleAssignedEvent(player, timestamp, Role.WEREWOLF);
+
+
                 // Miscellaneous Role-based Voting Events
 
                 case "Werewolf.GameEngine.Roles.Coven.Puppetmaster.PuppetVoted":
@@ -315,6 +333,7 @@ public class ArchivedGameParser extends AbstractGameParser {
                 // Old events - ignore?
                 case "Werewolf.GameEngine.Roles.Village.Gravedigger.GravediggerTargetChosenEvent":
                 case "Werewolf.GameEngine.Roles.Village.Huntsman.HuntsmanTargetChosenEvent":
+                case "Werewolf.GameEngine.Roles.Village.Protector.ProtectorTargetChosenEvent":
                 case "Werewolf.GameEngine.Roles.Werewolves.Alphawolf.AlphawolfTargetChosen":
                 case "Werewolf.GameEngine.Roles.Werewolves.Bloodhound.BloodhoundTargetChosenEvent":
                     return null;
@@ -335,6 +354,11 @@ public class ArchivedGameParser extends AbstractGameParser {
                                                    timestamp,
                                                    getInstanceForUser(event, "Visitor"),
                                                    getInstanceForUser(event, "Target"));
+                case "Werewolf.GameEngine.Roles.Village.Insomniac.InsomniacSawVisit":
+                    return new InsomniacSawVisitEvent(getInstanceForUser(event, "Insomniac"),
+                                                      timestamp,
+                                                      getInstanceForUser(event, "Visitor"),
+                                                      getInstanceForUser(event, "Target"));
                 case "Werewolf.GameEngine.Roles.Village.Reviver.PlayerRevivedEvent":
                     playerContext.assignVitalityToUser(player.getUser(), Vitality.ALIVE);
                     return new PlayerRevivedEvent(player, timestamp);
@@ -370,6 +394,7 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 // These are silent?
                 case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanLureTotemUsed":
+                case "Werewolf.GameEngine.Roles.Coven.Shaman.ShamanProtectionTotemBroken":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedKill":
                 case "Werewolf.GameEngine.Roles.Coven.Witch.WitchUsedRevive":
                 case "Werewolf.GameEngine.Roles.Demons.Demonlord.PlayerBlighted":
@@ -389,13 +414,13 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Creation.PlayerJoinedEvent":
                     player.getUser().setJoinedGame(true);
-                    if(isGameStarted()) {
+                    if (isGameStarted()) {
                         // A user has joined the game whilst it's in progress...
                         // This is almost certainly due to Kirschstein messing about,
                         //   but it could cause problems later on so we need to fix it
                         User user = player.getUser();
                         Character character = playerContext.getCharacterFor(user);
-                        if(Objects.isNull(character)) {
+                        if (Objects.isNull(character)) {
                             character = playerContext.findOrCreateCharacter(user.getName(), user.getAvatarURI().toString());
                             playerContext.assignCharacterToUser(user, character);
                         }
@@ -420,6 +445,9 @@ public class ArchivedGameParser extends AbstractGameParser {
 
                 case "Werewolf.GameEngine.Core.AnonymisedGameStartedEvent":
                 case "Werewolf.GameEngine.Creation.GameSetToFixedLengthDayCycleEvent":
+                case "Werewolf.GameEngine.Creation.GameSetToFourOneCycle":
+                case "Werewolf.GameEngine.Creation.GameSetToEightTwoCycle":
+                case "Werewolf.GameEngine.Creation.GameSetToTenFiveCycle":
                     return null; // Set something in the context?
 
                 case "Werewolf.GameEngine.Phases.Day.VillageNominationsOpenedEvent":

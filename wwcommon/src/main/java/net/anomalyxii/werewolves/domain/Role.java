@@ -28,6 +28,11 @@ public enum Role {
     BEHOLDER(Alignment.VILLAGE),
     ZEALOT(Alignment.VILLAGE),
 
+    NAIVE_SEER(Alignment.VILLAGE),
+    PARANOID_SEER(Alignment.VILLAGE),
+    INSANE_SEER(Alignment.VILLAGE),
+    CHAOTIC_SEER(Alignment.VILLAGE),
+
     // Werewolves
     WEREWOLF(Alignment.WEREWOLVES),
     SHAPESHIFTER(Alignment.WEREWOLVES),
