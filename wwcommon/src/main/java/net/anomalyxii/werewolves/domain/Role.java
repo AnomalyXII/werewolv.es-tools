@@ -93,7 +93,10 @@ public enum Role {
      * @return the {@link Role}
      */
     public static Role forString(String role) {
-        return Role.valueOf(role.toUpperCase().replaceAll("[ ()]", ""));
+        String sanitisedRole = role.toUpperCase().replaceAll("[ ()]", "");
+        if("FAMILIARMILTIA".equalsIgnoreCase(sanitisedRole))
+            return FAMILIARMILITIA;
+        return Role.valueOf(sanitisedRole);
     }
 
 }
