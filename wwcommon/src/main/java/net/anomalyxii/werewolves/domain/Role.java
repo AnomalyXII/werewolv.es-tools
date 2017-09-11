@@ -42,6 +42,7 @@ public enum Role {
     DIREWOLF(Alignment.WEREWOLVES),
 
     // Coven
+    ALCHEMIST(Alignment.COVEN),
     DJINN(Alignment.COVEN),
     SUCCUBUS(Alignment.COVEN),
     WITCH(Alignment.COVEN),
@@ -51,8 +52,11 @@ public enum Role {
 
     // "Neutral"
     VAMPIRE(Alignment.VAMPIRES),
+    VAMPIREMASTER(Alignment.VAMPIRES),
     FAMILIAR(Alignment.VAMPIRES),
     FAMILIARSTALKER(Alignment.VAMPIRES),
+    FAMILIARGRAVEDIGGER(Alignment.VAMPIRES),
+    FAMILIARMILITIA(Alignment.VAMPIRES),
     DEMONLORD(Alignment.DEMONS),
     HELLHOUND(Alignment.DEMONS),
 
@@ -85,11 +89,11 @@ public enum Role {
      * Convert the name of a {@link Role}
      * into the appropriate constant.
      *
-     * @param role
-     * @return
+     * @param role the role identifier
+     * @return the {@link Role}
      */
     public static Role forString(String role) {
-        return Role.valueOf(role.toUpperCase().replace(" ", ""));
+        return Role.valueOf(role.toUpperCase().replaceAll("[ ()]", ""));
     }
 
 }
