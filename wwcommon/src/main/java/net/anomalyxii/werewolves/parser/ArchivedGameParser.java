@@ -486,13 +486,13 @@ public class ArchivedGameParser extends AbstractGameParser {
                 // Other Events
                 case "Werewolf.GameEngine.Creation.GameCreatedEvent":
                 case "Werewolf.GameEngine.Creation.GameSpyJoinedEvent":
+                case "Werewolf.GameEngine.Creation.SpectatorJoinedEvent":
                 case "Werewolf.GameEngine.PlayerActivity.InactivitySmitingEnabled":
                     return null;
                 case "Werewolf.GameEngine.PlayerActivity.WarnedForInactivity":
                     return new WarnedForInactivityEvent(player, timestamp);
                 case "Werewolf.GameEngine.PlayerActivity.PlayerCheckedGame":
                 case "Werewolf.GameEngine.PlayerActivity.PlayerActiveDuringLastDay":
-                case "Werewolf.GameEngine.Creation.SpectatorJoinedEvent":
                     return null;
 
                 default:

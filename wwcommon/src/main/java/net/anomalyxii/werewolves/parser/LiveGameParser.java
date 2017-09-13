@@ -249,6 +249,7 @@ public class LiveGameParser extends AbstractGameParser {
                     finishGame(Alignment.WEREWOLVES, event);
                     return null;
 
+                case "SpectatorJoined":
                 case "GameSpyJoined":
                 case "HostRightsGranted":
                     return null;
@@ -362,6 +363,7 @@ public class LiveGameParser extends AbstractGameParser {
                 case "PlayerJoined":
                 case "PlayerLeft":
                 case "GameSpyJoined":
+                case "SpectatorJoined":
                 case "Spy":
                     return !isGameStarted()
                            ? LiveGameParser.PlayerLookupMode.PREGAME
