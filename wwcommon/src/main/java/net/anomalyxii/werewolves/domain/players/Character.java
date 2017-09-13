@@ -91,6 +91,10 @@ public class Character extends AbstractPlayer {
      * @return the {@code Character's} current {@link Alignment}
      */
     public Alignment getCurrentAlignment() {
+        // Hack hack hack???
+        if(currentAlignment == null)
+            return role.getAlignment();
+
         return currentAlignment;
     }
 

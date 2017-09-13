@@ -8,66 +8,68 @@ package net.anomalyxii.werewolves.domain;
 public enum Role {
 
     // Village
-    VILLAGER(Alignment.VILLAGE),
-    LYCAN(Alignment.VILLAGE),
-    SEER(Alignment.VILLAGE),
-    PROTECTOR(Alignment.VILLAGE),
-    HUNTSMAN(Alignment.VILLAGE),
-    GRAVEDIGGER(Alignment.VILLAGE),
-    GRAVEROBBER(Alignment.VILLAGE),
-    STALKER(Alignment.VILLAGE),
-    HARLOT(Alignment.VILLAGE),
-    MILITIA(Alignment.VILLAGE),
-    REVIVER(Alignment.VILLAGE),
-    MESSIAH(Alignment.VILLAGE),
-    MASONLEADER(Alignment.VILLAGE),
-    TAROTREADER(Alignment.VILLAGE),
-    WITCHHUNTER(Alignment.VILLAGE),
-    SLEEPWALKER(Alignment.VILLAGE),
-    INSOMNIAC(Alignment.VILLAGE),
-    BEHOLDER(Alignment.VILLAGE),
-    ZEALOT(Alignment.VILLAGE),
+    VILLAGER("Villager", Alignment.VILLAGE),
+    LYCAN("Lycan", Alignment.VILLAGE),
+    SEER("Seer", Alignment.VILLAGE),
+    PROTECTOR("Protector", Alignment.VILLAGE),
+    HUNTSMAN("Huntsman", Alignment.VILLAGE),
+    GRAVEDIGGER("Gravedigger", Alignment.VILLAGE),
+    GRAVEROBBER("Graverobber", Alignment.VILLAGE),
+    STALKER("Stalker", Alignment.VILLAGE),
+    HARLOT("Harlot", Alignment.VILLAGE),
+    MILITIA("Militia", Alignment.VILLAGE),
+    REVIVER("Reviver", Alignment.VILLAGE),
+    MESSIAH("Messiah", Alignment.VILLAGE),
+    MASONLEADER("Mason Leader", Alignment.VILLAGE),
+    TAROTREADER("Tarot Reader", Alignment.VILLAGE),
+    WITCHHUNTER("Witch Hunter", Alignment.VILLAGE),
+    SLEEPWALKER("Sleepwalker", Alignment.VILLAGE),
+    INSOMNIAC("Insomniac", Alignment.VILLAGE),
+    BEHOLDER("Beholder", Alignment.VILLAGE),
+    ZEALOT("Zealot", Alignment.VILLAGE),
 
-    NAIVE_SEER(Alignment.VILLAGE),
-    PARANOID_SEER(Alignment.VILLAGE),
-    INSANE_SEER(Alignment.VILLAGE),
-    CHAOTIC_SEER(Alignment.VILLAGE),
+    NAIVE_SEER("Naive Seer", Alignment.VILLAGE),
+    PARANOID_SEER("Paranoid Seer", Alignment.VILLAGE),
+    INSANE_SEER("Insane Seer", Alignment.VILLAGE),
+    CHAOTIC_SEER("Chaotic Seer", Alignment.VILLAGE),
 
     // Werewolves
-    WEREWOLF(Alignment.WEREWOLVES),
-    SHAPESHIFTER(Alignment.WEREWOLVES),
-    ALPHAWOLF(Alignment.WEREWOLVES),
-    BLOODHOUND(Alignment.WEREWOLVES),
-    BLOODLETTER(Alignment.WEREWOLVES),
-    DIREWOLF(Alignment.WEREWOLVES),
+    WEREWOLF("Werewolf", Alignment.WEREWOLVES),
+    SHAPESHIFTER("Shapeshifter", Alignment.WEREWOLVES),
+    ALPHAWOLF("Alphawolf", Alignment.WEREWOLVES),
+    BLOODHOUND("Bloodhound", Alignment.WEREWOLVES),
+    BLOODLETTER("Bloodletter", Alignment.WEREWOLVES),
+    DIREWOLF("Direwolf", Alignment.WEREWOLVES),
 
     // Coven
-    ALCHEMIST(Alignment.COVEN),
-    DJINN(Alignment.COVEN),
-    SUCCUBUS(Alignment.COVEN),
-    WITCH(Alignment.COVEN),
-    SHAMAN(Alignment.COVEN),
-    PUPPETMASTER(Alignment.COVEN),
-    PUPPET(Alignment.COVEN),
+    ALCHEMIST("Alchemist", Alignment.COVEN),
+    DJINN("Djinn", Alignment.COVEN),
+    SUCCUBUS("Succubus", Alignment.COVEN),
+    WITCH("Witch", Alignment.COVEN),
+    SHAMAN("Shaman", Alignment.COVEN),
+    PUPPETMASTER("PuppetMaster", Alignment.COVEN),
+    PUPPET("Puppet", Alignment.COVEN),
 
     // "Neutral"
-    VAMPIRE(Alignment.VAMPIRES),
-    VAMPIREMASTER(Alignment.VAMPIRES),
-    FAMILIAR(Alignment.VAMPIRES),
-    FAMILIARSTALKER(Alignment.VAMPIRES),
-    FAMILIARGRAVEDIGGER(Alignment.VAMPIRES),
-    FAMILIARMILITIA(Alignment.VAMPIRES),
-    DEMONLORD(Alignment.DEMONS),
-    HELLHOUND(Alignment.DEMONS),
+    VAMPIRE("Vampire", Alignment.VAMPIRES),
+    VAMPIREMASTER("Vampire Master", Alignment.VAMPIRES),
+    FAMILIAR("Familiar", Alignment.VAMPIRES),
+    FAMILIARSTALKER("Familiar (Stalker)", Alignment.VAMPIRES),
+    FAMILIARGRAVEDIGGER("Familiar (Gravedigger)", Alignment.VAMPIRES),
+    FAMILIARMILITIA("Familiar (Militia)", Alignment.VAMPIRES),
+    DEMONLORD("Demonlord", Alignment.DEMONS),
+    HELLHOUND("Hellhound", Alignment.DEMONS),
 
     // End of constants
     ;
 
+    private final String name;
     private final Alignment alignment;
 
     // Constructors
 
-    Role(Alignment alignment) {
+    Role(String name, Alignment alignment) {
+        this.name = name;
         this.alignment = alignment;
     }
 
@@ -82,6 +84,14 @@ public enum Role {
     public Alignment getAlignment() {
         return alignment;
     }
+
+    // To String
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
 
     // Helper Methods
 
