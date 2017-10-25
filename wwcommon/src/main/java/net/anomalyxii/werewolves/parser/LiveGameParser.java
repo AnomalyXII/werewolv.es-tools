@@ -195,11 +195,11 @@ public class LiveGameParser extends AbstractGameParser {
                     if (isDayPhase())
                         return null;
                     int dayNumber = (Integer) event.getOrDefault("dayNumber", 1);
-                    startDayPhase(dayNumber);
+                    startDayPhase(dayNumber, timestamp);
                     return null;
 
                 case "NightStarted":
-                    startNightPhase();
+                    startNightPhase(timestamp);
                     return null;
 
                 case "AnonymisedGameStarted":

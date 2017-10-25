@@ -47,7 +47,7 @@ public enum Role {
     SUCCUBUS("Succubus", Alignment.COVEN),
     WITCH("Witch", Alignment.COVEN),
     SHAMAN("Shaman", Alignment.COVEN),
-    PUPPETMASTER("PuppetMaster", Alignment.COVEN),
+    PUPPETMASTER("Puppet Master", Alignment.COVEN),
     PUPPET("Puppet", Alignment.COVEN),
 
     // "Neutral"

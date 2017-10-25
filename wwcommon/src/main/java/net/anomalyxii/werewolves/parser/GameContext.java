@@ -2,9 +2,11 @@ package net.anomalyxii.werewolves.parser;
 
 import net.anomalyxii.werewolves.domain.*;
 import net.anomalyxii.werewolves.domain.events.Event;
+import net.anomalyxii.werewolves.domain.phases.AbstractPhase;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
 import net.anomalyxii.werewolves.domain.players.Character;
+import net.anomalyxii.werewolves.domain.players.CharacterInstance;
 import net.anomalyxii.werewolves.domain.players.User;
 
 import java.time.OffsetDateTime;
@@ -13,7 +15,7 @@ import java.util.*;
 /**
  * Tracks the information needed to reconstruct a {@link Game}
  * whilst parsing {@link Event Events} from the API.
- *
+ * <p>
  * Created by Anomaly on 05/01/2017.
  */
 public abstract class GameContext {
@@ -51,26 +53,12 @@ public abstract class GameContext {
     // ******************************
 
     public void process(Map<String, Object> event) {
-
-        // Lookup the player
-        PlayerInstance player = parsePlayerInstance(event);
-
-        // Calculate the event time
-        OffsetDateTime timestamp = parseTime(event);
-
-        Day currentDay = days.peekLast();
-        List<Event> currentPhase = gameStarted
-                                   ? gameFinished
-                                     ? postGameEvents
-                                     : dayPhase
-                                       ? dayGameEvents.get(currentDay)
-                                       : nightGameEvents.get(currentDay)
-                                   : preGameEvents;
+        PlayerInstance player = parsePlayerInstance(event); // Lookup the player
+        OffsetDateTime timestamp = parseTime(event); // Calculate the event time
 
         Event parsedEvent = parseEvent(player, timestamp, event);
         if (parsedEvent != null)
-            currentPhase.add(parsedEvent);
-
+            getCurrentPhaseEventList().add(parsedEvent);
     }
 
     protected abstract Event parseEvent(PlayerInstance player, OffsetDateTime timestamp, Map<String, Object> event);
@@ -193,44 +181,80 @@ public abstract class GameContext {
 
     // Phase Functions
 
-    protected Day startDayPhase(int dayNumber) {
+    /*
+     * Get the Event List for the current "Phase".
+     *
+     * In this context, "Phase" might be:
+     *      -> preGameEvents
+     *      -> postGameEvents
+     *      -> dayPhase
+     *      -> nightPhase
+     */
+    protected List<Event> getCurrentPhaseEventList() {
+        if (!gameStarted)
+            return preGameEvents;
+        if (gameFinished)
+            return postGameEvents;
+
+        if (dayPhase)
+            return dayGameEvents.get(days.peekLast());
+        else
+            return nightGameEvents.get(days.peekLast());
+    }
+
+
+    protected Day startDayPhase(int dayNumber, OffsetDateTime time) {
         Day lastDay = days.peekLast();
         if (Objects.nonNull(lastDay))
             lastDay.getNightPhase().setComplete(true);
 
         List<Event> newDayPhase = new ArrayList<>();
+        DayPhase dayPhase = new DayPhase(newDayPhase);
+        dayPhase.setStartTime(time);
+
         List<Event> newNightPhase = new ArrayList<>();
-        Day currentDay = new Day(dayNumber, new DayPhase(newDayPhase), new NightPhase(newNightPhase));
+        NightPhase nightPhase = new NightPhase(newNightPhase);
+
+        Day currentDay = new Day(dayNumber, dayPhase, nightPhase);
+
         dayGameEvents.put(currentDay, newDayPhase);
         nightGameEvents.put(currentDay, newNightPhase);
         getDays().addLast(currentDay);
 
+        setCurrentCharacterInstances(dayPhase);
         setDayPhase(true);
         return currentDay;
     }
 
-    protected Day startNightPhase() {
+    protected Day startNightPhase(OffsetDateTime time) {
         Day currentDay = days.peekLast();
         if (Objects.isNull(currentDay)) {
             // Very rarely, games might start in the night phase...
             //   ... so immediately start and then end the day
-            currentDay = startDayPhase(1);
+            currentDay = startDayPhase(1, time);
         }
 
         playerContext.resetControlledCharacters();
 
-        currentDay.getDayPhase().setComplete(true);
+        DayPhase dayPhase = currentDay.getDayPhase();
+        dayPhase.setComplete(true);
+
+        NightPhase nightPhase = currentDay.getNightPhase();
+        nightPhase.setStartTime(time);
+        setCurrentCharacterInstances(nightPhase);
+
         setDayPhase(false);
         return currentDay;
     }
 
-    protected void finishGame(Alignment winningAlignment) {
-        Day lastDay = days.peekLast();
-        if (isDayPhase())
-            lastDay.getDayPhase().setComplete(true);
-        else
-            lastDay.getNightPhase().setComplete(true);
+    protected void setCurrentCharacterInstances(AbstractPhase phase) {
+        PlayerContext playerContext = getPlayerContext();
+        playerContext.allCharacters().stream()
+                .map(playerContext::instanceForCharacter)
+                .forEach(phase::setCharacterInstanceAtStart);
+    }
 
+    protected void finishGame(Alignment winningAlignment) {
         setWinningAlignment(winningAlignment);
         setGameFinished(true);
     }
@@ -244,7 +268,7 @@ public abstract class GameContext {
     protected void finalisePlayerIdentities() {
         playerContext.allUsers().forEach(user -> {
             Character character = playerContext.getCharacterFor(user);
-            if(Objects.isNull(character))
+            if (Objects.isNull(character))
                 return;
 
             character.setUser(user);

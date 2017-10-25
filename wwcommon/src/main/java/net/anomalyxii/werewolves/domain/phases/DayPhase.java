@@ -19,8 +19,4 @@ public class DayPhase extends AbstractPhase {
         super(events);
     }
 
-    public DayPhase(List<Event> events, boolean complete) {
-        super(events, complete);
-    }
-
 }

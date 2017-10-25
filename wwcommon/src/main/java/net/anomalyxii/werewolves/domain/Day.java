@@ -1,11 +1,7 @@
 package net.anomalyxii.werewolves.domain;
 
-import net.anomalyxii.werewolves.domain.events.Event;
 import net.anomalyxii.werewolves.domain.phases.DayPhase;
 import net.anomalyxii.werewolves.domain.phases.NightPhase;
-
-import java.util.Collections;
-import java.util.List;
 
 /**
  * A day cycle.

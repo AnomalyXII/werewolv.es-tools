@@ -76,24 +76,107 @@ public class Game {
         return Collections.unmodifiableList(characters);
     }
 
+    /**
+     * Get all the {@link Event Events} that occurred before the
+     * {@code Game} officially began.
+     *
+     * @return a {@link List} of pre-game {@link Event Events}
+     */
     public List<Event> getPreGameEvents() {
         return Collections.unmodifiableList(preGameEvents);
     }
 
+    /**
+     * Get all the {@link Event Events} that occurred after the
+     * {@code Game} officially ended.
+     *
+     * @return a {@link List} of post-game {@link Event Events}
+     */
     public List<Event> getPostGameEvents() {
         return Collections.unmodifiableList(postGameEvents);
     }
 
+    /**
+     * Get all the {@link Day Days} that occurred during the
+     * start and end of the {@code Game}.
+     *
+     * @return a {@link List} of {@link Day Days}
+     */
     public List<Day> getDays() {
         return Collections.unmodifiableList(days);
     }
 
+    /**
+     * Get the {@link Day} using a 0-based index.
+     *
+     * @param dayNo the day number, starting from 0
+     * @return the {@link Day}
+     */
     public Day getDay(int dayNo) {
         return days.get(dayNo);
     }
 
+    /**
+     * Get the {@link Day} using a 1-based index.
+     *
+     * @param visualDayNo the day number, starting from 1
+     * @return the {@link Day}
+     */
     public Day getDayFor(int visualDayNo) {
         return getDay(visualDayNo - 1);
+    }
+
+    /**
+     * Get the final {@link Day}.
+     * <p>
+     * If the game hasn't finished, this method will return
+     * {@literal null}.
+     *
+     * @return the final {@link Day}
+     */
+    public Day getLastDay() {
+        if (!isGameEnded())
+            return null;
+
+        return days.get(days.size() - 1);
+    }
+
+    /**
+     * Get the effectively final {@link Day} - that is, the last
+     * {@link Day} that actually has meaningful
+     * {@link Event Events}.
+     * <p>
+     * Under normal circumstances, if the game ended at night-fall,
+     * i.e. after a player has been lynched, then will be the actual
+     * {@link #getLastDay() last day} - otherwise this will be the
+     * previous day.
+     * <p>
+     * If the game hasn't finished, this method will return
+     * {@literal null}.
+     *
+     * @return the final {@link Day}
+     */
+    public Day getEffectiveLastDay() {
+        if (!isGameEnded())
+            return null;
+
+        int lastDayIndex = days.size() - 1;
+        Day lastDay = days.get(lastDayIndex);
+
+        // Game ended when the Day started, so go back another day...
+        if (!lastDay.getDayPhase().isComplete())
+            lastDay = days.get(lastDayIndex - 1);
+
+        return lastDay;
+    }
+
+    /**
+     * Determine whether the {@code Game} has ended.
+     *
+     * @return {@literal true} if the game is over; {@literal false} otherwise
+     */
+    public boolean isGameEnded() {
+        return winningAlignment != null;
     }
 
     /**

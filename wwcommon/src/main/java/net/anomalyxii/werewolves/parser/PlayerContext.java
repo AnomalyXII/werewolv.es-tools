@@ -112,12 +112,12 @@ public class PlayerContext {
         return instanceForCharacter(user, character);
     }
 
-    public PlayerInstance instanceForCharacter(Character character) {
+    public CharacterInstance instanceForCharacter(Character character) {
         User user = getUserFromCharacter(character);
         return instanceForCharacter(user, character);
     }
 
-    protected PlayerInstance instanceForCharacter(User user, Character character) {
+    protected CharacterInstance instanceForCharacter(User user, Character character) {
         Role role = getRoleForUser(user);
         if(Objects.isNull(role)) {
             role = character.getRole();

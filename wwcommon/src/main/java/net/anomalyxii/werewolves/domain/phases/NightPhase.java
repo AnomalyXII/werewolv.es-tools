@@ -19,8 +19,4 @@ public class NightPhase extends AbstractPhase {
         super(events);
     }
 
-    public NightPhase(List<Event> events, boolean complete) {
-        super(events, complete);
-    }
-
 }
